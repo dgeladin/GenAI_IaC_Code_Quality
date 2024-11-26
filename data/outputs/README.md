@@ -25,7 +25,7 @@ The `outputs` directory further houses subdirectories for each GenAI model used 
   * ...
 
 
-*Model List:**
+## Model List:
 
 * model_1: ChatGPT
 * model_2: Google Gemini
