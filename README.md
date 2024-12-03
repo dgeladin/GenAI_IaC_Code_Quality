@@ -45,5 +45,4 @@ This repository serves as a data repository for the PhD dissertation research.
 
 Currently, this repository is for storing research data only. Contributions are not open at this time.
 
-This README provides a high-level overview of the `outputs` directory. 
 
