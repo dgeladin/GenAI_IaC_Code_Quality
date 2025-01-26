@@ -1,4 +1,3 @@
-# DONE
 # Prompt Set (Managing Multiple Environments with Terraform Workspaces):
 
 ## Prompt 1 (General Setup):

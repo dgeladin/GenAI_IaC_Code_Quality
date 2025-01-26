@@ -1,4 +1,3 @@
-# DONE
 # Prompt Set (High Availability):
 
 ## Prompt 1 (General Setup):

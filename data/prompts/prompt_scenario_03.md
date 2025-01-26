@@ -1,4 +1,3 @@
-# DONE
 # Scenario 3 Prompts (EKS Cluster)
 
 ## Prompt 1 (General Setup):

@@ -1,5 +1,3 @@
-# DONE
-
 # Prompt Set (RDS Instances and Security Groups):
 
 ## Prompt 1 (General Setup):

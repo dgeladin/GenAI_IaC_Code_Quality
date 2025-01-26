@@ -1,5 +1,3 @@
-# DONE
-
 # Prompt Set (Blue/Green Deployments):
 
 ## Prompt 1 (General Setup):
