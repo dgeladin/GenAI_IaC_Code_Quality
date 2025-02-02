@@ -30,12 +30,12 @@ Wait to provide any code until the requirements are provided.
 
 ## Prompt 3 (Workspaces and Basic Variables):
 
-Using the style guide from the previous step, create Terraform code that utilizes Terraform workspaces to manage different environments.
+Using the style guide from the previous step, create Terraform code that utilizes Terraform workspaces to manage different environments.  
 
-Define a variable named environment that defaults to the current Terraform workspace (terraform.workspace).
-Define a variable called instance_type that is a map of strings. 
-The map should have default, dev, and prod keys with corresponding instance types: t2.micro (default), t2.small (dev), and t2.medium (prod).
-Define variables with ami_id for windows and AWS linux AMIs.
+Define a variable named environment that defaults to the current Terraform workspace (terraform.workspace).  
+Define a variable called instance_type that is a map of strings.   
+The map should have default, dev, and prod keys with corresponding instance types: t2.micro (default), t2.small (dev), and t2.medium (prod).  
+Define variables with ami_id for windows and AWS linux AMIs.  
 
 ## Prompt 4 (Resource Quantities):
 
@@ -48,7 +48,10 @@ Create three AWS Linux aws_instance resources in prod.
 
 ## Prompt 5 (Defining the Configuration)
 
-The ami should be taken from the ami_id variables. The instance_types and quantity should be dynamically selected from the instance_type map based on the current Terraform workspace (using terraform.workspace). Add a tag to the aws_instance resource with the key Name. The value of the tag should be a string that includes the instance name "example-instance-" followed by the current Terraform workspace (e.g., "example-instance-dev").
-Add a tag to the aws_instance resources for created_by, specifying Terraform as the creation tool. 
+The ami should be taken from the ami_id variables.  
+The instance_types and quantity should be dynamically selected from the instance_type map based on the current Terraform workspace (using terraform.workspace).   
+Add a tag to the aws_instance resource with the key Name.  
+ The value of the tag should be a string that includes the instance name "example-instance-" followed by the current Terraform workspace (e.g., "example-instance-dev").  
+Add a tag to the aws_instance resources for created_by, specifying Terraform as the creation tool.   
 
 [List of Scenarios](../scenarios.md)

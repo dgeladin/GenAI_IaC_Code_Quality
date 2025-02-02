@@ -40,14 +40,14 @@ Use 10.0.0.0/16 CIDR for the East region and 10.1.0.0/16 for the West region.
 
 Building upon the previous steps:
 
-Create another module (asg module) to define the Auto Scaling Groups.
-Use this module to create Auto Scaling Groups in each region (e.g., asg_east and asg_west).
+Create another module (asg module) to define the Auto Scaling Groups.  
+Use this module to create Auto Scaling Groups in each region (e.g., asg_east and asg_west).  
 Pass required information to the ASG module, such as:
-VPC ID (from VPC modules)
-Public subnet IDs (from VPC modules)
-Minimum, maximum, and desired capacity for instances (min 2, max 5, and desired capacity 2)
-Instance type (t3.micro)
-Application name (example-app in this case)
+* VPC ID (from VPC modules)
+* Public subnet IDs (from VPC modules)
+* Minimum, maximum, and desired capacity for instances (min 2, max 5, and desired capacity 2)
+* Instance type (t3.micro)
+* Application name (example-app in this case)
 
 ## Prompt 5 (Global Accelerator and Load Balancers):
 

@@ -100,7 +100,7 @@ Using the previously defined Ingress Contoller secure the API enpoint.
 Configure TLS termination at the Ingress controller:
 * Obtain a TLS certificate (e.g., from AWS Certificate Manager (ACM)).
 * Reference the certificate ARN in the Ingress TLS configuration.
-* Define hostnames and paths for your API endpoints and map them to the corresponding Kubernetes services running in your cluster.
+* Define hostnames and paths for the API endpoints and map them to the corresponding Kubernetes services running in the cluster.
 
 
 [List of Scenarios](../scenarios.md)

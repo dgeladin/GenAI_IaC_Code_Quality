@@ -6,7 +6,7 @@ You are a DevOps engineer tasked with creating a Terraform configuration to auto
 
 Focus on deploying a simple Lambda function triggered by an API Gateway request.
 Leverage Terraform to manage the entire infrastructure stack, including IAM roles, Lambda function, API Gateway resources, and permissions.
-Use a Node.js Lambda function as an example (replace with your preferred runtime if needed).
+Use a Node.js Lambda function.
 
 ## Prompt 2 (IaC Style Guide):
 
@@ -40,8 +40,8 @@ Attach the AWSLambdaBasicExecutionRole managed policy to the IAM role using aws_
 Building upon the previous steps:
 
 Specify the function name (example_lambda_function), runtime (nodejs14.x), and the role it should use (aws_iam_role.lambda_exec.arn).  
-Set the handler (index.handler) to the exported function within your Lambda code (replace with your actual handler name).  
-Use the filename argument to reference the ZIP archive containing your Lambda function code (lambda_function.zip).  
+Set the handler (index.handler) to the exported function within the Lambda code. 
+Use the filename argument to reference the ZIP archive containing the Lambda function code (lambda_function.zip).  
 Calculate the source code hash (source_code_hash) using filebase64sha256 to ensure deployment only occurs if the code changes.  
 
 ## Prompt 5 (API Gateway Setup):
@@ -50,9 +50,9 @@ Building upon the previous steps:
 
 Create an API Gateway REST API named example_api with a descriptive name.  
 Create an API Gateway resource (example) with a specific path part (example).    
-Define an API Gateway method (example) within the resource for the HTTP method (GET) and configure it to use NONE for authorization (adjust this for your specific authorization needs).    
-Create an API Gateway integration (example) to connect the API Gateway resource and method to your Lambda function.    
-Set the integration type to AWS_PROXY to allow the Lambda function to handle the entire request and response.  
+Define an API Gateway method (example) within the resource for the HTTP method (GET) and configure it to use NONE for authorization.
+Create an API Gateway integration (example) to connect the API Gateway resource and method to the Lambda function.    
+Set the integration type to AWS_PROXY to allow the Lambda function to handle the request and response.  
 Use the Lambda function's invoke_arn to specify the integration target.
 
 ## Prompt 6 (API Gateway Deployment and Permissions):

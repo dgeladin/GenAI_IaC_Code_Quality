@@ -54,9 +54,8 @@ Allow inbound traffic only on port 3306 (MySQL) using the TCP protocol.
 Restrict access to the security group by specifying a CIDR block that matches the VPC CIDR (10.0.0.0/16).  
 
 Define a DB subnet group:
-
-Create a DB subnet group named example-db-subnet-group.  
-Reference existing subnet IDs stored in Terraform variables (e.g., var.private_subnet_ids). 
+* Create a DB subnet group named example-db-subnet-group.  
+* Reference existing subnet IDs stored in Terraform variables (e.g., var.private_subnet_ids). 
 
 ## Prompt 5 (Database Migration Script):
 
@@ -69,12 +68,12 @@ Ensure the script path is relative to the module location using ${path.module}.
 
 Building upon the previous steps:
 
-Create a null_resource named db_migration with a trigger based on the SHA256 hash of the rendered migration script (using data.template_file.migration_script.rendered).
-This ensures the migration runs only if the script content changes.
-Define a local-exec provisioner within the null resource to execute a shell command.
-The command should use mysql cli and connect to the RDS instance endpoint, username, and password (reference Terraform variables).
-Pipe the rendered migration script content (path.module}/migrations/V1__initial_schema.sql) to the mysql command for execution.
-Make sure the null resource depends on the RDS instance creation (aws_db_instance.example) to ensure the database exists before migration.
+Create a null_resource named db_migration with a trigger based on the SHA256 hash of the migration script (using data.template_file.migration_script.rendered).  
+This ensures the migration runs only if the script content changes.  
+Define a local-exec provisioner within the null resource to execute a shell command.  
+The command should use mysql cli and connect to the RDS instance endpoint, username, and password (reference Terraform variables).  
+Pipe the rendered migration script content ({path.module}/migrations/V1__initial_schema.sql) to the mysql command for execution.  
+Make sure the null resource depends on the RDS instance creation (aws_db_instance.example) to ensure the database exists before migration.  
 
 ## Prompt 7 (Output and Considerations):
 

@@ -44,7 +44,7 @@ Building upon the previous steps:
 Define the resources for the primary site:  
 
 Create an EC2 instance (primary) with a specific AMI (ami-0c55b159cbfafe1f0) and instance type (t3.micro) in the primary region.  
-Provision an EBS volume (primary_data) with desired size (100 GiB) and type (gp3) in the same availability zone as the instance.  
+Provision an EBS volume (primary_data) with desired size (100G) and type (gp3) in the same availability zone as the instance.  
 Attach the EBS volume to the EC2 instance (primary_data_attachment) for data persistence.  
 
 ## Prompt 5 (AWS Elastic Disaster Recovery (DRS) Configuration):

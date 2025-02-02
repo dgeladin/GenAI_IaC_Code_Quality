@@ -32,19 +32,21 @@ Wait to provide any code until the requirements are provided.
 
 Create a VPC with private and public subnets using a pre-built module (consider terraform-aws-modules/vpc/aws) or define them manually.  
 Configure two security groups:
-* app_sg for the application instances: Allow inbound traffic on port 80 (HTTP) from the lb_sg security group. Allow outbound traffic on all ports and protocols 0.0.0.0/0 for demonstration purposes only. In a real-world scenario, restrict outbound traffic as much as possible.
-* lb_sg for the load balancer: Allow inbound traffic on port 80 (HTTP) from 0.0.0.0/0. Allow outbound traffic to the app_sg on port 80."
+* app_sg for the application instances: Allow inbound traffic on port 80 (HTTP) from the lb_sg security group.  
+  Allow outbound traffic on all ports and protocols 10.0.0.0/16. 
+* lb_sg for the load balancer: Allow inbound traffic on port 80 (HTTP) from 10.0.0.0/16. Allow outbound traffic to the app_sg on port 80."
 
 ## Prompt 4 (Launch Templates for Blue/Green):
 
 Building upon the previous steps:
 
-Create separate launch templates for the blue and green environments (aws_launch_template).
-Specify a Amazon Linux AMI, instance type (e.g., t3.micro), and security group association with app_sg.
-Use user data scripts for each template to demonstrate basic functionality.
+Create separate launch templates for the blue and green environments (aws_launch_template).  
+Specify a Amazon Linux AMI, instance type (e.g., t3.micro), and security group association with app_sg.  
+Use user data scripts for each template to demonstrate basic functionality.  
 Use distinct user data scripts to differentiate the environments:
 * Blue: #!/bin/bash\necho "Hello from Blue Environment" > index.html\nsudo yum install -y python3 && nohup python3 -m http.server 80 &
 * Green: #!/bin/bash\necho "Hello from Green Environment" > index.html\nsudo yum install -y python3 && nohup python3 -m http.server 80 &
+
 Add tags to the launch templates to easily identify them (e.g., Environment: blue or Environment: green)."
 
 ## Prompt 5 (Auto Scaling Groups):
@@ -53,10 +55,10 @@ Building upon the previous steps:
 
 Introduce Auto Scaling Groups (ASGs) for each environment:
 
-Create ASGs named blue-asg and green-asg with desired capacity, minimum of 2 and maximum size of 5.
-Associate each ASG with its corresponding launch template version (using $Latest).
-Connect each ASG to its respective target group using target_group_arns.
-Configure health checks for the ASGs to monitor instance health on port 80."
+Create ASGs named blue-asg and green-asg with desired capacity, minimum of 2 and maximum size of 5.  
+Associate each ASG with its corresponding launch template version (using $Latest).  
+Connect each ASG to its respective target group using target_group_arns.  
+Configure health checks for the ASGs to monitor instance health on port 80.
 
 ## Prompt 6 (Application Load Balancer):
 
@@ -64,7 +66,7 @@ Building upon the previous steps:
 
 Implement the load balancing component for blue/green deployment:
 
-Create an Application Load Balancer (app_lb) with appropriate security group association and public subnets.
+Create an Application Load Balancer (app_lb) with appropriate security group association and public subnets.  
 Define separate target groups named blue-tg and green-tg for each environment, specifying port and protocol (HTTP) within the VPC.
 
 ## Prompt 7 (Listener Rule and Output):
