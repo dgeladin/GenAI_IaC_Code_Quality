@@ -1,5 +1,3 @@
-# WORK ON - need more code
-
 # Prompt Set (Multi-Environment Deployment Pipeline):
 
 ## Prompt 1 (General Setup and Objective):
