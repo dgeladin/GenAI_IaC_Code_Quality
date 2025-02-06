@@ -55,5 +55,4 @@ Add a tag to the aws_instance resource with the key Name.
 Add a tag to the aws_instance resources for created_by, specifying Terraform as the creation tool.   
 
 
-
 [List of Scenarios](../scenarios.md)

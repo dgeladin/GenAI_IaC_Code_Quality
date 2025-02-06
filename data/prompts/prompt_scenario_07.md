@@ -69,6 +69,8 @@ Outputs:
 
 ## Prompt 5 (Compute Module):
 
+Building upon the previous steps:
+
 This module handles the compute resources.
 
 Launch Template:  
@@ -88,7 +90,10 @@ Load Balancer (ALB):
 
 ## Prompt 6 (Database Module):
 
+Building upon the previous steps:
+
 This module handles the database resources.  
+
 The module should accept the following input variables:  
 * environment (string): The name of the environment (e.g., "development", "staging", "production").  
 * db_name (string): The name of the database.  
@@ -107,6 +112,8 @@ Set the db_subnet_group_name and vpc_security_group_ids using the resources crea
 The module should output the database endpoint (db_endpoint).
 
 ## Prompt 7 (IAM Roles):
+
+Building upon the previous steps:
 
 Create two IAM roles:
 * db_admin_role: This role will be used by administrators to manage the database.  It should have full access to the RDS instance.  
