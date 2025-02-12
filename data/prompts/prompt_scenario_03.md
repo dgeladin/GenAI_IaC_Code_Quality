@@ -102,5 +102,10 @@ Configure TLS termination at the Ingress controller:
 * Reference the certificate ARN in the Ingress TLS configuration.
 * Define hostnames and paths for the API endpoints and map them to the corresponding Kubernetes services running in the cluster.
 
+## Prompt 9 (Complete the configuration): 
+
+Building upon the previous steps:
+
+Create any additional configuration files to complete the Terraform project structure.
 
 [List of Scenarios](../scenarios.md)

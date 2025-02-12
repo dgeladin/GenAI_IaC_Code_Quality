@@ -101,4 +101,6 @@ Building upon the previous steps:
 Integrate the CloudWatch event rule and Lambda function for automated response:  
 Define a CloudWatch event target that connects the dr_failover rule to the dr_failover Lambda function.  
 
+Create any additional configuration files to complete the Terraform project structure.
+
 [List of Scenarios](../scenarios.md)

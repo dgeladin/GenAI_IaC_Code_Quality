@@ -81,5 +81,6 @@ Building upon the previous steps:
 
 Output the RDS instance endpoint for connection purposes.
 Define an output variable named db_endpoint referencing the endpoint of the aws_db_instance.example resource.
+Create any additional configuration files to complete the Terraform project structure.
 
 [List of Scenarios](../scenarios.md)

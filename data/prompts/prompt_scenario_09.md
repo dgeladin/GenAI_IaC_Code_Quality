@@ -80,4 +80,6 @@ Store the Datadog dashboard URL in a Terraform output variable:
 Use the Datadog dashboard ID retrieved from the datadog_dashboard resource to construct the complete URL.  
 The output will provide a link to access the centralized dashboard for monitoring the multi-cloud resources.  
 
+Create any additional configuration files to complete the Terraform project structure.
+
 [List of Scenarios](../scenarios.md)

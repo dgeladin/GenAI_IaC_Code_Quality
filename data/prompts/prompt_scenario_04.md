@@ -34,7 +34,7 @@ Create a VPC with private and public subnets using a pre-built module (consider 
 Configure two security groups:
 * app_sg for the application instances: Allow inbound traffic on port 80 (HTTP) from the lb_sg security group.  
   Allow outbound traffic on all ports and protocols 10.0.0.0/16. 
-* lb_sg for the load balancer: Allow inbound traffic on port 80 (HTTP) from 10.0.0.0/16. Allow outbound traffic to the app_sg on port 80."
+* lb_sg for the load balancer: Allow inbound traffic on port 80 (HTTP) from 10.0.0.0/16. Allow outbound traffic to the app_sg on port 80.
 
 ## Prompt 4 (Launch Templates for Blue/Green):
 
@@ -47,7 +47,7 @@ Use distinct user data scripts to differentiate the environments:
 * Blue: #!/bin/bash\necho "Hello from Blue Environment" > index.html\nsudo yum install -y python3 && nohup python3 -m http.server 80 &
 * Green: #!/bin/bash\necho "Hello from Green Environment" > index.html\nsudo yum install -y python3 && nohup python3 -m http.server 80 &
 
-Add tags to the launch templates to easily identify them (e.g., Environment: blue or Environment: green)."
+Add tags to the launch templates to easily identify them (e.g., Environment: blue or Environment: green).
 
 ## Prompt 5 (Auto Scaling Groups):
 
@@ -78,6 +78,7 @@ Configure the listener for blue/green deployment:
 Create a listener rule (front_end) on the load balancer (using aws_lb_listener) to route traffic initially to the blue environment by default.  
 Set the listener port to 80 (HTTP) and use a forward action that points to the blue-tg target group.  
 Output the load balancer's DNS name for easy access to the deployed application.  
+Create any additional configuration files to complete the Terraform project structure.
 
 [List of Scenarios](../scenarios.md)
 

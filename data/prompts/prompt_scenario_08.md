@@ -72,4 +72,6 @@ Add a tag to all instances launched by the ASG.
 Define a tag named Name with the value ASG-Instance to easily identify these instances.  
 Set propagate_at_launch to true to ensure the tag is applied when instances are launched.  
 
+Create any additional configuration files to complete the Terraform project structure.
+
 [List of Scenarios](../scenarios.md)

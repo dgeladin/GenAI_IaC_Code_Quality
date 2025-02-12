@@ -121,5 +121,6 @@ Create two IAM roles:
 
 Create IAM users or groups as needed and attach the appropriate roles to them.  For this exercise, you can assume that these roles are used by the deployment pipeline.  
 
+Create any additional configuration files to complete the Terraform project structure.
 
 [List of Scenarios](../scenarios.md)
