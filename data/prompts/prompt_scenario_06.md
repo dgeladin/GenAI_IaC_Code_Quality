@@ -69,6 +69,7 @@ Specify the source Lambda ARN using to restrict invocation only from the specifi
 Building upon the previous steps:
   
 Use an output variable named api_url to construct the API Gateway URL by combining the deployment invoke URL and resource path.  
+
 Create any additional configuration files to complete the Terraform project structure.
 
 [List of Scenarios](../scenarios.md)

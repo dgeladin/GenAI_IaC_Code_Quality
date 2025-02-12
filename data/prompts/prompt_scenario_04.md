@@ -78,6 +78,7 @@ Configure the listener for blue/green deployment:
 Create a listener rule (front_end) on the load balancer (using aws_lb_listener) to route traffic initially to the blue environment by default.  
 Set the listener port to 80 (HTTP) and use a forward action that points to the blue-tg target group.  
 Output the load balancer's DNS name for easy access to the deployed application.  
+
 Create any additional configuration files to complete the Terraform project structure.
 
 [List of Scenarios](../scenarios.md)

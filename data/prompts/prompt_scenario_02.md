@@ -59,4 +59,6 @@ Introduce another resource, aws_globalaccelerator_endpoint_group, to attach regi
 Use the output (alb_arn) from the ASG module (presumably containing the regional load balancers) as the endpoint IDs for the global accelerator group.  
 Set equal weights (e.g., 50) for each endpoint in the group.  
 
+Create any additional configuration files to complete the Terraform project structure.
+
 [List of Scenarios](../scenarios.md)

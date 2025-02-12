@@ -54,5 +54,6 @@ Add a tag to the aws_instance resource with the key Name.
  The value of the tag should be a string that includes the instance name "example-instance-" followed by the current Terraform workspace (e.g., "example-instance-dev").  
 Add a tag to the aws_instance resources for created_by, specifying Terraform as the creation tool.   
 
+Create any additional configuration files to complete the Terraform project structure.
 
 [List of Scenarios](../scenarios.md)
