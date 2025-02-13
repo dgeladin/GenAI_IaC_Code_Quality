@@ -6,6 +6,7 @@ You are an experienced DevOps engineer specializing in Infrastructure as Code (I
 
 Utilize Terraform to automate the provisioning and management of an Auto Scaling group (ASG) that utilizes a mix of On-Demand and Spot Instances.
 Ensure the ASG maintains a desired level of availability and performance while taking advantage of Spot Instances' cost benefits.
+Wait to provide any code until the requirements are provided.  
 
 ## Prompt 2 (IaC Style Guide):
 

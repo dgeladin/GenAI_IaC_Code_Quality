@@ -8,6 +8,7 @@ Configure Terraform providers for AWS, Azure, and Datadog.
 Deploy sample resources on both AWS (EC2 instance) and Azure (virtual machine).  
 Utilize Datadog monitors to track CPU utilization on both cloud platforms and trigger alerts if thresholds are exceeded.  
 Create a Datadog dashboard to visualize CPU usage across the AWS and Azure resources.  
+Wait to provide any code until the requirements are provided.  
 
 ## Prompt 2 (IaC Style Guide):
 

@@ -7,7 +7,7 @@ You will be focusing on the Terraform code as part of this project.
 
 Implement a GitOps-style workflow for automated infrastructure changes based on Git branches.
 Utilize Terraform workspaces to manage infrastructure configurations for different environments (development, staging, production).
-Create the following Terraform code to implement the infrastructure. 
+Wait to provide any code until the requirements are provided.  
 
 ## Prompt 2 (IaC Style Guide):
 

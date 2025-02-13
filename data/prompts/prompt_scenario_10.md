@@ -7,6 +7,7 @@ You are an experienced DevOps engineer specializing in Infrastructure as Code (I
 Utilize Terraform to automate the provisioning and configuration of key resources for DR.  
 Leverage Terraform providers for both the primary region (us-west-2) and the disaster recovery (DR) region (us-east-1).  
 Implement a comprehensive approach involving data backup, replication, and failover mechanisms.  
+Wait to provide any code until the requirements are provided.  
 
 ## Prompt 2 (IaC Style Guide):
 
