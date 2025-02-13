@@ -6,7 +6,6 @@ You are a DevOps engineer tasked with creating a Terraform configuration to auto
 
 Focus on deploying a simple Lambda function triggered by an API Gateway request.
 Leverage Terraform to manage the entire infrastructure stack, including IAM roles, Lambda function, API Gateway resources, and permissions.
-Use a Node.js Lambda function.
 Wait to provide any code until the requirements are provided.  
 
 ## Prompt 2 (IaC Style Guide):
