@@ -39,6 +39,7 @@ Utilize Terraform modules for reusability:
 * Create a compute module (database) located in ../modules/database.
 
 Each module should receive the environment variable to configure infrastructure based on the environment.
+Wait to generate each module until they have been defined.
 
 ## Prompt 4 (Network Module):
 
