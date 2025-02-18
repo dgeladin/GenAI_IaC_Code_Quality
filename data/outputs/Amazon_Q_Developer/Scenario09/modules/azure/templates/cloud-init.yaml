@@ -1,0 +1,22 @@
+#cloud-config
+package_upgrade: true
+packages:
+  - azure-cli
+  - jq
+
+write_files:
+  - path: /etc/azure/monitoring-config.json
+    content: |
+      {
+        "environment": "${environment}",
+        "metrics": {
+          "cpu": true,
+          "memory": true,
+          "disk": true
+        }
+      }
+    permissions: '0644'
+
+runcmd:
+  - systemctl enable azure-mdsd
+  - systemctl start azure-mdsd

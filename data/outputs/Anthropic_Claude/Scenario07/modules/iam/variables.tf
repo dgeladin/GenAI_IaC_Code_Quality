@@ -1,0 +1,1 @@
+# Variables are already defined in main.tf
