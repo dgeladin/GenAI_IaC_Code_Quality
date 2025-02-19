@@ -1,5 +1,8 @@
 # CHECKOV OUTPUT
 
+## Version
+Checkov Version: 3.2.299
+
 ## Directory Structure
 Follows the outputs directory  
 GenAI_Model / Scenario#

@@ -1,5 +1,8 @@
 # TFSEC OUTPUT
 
+## Version
+TFSEC Version: v1.28.11
+
 ## Directory Structure
 Follows the outputs directory  
 GenAI_Model / Scenario#

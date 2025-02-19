@@ -1,5 +1,8 @@
 # TFLINT OUTPUT
 
+## Version
+TFLint version 0.50.3
+
 ## Directory Structure
 Follows the outputs directory  
 GenAI_Model / Scenario#
