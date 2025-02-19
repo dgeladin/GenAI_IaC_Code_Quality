@@ -1,5 +1,9 @@
 # Amazon Q Developer
 
+## Version
+Claude 3.5 Sonnet, specifically version claude-3-5-sonnet-20241022.
+Amazon Q is not Claude. LLM is built on Amazon Bedrock
+
 ## Process
 * Install VS Code
 * Install Amazon Q: Chat Plugin
