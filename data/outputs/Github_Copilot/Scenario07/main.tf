@@ -19,19 +19,19 @@ locals {
 }
 
 module "network" {
-  source = "../modules/network"
+  source = "./modules/network"
   environment = local.environment
 }
 
 module "compute" {
-  source = "../modules/compute"
+  source = "./modules/compute"
   environment = local.environment
   public_subnet_ids = module.network.public_subnet_ids
   load_balancer_sg_id = module.network.web_server_sg_id
 }
 
 module "database" {
-  source = "../modules/database"
+  source = "./modules/database"
   environment = local.environment
   db_name = "exampledb"
   db_username = "admin"
@@ -44,6 +44,6 @@ module "database" {
 }
 
 module "iam" {
-  source = "../modules/iam"
+  source = "./modules/iam"
   environment = local.environment
 }

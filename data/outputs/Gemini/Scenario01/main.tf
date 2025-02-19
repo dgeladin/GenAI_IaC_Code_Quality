@@ -15,7 +15,6 @@ provider "aws" {
 
 variable "environment" {
   type    = string
-  default = terraform.workspace
   description = "The environment (dev, prod, etc.) based on Terraform workspace"
 }
 

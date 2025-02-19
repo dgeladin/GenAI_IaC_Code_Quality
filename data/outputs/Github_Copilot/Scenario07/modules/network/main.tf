@@ -1,4 +1,4 @@
-```hcl
+
 variable "cidr_block" {
   description = "The CIDR block for the VPC"
   type        = string
@@ -110,4 +110,3 @@ output "private_subnet_ids" {
 output "web_server_sg_id" {
   value = aws_security_group.web_server.id
 }
-```
