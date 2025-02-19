@@ -4,5 +4,5 @@
 | Anthropic Claude   | x | x | x | x | x | x | x | x | x | x |
 | ChatGPT            |   |   |   |   |   |   |   |   |   |   |
 | Code Llama         |   |   |   |   |   |   |   |   |   |   |
-| Google Gemini      |   |   |   |   |   |   |   |   |   |   |
+| Google Gemini      | x | x | x | x | x | x | x | x | x | x |
 | Github Copilot     | x | x | x | x | x | x | x | x | x | x |
