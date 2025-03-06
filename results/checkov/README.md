@@ -1,7 +1,10 @@
 # CHECKOV OUTPUT
 
 ## Version
-Checkov Version: 3.2.299
+Checkov Version: 3.2.381
+
+## Documentation
+[https://www.checkov.io/1.Welcome/Quick%20Start.html](https://www.checkov.io/1.Welcome/Quick%20Start.html)
 
 ## Directory Structure
 Follows the outputs directory  

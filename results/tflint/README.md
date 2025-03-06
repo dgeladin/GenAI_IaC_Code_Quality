@@ -1,7 +1,10 @@
 # TFLINT OUTPUT
 
 ## Version
-TFLint version 0.50.3
+TFLint version 0.51.1
+
+## Documentation
+[https://github.com/terraform-linters/tflint/blob/master/docs/user-guide/config.md](https://github.com/terraform-linters/tflint/blob/master/docs/user-guide/config.md)
 
 ## Directory Structure
 Follows the outputs directory  

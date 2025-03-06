@@ -33,7 +33,7 @@ fi
 if [ -d "$RESULT_DIR" ]; then
     echo " RESULT_DIR: $RESULT_DIR is present"
 else
-    echo " OUTPUT_DIR: $OUTPUT_DIR is not present"
+    echo " RESULT_DIR: $RESULT_DIR is not present"
     exit 1;
 fi
 
@@ -65,6 +65,10 @@ echo "Running TFLINT on the following directories ... "
 if [[ ${#directories_to_process[@]} -gt 0 ]]; then # Check if the array is not empty
   echo "Directories to process:"
   for dir in "${directories_to_process[@]}"; do
+    if [ ! -d "$RESULT_DIR/$dir" ]; then
+	    echo "Creating dir: $dir"
+	    mkdir -p $RESULT_DIR/$dir
+    fi
     echo "  Processing: $dir"
     tflint --chdir="$OUTPUT_DIR/$dir" > $RESULT_DIR/$dir/tflint_output.txt
     tflint --chdir="$OUTPUT_DIR/$dir" -f json > $RESULT_DIR/$dir/tflint_output.json

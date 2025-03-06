@@ -3,6 +3,9 @@
 ## Version
 TFSEC Version: v1.28.11
 
+## Documentation
+[https://aquasecurity.github.io/tfsec/v1.20.0/guides/installation/](https://aquasecurity.github.io/tfsec/v1.20.0/guides/installation/)
+
 ## Directory Structure
 Follows the outputs directory  
 GenAI_Model / Scenario#
