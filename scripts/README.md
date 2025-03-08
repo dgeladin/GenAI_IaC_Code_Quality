@@ -42,6 +42,8 @@ brew install rust
      
 # Tool Installation
 
+The versions installed below are the versions used in this experiment. If you are looking to install the latest version instead of a specific one, replace the version number at the end of the asdf install line with "latest"
+
 ## asdf - [Docs](https://asdf-vm.com/guide/getting-started.html)
 
 asdf is a version manager (not to be confused with brew which is a package manager). A version manager allows you to install multiple versions of the same program and easily switch between versions. We will use asdf to install most of the required tooling for terraform/tofu development. Run the following commands to install the asdf version manager.
@@ -87,6 +89,6 @@ Checkov is an open-source static code analysis tool that scans infrastructure-as
 
 ```
 asdf plugin add checkov
-asdf install checkov 3.2.381
-asdf global checkov 3.2.381
+asdf install checkov 3.2.382
+asdf global checkov 3.2.382
 ```
