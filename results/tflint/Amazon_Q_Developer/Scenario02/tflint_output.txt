@@ -1,0 +1,16 @@
+2 issue(s) found:
+
+Warning: [Fixable] variable "enable_flow_logs" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario02/variables.tf line 35:
+  35: variable "enable_flow_logs" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "flow_logs_retention_days" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario02/variables.tf line 41:
+  41: variable "flow_logs_retention_days" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+

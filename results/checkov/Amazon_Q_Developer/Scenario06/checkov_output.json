@@ -1,0 +1,1540 @@
+{
+    "check_type": "terraform",
+    "results": {
+        "failed_checks": [
+            {
+                "check_id": "CKV_AWS_237",
+                "bc_check_id": "BC_AWS_GENERAL_152",
+                "check_name": "Ensure Create before destroy for API Gateway",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "lifecycle/[0]/create_before_destroy"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/api_gateway.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "file_line_range": [
+                    4,
+                    13
+                ],
+                "resource": "aws_api_gateway_rest_api.example_api",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.APIGatewayCreateBeforeDestroy",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "prod",
+                    "Owner": "${var.owner}",
+                    "Project": "${var.project_name}",
+                    "Terraform": true
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-api-gateway-enables-create-before-destroy",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "breadcrumbs": {
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/locals.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_59",
+                "bc_check_id": "BC_AWS_PUBLIC_6",
+                "check_name": "Ensure there is no open access to back-end resources through API",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "http_method",
+                        "authorization",
+                        "api_key_required"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/api_gateway.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "file_line_range": [
+                    23,
+                    32
+                ],
+                "resource": "aws_api_gateway_method.example",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.APIGatewayAuthorization",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-6-api-gateway-authorizer-set",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf"
+            },
+            {
+                "check_id": "CKV_AWS_120",
+                "bc_check_id": "BC_AWS_GENERAL_128",
+                "check_name": "Ensure API Gateway caching is enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "cache_cluster_enabled"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/api_gateway.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "file_line_range": [
+                    104,
+                    126
+                ],
+                "resource": "aws_api_gateway_stage.prod",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.APIGatewayCacheEnable",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "prod",
+                    "Owner": "${var.owner}",
+                    "Project": "${var.project_name}",
+                    "Terraform": true
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-api-gateway-caching-is-enabled",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "breadcrumbs": {
+                    "stage_name": [
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_api_gateway_stage.prod",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "xray_tracing_enabled": [
+                        {
+                            "type": "variable",
+                            "name": "enable_xray_tracing",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/locals.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_73",
+                "bc_check_id": "BC_AWS_LOGGING_15",
+                "check_name": "Ensure API Gateway has X-Ray Tracing enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "xray_tracing_enabled"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/api_gateway.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "file_line_range": [
+                    104,
+                    126
+                ],
+                "resource": "aws_api_gateway_stage.prod",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.APIGatewayXray",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "prod",
+                    "Owner": "${var.owner}",
+                    "Project": "${var.project_name}",
+                    "Terraform": true
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-15",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "breadcrumbs": {
+                    "stage_name": [
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_api_gateway_stage.prod",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "xray_tracing_enabled": [
+                        {
+                            "type": "variable",
+                            "name": "enable_xray_tracing",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/locals.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_158",
+                "bc_check_id": "BC_AWS_GENERAL_85",
+                "check_name": "Ensure that CloudWatch Log Group is encrypted by KMS",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "kms_key_id"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/api_gateway.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "file_line_range": [
+                    129,
+                    134
+                ],
+                "resource": "aws_cloudwatch_log_group.api_gateway",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.CloudWatchLogGroupKMSKey",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "prod",
+                    "Owner": "${var.owner}",
+                    "Project": "${var.project_name}",
+                    "Terraform": true
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-cloudwatch-log-group-is-encrypted-by-kms",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "breadcrumbs": {
+                    "name": [
+                        {
+                            "type": "variable",
+                            "name": "project_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_cloudwatch_log_group.api_gateway",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "retention_in_days": [
+                        {
+                            "type": "variable",
+                            "name": "log_retention_days",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/locals.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_338",
+                "bc_check_id": "BC_AWS_LOGGING_46",
+                "check_name": "Ensure CloudWatch log groups retains logs for at least 1 year",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "retention_in_days"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/api_gateway.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "file_line_range": [
+                    129,
+                    134
+                ],
+                "resource": "aws_cloudwatch_log_group.api_gateway",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.CloudWatchLogGroupRetentionYear",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "prod",
+                    "Owner": "${var.owner}",
+                    "Project": "${var.project_name}",
+                    "Terraform": true
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-338",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "breadcrumbs": {
+                    "name": [
+                        {
+                            "type": "variable",
+                            "name": "project_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_cloudwatch_log_group.api_gateway",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "retention_in_days": [
+                        {
+                            "type": "variable",
+                            "name": "log_retention_days",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/locals.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_290",
+                "bc_check_id": "BC_AWS_IAM_85",
+                "check_name": "Ensure IAM policies does not allow write access without constraints",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "policy/Statement/[0]/Action"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/iam.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/iam.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/iam.tf",
+                "file_line_range": [
+                    53,
+                    73
+                ],
+                "resource": "aws_iam_role_policy.api_gateway_cloudwatch",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.IAMWriteAccess",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/iam.tf"
+            },
+            {
+                "check_id": "CKV_AWS_355",
+                "bc_check_id": "BC_AWS_IAM_88",
+                "check_name": "Ensure no IAM policies documents allow \"*\" as a statement's resource for restrictable actions",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "policy/Statement/[0]/Action"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/iam.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/iam.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/iam.tf",
+                "file_line_range": [
+                    53,
+                    73
+                ],
+                "resource": "aws_iam_role_policy.api_gateway_cloudwatch",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.IAMStarResourcePolicyDocument",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/iam.tf"
+            },
+            {
+                "check_id": "CKV_AWS_115",
+                "bc_check_id": "BC_AWS_GENERAL_63",
+                "check_name": "Ensure that AWS Lambda function is configured for function-level concurrent execution limit",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "reserved_concurrent_executions/[0]"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/lambda.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "file_line_range": [
+                    4,
+                    47
+                ],
+                "resource": "aws_lambda_function.example_lambda_function",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LambdaFunctionLevelConcurrentExecutionLimit",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-function-level-concurrent-execution-limit",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "breadcrumbs": {
+                    "function_name": [
+                        {
+                            "type": "variable",
+                            "name": "project_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_lambda_function.example_lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_cloudwatch_log_group.lambda_log_group",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "environment.variables": [
+                        {
+                            "type": "variable",
+                            "name": "lambda_environment_variables",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "runtime": [
+                        {
+                            "type": "variable",
+                            "name": "lambda_runtime",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_lambda_function.example_lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "memory_size": [
+                        {
+                            "type": "variable",
+                            "name": "lambda_memory_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "timeout": [
+                        {
+                            "type": "variable",
+                            "name": "lambda_timeout",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tracing_config.mode": [
+                        {
+                            "type": "variable",
+                            "name": "enable_xray_tracing",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_173",
+                "bc_check_id": "BC_AWS_SERVERLESS_5",
+                "check_name": "Check encryption settings for Lambda environmental variable",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "kms_key_arn"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/lambda.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "file_line_range": [
+                    4,
+                    47
+                ],
+                "resource": "aws_lambda_function.example_lambda_function",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LambdaEnvironmentEncryptionSettings",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-5",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "breadcrumbs": {
+                    "function_name": [
+                        {
+                            "type": "variable",
+                            "name": "project_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_lambda_function.example_lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_cloudwatch_log_group.lambda_log_group",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "environment.variables": [
+                        {
+                            "type": "variable",
+                            "name": "lambda_environment_variables",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "runtime": [
+                        {
+                            "type": "variable",
+                            "name": "lambda_runtime",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_lambda_function.example_lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "memory_size": [
+                        {
+                            "type": "variable",
+                            "name": "lambda_memory_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "timeout": [
+                        {
+                            "type": "variable",
+                            "name": "lambda_timeout",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tracing_config.mode": [
+                        {
+                            "type": "variable",
+                            "name": "enable_xray_tracing",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_272",
+                "bc_check_id": "BC_AWS_General_201",
+                "check_name": "Ensure AWS Lambda function is configured to validate code-signing",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "code_signing_config_arn"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/lambda.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "file_line_range": [
+                    4,
+                    47
+                ],
+                "resource": "aws_lambda_function.example_lambda_function",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LambdaCodeSigningConfigured",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-272",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "breadcrumbs": {
+                    "function_name": [
+                        {
+                            "type": "variable",
+                            "name": "project_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_lambda_function.example_lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_cloudwatch_log_group.lambda_log_group",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "environment.variables": [
+                        {
+                            "type": "variable",
+                            "name": "lambda_environment_variables",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "runtime": [
+                        {
+                            "type": "variable",
+                            "name": "lambda_runtime",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_lambda_function.example_lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "memory_size": [
+                        {
+                            "type": "variable",
+                            "name": "lambda_memory_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "timeout": [
+                        {
+                            "type": "variable",
+                            "name": "lambda_timeout",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tracing_config.mode": [
+                        {
+                            "type": "variable",
+                            "name": "enable_xray_tracing",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_116",
+                "bc_check_id": "BC_AWS_GENERAL_64",
+                "check_name": "Ensure that AWS Lambda function is configured for a Dead Letter Queue(DLQ)",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "dead_letter_config/[0]/target_arn"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/lambda.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "file_line_range": [
+                    4,
+                    47
+                ],
+                "resource": "aws_lambda_function.example_lambda_function",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LambdaDLQConfigured",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-a-dead-letter-queue-dlq",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "breadcrumbs": {
+                    "function_name": [
+                        {
+                            "type": "variable",
+                            "name": "project_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_lambda_function.example_lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_cloudwatch_log_group.lambda_log_group",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "environment.variables": [
+                        {
+                            "type": "variable",
+                            "name": "lambda_environment_variables",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "runtime": [
+                        {
+                            "type": "variable",
+                            "name": "lambda_runtime",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_lambda_function.example_lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "memory_size": [
+                        {
+                            "type": "variable",
+                            "name": "lambda_memory_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "timeout": [
+                        {
+                            "type": "variable",
+                            "name": "lambda_timeout",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tracing_config.mode": [
+                        {
+                            "type": "variable",
+                            "name": "enable_xray_tracing",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_158",
+                "bc_check_id": "BC_AWS_GENERAL_85",
+                "check_name": "Ensure that CloudWatch Log Group is encrypted by KMS",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "kms_key_id"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/lambda.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "file_line_range": [
+                    50,
+                    55
+                ],
+                "resource": "aws_cloudwatch_log_group.lambda_log_group",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.CloudWatchLogGroupKMSKey",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "prod",
+                    "Owner": "${var.owner}",
+                    "Project": "${var.project_name}",
+                    "Terraform": true
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-cloudwatch-log-group-is-encrypted-by-kms",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "breadcrumbs": {
+                    "retention_in_days": [
+                        {
+                            "type": "variable",
+                            "name": "log_retention_days",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "variable",
+                            "name": "project_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_lambda_function.example_lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_cloudwatch_log_group.lambda_log_group",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_338",
+                "bc_check_id": "BC_AWS_LOGGING_46",
+                "check_name": "Ensure CloudWatch log groups retains logs for at least 1 year",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "retention_in_days"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/lambda.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "file_line_range": [
+                    50,
+                    55
+                ],
+                "resource": "aws_cloudwatch_log_group.lambda_log_group",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.CloudWatchLogGroupRetentionYear",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "prod",
+                    "Owner": "${var.owner}",
+                    "Project": "${var.project_name}",
+                    "Terraform": true
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-338",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                "breadcrumbs": {
+                    "retention_in_days": [
+                        {
+                            "type": "variable",
+                            "name": "log_retention_days",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "variable",
+                            "name": "project_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_lambda_function.example_lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_cloudwatch_log_group.lambda_log_group",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_51",
+                "bc_check_id": "BC_AWS_GENERAL_189",
+                "check_name": "Ensure AWS API Gateway endpoints uses client certificate authentication",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_api_gateway_stage": {
+                            "prod": {
+                                "__end_line__": 126,
+                                "__start_line__": 104,
+                                "access_log_settings": [
+                                    {
+                                        "destination_arn": [
+                                            "aws_cloudwatch_log_group.api_gateway.arn"
+                                        ],
+                                        "format": [
+                                            {
+                                                "requestId": "$context.requestId",
+                                                "ip": "$context.identity.sourceIp",
+                                                "requestTime": "$context.requestTime",
+                                                "httpMethod": "$context.httpMethod",
+                                                "resourcePath": "$context.resourcePath",
+                                                "status": "$context.status",
+                                                "responseLength": "$context.responseLength",
+                                                "errorMessage": "$context.error.message"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "deployment_id": [
+                                    "aws_api_gateway_deployment.example.id"
+                                ],
+                                "rest_api_id": [
+                                    "aws_api_gateway_rest_api.example_api.id"
+                                ],
+                                "stage_name": [
+                                    "prod"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "prod",
+                                        "Owner": "${var.owner}",
+                                        "Project": "${var.project_name}",
+                                        "Terraform": true
+                                    }
+                                ],
+                                "xray_tracing_enabled": [
+                                    false
+                                ],
+                                "__address__": "aws_api_gateway_stage.prod"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "protocol_type",
+                        "resource_type",
+                        "client_certificate_id"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/api_gateway.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "file_line_range": [
+                    104,
+                    126
+                ],
+                "resource": "aws_api_gateway_stage.prod",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "prod",
+                    "Owner": "${var.owner}",
+                    "Project": "${var.project_name}",
+                    "Terraform": true
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-2-51",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "breadcrumbs": {
+                    "stage_name": [
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_api_gateway_stage.prod",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "xray_tracing_enabled": [
+                        {
+                            "type": "variable",
+                            "name": "enable_xray_tracing",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/locals.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_4",
+                "bc_check_id": "BC_AWS_LOGGING_29",
+                "check_name": "Ensure API Gateway stage have logging level defined as appropriate",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_api_gateway_stage": {
+                            "prod": {
+                                "__end_line__": 126,
+                                "__start_line__": 104,
+                                "access_log_settings": [
+                                    {
+                                        "destination_arn": [
+                                            "aws_cloudwatch_log_group.api_gateway.arn"
+                                        ],
+                                        "format": [
+                                            {
+                                                "requestId": "$context.requestId",
+                                                "ip": "$context.identity.sourceIp",
+                                                "requestTime": "$context.requestTime",
+                                                "httpMethod": "$context.httpMethod",
+                                                "resourcePath": "$context.resourcePath",
+                                                "status": "$context.status",
+                                                "responseLength": "$context.responseLength",
+                                                "errorMessage": "$context.error.message"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "deployment_id": [
+                                    "aws_api_gateway_deployment.example.id"
+                                ],
+                                "rest_api_id": [
+                                    "aws_api_gateway_rest_api.example_api.id"
+                                ],
+                                "stage_name": [
+                                    "prod"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "prod",
+                                        "Owner": "${var.owner}",
+                                        "Project": "${var.project_name}",
+                                        "Terraform": true
+                                    }
+                                ],
+                                "xray_tracing_enabled": [
+                                    false
+                                ],
+                                "__address__": "aws_api_gateway_stage.prod"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "settings/logging_level",
+                        "settings/metrics_enabled",
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/api_gateway.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "file_line_range": [
+                    104,
+                    126
+                ],
+                "resource": "aws_api_gateway_stage.prod",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "prod",
+                    "Owner": "${var.owner}",
+                    "Project": "${var.project_name}",
+                    "Terraform": true
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-api-gateway-stage-have-logging-level-defined-as-appropiate",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "breadcrumbs": {
+                    "stage_name": [
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_api_gateway_stage.prod",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "xray_tracing_enabled": [
+                        {
+                            "type": "variable",
+                            "name": "enable_xray_tracing",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/locals.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_29",
+                "bc_check_id": "BC_AWS_NETWORKING_59",
+                "check_name": "Ensure public API gateway are protected by WAF",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_api_gateway_stage": {
+                            "prod": {
+                                "__end_line__": 126,
+                                "__start_line__": 104,
+                                "access_log_settings": [
+                                    {
+                                        "destination_arn": [
+                                            "aws_cloudwatch_log_group.api_gateway.arn"
+                                        ],
+                                        "format": [
+                                            {
+                                                "requestId": "$context.requestId",
+                                                "ip": "$context.identity.sourceIp",
+                                                "requestTime": "$context.requestTime",
+                                                "httpMethod": "$context.httpMethod",
+                                                "resourcePath": "$context.resourcePath",
+                                                "status": "$context.status",
+                                                "responseLength": "$context.responseLength",
+                                                "errorMessage": "$context.error.message"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "deployment_id": [
+                                    "aws_api_gateway_deployment.example.id"
+                                ],
+                                "rest_api_id": [
+                                    "aws_api_gateway_rest_api.example_api.id"
+                                ],
+                                "stage_name": [
+                                    "prod"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "prod",
+                                        "Owner": "${var.owner}",
+                                        "Project": "${var.project_name}",
+                                        "Terraform": true
+                                    }
+                                ],
+                                "xray_tracing_enabled": [
+                                    false
+                                ],
+                                "__address__": "aws_api_gateway_stage.prod"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "endpoint_configuration/types",
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/api_gateway.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "file_line_range": [
+                    104,
+                    126
+                ],
+                "resource": "aws_api_gateway_stage.prod",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "prod",
+                    "Owner": "${var.owner}",
+                    "Project": "${var.project_name}",
+                    "Terraform": true
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-api-gateway-are-protected-by-waf",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "breadcrumbs": {
+                    "stage_name": [
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_api_gateway_stage.prod",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "xray_tracing_enabled": [
+                        {
+                            "type": "variable",
+                            "name": "enable_xray_tracing",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/locals.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_53",
+                "bc_check_id": "BC_AWS_GENERAL_190",
+                "check_name": "Ensure AWS API gateway request is validated",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_api_gateway_method": {
+                            "example": {
+                                "__end_line__": 32,
+                                "__start_line__": 23,
+                                "authorization": [
+                                    "NONE"
+                                ],
+                                "http_method": [
+                                    "GET"
+                                ],
+                                "request_parameters": [
+                                    {
+                                        "method.request.header.X-Request-ID": false
+                                    }
+                                ],
+                                "resource_id": [
+                                    "aws_api_gateway_resource.example.id"
+                                ],
+                                "rest_api_id": [
+                                    "aws_api_gateway_rest_api.example_api.id"
+                                ],
+                                "__address__": "aws_api_gateway_method.example"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "request_validator_id"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/api_gateway.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+                "file_line_range": [
+                    23,
+                    32
+                ],
+                "resource": "aws_api_gateway_method.example",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-2-53",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf"
+            }
+        ]
+    },
+    "summary": {
+        "passed": 30,
+        "failed": 18,
+        "skipped": 0,
+        "parsing_errors": 0,
+        "resource_count": 21,
+        "checkov_version": "3.2.382"
+    }
+}

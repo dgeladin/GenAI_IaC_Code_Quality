@@ -56,11 +56,9 @@ echo "Running TFLINT on the following directories ... "
 if [[ ${#directories_to_process[@]} -gt 0 ]]; then # Check if the array is not empty
   echo "Directories to process:"
   for dir in "${directories_to_process[@]}"; do
-    echo -n "  Warnings: $dir : "
-    grep "Warning:"  $RESULT_DIR/$dir/tflint_output.txt | awk -F':' '{ print $1 }' | wc -l
-    echo -n "    Errors: $dir : "
-    grep "Errors:"  $RESULT_DIR/$dir/tflint_output.txt | awk -F':' '{ print $1 }' | wc -l
-    echo ""
+    errors=`grep "Errors:"  $RESULT_DIR/$dir/tflint_output.txt | awk -F':' '{ print $1 }' | wc -l`
+    warnings=`grep "Warning:"  $RESULT_DIR/$dir/tflint_output.txt | awk -F':' '{ print $1 }' | wc -l`
+    echo "  $dir: Errors: $errors Warnings: $warnings  "
   done
 else
   echo "No directories to process."

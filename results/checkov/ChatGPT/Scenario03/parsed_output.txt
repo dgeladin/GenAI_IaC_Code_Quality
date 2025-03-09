@@ -1,0 +1,42 @@
+Check Type: terraform
+Failed Checks:
+- Check ID: CKV_AWS_233
+  Check Name: Ensure Create before destroy for ACM certificates
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [59, 62]
+  Resource: aws_acm_certificate.tls_cert
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-acm-certificate-enables-create-before-destroy
+
+- Check ID: CKV_K8S_21
+  Check Name: The default namespace should not be used
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [64, 100]
+  Resource: kubernetes_ingress_v1.api_ingress
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-20
+
+- Check ID: CKV_TF_1
+  Check Name: Ensure Terraform module sources use a commit hash
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [1, 15]
+  Resource: vpc
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision
+
+- Check ID: CKV_TF_1
+  Check Name: Ensure Terraform module sources use a commit hash
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [17, 37]
+  Resource: eks
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision
+
+Summary:
+  Passed: 13
+  Failed: 4
+  Skipped: 0
+  Parsing Errors: 0
+  Resource Count: 6
+  Checkov Version: 3.2.382
+

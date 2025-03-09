@@ -1,0 +1,30 @@
+4 issue(s) found:
+
+Warning: [Fixable] List items should be accessed using square brackets (terraform_deprecated_index)
+
+  on ../data/outputs/Github_Copilot/Scenario01/outputs.tf line 2:
+   2:   value       = aws_instance.windows_dev.*.id
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_deprecated_index.md
+
+Warning: [Fixable] List items should be accessed using square brackets (terraform_deprecated_index)
+
+  on ../data/outputs/Github_Copilot/Scenario01/outputs.tf line 7:
+   7:   value       = aws_instance.windows_prod.*.id
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_deprecated_index.md
+
+Warning: [Fixable] List items should be accessed using square brackets (terraform_deprecated_index)
+
+  on ../data/outputs/Github_Copilot/Scenario01/outputs.tf line 12:
+  12:   value       = aws_instance.linux_dev.*.id
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_deprecated_index.md
+
+Warning: [Fixable] List items should be accessed using square brackets (terraform_deprecated_index)
+
+  on ../data/outputs/Github_Copilot/Scenario01/outputs.tf line 17:
+  17:   value       = aws_instance.linux_prod.*.id
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_deprecated_index.md
+

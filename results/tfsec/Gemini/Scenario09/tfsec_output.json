@@ -1,0 +1,73 @@
+{
+	"results": [
+		{
+			"rule_id": "AVD-AWS-0131",
+			"long_id": "aws-ec2-enable-at-rest-encryption",
+			"rule_description": "Instance with unencrypted block device.",
+			"rule_provider": "aws",
+			"rule_service": "ec2",
+			"impact": "The block device could be compromised and read from",
+			"resolution": "Turn on encryption for all block devices",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/enable-at-rest-encryption/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#ebs-ephemeral-and-root-block-devices"
+			],
+			"description": "Root block device is not encrypted.",
+			"severity": "HIGH",
+			"warning": false,
+			"status": 0,
+			"resource": "aws_instance.example_ec2",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario09/main.tf",
+				"start_line": 33,
+				"end_line": 40
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0028",
+			"long_id": "aws-ec2-enforce-http-token-imds",
+			"rule_description": "aws_instance should activate session tokens for Instance Metadata Service.",
+			"rule_provider": "aws",
+			"rule_service": "ec2",
+			"impact": "Instance metadata service can be interacted with freely",
+			"resolution": "Enable HTTP token requirement for IMDS",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/enforce-http-token-imds/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#metadata-options"
+			],
+			"description": "Instance does not require IMDS access to require a token",
+			"severity": "HIGH",
+			"warning": false,
+			"status": 0,
+			"resource": "aws_instance.example_ec2",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario09/main.tf",
+				"start_line": 33,
+				"end_line": 40
+			}
+		},
+		{
+			"rule_id": "AVD-AZU-0011",
+			"long_id": "azure-storage-use-secure-tls-policy",
+			"rule_description": "The minimum TLS version for Storage Accounts should be TLS1_2",
+			"rule_provider": "azure",
+			"rule_service": "storage",
+			"impact": "The TLS version being outdated and has known vulnerabilities",
+			"resolution": "Use a more recent TLS/SSL policy for the load balancer",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/azure/storage/use-secure-tls-policy/",
+				"https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account#min_tls_version"
+			],
+			"description": "Storage account uses an insecure TLS version.",
+			"severity": "CRITICAL",
+			"warning": false,
+			"status": 0,
+			"resource": "azurerm_storage_account.example_sa",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario09/main.tf",
+				"start_line": 111,
+				"end_line": 117
+			}
+		}
+	]
+}

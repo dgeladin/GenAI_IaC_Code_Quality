@@ -1,0 +1,42 @@
+Check Type: terraform
+Failed Checks:
+- Check ID: CKV2_AWS_41
+  Check Name: Ensure an IAM role is attached to EC2 instance
+  Check Result: FAILED
+  File Path: /modules/instances/main.tf
+  File Line Range: [20, 28]
+  Resource: module.instances.aws_instance.windows_dev
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance
+
+- Check ID: CKV2_AWS_41
+  Check Name: Ensure an IAM role is attached to EC2 instance
+  Check Result: FAILED
+  File Path: /modules/instances/main.tf
+  File Line Range: [42, 50]
+  Resource: module.instances.aws_instance.linux_dev
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance
+
+- Check ID: CKV2_AWS_41
+  Check Name: Ensure an IAM role is attached to EC2 instance
+  Check Result: FAILED
+  File Path: /modules/instances/main.tf
+  File Line Range: [31, 39]
+  Resource: module.instances.aws_instance.windows_prod
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance
+
+- Check ID: CKV2_AWS_41
+  Check Name: Ensure an IAM role is attached to EC2 instance
+  Check Result: FAILED
+  File Path: /modules/instances/main.tf
+  File Line Range: [53, 61]
+  Resource: module.instances.aws_instance.linux_prod
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance
+
+Summary:
+  Passed: 1
+  Failed: 4
+  Skipped: 0
+  Parsing Errors: 0
+  Resource Count: 4
+  Checkov Version: 3.2.382
+

@@ -1,0 +1,30 @@
+4 issue(s) found:
+
+Warning: Missing version constraint for provider "null" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/ChatGPT/Scenario05/db_migration.tf line 1:
+   1: resource "null_resource" "db_migration" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+
+Warning: Missing version constraint for provider "template" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/ChatGPT/Scenario05/migration_script.tf line 1:
+   1: data "template_file" "initial_schema" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+
+Warning: [Fixable] variable "state_bucket" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/ChatGPT/Scenario05/variables.tf line 23:
+  23: variable "state_bucket" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "state_lock_table" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/ChatGPT/Scenario05/variables.tf line 29:
+  29: variable "state_lock_table" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+

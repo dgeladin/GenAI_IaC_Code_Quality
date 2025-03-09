@@ -1,0 +1,178 @@
+Check Type: terraform
+Failed Checks:
+- Check ID: CKV_AWS_26
+  Check Name: Ensure all data stored in the SNS topic is encrypted
+  Check Result: FAILED
+  File Path: /environments/prod/main.tf
+  File Line Range: [2, 10]
+  Resource: aws_sns_topic.dr_notifications
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-15
+
+- Check ID: CKV_AWS_300
+  Check Name: Ensure S3 lifecycle configuration sets period for aborting failed uploads
+  Check Result: FAILED
+  File Path: /modules/dr_backup/main.tf
+  File Line Range: [92, 122]
+  Resource: module.dr_backup.aws_s3_bucket_lifecycle_configuration.dr_backup
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-300
+
+- Check ID: CKV_AWS_111
+  Check Name: Ensure IAM policies does not allow write access without constraints
+  Check Result: FAILED
+  File Path: /modules/dr_backup/main.tf
+  File Line Range: [147, 172]
+  Resource: module.dr_backup.aws_iam_policy_document.kms_key_policy
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-iam-policies-do-not-allow-write-access-without-constraint
+
+- Check ID: CKV_AWS_109
+  Check Name: Ensure IAM policies does not allow permissions management / resource exposure without constraints
+  Check Result: FAILED
+  File Path: /modules/dr_backup/main.tf
+  File Line Range: [147, 172]
+  Resource: module.dr_backup.aws_iam_policy_document.kms_key_policy
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-iam-policies-do-not-allow-permissions-management-resource-exposure-without-constraint
+
+- Check ID: CKV_AWS_356
+  Check Name: Ensure no IAM policies documents allow "*" as a statement's resource for restrictable actions
+  Check Result: FAILED
+  File Path: /modules/dr_backup/main.tf
+  File Line Range: [147, 172]
+  Resource: module.dr_backup.aws_iam_policy_document.kms_key_policy
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-356
+
+- Check ID: CKV_AWS_115
+  Check Name: Ensure that AWS Lambda function is configured for function-level concurrent execution limit
+  Check Result: FAILED
+  File Path: /modules/dr_lambda/main.tf
+  File Line Range: [2, 45]
+  Resource: module.dr_lambda.aws_lambda_function.dr_failover
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-function-level-concurrent-execution-limit
+
+- Check ID: CKV_AWS_173
+  Check Name: Check encryption settings for Lambda environmental variable
+  Check Result: FAILED
+  File Path: /modules/dr_lambda/main.tf
+  File Line Range: [2, 45]
+  Resource: module.dr_lambda.aws_lambda_function.dr_failover
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-5
+
+- Check ID: CKV_AWS_272
+  Check Name: Ensure AWS Lambda function is configured to validate code-signing
+  Check Result: FAILED
+  File Path: /modules/dr_lambda/main.tf
+  File Line Range: [2, 45]
+  Resource: module.dr_lambda.aws_lambda_function.dr_failover
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-272
+
+- Check ID: CKV_AWS_116
+  Check Name: Ensure that AWS Lambda function is configured for a Dead Letter Queue(DLQ)
+  Check Result: FAILED
+  File Path: /modules/dr_lambda/main.tf
+  File Line Range: [2, 45]
+  Resource: module.dr_lambda.aws_lambda_function.dr_failover
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-a-dead-letter-queue-dlq
+
+- Check ID: CKV_AWS_338
+  Check Name: Ensure CloudWatch log groups retains logs for at least 1 year
+  Check Result: FAILED
+  File Path: /modules/dr_lambda/main.tf
+  File Line Range: [70, 82]
+  Resource: module.dr_lambda.aws_cloudwatch_log_group.lambda_logs
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-338
+
+- Check ID: CKV_AWS_337
+  Check Name: Ensure SSM parameters are using KMS CMK
+  Check Result: FAILED
+  File Path: /modules/drs_config/main.tf
+  File Line Range: [163, 180]
+  Resource: module.drs_config.aws_ssm_parameter.drs_config
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-337
+
+- Check ID: CKV_AWS_126
+  Check Name: Ensure that detailed monitoring is enabled for EC2 instances
+  Check Result: FAILED
+  File Path: /modules/primary_instance/main.tf
+  File Line Range: [2, 46]
+  Resource: module.primary_instance.aws_instance.primary
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-detailed-monitoring-is-enabled-for-ec2-instances
+
+- Check ID: CKV_AWS_135
+  Check Name: Ensure that EC2 is EBS optimized
+  Check Result: FAILED
+  File Path: /modules/primary_instance/main.tf
+  File Line Range: [2, 46]
+  Resource: module.primary_instance.aws_instance.primary
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized
+
+- Check ID: CKV_AWS_23
+  Check Name: Ensure every security group and rule has a description
+  Check Result: FAILED
+  File Path: /modules/primary_instance/main.tf
+  File Line Range: [68, 75]
+  Resource: module.primary_instance.aws_security_group_rule.egress
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31
+
+- Check ID: CKV_AWS_382
+  Check Name: Ensure no security groups allow egress from 0.0.0.0:0 to port -1
+  Check Result: FAILED
+  File Path: /modules/primary_instance/main.tf
+  File Line Range: [68, 75]
+  Resource: module.primary_instance.aws_security_group_rule.egress
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382
+
+- Check ID: CKV_AWS_290
+  Check Name: Ensure IAM policies does not allow write access without constraints
+  Check Result: FAILED
+  File Path: /modules/primary_instance/main.tf
+  File Line Range: [167, 187]
+  Resource: module.primary_instance.aws_iam_role_policy.ssm_policy
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290
+
+- Check ID: CKV_AWS_355
+  Check Name: Ensure no IAM policies documents allow "*" as a statement's resource for restrictable actions
+  Check Result: FAILED
+  File Path: /modules/primary_instance/main.tf
+  File Line Range: [167, 187]
+  Resource: module.primary_instance.aws_iam_role_policy.ssm_policy
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355
+
+- Check ID: CKV_AWS_144
+  Check Name: Ensure that S3 bucket has cross-region replication enabled
+  Check Result: FAILED
+  File Path: /modules/dr_backup/main.tf
+  File Line Range: [2, 17]
+  Resource: module.dr_backup.aws_s3_bucket.dr_backup
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-bucket-has-cross-region-replication-enabled
+
+- Check ID: CKV2_AWS_62
+  Check Name: Ensure S3 buckets should have event notifications enabled
+  Check Result: FAILED
+  File Path: /modules/dr_backup/main.tf
+  File Line Range: [2, 17]
+  Resource: module.dr_backup.aws_s3_bucket.dr_backup
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-62
+
+- Check ID: CKV_AWS_18
+  Check Name: Ensure the S3 bucket has access logging enabled
+  Check Result: FAILED
+  File Path: /modules/dr_backup/main.tf
+  File Line Range: [2, 17]
+  Resource: module.dr_backup.aws_s3_bucket.dr_backup
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-13-enable-logging
+
+- Check ID: CKV_AWS_21
+  Check Name: Ensure all data stored in the S3 bucket have versioning enabled
+  Check Result: FAILED
+  File Path: /modules/dr_backup/main.tf
+  File Line Range: [2, 17]
+  Resource: module.dr_backup.aws_s3_bucket.dr_backup
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-16-enable-versioning
+
+Summary:
+  Passed: 193
+  Failed: 21
+  Skipped: 0
+  Parsing Errors: 0
+  Resource Count: 73
+  Checkov Version: 3.2.382
+

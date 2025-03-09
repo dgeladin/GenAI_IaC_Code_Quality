@@ -1,0 +1,257 @@
+{
+	"results": [
+		{
+			"rule_id": "AVD-AWS-0104",
+			"long_id": "aws-ec2-no-public-egress-sgr",
+			"rule_description": "An egress security group rule allows traffic to /0.",
+			"rule_provider": "aws",
+			"rule_service": "ec2",
+			"impact": "Your port is egressing data to the internet",
+			"resolution": "Set a more restrictive cidr range",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/no-public-egress-sgr/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group"
+			],
+			"description": "Security group rule allows egress to multiple public internet addresses.",
+			"severity": "CRITICAL",
+			"warning": false,
+			"status": 0,
+			"resource": "module.eks",
+			"location": {
+				"filename": "terraform-aws-modules/eks/aws/node_groups.tf",
+				"start_line": 247,
+				"end_line": 247
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0104",
+			"long_id": "aws-ec2-no-public-egress-sgr",
+			"rule_description": "An egress security group rule allows traffic to /0.",
+			"rule_provider": "aws",
+			"rule_service": "ec2",
+			"impact": "Your port is egressing data to the internet",
+			"resolution": "Set a more restrictive cidr range",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/no-public-egress-sgr/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group"
+			],
+			"description": "Security group rule allows egress to multiple public internet addresses.",
+			"severity": "CRITICAL",
+			"warning": false,
+			"status": 0,
+			"resource": "module.eks",
+			"location": {
+				"filename": "terraform-aws-modules/eks/aws/node_groups.tf",
+				"start_line": 247,
+				"end_line": 247
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0104",
+			"long_id": "aws-ec2-no-public-egress-sgr",
+			"rule_description": "An egress security group rule allows traffic to /0.",
+			"rule_provider": "aws",
+			"rule_service": "ec2",
+			"impact": "Your port is egressing data to the internet",
+			"resolution": "Set a more restrictive cidr range",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/no-public-egress-sgr/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group"
+			],
+			"description": "Security group rule allows egress to multiple public internet addresses.",
+			"severity": "CRITICAL",
+			"warning": false,
+			"status": 0,
+			"resource": "module.eks",
+			"location": {
+				"filename": "terraform-aws-modules/eks/aws/node_groups.tf",
+				"start_line": 247,
+				"end_line": 247
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0104",
+			"long_id": "aws-ec2-no-public-egress-sgr",
+			"rule_description": "An egress security group rule allows traffic to /0.",
+			"rule_provider": "aws",
+			"rule_service": "ec2",
+			"impact": "Your port is egressing data to the internet",
+			"resolution": "Set a more restrictive cidr range",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/no-public-egress-sgr/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group"
+			],
+			"description": "Security group rule allows egress to multiple public internet addresses.",
+			"severity": "CRITICAL",
+			"warning": false,
+			"status": 0,
+			"resource": "module.eks",
+			"location": {
+				"filename": "terraform-aws-modules/eks/aws/node_groups.tf",
+				"start_line": 247,
+				"end_line": 247
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0104",
+			"long_id": "aws-ec2-no-public-egress-sgr",
+			"rule_description": "An egress security group rule allows traffic to /0.",
+			"rule_provider": "aws",
+			"rule_service": "ec2",
+			"impact": "Your port is egressing data to the internet",
+			"resolution": "Set a more restrictive cidr range",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/no-public-egress-sgr/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group"
+			],
+			"description": "Security group rule allows egress to multiple public internet addresses.",
+			"severity": "CRITICAL",
+			"warning": false,
+			"status": 0,
+			"resource": "aws_security_group.eks_additional_sg",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/security.tf",
+				"start_line": 14,
+				"end_line": 14
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0038",
+			"long_id": "aws-eks-enable-control-plane-logging",
+			"rule_description": "EKS Clusters should have cluster control plane logging turned on",
+			"rule_provider": "aws",
+			"rule_service": "eks",
+			"impact": "Logging provides valuable information about access and usage",
+			"resolution": "Enable logging for the EKS control plane",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/eks/enable-control-plane-logging/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_cluster#enabled_cluster_log_types"
+			],
+			"description": "Control plane scheduler logging is not enabled.",
+			"severity": "MEDIUM",
+			"warning": false,
+			"status": 0,
+			"resource": "module.eks",
+			"location": {
+				"filename": "terraform-aws-modules/eks/aws/main.tf",
+				"start_line": 27,
+				"end_line": 120
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0038",
+			"long_id": "aws-eks-enable-control-plane-logging",
+			"rule_description": "EKS Clusters should have cluster control plane logging turned on",
+			"rule_provider": "aws",
+			"rule_service": "eks",
+			"impact": "Logging provides valuable information about access and usage",
+			"resolution": "Enable logging for the EKS control plane",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/eks/enable-control-plane-logging/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_cluster#enabled_cluster_log_types"
+			],
+			"description": "Control plane controller manager logging is not enabled.",
+			"severity": "MEDIUM",
+			"warning": false,
+			"status": 0,
+			"resource": "module.eks",
+			"location": {
+				"filename": "terraform-aws-modules/eks/aws/main.tf",
+				"start_line": 27,
+				"end_line": 120
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0038",
+			"long_id": "aws-eks-enable-control-plane-logging",
+			"rule_description": "EKS Clusters should have cluster control plane logging turned on",
+			"rule_provider": "aws",
+			"rule_service": "eks",
+			"impact": "Logging provides valuable information about access and usage",
+			"resolution": "Enable logging for the EKS control plane",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/eks/enable-control-plane-logging/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_cluster#enabled_cluster_log_types"
+			],
+			"description": "Control plane scheduler logging is not enabled.",
+			"severity": "MEDIUM",
+			"warning": false,
+			"status": 0,
+			"resource": "module.eks",
+			"location": {
+				"filename": "terraform-aws-modules/eks/aws/main.tf",
+				"start_line": 27,
+				"end_line": 120
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0038",
+			"long_id": "aws-eks-enable-control-plane-logging",
+			"rule_description": "EKS Clusters should have cluster control plane logging turned on",
+			"rule_provider": "aws",
+			"rule_service": "eks",
+			"impact": "Logging provides valuable information about access and usage",
+			"resolution": "Enable logging for the EKS control plane",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/eks/enable-control-plane-logging/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_cluster#enabled_cluster_log_types"
+			],
+			"description": "Control plane controller manager logging is not enabled.",
+			"severity": "MEDIUM",
+			"warning": false,
+			"status": 0,
+			"resource": "module.eks",
+			"location": {
+				"filename": "terraform-aws-modules/eks/aws/main.tf",
+				"start_line": 27,
+				"end_line": 120
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0057",
+			"long_id": "aws-iam-no-policy-wildcards",
+			"rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
+			"rule_provider": "aws",
+			"rule_service": "iam",
+			"impact": "Overly permissive policies may grant access to sensitive resources",
+			"resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
+			],
+			"description": "IAM policy document uses sensitive action 'logs:CreateLogGroup' on wildcarded resource 'arn:aws:logs:*:*:*'",
+			"severity": "HIGH",
+			"warning": false,
+			"status": 0,
+			"resource": "aws_iam_policy.eks_cloudwatch_logs",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/security.tf",
+				"start_line": 70,
+				"end_line": 70
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0057",
+			"long_id": "aws-iam-no-policy-wildcards",
+			"rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
+			"rule_provider": "aws",
+			"rule_service": "iam",
+			"impact": "Overly permissive policies may grant access to sensitive resources",
+			"resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
+			],
+			"description": "IAM policy document uses sensitive action 'autoscaling:SetDesiredCapacity' on wildcarded resource '*'",
+			"severity": "HIGH",
+			"warning": false,
+			"status": 0,
+			"resource": "aws_iam_policy.cluster_autoscaler",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/security.tf",
+				"start_line": 39,
+				"end_line": 39
+			}
+		}
+	]
+}

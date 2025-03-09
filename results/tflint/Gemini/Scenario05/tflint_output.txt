@@ -1,0 +1,16 @@
+2 issue(s) found:
+
+Warning: Missing version constraint for provider "template" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Gemini/Scenario05/main.tf line 77:
+  77: data "template_file" "migration_script" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+
+Warning: Missing version constraint for provider "null" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Gemini/Scenario05/main.tf line 82:
+  82: resource "null_resource" "db_migration" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+

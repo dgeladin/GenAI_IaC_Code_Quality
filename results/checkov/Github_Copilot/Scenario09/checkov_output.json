@@ -1,0 +1,824 @@
+{
+    "check_type": "terraform",
+    "results": {
+        "failed_checks": [
+            {
+                "check_id": "CKV_AWS_8",
+                "bc_check_id": "BC_AWS_GENERAL_13",
+                "check_name": "Ensure all data stored in the Launch configuration or instance Elastic Blocks Store is securely encrypted",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "root_block_device"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/aws_instance.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+                "file_line_range": [
+                    1,
+                    8
+                ],
+                "resource": "aws_instance.example",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LaunchConfigurationEBSEncryption",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-ec2"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-13",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+                "breadcrumbs": {
+                    "instance_type": [
+                        {
+                            "type": "variable",
+                            "name": "aws_instance_type",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "ami": [
+                        {
+                            "type": "variable",
+                            "name": "aws_ami",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_126",
+                "bc_check_id": "BC_AWS_LOGGING_26",
+                "check_name": "Ensure that detailed monitoring is enabled for EC2 instances",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "monitoring"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/aws_instance.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+                "file_line_range": [
+                    1,
+                    8
+                ],
+                "resource": "aws_instance.example",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.EC2DetailedMonitoringEnabled",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-ec2"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-detailed-monitoring-is-enabled-for-ec2-instances",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+                "breadcrumbs": {
+                    "instance_type": [
+                        {
+                            "type": "variable",
+                            "name": "aws_instance_type",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "ami": [
+                        {
+                            "type": "variable",
+                            "name": "aws_ami",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_79",
+                "bc_check_id": "BC_AWS_GENERAL_31",
+                "check_name": "Ensure Instance Metadata Service Version 1 is not enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "metadata_options/[0]/http_tokens"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/aws_instance.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+                "file_line_range": [
+                    1,
+                    8
+                ],
+                "resource": "aws_instance.example",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.IMDSv1Disabled",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-ec2"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+                "breadcrumbs": {
+                    "instance_type": [
+                        {
+                            "type": "variable",
+                            "name": "aws_instance_type",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "ami": [
+                        {
+                            "type": "variable",
+                            "name": "aws_ami",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_135",
+                "bc_check_id": "BC_AWS_GENERAL_68",
+                "check_name": "Ensure that EC2 is EBS optimized",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "ebs_optimized"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/aws_instance.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+                "file_line_range": [
+                    1,
+                    8
+                ],
+                "resource": "aws_instance.example",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.EC2EBSOptimized",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-ec2"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+                "breadcrumbs": {
+                    "instance_type": [
+                        {
+                            "type": "variable",
+                            "name": "aws_instance_type",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "ami": [
+                        {
+                            "type": "variable",
+                            "name": "aws_ami",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AZURE_1",
+                "bc_check_id": "BC_AZR_NETWORKING_1",
+                "check_name": "Ensure Azure Instance does not use basic authentication(Use SSH Key Instead)",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "os_profile_linux_config/[0]/disable_password_authentication"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/azure_vm.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                "file_line_range": [
+                    32,
+                    62
+                ],
+                "resource": "azurerm_virtual_machine.example",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.azure.AzureInstancePassword",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/bc-azr-networking-1",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                "breadcrumbs": {
+                    "vm_size": [
+                        {
+                            "type": "variable",
+                            "name": "azure_vm_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "variable",
+                            "name": "azure_vm_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_virtual_machine.example",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "resource_group_name": [
+                        {
+                            "type": "variable",
+                            "name": "azure_resource_group_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.example",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "location": [
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.example",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_41",
+                "bc_check_id": "BC_AWS_IAM_69",
+                "check_name": "Ensure an IAM role is attached to EC2 instance",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_instance": {
+                            "example": {
+                                "__end_line__": 8,
+                                "__start_line__": 1,
+                                "ami": [
+                                    "ami-0c55b159cbfafe1f0"
+                                ],
+                                "instance_type": [
+                                    "t3.micro"
+                                ],
+                                "tags": [
+                                    {
+                                        "Name": "example-ec2"
+                                    }
+                                ],
+                                "__address__": "aws_instance.example"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "iam_instance_profile"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/aws_instance.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+                "file_line_range": [
+                    1,
+                    8
+                ],
+                "resource": "aws_instance.example",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-ec2"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+                "breadcrumbs": {
+                    "instance_type": [
+                        {
+                            "type": "variable",
+                            "name": "aws_instance_type",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "ami": [
+                        {
+                            "type": "variable",
+                            "name": "aws_ami",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AZURE_12",
+                "bc_check_id": "BC_AZR_GENERAL_20",
+                "check_name": "Ensure that virtual machines are backed up using Azure Backup",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "azurerm_virtual_machine": {
+                            "example": {
+                                "__end_line__": 62,
+                                "__start_line__": 32,
+                                "location": [
+                                    "West US"
+                                ],
+                                "name": [
+                                    "example-vm"
+                                ],
+                                "network_interface_ids": [
+                                    [
+                                        "azurerm_network_interface.example.id"
+                                    ]
+                                ],
+                                "os_profile": [
+                                    {
+                                        "admin_password": [
+                                            "Password1234!"
+                                        ],
+                                        "admin_username": [
+                                            "adminuser"
+                                        ],
+                                        "computer_name": [
+                                            "hostname"
+                                        ]
+                                    }
+                                ],
+                                "os_profile_linux_config": [
+                                    {
+                                        "disable_password_authentication": [
+                                            false
+                                        ]
+                                    }
+                                ],
+                                "resource_group_name": [
+                                    "example-resources"
+                                ],
+                                "storage_image_reference": [
+                                    {
+                                        "offer": [
+                                            "UbuntuServer"
+                                        ],
+                                        "publisher": [
+                                            "Canonical"
+                                        ],
+                                        "sku": [
+                                            "18.04-LTS"
+                                        ],
+                                        "version": [
+                                            "latest"
+                                        ]
+                                    }
+                                ],
+                                "storage_os_disk": [
+                                    {
+                                        "caching": [
+                                            "ReadWrite"
+                                        ],
+                                        "create_option": [
+                                            "FromImage"
+                                        ],
+                                        "managed_disk_type": [
+                                            "Standard_LRS"
+                                        ],
+                                        "name": [
+                                            "example-os-disk"
+                                        ]
+                                    }
+                                ],
+                                "vm_size": [
+                                    "Standard_DS1_v2"
+                                ],
+                                "__address__": "azurerm_virtual_machine.example"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "networking",
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/azure_vm.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                "file_line_range": [
+                    32,
+                    62
+                ],
+                "resource": "azurerm_virtual_machine.example",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/ensure-that-virtual-machines-are-backed-up-using-azure-backup",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                "breadcrumbs": {
+                    "vm_size": [
+                        {
+                            "type": "variable",
+                            "name": "azure_vm_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "variable",
+                            "name": "azure_vm_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_virtual_machine.example",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "resource_group_name": [
+                        {
+                            "type": "variable",
+                            "name": "azure_resource_group_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.example",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "location": [
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.example",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AZURE_31",
+                "bc_check_id": "BC_AZR_GENERAL_124",
+                "check_name": "Ensure VNET subnet is configured with a Network Security Group (NSG)",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "azurerm_subnet": {
+                            "example": {
+                                "__end_line__": 18,
+                                "__start_line__": 13,
+                                "address_prefixes": [
+                                    [
+                                        "10.0.1.0/24"
+                                    ]
+                                ],
+                                "name": [
+                                    "example-subnet"
+                                ],
+                                "resource_group_name": [
+                                    "example-resources"
+                                ],
+                                "virtual_network_name": [
+                                    "example-network"
+                                ],
+                                "__address__": "azurerm_subnet.example"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "delegation/service_delegation/name",
+                        "name"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/azure_vm.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                "file_line_range": [
+                    13,
+                    18
+                ],
+                "resource": "azurerm_subnet.example",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/bc-azure-2-31",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                "breadcrumbs": {
+                    "resource_group_name": [
+                        {
+                            "type": "variable",
+                            "name": "azure_resource_group_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.example",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "virtual_network_name": [
+                        {
+                            "type": "resource",
+                            "name": "azurerm_virtual_network.example",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AZURE_10",
+                "bc_check_id": "BC_AZR_GENERAL_68",
+                "check_name": "Ensure that Microsoft Antimalware is configured to automatically updates for Virtual Machines",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "azurerm_virtual_machine": {
+                            "example": {
+                                "__end_line__": 62,
+                                "__start_line__": 32,
+                                "location": [
+                                    "West US"
+                                ],
+                                "name": [
+                                    "example-vm"
+                                ],
+                                "network_interface_ids": [
+                                    [
+                                        "azurerm_network_interface.example.id"
+                                    ]
+                                ],
+                                "os_profile": [
+                                    {
+                                        "admin_password": [
+                                            "Password1234!"
+                                        ],
+                                        "admin_username": [
+                                            "adminuser"
+                                        ],
+                                        "computer_name": [
+                                            "hostname"
+                                        ]
+                                    }
+                                ],
+                                "os_profile_linux_config": [
+                                    {
+                                        "disable_password_authentication": [
+                                            false
+                                        ]
+                                    }
+                                ],
+                                "resource_group_name": [
+                                    "example-resources"
+                                ],
+                                "storage_image_reference": [
+                                    {
+                                        "offer": [
+                                            "UbuntuServer"
+                                        ],
+                                        "publisher": [
+                                            "Canonical"
+                                        ],
+                                        "sku": [
+                                            "18.04-LTS"
+                                        ],
+                                        "version": [
+                                            "latest"
+                                        ]
+                                    }
+                                ],
+                                "storage_os_disk": [
+                                    {
+                                        "caching": [
+                                            "ReadWrite"
+                                        ],
+                                        "create_option": [
+                                            "FromImage"
+                                        ],
+                                        "managed_disk_type": [
+                                            "Standard_LRS"
+                                        ],
+                                        "name": [
+                                            "example-os-disk"
+                                        ]
+                                    }
+                                ],
+                                "vm_size": [
+                                    "Standard_DS1_v2"
+                                ],
+                                "__address__": "azurerm_virtual_machine.example"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "auto_upgrade_minor_version",
+                        "resource_type",
+                        "publisher",
+                        "type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/azure_vm.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                "file_line_range": [
+                    32,
+                    62
+                ],
+                "resource": "azurerm_virtual_machine.example",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/ensure-that-microsoft-antimalware-is-configured-to-automatically-updates-for-virtual-machines",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                "breadcrumbs": {
+                    "vm_size": [
+                        {
+                            "type": "variable",
+                            "name": "azure_vm_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "variable",
+                            "name": "azure_vm_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_virtual_machine.example",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "resource_group_name": [
+                        {
+                            "type": "variable",
+                            "name": "azure_resource_group_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.example",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "location": [
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.example",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "summary": {
+        "passed": 11,
+        "failed": 9,
+        "skipped": 0,
+        "parsing_errors": 0,
+        "resource_count": 9,
+        "checkov_version": "3.2.382"
+    }
+}

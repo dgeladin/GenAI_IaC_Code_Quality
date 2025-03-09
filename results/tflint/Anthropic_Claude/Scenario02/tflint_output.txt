@@ -1,0 +1,65 @@
+9 issue(s) found:
+
+Warning: [Fixable] data "aws_caller_identity" "current" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario02/main.tf line 41:
+  41: data "aws_caller_identity" "current" {}
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] data "aws_availability_zones" "available" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario02/main.tf line 44:
+  44: data "aws_availability_zones" "available" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "kubernetes_version" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario02/variables.tf line 15:
+  15: variable "kubernetes_version" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "vpc_cidr" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario02/variables.tf line 21:
+  21: variable "vpc_cidr" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "availability_zones" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario02/variables.tf line 27:
+  27: variable "availability_zones" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "node_group_min_size" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario02/variables.tf line 33:
+  33: variable "node_group_min_size" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "node_group_max_size" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario02/variables.tf line 39:
+  39: variable "node_group_max_size" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "node_group_desired_size" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario02/variables.tf line 45:
+  45: variable "node_group_desired_size" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "node_instance_types" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario02/variables.tf line 51:
+  51: variable "node_instance_types" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+

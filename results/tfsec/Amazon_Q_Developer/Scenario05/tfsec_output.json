@@ -1,0 +1,117 @@
+{
+	"results": [
+		{
+			"rule_id": "AVD-AWS-0017",
+			"long_id": "aws-cloudwatch-log-group-customer-key",
+			"rule_description": "CloudWatch log groups should be encrypted using CMK",
+			"rule_provider": "aws",
+			"rule_service": "cloudwatch",
+			"impact": "Log data may be leaked if the logs are compromised. No auditing of who have viewed the logs.",
+			"resolution": "Enable CMK encryption of CloudWatch Log Groups",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/cloudwatch/log-group-customer-key/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group#kms_key_id"
+			],
+			"description": "Log group is not encrypted.",
+			"severity": "LOW",
+			"warning": false,
+			"status": 0,
+			"resource": "aws_cloudwatch_log_group.migration_logs",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/migrations.tf",
+				"start_line": 106,
+				"end_line": 111
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0104",
+			"long_id": "aws-ec2-no-public-egress-sgr",
+			"rule_description": "An egress security group rule allows traffic to /0.",
+			"rule_provider": "aws",
+			"rule_service": "ec2",
+			"impact": "Your port is egressing data to the internet",
+			"resolution": "Set a more restrictive cidr range",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/no-public-egress-sgr/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group"
+			],
+			"description": "Security group rule allows egress to multiple public internet addresses.",
+			"severity": "CRITICAL",
+			"warning": false,
+			"status": 0,
+			"resource": "aws_security_group_rule.egress",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/security.tf",
+				"start_line": 35,
+				"end_line": 35
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0177",
+			"long_id": "aws-rds-enable-deletion-protection",
+			"rule_description": "RDS Deletion Protection Disabled",
+			"rule_provider": "aws",
+			"rule_service": "rds",
+			"impact": "",
+			"resolution": "Modify the RDS instances to enable deletion protection.",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/rds/enable-deletion-protection/"
+			],
+			"description": "Instance does not have Deletion Protection enabled",
+			"severity": "MEDIUM",
+			"warning": false,
+			"status": 0,
+			"resource": "aws_db_instance.example.deletion_protection",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/main.tf",
+				"start_line": 36,
+				"end_line": 36
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0176",
+			"long_id": "aws-rds-enable-iam-auth",
+			"rule_description": "RDS IAM Database Authentication Disabled",
+			"rule_provider": "aws",
+			"rule_service": "rds",
+			"impact": "",
+			"resolution": "Modify the PostgreSQL and MySQL type RDS instances to enable IAM database authentication.",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/rds/enable-iam-auth/"
+			],
+			"description": "Instance does not have IAM Authentication enabled",
+			"severity": "MEDIUM",
+			"warning": false,
+			"status": 0,
+			"resource": "aws_db_instance.example",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/main.tf",
+				"start_line": 2,
+				"end_line": 81
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0095",
+			"long_id": "aws-sns-enable-topic-encryption",
+			"rule_description": "Unencrypted SNS topic.",
+			"rule_provider": "aws",
+			"rule_service": "sns",
+			"impact": "The SNS topic messages could be read if compromised",
+			"resolution": "Turn on SNS Topic encryption",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/sns/enable-topic-encryption/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic#example-with-server-side-encryption-sse"
+			],
+			"description": "Topic does not have encryption enabled.",
+			"severity": "HIGH",
+			"warning": false,
+			"status": 0,
+			"resource": "aws_sns_topic.rds_events",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/main.tf",
+				"start_line": 216,
+				"end_line": 220
+			}
+		}
+	]
+}

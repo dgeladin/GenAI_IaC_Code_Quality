@@ -1,0 +1,16 @@
+2 issue(s) found:
+
+Warning: Missing version constraint for provider "kubernetes" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Github_Copilot/Scenario03/helm.tf line 1:
+   1: resource "kubernetes_helm_release" "nginx_ingress" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+
+Warning: [Fixable] data "aws_eks_cluster" "main" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Github_Copilot/Scenario03/main.tf line 28:
+  28: data "aws_eks_cluster" "main" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+

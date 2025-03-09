@@ -1,0 +1,16 @@
+2 issue(s) found:
+
+Warning: Missing version constraint for provider "aws" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Anthropic_Claude/Scenario07/provider.tf line 3:
+   3: provider "aws" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+
+Warning: Missing version constraint for provider "null" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Anthropic_Claude/Scenario07/workspace.tf line 16:
+  16: resource "null_resource" "prevent_default_workspace" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+

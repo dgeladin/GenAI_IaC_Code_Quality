@@ -1,0 +1,322 @@
+Check Type: terraform
+Failed Checks:
+- Check ID: CKV_TF_1
+  Check Name: Ensure Terraform module sources use a commit hash
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [2, 24]
+  Resource: vpc_east
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision
+
+- Check ID: CKV_TF_1
+  Check Name: Ensure Terraform module sources use a commit hash
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [27, 53]
+  Resource: vpc_west
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision
+
+- Check ID: CKV_AWS_260
+  Check Name: Ensure no security groups allow ingress from 0.0.0.0:0 to port 80
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [6, 31]
+  Resource: module.asg_east.aws_security_group.instance
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-groups-do-not-allow-ingress-from-00000-to-port-80
+
+- Check ID: CKV_AWS_23
+  Check Name: Ensure every security group and rule has a description
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [6, 31]
+  Resource: module.asg_east.aws_security_group.instance
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31
+
+- Check ID: CKV_AWS_382
+  Check Name: Ensure no security groups allow egress from 0.0.0.0:0 to port -1
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [6, 31]
+  Resource: module.asg_east.aws_security_group.instance
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382
+
+- Check ID: CKV_AWS_79
+  Check Name: Ensure Instance Metadata Service Version 1 is not enabled
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [34, 64]
+  Resource: module.asg_east.aws_launch_template.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31
+
+- Check ID: CKV_AWS_88
+  Check Name: EC2 instance should not have public IP.
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [34, 64]
+  Resource: module.asg_east.aws_launch_template.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-12
+
+- Check ID: CKV_AWS_150
+  Check Name: Ensure that Load Balancer has deletion protection enabled
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [93, 103]
+  Resource: module.asg_east.aws_lb.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-150
+
+- Check ID: CKV_AWS_91
+  Check Name: Ensure the ELBv2 (Application/Network) has access logging enabled
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [93, 103]
+  Resource: module.asg_east.aws_lb.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-logging-22
+
+- Check ID: CKV_AWS_131
+  Check Name: Ensure that ALB drops HTTP headers
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [93, 103]
+  Resource: module.asg_east.aws_lb.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-drops-http-headers
+
+- Check ID: CKV_AWS_260
+  Check Name: Ensure no security groups allow ingress from 0.0.0.0:0 to port 80
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [106, 127]
+  Resource: module.asg_east.aws_security_group.alb
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-groups-do-not-allow-ingress-from-00000-to-port-80
+
+- Check ID: CKV_AWS_23
+  Check Name: Ensure every security group and rule has a description
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [106, 127]
+  Resource: module.asg_east.aws_security_group.alb
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31
+
+- Check ID: CKV_AWS_382
+  Check Name: Ensure no security groups allow egress from 0.0.0.0:0 to port -1
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [106, 127]
+  Resource: module.asg_east.aws_security_group.alb
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382
+
+- Check ID: CKV_AWS_2
+  Check Name: Ensure ALB protocol is HTTPS
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [144, 153]
+  Resource: module.asg_east.aws_lb_listener.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-29
+
+- Check ID: CKV_AWS_260
+  Check Name: Ensure no security groups allow ingress from 0.0.0.0:0 to port 80
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [6, 31]
+  Resource: module.asg_west.aws_security_group.instance
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-groups-do-not-allow-ingress-from-00000-to-port-80
+
+- Check ID: CKV_AWS_23
+  Check Name: Ensure every security group and rule has a description
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [6, 31]
+  Resource: module.asg_west.aws_security_group.instance
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31
+
+- Check ID: CKV_AWS_382
+  Check Name: Ensure no security groups allow egress from 0.0.0.0:0 to port -1
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [6, 31]
+  Resource: module.asg_west.aws_security_group.instance
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382
+
+- Check ID: CKV_AWS_79
+  Check Name: Ensure Instance Metadata Service Version 1 is not enabled
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [34, 64]
+  Resource: module.asg_west.aws_launch_template.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31
+
+- Check ID: CKV_AWS_88
+  Check Name: EC2 instance should not have public IP.
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [34, 64]
+  Resource: module.asg_west.aws_launch_template.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-12
+
+- Check ID: CKV_AWS_150
+  Check Name: Ensure that Load Balancer has deletion protection enabled
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [93, 103]
+  Resource: module.asg_west.aws_lb.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-150
+
+- Check ID: CKV_AWS_91
+  Check Name: Ensure the ELBv2 (Application/Network) has access logging enabled
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [93, 103]
+  Resource: module.asg_west.aws_lb.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-logging-22
+
+- Check ID: CKV_AWS_131
+  Check Name: Ensure that ALB drops HTTP headers
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [93, 103]
+  Resource: module.asg_west.aws_lb.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-drops-http-headers
+
+- Check ID: CKV_AWS_260
+  Check Name: Ensure no security groups allow ingress from 0.0.0.0:0 to port 80
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [106, 127]
+  Resource: module.asg_west.aws_security_group.alb
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-groups-do-not-allow-ingress-from-00000-to-port-80
+
+- Check ID: CKV_AWS_23
+  Check Name: Ensure every security group and rule has a description
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [106, 127]
+  Resource: module.asg_west.aws_security_group.alb
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31
+
+- Check ID: CKV_AWS_382
+  Check Name: Ensure no security groups allow egress from 0.0.0.0:0 to port -1
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [106, 127]
+  Resource: module.asg_west.aws_security_group.alb
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382
+
+- Check ID: CKV_AWS_2
+  Check Name: Ensure ALB protocol is HTTPS
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [144, 153]
+  Resource: module.asg_west.aws_lb_listener.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-29
+
+- Check ID: CKV_AWS_144
+  Check Name: Ensure that S3 bucket has cross-region replication enabled
+  Check Result: FAILED
+  File Path: /global_accelerator.tf
+  File Line Range: [61, 63]
+  Resource: aws_s3_bucket.flow_logs
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-bucket-has-cross-region-replication-enabled
+
+- Check ID: CKV2_AWS_61
+  Check Name: Ensure that an S3 bucket has a lifecycle configuration
+  Check Result: FAILED
+  File Path: /global_accelerator.tf
+  File Line Range: [61, 63]
+  Resource: aws_s3_bucket.flow_logs
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-61
+
+- Check ID: CKV2_AWS_62
+  Check Name: Ensure S3 buckets should have event notifications enabled
+  Check Result: FAILED
+  File Path: /global_accelerator.tf
+  File Line Range: [61, 63]
+  Resource: aws_s3_bucket.flow_logs
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-62
+
+- Check ID: CKV_AWS_18
+  Check Name: Ensure the S3 bucket has access logging enabled
+  Check Result: FAILED
+  File Path: /global_accelerator.tf
+  File Line Range: [61, 63]
+  Resource: aws_s3_bucket.flow_logs
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-13-enable-logging
+
+- Check ID: CKV_AWS_145
+  Check Name: Ensure that S3 buckets are encrypted with KMS by default
+  Check Result: FAILED
+  File Path: /global_accelerator.tf
+  File Line Range: [61, 63]
+  Resource: aws_s3_bucket.flow_logs
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-buckets-are-encrypted-with-kms-by-default
+
+- Check ID: CKV_AWS_103
+  Check Name: Ensure that load balancer is using at least TLS 1.2
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [144, 153]
+  Resource: module.asg_east.aws_lb_listener.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-43
+
+- Check ID: CKV_AWS_103
+  Check Name: Ensure that load balancer is using at least TLS 1.2
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [144, 153]
+  Resource: module.asg_west.aws_lb_listener.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-43
+
+- Check ID: CKV2_AWS_20
+  Check Name: Ensure that ALB redirects HTTP requests into HTTPS ones
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [93, 103]
+  Resource: module.asg_east.aws_lb.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-redirects-http-requests-into-https-ones
+
+- Check ID: CKV2_AWS_20
+  Check Name: Ensure that ALB redirects HTTP requests into HTTPS ones
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [93, 103]
+  Resource: module.asg_west.aws_lb.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-redirects-http-requests-into-https-ones
+
+- Check ID: CKV_AWS_378
+  Check Name: Ensure AWS Load Balancer doesn't use HTTP protocol
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [130, 141]
+  Resource: module.asg_east.aws_lb_target_group.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-378
+
+- Check ID: CKV_AWS_378
+  Check Name: Ensure AWS Load Balancer doesn't use HTTP protocol
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [130, 141]
+  Resource: module.asg_west.aws_lb_target_group.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-378
+
+- Check ID: CKV2_AWS_28
+  Check Name: Ensure public facing ALB are protected by WAF
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [93, 103]
+  Resource: module.asg_east.aws_lb.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-facing-alb-are-protected-by-waf
+
+- Check ID: CKV2_AWS_28
+  Check Name: Ensure public facing ALB are protected by WAF
+  Check Result: FAILED
+  File Path: /modules/asg/main.tf
+  File Line Range: [93, 103]
+  Resource: module.asg_west.aws_lb.this
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-facing-alb-are-protected-by-waf
+
+Summary:
+  Passed: 47
+  Failed: 39
+  Skipped: 0
+  Parsing Errors: 0
+  Resource Count: 23
+  Checkov Version: 3.2.382
+

@@ -1,0 +1,491 @@
+{
+    "check_type": "terraform",
+    "results": {
+        "failed_checks": [
+            {
+                "check_id": "CKV2_AWS_41",
+                "bc_check_id": "BC_AWS_IAM_69",
+                "check_name": "Ensure an IAM role is attached to EC2 instance",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_instance": {
+                            "windows_dev": {
+                                "__end_line__": 28,
+                                "__start_line__": 20,
+                                "ami": [
+                                    "ami-0abcdef1234567890"
+                                ],
+                                "count": [
+                                    0
+                                ],
+                                "instance_type": [
+                                    "[\"${{'default': 't2.micro', 'dev': 't2.small', 'prod': 't2.medium'}[\"${var.environment}\"]}\"]"
+                                ],
+                                "tags": [
+                                    {
+                                        "Name": "example-instance-${var.environment}",
+                                        "created_by": "Terraform"
+                                    }
+                                ],
+                                "__address__": "module.instances.aws_instance.windows_dev",
+                                "__provider_address__": "aws.default"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "iam_instance_profile"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/instances/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                "file_line_range": [
+                    20,
+                    28
+                ],
+                "resource": "module.instances.aws_instance.windows_dev",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-instance-${var.environment}",
+                    "created_by": "Terraform"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                "breadcrumbs": {
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "ami": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "ami_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "count": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "idx": 0,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_41",
+                "bc_check_id": "BC_AWS_IAM_69",
+                "check_name": "Ensure an IAM role is attached to EC2 instance",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_instance": {
+                            "linux_dev": {
+                                "__end_line__": 50,
+                                "__start_line__": 42,
+                                "ami": [
+                                    "ami-0abcdef1234567890"
+                                ],
+                                "count": [
+                                    0
+                                ],
+                                "instance_type": [
+                                    "[\"${{'default': 't2.micro', 'dev': 't2.small', 'prod': 't2.medium'}[\"${var.environment}\"]}\"]"
+                                ],
+                                "tags": [
+                                    {
+                                        "Name": "example-instance-${var.environment}",
+                                        "created_by": "Terraform"
+                                    }
+                                ],
+                                "__address__": "module.instances.aws_instance.linux_dev",
+                                "__provider_address__": "aws.default"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "iam_instance_profile"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/instances/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                "file_line_range": [
+                    42,
+                    50
+                ],
+                "resource": "module.instances.aws_instance.linux_dev",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-instance-${var.environment}",
+                    "created_by": "Terraform"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                "breadcrumbs": {
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "count": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "ami": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "ami_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "idx": 0,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_41",
+                "bc_check_id": "BC_AWS_IAM_69",
+                "check_name": "Ensure an IAM role is attached to EC2 instance",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_instance": {
+                            "windows_prod": {
+                                "__end_line__": 39,
+                                "__start_line__": 31,
+                                "ami": [
+                                    "ami-0abcdef1234567890"
+                                ],
+                                "count": [
+                                    0
+                                ],
+                                "instance_type": [
+                                    "[\"${{'default': 't2.micro', 'dev': 't2.small', 'prod': 't2.medium'}[\"${var.environment}\"]}\"]"
+                                ],
+                                "tags": [
+                                    {
+                                        "Name": "example-instance-${var.environment}-${count.index + 1}",
+                                        "created_by": "Terraform"
+                                    }
+                                ],
+                                "__address__": "module.instances.aws_instance.windows_prod",
+                                "__provider_address__": "aws.default"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "iam_instance_profile"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/instances/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                "file_line_range": [
+                    31,
+                    39
+                ],
+                "resource": "module.instances.aws_instance.windows_prod",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-instance-${var.environment}-${count.index + 1}",
+                    "created_by": "Terraform"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                "breadcrumbs": {
+                    "ami": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "ami_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "count": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "idx": 0,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_41",
+                "bc_check_id": "BC_AWS_IAM_69",
+                "check_name": "Ensure an IAM role is attached to EC2 instance",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_instance": {
+                            "linux_prod": {
+                                "__end_line__": 61,
+                                "__start_line__": 53,
+                                "ami": [
+                                    "ami-0abcdef1234567890"
+                                ],
+                                "count": [
+                                    0
+                                ],
+                                "instance_type": [
+                                    "[\"${{'default': 't2.micro', 'dev': 't2.small', 'prod': 't2.medium'}[\"${var.environment}\"]}\"]"
+                                ],
+                                "tags": [
+                                    {
+                                        "Name": "example-instance-${var.environment}-${count.index + 1}",
+                                        "created_by": "Terraform"
+                                    }
+                                ],
+                                "__address__": "module.instances.aws_instance.linux_prod",
+                                "__provider_address__": "aws.default"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "iam_instance_profile"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/instances/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                "file_line_range": [
+                    53,
+                    61
+                ],
+                "resource": "module.instances.aws_instance.linux_prod",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-instance-${var.environment}-${count.index + 1}",
+                    "created_by": "Terraform"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                "breadcrumbs": {
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "count": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "ami": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "ami_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "idx": 0,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "summary": {
+        "passed": 1,
+        "failed": 4,
+        "skipped": 0,
+        "parsing_errors": 0,
+        "resource_count": 4,
+        "checkov_version": "3.2.382"
+    }
+}

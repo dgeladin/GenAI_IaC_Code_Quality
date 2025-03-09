@@ -1,0 +1,90 @@
+Check Type: terraform
+Failed Checks:
+- Check ID: CKV_AWS_237
+  Check Name: Ensure Create before destroy for API Gateway
+  Check Result: FAILED
+  File Path: /api_gateway.tf
+  File Line Range: [1, 9]
+  Resource: aws_api_gateway_rest_api.example_api
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-api-gateway-enables-create-before-destroy
+
+- Check ID: CKV_AWS_59
+  Check Name: Ensure there is no open access to back-end resources through API
+  Check Result: FAILED
+  File Path: /api_gateway.tf
+  File Line Range: [17, 22]
+  Resource: aws_api_gateway_method.example
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-6-api-gateway-authorizer-set
+
+- Check ID: CKV_AWS_117
+  Check Name: Ensure that AWS Lambda function is configured inside a VPC
+  Check Result: FAILED
+  File Path: /lambda.tf
+  File Line Range: [1, 19]
+  Resource: aws_lambda_function.example_lambda_function
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-inside-a-vpc-1
+
+- Check ID: CKV_AWS_115
+  Check Name: Ensure that AWS Lambda function is configured for function-level concurrent execution limit
+  Check Result: FAILED
+  File Path: /lambda.tf
+  File Line Range: [1, 19]
+  Resource: aws_lambda_function.example_lambda_function
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-function-level-concurrent-execution-limit
+
+- Check ID: CKV_AWS_50
+  Check Name: X-Ray tracing is enabled for Lambda
+  Check Result: FAILED
+  File Path: /lambda.tf
+  File Line Range: [1, 19]
+  Resource: aws_lambda_function.example_lambda_function
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-4
+
+- Check ID: CKV_AWS_173
+  Check Name: Check encryption settings for Lambda environmental variable
+  Check Result: FAILED
+  File Path: /lambda.tf
+  File Line Range: [1, 19]
+  Resource: aws_lambda_function.example_lambda_function
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-5
+
+- Check ID: CKV_AWS_363
+  Check Name: Ensure Lambda Runtime is not deprecated
+  Check Result: FAILED
+  File Path: /lambda.tf
+  File Line Range: [1, 19]
+  Resource: aws_lambda_function.example_lambda_function
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-363
+
+- Check ID: CKV_AWS_272
+  Check Name: Ensure AWS Lambda function is configured to validate code-signing
+  Check Result: FAILED
+  File Path: /lambda.tf
+  File Line Range: [1, 19]
+  Resource: aws_lambda_function.example_lambda_function
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-272
+
+- Check ID: CKV_AWS_116
+  Check Name: Ensure that AWS Lambda function is configured for a Dead Letter Queue(DLQ)
+  Check Result: FAILED
+  File Path: /lambda.tf
+  File Line Range: [1, 19]
+  Resource: aws_lambda_function.example_lambda_function
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-a-dead-letter-queue-dlq
+
+- Check ID: CKV2_AWS_53
+  Check Name: Ensure AWS API gateway request is validated
+  Check Result: FAILED
+  File Path: /api_gateway.tf
+  File Line Range: [17, 22]
+  Resource: aws_api_gateway_method.example
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-2-53
+
+Summary:
+  Passed: 12
+  Failed: 10
+  Skipped: 0
+  Parsing Errors: 0
+  Resource Count: 9
+  Checkov Version: 3.2.382
+

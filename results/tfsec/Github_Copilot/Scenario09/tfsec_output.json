@@ -1,0 +1,74 @@
+{
+	"results": [
+		{
+			"rule_id": "AVD-AWS-0131",
+			"long_id": "aws-ec2-enable-at-rest-encryption",
+			"rule_description": "Instance with unencrypted block device.",
+			"rule_provider": "aws",
+			"rule_service": "ec2",
+			"impact": "The block device could be compromised and read from",
+			"resolution": "Turn on encryption for all block devices",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/enable-at-rest-encryption/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#ebs-ephemeral-and-root-block-devices"
+			],
+			"description": "Root block device is not encrypted.",
+			"severity": "HIGH",
+			"warning": false,
+			"status": 0,
+			"resource": "aws_instance.example",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+				"start_line": 1,
+				"end_line": 8
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0028",
+			"long_id": "aws-ec2-enforce-http-token-imds",
+			"rule_description": "aws_instance should activate session tokens for Instance Metadata Service.",
+			"rule_provider": "aws",
+			"rule_service": "ec2",
+			"impact": "Instance metadata service can be interacted with freely",
+			"resolution": "Enable HTTP token requirement for IMDS",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/enforce-http-token-imds/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#metadata-options"
+			],
+			"description": "Instance does not require IMDS access to require a token",
+			"severity": "HIGH",
+			"warning": false,
+			"status": 0,
+			"resource": "aws_instance.example",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/aws_instance.tf",
+				"start_line": 1,
+				"end_line": 8
+			}
+		},
+		{
+			"rule_id": "AVD-AZU-0039",
+			"long_id": "azure-compute-disable-password-authentication",
+			"rule_description": "Password authentication should be disabled on Azure virtual machines",
+			"rule_provider": "azure",
+			"rule_service": "compute",
+			"impact": "Using password authentication is less secure that ssh keys may result in compromised servers",
+			"resolution": "Use ssh authentication for virtual machines",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/azure/compute/disable-password-authentication/",
+				"https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine#disable_password_authentication",
+				"https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_machine#disable_password_authentication"
+			],
+			"description": "Linux virtual machine allows password authentication.",
+			"severity": "HIGH",
+			"warning": false,
+			"status": 0,
+			"resource": "azurerm_virtual_machine.example",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario09/azure_vm.tf",
+				"start_line": 60,
+				"end_line": 60
+			}
+		}
+	]
+}

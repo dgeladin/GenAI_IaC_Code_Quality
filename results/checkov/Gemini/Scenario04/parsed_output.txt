@@ -1,0 +1,146 @@
+Check Type: terraform
+Failed Checks:
+- Check ID: CKV_AWS_79
+  Check Name: Ensure Instance Metadata Service Version 1 is not enabled
+  Check Result: FAILED
+  File Path: /launch_templates.tf
+  File Line Range: [2, 16]
+  Resource: aws_launch_template.blue_lt
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31
+
+- Check ID: CKV_AWS_79
+  Check Name: Ensure Instance Metadata Service Version 1 is not enabled
+  Check Result: FAILED
+  File Path: /launch_templates.tf
+  File Line Range: [19, 33]
+  Resource: aws_launch_template.green_lt
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31
+
+- Check ID: CKV_AWS_2
+  Check Name: Ensure ALB protocol is HTTPS
+  Check Result: FAILED
+  File Path: /listener.tf
+  File Line Range: [2, 11]
+  Resource: aws_lb_listener.front_end
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-29
+
+- Check ID: CKV_AWS_150
+  Check Name: Ensure that Load Balancer has deletion protection enabled
+  Check Result: FAILED
+  File Path: /load_balancer.tf
+  File Line Range: [2, 8]
+  Resource: aws_lb.app_lb
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-150
+
+- Check ID: CKV_AWS_91
+  Check Name: Ensure the ELBv2 (Application/Network) has access logging enabled
+  Check Result: FAILED
+  File Path: /load_balancer.tf
+  File Line Range: [2, 8]
+  Resource: aws_lb.app_lb
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-logging-22
+
+- Check ID: CKV_AWS_131
+  Check Name: Ensure that ALB drops HTTP headers
+  Check Result: FAILED
+  File Path: /load_balancer.tf
+  File Line Range: [2, 8]
+  Resource: aws_lb.app_lb
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-drops-http-headers
+
+- Check ID: CKV_AWS_261
+  Check Name: Ensure HTTP HTTPS Target group defines Healthcheck
+  Check Result: FAILED
+  File Path: /load_balancer.tf
+  File Line Range: [11, 16]
+  Resource: aws_lb_target_group.blue_tg
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-kendra-index-server-side-encryption-uses-customer-managed-keys-cmks
+
+- Check ID: CKV_AWS_261
+  Check Name: Ensure HTTP HTTPS Target group defines Healthcheck
+  Check Result: FAILED
+  File Path: /load_balancer.tf
+  File Line Range: [19, 24]
+  Resource: aws_lb_target_group.green_tg
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-kendra-index-server-side-encryption-uses-customer-managed-keys-cmks
+
+- Check ID: CKV_AWS_260
+  Check Name: Ensure no security groups allow ingress from 0.0.0.0:0 to port 80
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [32, 50]
+  Resource: aws_security_group.app_sg
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-groups-do-not-allow-ingress-from-00000-to-port-80
+
+- Check ID: CKV_AWS_23
+  Check Name: Ensure every security group and rule has a description
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [32, 50]
+  Resource: aws_security_group.app_sg
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31
+
+- Check ID: CKV_AWS_23
+  Check Name: Ensure every security group and rule has a description
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [52, 70]
+  Resource: aws_security_group.lb_sg
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31
+
+- Check ID: CKV_TF_1
+  Check Name: Ensure Terraform module sources use a commit hash
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [16, 28]
+  Resource: vpc
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision
+
+- Check ID: CKV_AWS_103
+  Check Name: Ensure that load balancer is using at least TLS 1.2
+  Check Result: FAILED
+  File Path: /listener.tf
+  File Line Range: [2, 11]
+  Resource: aws_lb_listener.front_end
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-43
+
+- Check ID: CKV2_AWS_20
+  Check Name: Ensure that ALB redirects HTTP requests into HTTPS ones
+  Check Result: FAILED
+  File Path: /load_balancer.tf
+  File Line Range: [2, 8]
+  Resource: aws_lb.app_lb
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-redirects-http-requests-into-https-ones
+
+- Check ID: CKV_AWS_378
+  Check Name: Ensure AWS Load Balancer doesn't use HTTP protocol
+  Check Result: FAILED
+  File Path: /load_balancer.tf
+  File Line Range: [11, 16]
+  Resource: aws_lb_target_group.blue_tg
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-378
+
+- Check ID: CKV_AWS_378
+  Check Name: Ensure AWS Load Balancer doesn't use HTTP protocol
+  Check Result: FAILED
+  File Path: /load_balancer.tf
+  File Line Range: [19, 24]
+  Resource: aws_lb_target_group.green_tg
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-378
+
+- Check ID: CKV2_AWS_28
+  Check Name: Ensure public facing ALB are protected by WAF
+  Check Result: FAILED
+  File Path: /load_balancer.tf
+  File Line Range: [2, 8]
+  Resource: aws_lb.app_lb
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-facing-alb-are-protected-by-waf
+
+Summary:
+  Passed: 24
+  Failed: 17
+  Skipped: 0
+  Parsing Errors: 0
+  Resource Count: 10
+  Checkov Version: 3.2.382
+

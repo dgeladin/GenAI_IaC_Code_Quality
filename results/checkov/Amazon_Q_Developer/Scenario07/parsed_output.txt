@@ -1,0 +1,178 @@
+Check Type: terraform
+Failed Checks:
+- Check ID: CKV_AWS_382
+  Check Name: Ensure no security groups allow egress from 0.0.0.0:0 to port -1
+  Check Result: FAILED
+  File Path: /modules/compute/main.tf
+  File Line Range: [26, 50]
+  Resource: module.compute.aws_security_group.alb
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382
+
+- Check ID: CKV_AWS_79
+  Check Name: Ensure Instance Metadata Service Version 1 is not enabled
+  Check Result: FAILED
+  File Path: /modules/compute/main.tf
+  File Line Range: [53, 82]
+  Resource: module.compute.aws_launch_template.web_server
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31
+
+- Check ID: CKV_AWS_88
+  Check Name: EC2 instance should not have public IP.
+  Check Result: FAILED
+  File Path: /modules/compute/main.tf
+  File Line Range: [53, 82]
+  Resource: module.compute.aws_launch_template.web_server
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-12
+
+- Check ID: CKV_AWS_91
+  Check Name: Ensure the ELBv2 (Application/Network) has access logging enabled
+  Check Result: FAILED
+  File Path: /modules/compute/main.tf
+  File Line Range: [85, 95]
+  Resource: module.compute.aws_lb.web
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-logging-22
+
+- Check ID: CKV_AWS_131
+  Check Name: Ensure that ALB drops HTTP headers
+  Check Result: FAILED
+  File Path: /modules/compute/main.tf
+  File Line Range: [85, 95]
+  Resource: module.compute.aws_lb.web
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-drops-http-headers
+
+- Check ID: CKV_AWS_382
+  Check Name: Ensure no security groups allow egress from 0.0.0.0:0 to port -1
+  Check Result: FAILED
+  File Path: /modules/database/main.tf
+  File Line Range: [25, 53]
+  Resource: module.database.aws_security_group.database
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382
+
+- Check ID: CKV_AWS_161
+  Check Name: Ensure RDS database has IAM authentication enabled
+  Check Result: FAILED
+  File Path: /modules/database/main.tf
+  File Line Range: [72, 115]
+  Resource: module.database.aws_db_instance.main
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-rds-database-has-iam-authentication-enabled
+
+- Check ID: CKV_AWS_354
+  Check Name: Ensure RDS Performance Insights are encrypted using KMS CMKs
+  Check Result: FAILED
+  File Path: /modules/database/main.tf
+  File Line Range: [72, 115]
+  Resource: module.database.aws_db_instance.main
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-354
+
+- Check ID: CKV_AWS_129
+  Check Name: Ensure that respective logs of Amazon Relational Database Service (Amazon RDS) are enabled
+  Check Result: FAILED
+  File Path: /modules/database/main.tf
+  File Line Range: [72, 115]
+  Resource: module.database.aws_db_instance.main
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-that-respective-logs-of-amazon-relational-database-service-amazon-rds-are-enabled
+
+- Check ID: CKV_AWS_157
+  Check Name: Ensure that RDS instances have Multi-AZ enabled
+  Check Result: FAILED
+  File Path: /modules/database/main.tf
+  File Line Range: [72, 115]
+  Resource: module.database.aws_db_instance.main
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-73
+
+- Check ID: CKV_AWS_130
+  Check Name: Ensure VPC subnets do not assign public IP by default
+  Check Result: FAILED
+  File Path: /modules/network/main.tf
+  File Line Range: [20, 31]
+  Resource: module.network.aws_subnet.public[0]
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-vpc-subnets-do-not-assign-public-ip-by-default
+
+- Check ID: CKV_AWS_260
+  Check Name: Ensure no security groups allow ingress from 0.0.0.0:0 to port 80
+  Check Result: FAILED
+  File Path: /modules/network/main.tf
+  File Line Range: [114, 151]
+  Resource: module.network.aws_security_group.web_server
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-groups-do-not-allow-ingress-from-00000-to-port-80
+
+- Check ID: CKV_AWS_382
+  Check Name: Ensure no security groups allow egress from 0.0.0.0:0 to port -1
+  Check Result: FAILED
+  File Path: /modules/network/main.tf
+  File Line Range: [114, 151]
+  Resource: module.network.aws_security_group.web_server
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382
+
+- Check ID: CKV_AWS_130
+  Check Name: Ensure VPC subnets do not assign public IP by default
+  Check Result: FAILED
+  File Path: /modules/network/main.tf
+  File Line Range: [20, 31]
+  Resource: module.network.aws_subnet.public[1]
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-vpc-subnets-do-not-assign-public-ip-by-default
+
+- Check ID: CKV2_AWS_30
+  Check Name: Ensure Postgres RDS as aws_db_instance has Query Logging enabled
+  Check Result: FAILED
+  File Path: /modules/database/main.tf
+  File Line Range: [72, 115]
+  Resource: module.database.aws_db_instance.main
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-postgres-rds-has-query-logging-enabled
+
+- Check ID: CKV2_AWS_64
+  Check Name: Ensure KMS key Policy is defined
+  Check Result: FAILED
+  File Path: /modules/database/main.tf
+  File Line Range: [56, 64]
+  Resource: module.database.aws_kms_key.database
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-2-64
+
+- Check ID: CKV2_AWS_12
+  Check Name: Ensure the default security group of every VPC restricts all traffic
+  Check Result: FAILED
+  File Path: /modules/network/main.tf
+  File Line Range: [9, 17]
+  Resource: module.network.aws_vpc.main
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4
+
+- Check ID: CKV2_AWS_60
+  Check Name: Ensure RDS instance with copy tags to snapshots is enabled
+  Check Result: FAILED
+  File Path: /modules/database/main.tf
+  File Line Range: [72, 115]
+  Resource: module.database.aws_db_instance.main
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-2-60
+
+- Check ID: CKV2_AWS_5
+  Check Name: Ensure that Security Groups are attached to another resource
+  Check Result: FAILED
+  File Path: /modules/network/main.tf
+  File Line Range: [114, 151]
+  Resource: module.network.aws_security_group.web_server
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-security-groups-are-attached-to-ec2-instances-or-elastic-network-interfaces-enis
+
+- Check ID: CKV2_AWS_11
+  Check Name: Ensure VPC flow logging is enabled in all VPCs
+  Check Result: FAILED
+  File Path: /modules/network/main.tf
+  File Line Range: [9, 17]
+  Resource: module.network.aws_vpc.main
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-9-enable-vpc-flow-logging
+
+- Check ID: CKV2_AWS_28
+  Check Name: Ensure public facing ALB are protected by WAF
+  Check Result: FAILED
+  File Path: /modules/compute/main.tf
+  File Line Range: [85, 95]
+  Resource: module.compute.aws_lb.web
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-facing-alb-are-protected-by-waf
+
+Summary:
+  Passed: 74
+  Failed: 21
+  Skipped: 0
+  Parsing Errors: 0
+  Resource Count: 36
+  Checkov Version: 3.2.382
+

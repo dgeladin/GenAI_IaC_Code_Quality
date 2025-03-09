@@ -1,0 +1,237 @@
+{
+    "check_type": "terraform",
+    "results": {
+        "failed_checks": [
+            {
+                "check_id": "CKV_TF_1",
+                "bc_check_id": "BC_CROSS_1",
+                "check_name": "Ensure Terraform module sources use a commit hash",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": []
+                },
+                "code_block": null,
+                "file_path": "/eks-cluster.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario03/eks-cluster.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario03/eks-cluster.tf",
+                "file_line_range": [
+                    2,
+                    53
+                ],
+                "resource": "eks",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.module.generic.RevisionHash",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario03/eks-cluster.tf"
+            },
+            {
+                "check_id": "CKV_K8S_21",
+                "bc_check_id": "BC_K8S_20",
+                "check_name": "The default namespace should not be used",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "metadata/[0]/namespace"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/secure-ingress.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario03/secure-ingress.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario03/secure-ingress.tf",
+                "file_line_range": [
+                    2,
+                    56
+                ],
+                "resource": "kubernetes_ingress_v1.api_ingress",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.kubernetes.DefaultNamespace",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-20",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario03/secure-ingress.tf"
+            },
+            {
+                "check_id": "CKV_AWS_23",
+                "bc_check_id": "BC_AWS_NETWORKING_31",
+                "check_name": "Ensure every security group and rule has a description",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": []
+                },
+                "code_block": null,
+                "file_path": "/secure-ingress.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario03/secure-ingress.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario03/secure-ingress.tf",
+                "file_line_range": [
+                    58,
+                    65
+                ],
+                "resource": "aws_security_group_rule.allow_https",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.SecurityGroupRuleDescription",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario03/secure-ingress.tf"
+            },
+            {
+                "check_id": "CKV_TF_1",
+                "bc_check_id": "BC_CROSS_1",
+                "check_name": "Ensure Terraform module sources use a commit hash",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": []
+                },
+                "code_block": null,
+                "file_path": "/vpc.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario03/vpc.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario03/vpc.tf",
+                "file_line_range": [
+                    2,
+                    46
+                ],
+                "resource": "vpc",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.module.generic.RevisionHash",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario03/vpc.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_71",
+                "bc_check_id": "BC_AWS_NETWORKING_95",
+                "check_name": "Ensure AWS ACM Certificate domain name does not include wildcards",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_acm_certificate": {
+                            "api_cert": {
+                                "__end_line__": 16,
+                                "__start_line__": 2,
+                                "domain_name": [
+                                    "api.example.com"
+                                ],
+                                "lifecycle": [
+                                    {
+                                        "create_before_destroy": [
+                                            true
+                                        ]
+                                    }
+                                ],
+                                "subject_alternative_names": [
+                                    [
+                                        "*.api.example.com"
+                                    ]
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "production",
+                                        "Terraform": true
+                                    }
+                                ],
+                                "validation_method": [
+                                    "DNS"
+                                ],
+                                "__address__": "aws_acm_certificate.api_cert"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "subject_alternative_names",
+                        "subject_alternative_names/*",
+                        "domain_name"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/acm-certificate.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario03/acm-certificate.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario03/acm-certificate.tf",
+                "file_line_range": [
+                    2,
+                    16
+                ],
+                "resource": "aws_acm_certificate.api_cert",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "production",
+                    "Terraform": true
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-2-71",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario03/acm-certificate.tf"
+            }
+        ]
+    },
+    "summary": {
+        "passed": 15,
+        "failed": 5,
+        "skipped": 0,
+        "parsing_errors": 0,
+        "resource_count": 8,
+        "checkov_version": "3.2.382"
+    }
+}

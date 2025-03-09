@@ -1,0 +1,23 @@
+3 issue(s) found:
+
+Warning: terraform "required_version" attribute is required (terraform_required_version)
+
+  on  line 0:
+   (source code not available)
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_version.md
+
+Warning: Missing version constraint for provider "aws" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Gemini/Scenario10/dr_backup_bucket.tf line 3:
+   3: resource "aws_s3_bucket" "dr_backup_bucket" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+
+Warning: Missing version constraint for provider "archive" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Gemini/Scenario10/lambda_function.tf line 3:
+   3: data "archive_file" "dr_failover_function_zip" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+

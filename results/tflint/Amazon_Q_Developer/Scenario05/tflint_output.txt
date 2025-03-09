@@ -1,0 +1,98 @@
+11 issue(s) found:
+
+Warning: [Fixable] data "aws_availability_zones" "available" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario05/data.tf line 8:
+   8: data "aws_availability_zones" "available" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] data "aws_kms_key" "rds" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario05/data.tf line 18:
+  18: data "aws_kms_key" "rds" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.account_id is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario05/locals.tf line 3:
+   3:   account_id = data.aws_caller_identity.current.account_id
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.region is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario05/locals.tf line 4:
+   4:   region     = data.aws_region.current.name
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.maintenance_window is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario05/locals.tf line 29:
+  29:   maintenance_window = "Mon:04:00-Mon:05:00"
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.subnet_group_name is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario05/locals.tf line 35:
+  35:   subnet_group_name = "${local.name_prefix}-subnet-group"
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.sg_rules is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario05/locals.tf line 76:
+  76:   sg_rules = {
+  77:     ingress = {
+  78:       description = "MySQL from VPC"
+  79:       from_port   = local.db_port
+  80:       to_port     = local.db_port
+  81:       protocol    = "tcp"
+  82:       cidr_blocks = [data.aws_vpc.selected.cidr_block]
+  83:     }
+  84:     egress = {
+  85:       description = "Allow all outbound traffic"
+  86:       from_port   = 0
+  87:       to_port     = 0
+  88:       protocol    = "-1"
+  89:       cidr_blocks = ["0.0.0.0/0"]
+  90:     }
+  91:   }
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.backup_config is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario05/locals.tf line 110:
+ 110:   backup_config = {
+ 111:     retention_period = local.db_settings.backup_retention
+ 112:     window          = local.backup_window
+ 113:     snapshot_identifier = local.is_production ? "${local.name_prefix}-final-snapshot" : null
+ 114:   }
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: Missing version constraint for provider "null" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario05/migrations.tf line 29:
+  29: resource "null_resource" "database_migration" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+
+Warning: [Fixable] variable "private_subnet_ids" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario05/variables.tf line 33:
+  33: variable "private_subnet_ids" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "vpc_cidr" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario05/variables.tf line 38:
+  38: variable "vpc_cidr" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+

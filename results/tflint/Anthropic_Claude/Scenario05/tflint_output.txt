@@ -1,0 +1,77 @@
+8 issue(s) found:
+
+Warning: [Fixable] data "aws_caller_identity" "current" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario05/data.tf line 1:
+   1: data "aws_caller_identity" "current" {}
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] data "aws_region" "current" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario05/data.tf line 3:
+   3: data "aws_region" "current" {}
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] data "aws_vpc" "selected" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario05/data.tf line 5:
+   5: data "aws_vpc" "selected" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] data "aws_subnets" "private" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario05/data.tf line 9:
+   9: data "aws_subnets" "private" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.db_tags is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario05/locals.tf line 10:
+  10:   db_tags = merge(
+  11:     local.common_tags,
+  12:     {
+  13:       Name = "example-db-${var.environment}"
+  14:       Service = "database"
+  15:       BackupSchedule = "daily"
+  16:     }
+  17:   )
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.security_group_tags is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario05/locals.tf line 19:
+  19:   security_group_tags = merge(
+  20:     local.common_tags,
+  21:     {
+  22:       Name = "db-sg-${var.environment}"
+  23:       Service = "security"
+  24:     }
+  25:   )
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.subnet_group_tags is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario05/locals.tf line 27:
+  27:   subnet_group_tags = merge(
+  28:     local.common_tags,
+  29:     {
+  30:       Name = "db-subnet-group-${var.environment}"
+  31:       Service = "networking"
+  32:     }
+  33:   )
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: Missing version constraint for provider "null" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Anthropic_Claude/Scenario05/main.tf line 68:
+  68: resource "null_resource" "db_migration" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+

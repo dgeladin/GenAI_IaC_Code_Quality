@@ -1,0 +1,3033 @@
+{
+    "check_type": "terraform",
+    "results": {
+        "failed_checks": [
+            {
+                "check_id": "CKV_AWS_290",
+                "bc_check_id": "BC_AWS_IAM_85",
+                "check_name": "Ensure IAM policies does not allow write access without constraints",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "policy/Statement/[0]/Action"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/dr_lambda_iam_role.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/dr_lambda_iam_role.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/dr_lambda_iam_role.tf",
+                "file_line_range": [
+                    44,
+                    76
+                ],
+                "resource": "aws_iam_policy.dr_lambda_policy",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.IAMWriteAccess",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/dr_lambda_iam_role.tf"
+            },
+            {
+                "check_id": "CKV_AWS_355",
+                "bc_check_id": "BC_AWS_IAM_88",
+                "check_name": "Ensure no IAM policies documents allow \"*\" as a statement's resource for restrictable actions",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "policy/Statement/[0]/Action"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/dr_lambda_iam_role.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/dr_lambda_iam_role.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/dr_lambda_iam_role.tf",
+                "file_line_range": [
+                    44,
+                    76
+                ],
+                "resource": "aws_iam_policy.dr_lambda_policy",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.IAMStarResourcePolicyDocument",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/dr_lambda_iam_role.tf"
+            },
+            {
+                "check_id": "CKV_AWS_290",
+                "bc_check_id": "BC_AWS_IAM_85",
+                "check_name": "Ensure IAM policies does not allow write access without constraints",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "policy/Statement/[0]/Action"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/lambda_function.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "file_line_range": [
+                    44,
+                    76
+                ],
+                "resource": "aws_iam_policy.lambda_execution_policy",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.IAMWriteAccess",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf"
+            },
+            {
+                "check_id": "CKV_AWS_355",
+                "bc_check_id": "BC_AWS_IAM_88",
+                "check_name": "Ensure no IAM policies documents allow \"*\" as a statement's resource for restrictable actions",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "policy/Statement/[0]/Action"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/lambda_function.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "file_line_range": [
+                    44,
+                    76
+                ],
+                "resource": "aws_iam_policy.lambda_execution_policy",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.IAMStarResourcePolicyDocument",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf"
+            },
+            {
+                "check_id": "CKV_AWS_117",
+                "bc_check_id": "BC_AWS_GENERAL_65",
+                "check_name": "Ensure that AWS Lambda function is configured inside a VPC",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "vpc_config"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/lambda_function.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "file_line_range": [
+                    83,
+                    101
+                ],
+                "resource": "aws_lambda_function.dr_failover",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LambdaInVPC",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "dr_failover_lambda_function"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-inside-a-vpc-1",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf"
+            },
+            {
+                "check_id": "CKV_AWS_115",
+                "bc_check_id": "BC_AWS_GENERAL_63",
+                "check_name": "Ensure that AWS Lambda function is configured for function-level concurrent execution limit",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "reserved_concurrent_executions/[0]"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/lambda_function.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "file_line_range": [
+                    83,
+                    101
+                ],
+                "resource": "aws_lambda_function.dr_failover",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LambdaFunctionLevelConcurrentExecutionLimit",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "dr_failover_lambda_function"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-function-level-concurrent-execution-limit",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf"
+            },
+            {
+                "check_id": "CKV_AWS_50",
+                "bc_check_id": "BC_AWS_SERVERLESS_4",
+                "check_name": "X-Ray tracing is enabled for Lambda",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "tracing_config/[0]/mode"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/lambda_function.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "file_line_range": [
+                    83,
+                    101
+                ],
+                "resource": "aws_lambda_function.dr_failover",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LambdaXrayEnabled",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "dr_failover_lambda_function"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-4",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf"
+            },
+            {
+                "check_id": "CKV_AWS_173",
+                "bc_check_id": "BC_AWS_SERVERLESS_5",
+                "check_name": "Check encryption settings for Lambda environmental variable",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "kms_key_arn"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/lambda_function.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "file_line_range": [
+                    83,
+                    101
+                ],
+                "resource": "aws_lambda_function.dr_failover",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LambdaEnvironmentEncryptionSettings",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "dr_failover_lambda_function"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-5",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf"
+            },
+            {
+                "check_id": "CKV_AWS_363",
+                "bc_check_id": "BC_AWS_GENERAL_259",
+                "check_name": "Ensure Lambda Runtime is not deprecated",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "runtime"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/lambda_function.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "file_line_range": [
+                    83,
+                    101
+                ],
+                "resource": "aws_lambda_function.dr_failover",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.DeprecatedLambdaRuntime",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "dr_failover_lambda_function"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-363",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf"
+            },
+            {
+                "check_id": "CKV_AWS_272",
+                "bc_check_id": "BC_AWS_General_201",
+                "check_name": "Ensure AWS Lambda function is configured to validate code-signing",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "code_signing_config_arn"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/lambda_function.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "file_line_range": [
+                    83,
+                    101
+                ],
+                "resource": "aws_lambda_function.dr_failover",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LambdaCodeSigningConfigured",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "dr_failover_lambda_function"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-272",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf"
+            },
+            {
+                "check_id": "CKV_AWS_116",
+                "bc_check_id": "BC_AWS_GENERAL_64",
+                "check_name": "Ensure that AWS Lambda function is configured for a Dead Letter Queue(DLQ)",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "dead_letter_config/[0]/target_arn"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/lambda_function.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+                "file_line_range": [
+                    83,
+                    101
+                ],
+                "resource": "aws_lambda_function.dr_failover",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LambdaDLQConfigured",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "dr_failover_lambda_function"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-a-dead-letter-queue-dlq",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf"
+            },
+            {
+                "check_id": "CKV_AWS_290",
+                "bc_check_id": "BC_AWS_IAM_85",
+                "check_name": "Ensure IAM policies does not allow write access without constraints",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "policy/Statement/[0]/Action"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/dr_lambda_iam_role/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/dr_lambda_iam_role/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/dr_lambda_iam_role/main.tf",
+                "file_line_range": [
+                    23,
+                    55
+                ],
+                "resource": "module.dr_lambda_iam_role.aws_iam_policy.dr_lambda_policy",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.IAMWriteAccess",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    42,
+                    44
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/dr_lambda_iam_role/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda_iam_role",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 38,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_355",
+                "bc_check_id": "BC_AWS_IAM_88",
+                "check_name": "Ensure no IAM policies documents allow \"*\" as a statement's resource for restrictable actions",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "policy/Statement/[0]/Action"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/dr_lambda_iam_role/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/dr_lambda_iam_role/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/dr_lambda_iam_role/main.tf",
+                "file_line_range": [
+                    23,
+                    55
+                ],
+                "resource": "module.dr_lambda_iam_role.aws_iam_policy.dr_lambda_policy",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.IAMStarResourcePolicyDocument",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    42,
+                    44
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/dr_lambda_iam_role/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda_iam_role",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 38,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_117",
+                "bc_check_id": "BC_AWS_GENERAL_65",
+                "check_name": "Ensure that AWS Lambda function is configured inside a VPC",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "vpc_config"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/lambda_function/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "file_line_range": [
+                    1,
+                    19
+                ],
+                "resource": "module.lambda_function.aws_lambda_function.dr_failover",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LambdaInVPC",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "dr_failover_lambda_function"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    46,
+                    48
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-inside-a-vpc-1",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 39,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_115",
+                "bc_check_id": "BC_AWS_GENERAL_63",
+                "check_name": "Ensure that AWS Lambda function is configured for function-level concurrent execution limit",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "reserved_concurrent_executions/[0]"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/lambda_function/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "file_line_range": [
+                    1,
+                    19
+                ],
+                "resource": "module.lambda_function.aws_lambda_function.dr_failover",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LambdaFunctionLevelConcurrentExecutionLimit",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "dr_failover_lambda_function"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    46,
+                    48
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-function-level-concurrent-execution-limit",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 39,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_50",
+                "bc_check_id": "BC_AWS_SERVERLESS_4",
+                "check_name": "X-Ray tracing is enabled for Lambda",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "tracing_config/[0]/mode"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/lambda_function/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "file_line_range": [
+                    1,
+                    19
+                ],
+                "resource": "module.lambda_function.aws_lambda_function.dr_failover",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LambdaXrayEnabled",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "dr_failover_lambda_function"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    46,
+                    48
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-4",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 39,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_173",
+                "bc_check_id": "BC_AWS_SERVERLESS_5",
+                "check_name": "Check encryption settings for Lambda environmental variable",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "kms_key_arn"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/lambda_function/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "file_line_range": [
+                    1,
+                    19
+                ],
+                "resource": "module.lambda_function.aws_lambda_function.dr_failover",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LambdaEnvironmentEncryptionSettings",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "dr_failover_lambda_function"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    46,
+                    48
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-5",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 39,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_363",
+                "bc_check_id": "BC_AWS_GENERAL_259",
+                "check_name": "Ensure Lambda Runtime is not deprecated",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "runtime"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/lambda_function/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "file_line_range": [
+                    1,
+                    19
+                ],
+                "resource": "module.lambda_function.aws_lambda_function.dr_failover",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.DeprecatedLambdaRuntime",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "dr_failover_lambda_function"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    46,
+                    48
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-363",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 39,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_272",
+                "bc_check_id": "BC_AWS_General_201",
+                "check_name": "Ensure AWS Lambda function is configured to validate code-signing",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "code_signing_config_arn"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/lambda_function/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "file_line_range": [
+                    1,
+                    19
+                ],
+                "resource": "module.lambda_function.aws_lambda_function.dr_failover",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LambdaCodeSigningConfigured",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "dr_failover_lambda_function"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    46,
+                    48
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-272",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 39,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_116",
+                "bc_check_id": "BC_AWS_GENERAL_64",
+                "check_name": "Ensure that AWS Lambda function is configured for a Dead Letter Queue(DLQ)",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "dead_letter_config/[0]/target_arn"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/lambda_function/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "file_line_range": [
+                    1,
+                    19
+                ],
+                "resource": "module.lambda_function.aws_lambda_function.dr_failover",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LambdaDLQConfigured",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "dr_failover_lambda_function"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    46,
+                    48
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-a-dead-letter-queue-dlq",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/lambda_function/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "lambda_function",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 39,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_8",
+                "bc_check_id": "BC_AWS_GENERAL_13",
+                "check_name": "Ensure all data stored in the Launch configuration or instance Elastic Blocks Store is securely encrypted",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "root_block_device"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/primary_instance_and_volume/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "file_line_range": [
+                    1,
+                    11
+                ],
+                "resource": "module.primary_instance_and_volume.aws_instance.primary",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LaunchConfigurationEBSEncryption",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "Primary",
+                    "Name": "primary-instance"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    26,
+                    28
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-13",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "primary_instance_and_volume",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 34,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_126",
+                "bc_check_id": "BC_AWS_LOGGING_26",
+                "check_name": "Ensure that detailed monitoring is enabled for EC2 instances",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "monitoring"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/primary_instance_and_volume/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "file_line_range": [
+                    1,
+                    11
+                ],
+                "resource": "module.primary_instance_and_volume.aws_instance.primary",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.EC2DetailedMonitoringEnabled",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "Primary",
+                    "Name": "primary-instance"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    26,
+                    28
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-detailed-monitoring-is-enabled-for-ec2-instances",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "primary_instance_and_volume",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 34,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_79",
+                "bc_check_id": "BC_AWS_GENERAL_31",
+                "check_name": "Ensure Instance Metadata Service Version 1 is not enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "metadata_options/[0]/http_tokens"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/primary_instance_and_volume/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "file_line_range": [
+                    1,
+                    11
+                ],
+                "resource": "module.primary_instance_and_volume.aws_instance.primary",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.IMDSv1Disabled",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "Primary",
+                    "Name": "primary-instance"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    26,
+                    28
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "primary_instance_and_volume",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 34,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_135",
+                "bc_check_id": "BC_AWS_GENERAL_68",
+                "check_name": "Ensure that EC2 is EBS optimized",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "ebs_optimized"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/primary_instance_and_volume/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "file_line_range": [
+                    1,
+                    11
+                ],
+                "resource": "module.primary_instance_and_volume.aws_instance.primary",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.EC2EBSOptimized",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "Primary",
+                    "Name": "primary-instance"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    26,
+                    28
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "primary_instance_and_volume",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 34,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_3",
+                "bc_check_id": "BC_AWS_GENERAL_3",
+                "check_name": "Ensure all data stored in the EBS is securely encrypted",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "encrypted"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/primary_instance_and_volume/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "file_line_range": [
+                    13,
+                    23
+                ],
+                "resource": "module.primary_instance_and_volume.aws_ebs_volume.primary_data",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.EBSEncryption",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "Primary",
+                    "Name": "primary-data-volume"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    26,
+                    28
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-3-encrypt-ebs-volume",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "primary_instance_and_volume",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 34,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_189",
+                "bc_check_id": "BC_AWS_GENERAL_109",
+                "check_name": "Ensure EBS Volume is encrypted by KMS using a customer managed Key (CMK)",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "kms_key_id"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/primary_instance_and_volume/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "file_line_range": [
+                    13,
+                    23
+                ],
+                "resource": "module.primary_instance_and_volume.aws_ebs_volume.primary_data",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.EBSVolumeEncryptedWithCMK",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "Primary",
+                    "Name": "primary-data-volume"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    26,
+                    28
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-109",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "primary_instance_and_volume",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 34,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_8",
+                "bc_check_id": "BC_AWS_GENERAL_13",
+                "check_name": "Ensure all data stored in the Launch configuration or instance Elastic Blocks Store is securely encrypted",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "root_block_device"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/primary_instance_and_volume.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf",
+                "file_line_range": [
+                    17,
+                    27
+                ],
+                "resource": "aws_instance.primary",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.LaunchConfigurationEBSEncryption",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "Primary",
+                    "Name": "primary-instance"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-13",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf"
+            },
+            {
+                "check_id": "CKV_AWS_126",
+                "bc_check_id": "BC_AWS_LOGGING_26",
+                "check_name": "Ensure that detailed monitoring is enabled for EC2 instances",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "monitoring"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/primary_instance_and_volume.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf",
+                "file_line_range": [
+                    17,
+                    27
+                ],
+                "resource": "aws_instance.primary",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.EC2DetailedMonitoringEnabled",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "Primary",
+                    "Name": "primary-instance"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-detailed-monitoring-is-enabled-for-ec2-instances",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf"
+            },
+            {
+                "check_id": "CKV_AWS_79",
+                "bc_check_id": "BC_AWS_GENERAL_31",
+                "check_name": "Ensure Instance Metadata Service Version 1 is not enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "metadata_options/[0]/http_tokens"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/primary_instance_and_volume.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf",
+                "file_line_range": [
+                    17,
+                    27
+                ],
+                "resource": "aws_instance.primary",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.IMDSv1Disabled",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "Primary",
+                    "Name": "primary-instance"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf"
+            },
+            {
+                "check_id": "CKV_AWS_135",
+                "bc_check_id": "BC_AWS_GENERAL_68",
+                "check_name": "Ensure that EC2 is EBS optimized",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "ebs_optimized"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/primary_instance_and_volume.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf",
+                "file_line_range": [
+                    17,
+                    27
+                ],
+                "resource": "aws_instance.primary",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.EC2EBSOptimized",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "Primary",
+                    "Name": "primary-instance"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf"
+            },
+            {
+                "check_id": "CKV_AWS_3",
+                "bc_check_id": "BC_AWS_GENERAL_3",
+                "check_name": "Ensure all data stored in the EBS is securely encrypted",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "encrypted"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/primary_instance_and_volume.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf",
+                "file_line_range": [
+                    29,
+                    39
+                ],
+                "resource": "aws_ebs_volume.primary_data",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.EBSEncryption",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "Primary",
+                    "Name": "primary-data-volume"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-3-encrypt-ebs-volume",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf"
+            },
+            {
+                "check_id": "CKV_AWS_189",
+                "bc_check_id": "BC_AWS_GENERAL_109",
+                "check_name": "Ensure EBS Volume is encrypted by KMS using a customer managed Key (CMK)",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "kms_key_id"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/primary_instance_and_volume.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf",
+                "file_line_range": [
+                    29,
+                    39
+                ],
+                "resource": "aws_ebs_volume.primary_data",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.EBSVolumeEncryptedWithCMK",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "Primary",
+                    "Name": "primary-data-volume"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-109",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_41",
+                "bc_check_id": "BC_AWS_IAM_69",
+                "check_name": "Ensure an IAM role is attached to EC2 instance",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_instance": {
+                            "primary": {
+                                "__end_line__": 11,
+                                "__start_line__": 1,
+                                "ami": [
+                                    "ami-0c55b159cbfafe1f0"
+                                ],
+                                "instance_type": [
+                                    "t3.micro"
+                                ],
+                                "provider": [
+                                    "aws.primary"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "Primary",
+                                        "Name": "primary-instance"
+                                    }
+                                ],
+                                "__address__": "module.primary_instance_and_volume.aws_instance.primary",
+                                "__provider_address__": ""
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "iam_instance_profile"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/primary_instance_and_volume/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "file_line_range": [
+                    1,
+                    11
+                ],
+                "resource": "module.primary_instance_and_volume.aws_instance.primary",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "Primary",
+                    "Name": "primary-instance"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "primary_instance_and_volume",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 34,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_41",
+                "bc_check_id": "BC_AWS_IAM_69",
+                "check_name": "Ensure an IAM role is attached to EC2 instance",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_instance": {
+                            "primary": {
+                                "__end_line__": 27,
+                                "__start_line__": 17,
+                                "ami": [
+                                    "ami-0c55b159cbfafe1f0"
+                                ],
+                                "instance_type": [
+                                    "t3.micro"
+                                ],
+                                "provider": [
+                                    "aws.primary"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "Primary",
+                                        "Name": "primary-instance"
+                                    }
+                                ],
+                                "__address__": "aws_instance.primary",
+                                "__provider_address__": "aws.primary"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "iam_instance_profile"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/primary_instance_and_volume.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf",
+                "file_line_range": [
+                    17,
+                    27
+                ],
+                "resource": "aws_instance.primary",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "Primary",
+                    "Name": "primary-instance"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf"
+            },
+            {
+                "check_id": "CKV_AWS_144",
+                "bc_check_id": "BC_AWS_GENERAL_72",
+                "check_name": "Ensure that S3 bucket has cross-region replication enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "example_dr_backup_bucket": {
+                                "__end_line__": 29,
+                                "__start_line__": 1,
+                                "acl": [
+                                    "private"
+                                ],
+                                "bucket": [
+                                    "example-dr-backup-bucket"
+                                ],
+                                "lifecycle_rule": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ],
+                                        "expiration": [
+                                            {
+                                                "days": [
+                                                    90
+                                                ]
+                                            }
+                                        ],
+                                        "id": [
+                                            "transition-to-glacier-and-delete"
+                                        ],
+                                        "transition": [
+                                            {
+                                                "days": [
+                                                    30
+                                                ],
+                                                "storage_class": [
+                                                    "GLACIER"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "provider": [
+                                    "aws.dr"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "DR",
+                                        "Name": "example-dr-backup-bucket"
+                                    }
+                                ],
+                                "versioning": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ]
+                                    }
+                                ],
+                                "__address__": "module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket",
+                                "__provider_address__": ""
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "replication_configuration/rules/*/status",
+                        "resource_type",
+                        "rule/*/status"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/s3_backup_bucket/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/s3_backup_bucket/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/s3_backup_bucket/main.tf",
+                "file_line_range": [
+                    1,
+                    29
+                ],
+                "resource": "module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "example-dr-backup-bucket"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-bucket-has-cross-region-replication-enabled",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/s3_backup_bucket/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "s3_backup_bucket",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 33,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_144",
+                "bc_check_id": "BC_AWS_GENERAL_72",
+                "check_name": "Ensure that S3 bucket has cross-region replication enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "example_dr_backup_bucket": {
+                                "__end_line__": 45,
+                                "__start_line__": 17,
+                                "acl": [
+                                    "private"
+                                ],
+                                "bucket": [
+                                    "example-dr-backup-bucket"
+                                ],
+                                "lifecycle_rule": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ],
+                                        "expiration": [
+                                            {
+                                                "days": [
+                                                    90
+                                                ]
+                                            }
+                                        ],
+                                        "id": [
+                                            "transition-to-glacier-and-delete"
+                                        ],
+                                        "transition": [
+                                            {
+                                                "days": [
+                                                    30
+                                                ],
+                                                "storage_class": [
+                                                    "GLACIER"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "provider": [
+                                    "aws.dr"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "DR",
+                                        "Name": "example-dr-backup-bucket"
+                                    }
+                                ],
+                                "versioning": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ]
+                                    }
+                                ],
+                                "__address__": "aws_s3_bucket.example_dr_backup_bucket",
+                                "__provider_address__": "aws.dr"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "replication_configuration/rules/*/status",
+                        "resource_type",
+                        "rule/*/status"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/s3_backup_bucket.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/s3_backup_bucket.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/s3_backup_bucket.tf",
+                "file_line_range": [
+                    17,
+                    45
+                ],
+                "resource": "aws_s3_bucket.example_dr_backup_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "example-dr-backup-bucket"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-bucket-has-cross-region-replication-enabled",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/s3_backup_bucket.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_62",
+                "bc_check_id": "BC_AWS_LOGGING_36",
+                "check_name": "Ensure S3 buckets should have event notifications enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "example_dr_backup_bucket": {
+                                "__end_line__": 29,
+                                "__start_line__": 1,
+                                "acl": [
+                                    "private"
+                                ],
+                                "bucket": [
+                                    "example-dr-backup-bucket"
+                                ],
+                                "lifecycle_rule": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ],
+                                        "expiration": [
+                                            {
+                                                "days": [
+                                                    90
+                                                ]
+                                            }
+                                        ],
+                                        "id": [
+                                            "transition-to-glacier-and-delete"
+                                        ],
+                                        "transition": [
+                                            {
+                                                "days": [
+                                                    30
+                                                ],
+                                                "storage_class": [
+                                                    "GLACIER"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "provider": [
+                                    "aws.dr"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "DR",
+                                        "Name": "example-dr-backup-bucket"
+                                    }
+                                ],
+                                "versioning": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ]
+                                    }
+                                ],
+                                "__address__": "module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket",
+                                "__provider_address__": ""
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/s3_backup_bucket/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/s3_backup_bucket/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/s3_backup_bucket/main.tf",
+                "file_line_range": [
+                    1,
+                    29
+                ],
+                "resource": "module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "example-dr-backup-bucket"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-62",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/s3_backup_bucket/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "s3_backup_bucket",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 33,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_62",
+                "bc_check_id": "BC_AWS_LOGGING_36",
+                "check_name": "Ensure S3 buckets should have event notifications enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "example_dr_backup_bucket": {
+                                "__end_line__": 45,
+                                "__start_line__": 17,
+                                "acl": [
+                                    "private"
+                                ],
+                                "bucket": [
+                                    "example-dr-backup-bucket"
+                                ],
+                                "lifecycle_rule": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ],
+                                        "expiration": [
+                                            {
+                                                "days": [
+                                                    90
+                                                ]
+                                            }
+                                        ],
+                                        "id": [
+                                            "transition-to-glacier-and-delete"
+                                        ],
+                                        "transition": [
+                                            {
+                                                "days": [
+                                                    30
+                                                ],
+                                                "storage_class": [
+                                                    "GLACIER"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "provider": [
+                                    "aws.dr"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "DR",
+                                        "Name": "example-dr-backup-bucket"
+                                    }
+                                ],
+                                "versioning": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ]
+                                    }
+                                ],
+                                "__address__": "aws_s3_bucket.example_dr_backup_bucket",
+                                "__provider_address__": "aws.dr"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/s3_backup_bucket.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/s3_backup_bucket.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/s3_backup_bucket.tf",
+                "file_line_range": [
+                    17,
+                    45
+                ],
+                "resource": "aws_s3_bucket.example_dr_backup_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "example-dr-backup-bucket"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-62",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/s3_backup_bucket.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_64",
+                "bc_check_id": "BC_AWS_IAM_76",
+                "check_name": "Ensure KMS key Policy is defined",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_kms_key": {
+                            "dr_key": {
+                                "__end_line__": 28,
+                                "__start_line__": 17,
+                                "deletion_window_in_days": [
+                                    10
+                                ],
+                                "description": [
+                                    "KMS key for encrypting DR data"
+                                ],
+                                "enable_key_rotation": [
+                                    true
+                                ],
+                                "provider": [
+                                    "aws.dr"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "DR",
+                                        "Name": "dr-encryption-key"
+                                    }
+                                ],
+                                "__address__": "aws_kms_key.dr_key",
+                                "__provider_address__": "aws.dr"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "policy"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/dr_kms_key.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/dr_kms_key.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/dr_kms_key.tf",
+                "file_line_range": [
+                    17,
+                    28
+                ],
+                "resource": "aws_kms_key.dr_key",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "dr-encryption-key"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-2-64",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/dr_kms_key.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_64",
+                "bc_check_id": "BC_AWS_IAM_76",
+                "check_name": "Ensure KMS key Policy is defined",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_kms_key": {
+                            "dr_key": {
+                                "__end_line__": 12,
+                                "__start_line__": 1,
+                                "deletion_window_in_days": [
+                                    10
+                                ],
+                                "description": [
+                                    "KMS key for encrypting DR data"
+                                ],
+                                "enable_key_rotation": [
+                                    true
+                                ],
+                                "provider": [
+                                    "aws.dr"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "DR",
+                                        "Name": "dr-encryption-key"
+                                    }
+                                ],
+                                "__address__": "module.dr_kms_key.aws_kms_key.dr_key",
+                                "__provider_address__": ""
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "policy"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/dr_kms_key/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/dr_kms_key/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/dr_kms_key/main.tf",
+                "file_line_range": [
+                    1,
+                    12
+                ],
+                "resource": "module.dr_kms_key.aws_kms_key.dr_key",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "dr-encryption-key"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-2-64",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/dr_kms_key/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "dr_kms_key",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 36,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_18",
+                "bc_check_id": "BC_AWS_S3_13",
+                "check_name": "Ensure the S3 bucket has access logging enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "example_dr_backup_bucket": {
+                                "__end_line__": 29,
+                                "__start_line__": 1,
+                                "acl": [
+                                    "private"
+                                ],
+                                "bucket": [
+                                    "example-dr-backup-bucket"
+                                ],
+                                "lifecycle_rule": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ],
+                                        "expiration": [
+                                            {
+                                                "days": [
+                                                    90
+                                                ]
+                                            }
+                                        ],
+                                        "id": [
+                                            "transition-to-glacier-and-delete"
+                                        ],
+                                        "transition": [
+                                            {
+                                                "days": [
+                                                    30
+                                                ],
+                                                "storage_class": [
+                                                    "GLACIER"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "provider": [
+                                    "aws.dr"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "DR",
+                                        "Name": "example-dr-backup-bucket"
+                                    }
+                                ],
+                                "versioning": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ]
+                                    }
+                                ],
+                                "__address__": "module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket",
+                                "__provider_address__": ""
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "logging"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/s3_backup_bucket/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/s3_backup_bucket/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/s3_backup_bucket/main.tf",
+                "file_line_range": [
+                    1,
+                    29
+                ],
+                "resource": "module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "example-dr-backup-bucket"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-13-enable-logging",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/s3_backup_bucket/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "s3_backup_bucket",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 33,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_18",
+                "bc_check_id": "BC_AWS_S3_13",
+                "check_name": "Ensure the S3 bucket has access logging enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "example_dr_backup_bucket": {
+                                "__end_line__": 45,
+                                "__start_line__": 17,
+                                "acl": [
+                                    "private"
+                                ],
+                                "bucket": [
+                                    "example-dr-backup-bucket"
+                                ],
+                                "lifecycle_rule": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ],
+                                        "expiration": [
+                                            {
+                                                "days": [
+                                                    90
+                                                ]
+                                            }
+                                        ],
+                                        "id": [
+                                            "transition-to-glacier-and-delete"
+                                        ],
+                                        "transition": [
+                                            {
+                                                "days": [
+                                                    30
+                                                ],
+                                                "storage_class": [
+                                                    "GLACIER"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "provider": [
+                                    "aws.dr"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "DR",
+                                        "Name": "example-dr-backup-bucket"
+                                    }
+                                ],
+                                "versioning": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ]
+                                    }
+                                ],
+                                "__address__": "aws_s3_bucket.example_dr_backup_bucket",
+                                "__provider_address__": "aws.dr"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "logging"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/s3_backup_bucket.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/s3_backup_bucket.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/s3_backup_bucket.tf",
+                "file_line_range": [
+                    17,
+                    45
+                ],
+                "resource": "aws_s3_bucket.example_dr_backup_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "example-dr-backup-bucket"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-13-enable-logging",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/s3_backup_bucket.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_6",
+                "bc_check_id": "BC_AWS_NETWORKING_52",
+                "check_name": "Ensure that S3 bucket has a Public Access block",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "example_dr_backup_bucket": {
+                                "__end_line__": 29,
+                                "__start_line__": 1,
+                                "acl": [
+                                    "private"
+                                ],
+                                "bucket": [
+                                    "example-dr-backup-bucket"
+                                ],
+                                "lifecycle_rule": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ],
+                                        "expiration": [
+                                            {
+                                                "days": [
+                                                    90
+                                                ]
+                                            }
+                                        ],
+                                        "id": [
+                                            "transition-to-glacier-and-delete"
+                                        ],
+                                        "transition": [
+                                            {
+                                                "days": [
+                                                    30
+                                                ],
+                                                "storage_class": [
+                                                    "GLACIER"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "provider": [
+                                    "aws.dr"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "DR",
+                                        "Name": "example-dr-backup-bucket"
+                                    }
+                                ],
+                                "versioning": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ]
+                                    }
+                                ],
+                                "__address__": "module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket",
+                                "__provider_address__": ""
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "block_public_acls",
+                        "block_public_policy"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/s3_backup_bucket/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/s3_backup_bucket/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/s3_backup_bucket/main.tf",
+                "file_line_range": [
+                    1,
+                    29
+                ],
+                "resource": "module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "example-dr-backup-bucket"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/s3-bucket-should-have-public-access-blocks-defaults-to-false-if-the-public-access-block-is-not-attached",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/s3_backup_bucket/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "s3_backup_bucket",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 33,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_6",
+                "bc_check_id": "BC_AWS_NETWORKING_52",
+                "check_name": "Ensure that S3 bucket has a Public Access block",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "example_dr_backup_bucket": {
+                                "__end_line__": 45,
+                                "__start_line__": 17,
+                                "acl": [
+                                    "private"
+                                ],
+                                "bucket": [
+                                    "example-dr-backup-bucket"
+                                ],
+                                "lifecycle_rule": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ],
+                                        "expiration": [
+                                            {
+                                                "days": [
+                                                    90
+                                                ]
+                                            }
+                                        ],
+                                        "id": [
+                                            "transition-to-glacier-and-delete"
+                                        ],
+                                        "transition": [
+                                            {
+                                                "days": [
+                                                    30
+                                                ],
+                                                "storage_class": [
+                                                    "GLACIER"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "provider": [
+                                    "aws.dr"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "DR",
+                                        "Name": "example-dr-backup-bucket"
+                                    }
+                                ],
+                                "versioning": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ]
+                                    }
+                                ],
+                                "__address__": "aws_s3_bucket.example_dr_backup_bucket",
+                                "__provider_address__": "aws.dr"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "block_public_acls",
+                        "block_public_policy"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/s3_backup_bucket.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/s3_backup_bucket.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/s3_backup_bucket.tf",
+                "file_line_range": [
+                    17,
+                    45
+                ],
+                "resource": "aws_s3_bucket.example_dr_backup_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "example-dr-backup-bucket"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/s3-bucket-should-have-public-access-blocks-defaults-to-false-if-the-public-access-block-is-not-attached",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/s3_backup_bucket.tf"
+            },
+            {
+                "check_id": "CKV_AWS_145",
+                "bc_check_id": "BC_AWS_GENERAL_56",
+                "check_name": "Ensure that S3 buckets are encrypted with KMS by default",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "example_dr_backup_bucket": {
+                                "__end_line__": 29,
+                                "__start_line__": 1,
+                                "acl": [
+                                    "private"
+                                ],
+                                "bucket": [
+                                    "example-dr-backup-bucket"
+                                ],
+                                "lifecycle_rule": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ],
+                                        "expiration": [
+                                            {
+                                                "days": [
+                                                    90
+                                                ]
+                                            }
+                                        ],
+                                        "id": [
+                                            "transition-to-glacier-and-delete"
+                                        ],
+                                        "transition": [
+                                            {
+                                                "days": [
+                                                    30
+                                                ],
+                                                "storage_class": [
+                                                    "GLACIER"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "provider": [
+                                    "aws.dr"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "DR",
+                                        "Name": "example-dr-backup-bucket"
+                                    }
+                                ],
+                                "versioning": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ]
+                                    }
+                                ],
+                                "__address__": "module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket",
+                                "__provider_address__": ""
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "server_side_encryption_configuration/rule/apply_server_side_encryption_by_default/sse_algorithm",
+                        "rule/apply_server_side_encryption_by_default/sse_algorithm"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/s3_backup_bucket/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/s3_backup_bucket/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/s3_backup_bucket/main.tf",
+                "file_line_range": [
+                    1,
+                    29
+                ],
+                "resource": "module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "example-dr-backup-bucket"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-buckets-are-encrypted-with-kms-by-default",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/s3_backup_bucket/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "s3_backup_bucket",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 33,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_145",
+                "bc_check_id": "BC_AWS_GENERAL_56",
+                "check_name": "Ensure that S3 buckets are encrypted with KMS by default",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "example_dr_backup_bucket": {
+                                "__end_line__": 45,
+                                "__start_line__": 17,
+                                "acl": [
+                                    "private"
+                                ],
+                                "bucket": [
+                                    "example-dr-backup-bucket"
+                                ],
+                                "lifecycle_rule": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ],
+                                        "expiration": [
+                                            {
+                                                "days": [
+                                                    90
+                                                ]
+                                            }
+                                        ],
+                                        "id": [
+                                            "transition-to-glacier-and-delete"
+                                        ],
+                                        "transition": [
+                                            {
+                                                "days": [
+                                                    30
+                                                ],
+                                                "storage_class": [
+                                                    "GLACIER"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "provider": [
+                                    "aws.dr"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "DR",
+                                        "Name": "example-dr-backup-bucket"
+                                    }
+                                ],
+                                "versioning": [
+                                    {
+                                        "enabled": [
+                                            true
+                                        ]
+                                    }
+                                ],
+                                "__address__": "aws_s3_bucket.example_dr_backup_bucket",
+                                "__provider_address__": "aws.dr"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "server_side_encryption_configuration/rule/apply_server_side_encryption_by_default/sse_algorithm",
+                        "rule/apply_server_side_encryption_by_default/sse_algorithm"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/s3_backup_bucket.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/s3_backup_bucket.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/s3_backup_bucket.tf",
+                "file_line_range": [
+                    17,
+                    45
+                ],
+                "resource": "aws_s3_bucket.example_dr_backup_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "DR",
+                    "Name": "example-dr-backup-bucket"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-buckets-are-encrypted-with-kms-by-default",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/s3_backup_bucket.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_2",
+                "bc_check_id": "BC_AWS_GENERAL_60",
+                "check_name": "Ensure that only encrypted EBS volumes are attached to EC2 instances",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_ebs_volume": {
+                            "primary_data": {
+                                "__end_line__": 23,
+                                "__start_line__": 13,
+                                "availability_zone": [
+                                    "aws_instance.primary.availability_zone"
+                                ],
+                                "provider": [
+                                    "aws.primary"
+                                ],
+                                "size": [
+                                    100
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "Primary",
+                                        "Name": "primary-data-volume"
+                                    }
+                                ],
+                                "type": [
+                                    "gp3"
+                                ],
+                                "__address__": "module.primary_instance_and_volume.aws_ebs_volume.primary_data",
+                                "__provider_address__": ""
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "encrypted"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/primary_instance_and_volume/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "file_line_range": [
+                    13,
+                    23
+                ],
+                "resource": "module.primary_instance_and_volume.aws_ebs_volume.primary_data",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "Primary",
+                    "Name": "primary-data-volume"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-only-encrypted-ebs-volumes-are-attached-to-ec2-instances",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/primary_instance_and_volume/main.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "primary_instance_and_volume",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/main.tf",
+                            "idx": 34,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_2",
+                "bc_check_id": "BC_AWS_GENERAL_60",
+                "check_name": "Ensure that only encrypted EBS volumes are attached to EC2 instances",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_ebs_volume": {
+                            "primary_data": {
+                                "__end_line__": 39,
+                                "__start_line__": 29,
+                                "availability_zone": [
+                                    "aws_instance.primary.availability_zone"
+                                ],
+                                "provider": [
+                                    "aws.primary"
+                                ],
+                                "size": [
+                                    100
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "Primary",
+                                        "Name": "primary-data-volume"
+                                    }
+                                ],
+                                "type": [
+                                    "gp3"
+                                ],
+                                "__address__": "aws_ebs_volume.primary_data",
+                                "__provider_address__": "aws.primary"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "encrypted"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/primary_instance_and_volume.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf",
+                "file_line_range": [
+                    29,
+                    39
+                ],
+                "resource": "aws_ebs_volume.primary_data",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "Primary",
+                    "Name": "primary-data-volume"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-only-encrypted-ebs-volumes-are-attached-to-ec2-instances",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/primary_instance_and_volume.tf"
+            }
+        ]
+    },
+    "summary": {
+        "passed": 77,
+        "failed": 48,
+        "skipped": 0,
+        "parsing_errors": 0,
+        "resource_count": 29,
+        "checkov_version": "3.2.382"
+    }
+}

@@ -1,0 +1,16 @@
+2 issue(s) found:
+
+Warning: [Fixable] variable "cidr_block" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Mistral/Scenario02/variables.tf line 3:
+   3: variable "cidr_block" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "region" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Mistral/Scenario02/variables.tf line 8:
+   8: variable "region" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+

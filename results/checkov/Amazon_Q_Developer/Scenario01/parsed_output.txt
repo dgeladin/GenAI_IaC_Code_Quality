@@ -1,0 +1,58 @@
+Check Type: terraform
+Failed Checks:
+- Check ID: CKV_AWS_126
+  Check Name: Ensure that detailed monitoring is enabled for EC2 instances
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [2, 33]
+  Resource: aws_instance.windows_servers
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-detailed-monitoring-is-enabled-for-ec2-instances
+
+- Check ID: CKV_AWS_135
+  Check Name: Ensure that EC2 is EBS optimized
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [2, 33]
+  Resource: aws_instance.windows_servers
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized
+
+- Check ID: CKV_AWS_126
+  Check Name: Ensure that detailed monitoring is enabled for EC2 instances
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [35, 66]
+  Resource: aws_instance.linux_servers
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-detailed-monitoring-is-enabled-for-ec2-instances
+
+- Check ID: CKV_AWS_135
+  Check Name: Ensure that EC2 is EBS optimized
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [35, 66]
+  Resource: aws_instance.linux_servers
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized
+
+- Check ID: CKV2_AWS_41
+  Check Name: Ensure an IAM role is attached to EC2 instance
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [2, 33]
+  Resource: aws_instance.windows_servers
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance
+
+- Check ID: CKV2_AWS_41
+  Check Name: Ensure an IAM role is attached to EC2 instance
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [35, 66]
+  Resource: aws_instance.linux_servers
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance
+
+Summary:
+  Passed: 9
+  Failed: 6
+  Skipped: 0
+  Parsing Errors: 0
+  Resource Count: 2
+  Checkov Version: 3.2.382
+

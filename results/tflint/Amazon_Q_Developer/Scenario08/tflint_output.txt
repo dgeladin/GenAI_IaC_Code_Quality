@@ -1,0 +1,107 @@
+10 issue(s) found:
+
+Warning: [Fixable] local.asg_config is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario08/locals.tf line 22:
+  22:   asg_config = {
+  23:     min_size         = var.min_size
+  24:     max_size         = var.max_size
+  25:     desired_capacity = var.desired_capacity
+  26:   }
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.instance_types is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario08/locals.tf line 29:
+  29:   instance_types = {
+  30:     t3_micro = {
+  31:       instance_type     = "t3.micro"
+  32:       weighted_capacity = "1"
+  33:     }
+  34:     t3_small = {
+  35:       instance_type     = "t3.small"
+  36:       weighted_capacity = "2"
+  37:     }
+  38:   }
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] data "aws_availability_zones" "available" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario08/main.tf line 11:
+  11: data "aws_availability_zones" "available" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] data "aws_vpc" "selected" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario08/main.tf line 16:
+  16: data "aws_vpc" "selected" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] data "aws_subnets" "selected" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario08/main.tf line 21:
+  21: data "aws_subnets" "selected" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.mixed_instances_config is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario08/mixed_instances_policy.tf line 2:
+   2:   mixed_instances_config = {
+   3:     on_demand = {
+   4:       base_capacity                  = var.on_demand_base_capacity
+   5:       percentage_above_base_capacity = var.on_demand_percentage
+   6:     }
+   7:     spot = {
+   8:       allocation_strategy = "capacity-optimized"
+   9:       instance_pools     = 2
+  10:     }
+  11:   }
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.instance_requirements is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario08/mixed_instances_policy.tf line 13:
+  13:   instance_requirements = {
+  14:     primary = {
+  15:       instance_type     = "t3.micro"
+  16:       weighted_capacity = "1"
+  17:     }
+  18:     secondary = {
+  19:       instance_type     = "t3.small"
+  20:       weighted_capacity = "2"
+  21:     }
+  22:   }
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.asg_tags is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario08/tags.tf line 12:
+  12:   asg_tags = {
+  13:     Name             = "${local.name_prefix}-asg"
+  14:     ASGName          = "${local.name_prefix}-asg"
+  15:     AutoScalingGroup = "true"
+  16:   }
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: Missing version constraint for provider "null" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario08/tags.tf line 54:
+  54: resource "null_resource" "tag_validation" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+
+Warning: [Fixable] variable "additional_tags" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario08/variables.tf line 168:
+ 168: variable "additional_tags" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+

@@ -1,0 +1,86 @@
+11 issue(s) found:
+
+Warning: [Fixable] data "aws_caller_identity" "current" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario03/data.tf line 2:
+   2: data "aws_caller_identity" "current" {}
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] data "aws_availability_zones" "available" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario03/data.tf line 4:
+   4: data "aws_availability_zones" "available" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] List items should be accessed using square brackets (terraform_deprecated_index)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario03/ingress-controller.tf line 84:
+  84:   value       = data.kubernetes_service.ingress_nginx.status.0.load_balancer.0.ingress.0.hostname
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_deprecated_index.md
+
+Warning: [Fixable] List items should be accessed using square brackets (terraform_deprecated_index)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario03/ingress-controller.tf line 84:
+  84:   value       = data.kubernetes_service.ingress_nginx.status.0.load_balancer.0.ingress.0.hostname
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_deprecated_index.md
+
+Warning: [Fixable] List items should be accessed using square brackets (terraform_deprecated_index)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario03/ingress-controller.tf line 84:
+  84:   value       = data.kubernetes_service.ingress_nginx.status.0.load_balancer.0.ingress.0.hostname
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_deprecated_index.md
+
+Warning: [Fixable] local.common_tags is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario03/locals.tf line 5:
+   5:   common_tags = {
+   6:     Environment = var.environment
+   7:     Project     = var.project_name
+   8:     Terraform   = "true"
+   9:     ManagedBy   = "terraform"
+  10:   }
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.eks_tags is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario03/locals.tf line 12:
+  12:   eks_tags = {
+  13:     "kubernetes.io/cluster/${local.cluster_name}" = "owned"
+  14:   }
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "domain_name" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario03/variables.tf line 26:
+  26: variable "domain_name" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "vpc_cidr" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario03/variables.tf line 31:
+  31: variable "vpc_cidr" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "cluster_version" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario03/variables.tf line 37:
+  37: variable "cluster_version" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "node_group_instance_types" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario03/variables.tf line 43:
+  43: variable "node_group_instance_types" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+

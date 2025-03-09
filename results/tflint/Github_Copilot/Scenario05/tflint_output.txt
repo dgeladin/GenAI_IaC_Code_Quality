@@ -1,0 +1,23 @@
+3 issue(s) found:
+
+Warning: Missing version constraint for provider "template" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Github_Copilot/Scenario05/main.tf line 58:
+  58: data "template_file" "migration_script" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+
+Warning: Missing version constraint for provider "null" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Github_Copilot/Scenario05/main.tf line 62:
+  62: resource "null_resource" "db_migration" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+
+Warning: [Fixable] variable "allowed_cidr_blocks" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Github_Copilot/Scenario05/variables.tf line 29:
+  29: variable "allowed_cidr_blocks" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+

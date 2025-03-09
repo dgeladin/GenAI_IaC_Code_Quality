@@ -1,0 +1,44 @@
+6 issue(s) found:
+
+Warning: Missing version constraint for provider "helm" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Mistral/Scenario03/helm.tf line 3:
+   3: resource "helm_release" "ingress_nginx" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+
+Warning: Missing version constraint for provider "aws" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Mistral/Scenario03/ingress.tf line 38:
+  38: resource "aws_acm_certificate" "api_cert" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+
+Warning: Missing version constraint for provider "kubernetes" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Mistral/Scenario03/ingress.tf line 51:
+  51: resource "kubernetes_secret_v1" "api_tls_secret" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+
+Warning: [Fixable] variable "cluster_name" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Mistral/Scenario03/variables.tf line 9:
+   9: variable "cluster_name" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "vpc_name" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Mistral/Scenario03/variables.tf line 15:
+  15: variable "vpc_name" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "domain_name" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Mistral/Scenario03/variables.tf line 21:
+  21: variable "domain_name" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+

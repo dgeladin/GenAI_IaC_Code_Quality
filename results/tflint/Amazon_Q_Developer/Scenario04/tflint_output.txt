@@ -1,0 +1,58 @@
+7 issue(s) found:
+
+Warning: [Fixable] data "aws_region" "current" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario04/data.tf line 5:
+   5: data "aws_region" "current" {}
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.lb_name is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario04/locals.tf line 10:
+  10:   lb_name = "${var.environment}-app-lb"
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.blue_tg_name is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario04/locals.tf line 13:
+  13:   blue_tg_name  = "${var.environment}-blue-tg"
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.green_tg_name is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario04/locals.tf line 14:
+  14:   green_tg_name = "${var.environment}-green-tg"
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.health_check_settings is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario04/locals.tf line 17:
+  17:   health_check_settings = {
+  18:     healthy_threshold   = 2
+  19:     unhealthy_threshold = 2
+  20:     timeout            = 5
+  21:     interval           = 30
+  22:     path              = "/"
+  23:     port              = "traffic-port"
+  24:   }
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "aws_region" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario04/variables.tf line 1:
+   1: variable "aws_region" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "tags" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario04/variables.tf line 61:
+  61: variable "tags" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+

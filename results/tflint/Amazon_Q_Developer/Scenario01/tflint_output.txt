@@ -1,0 +1,9 @@
+1 issue(s) found:
+
+Warning: [Fixable] local.active_environment is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario01/locals.tf line 3:
+   3:   active_environment = coalesce(var.environment, terraform.workspace)
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+

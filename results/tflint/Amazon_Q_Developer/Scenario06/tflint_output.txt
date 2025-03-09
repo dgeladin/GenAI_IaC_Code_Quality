@@ -1,0 +1,44 @@
+6 issue(s) found:
+
+Warning: [Fixable] Interpolation-only expressions are deprecated in Terraform v0.12.14 (terraform_deprecated_interpolation)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf line 69:
+  69:         "${var.lambda_previous_version}" = var.lambda_traffic_shift_percentage
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_deprecated_interpolation.md
+
+Warning: [Fixable] local.lambda_timeout is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario06/locals.tf line 16:
+  16:   lambda_timeout     = 30
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.lambda_memory_size is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario06/locals.tf line 17:
+  17:   lambda_memory_size = 128
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "api_gateway_metrics_enabled" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario06/variables.tf line 148:
+ 148: variable "api_gateway_metrics_enabled" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "api_gateway_logging_level" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario06/variables.tf line 154:
+ 154: variable "api_gateway_logging_level" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "additional_tags" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Amazon_Q_Developer/Scenario06/variables.tf line 166:
+ 166: variable "additional_tags" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+

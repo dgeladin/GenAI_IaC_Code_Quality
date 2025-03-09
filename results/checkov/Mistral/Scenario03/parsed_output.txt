@@ -1,0 +1,34 @@
+Check Type: terraform
+Failed Checks:
+- Check ID: CKV_TF_1
+  Check Name: Ensure Terraform module sources use a commit hash
+  Check Result: FAILED
+  File Path: /eks.tf
+  File Line Range: [3, 28]
+  Resource: eks
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision
+
+- Check ID: CKV_K8S_21
+  Check Name: The default namespace should not be used
+  Check Result: FAILED
+  File Path: /ingress.tf
+  File Line Range: [3, 36]
+  Resource: kubernetes_ingress_v1.api_ingress
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-20
+
+- Check ID: CKV_K8S_21
+  Check Name: The default namespace should not be used
+  Check Result: FAILED
+  File Path: /ingress.tf
+  File Line Range: [51, 63]
+  Resource: kubernetes_secret_v1.api_tls_secret
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-20
+
+Summary:
+  Passed: 5
+  Failed: 3
+  Skipped: 0
+  Parsing Errors: 0
+  Resource Count: 5
+  Checkov Version: 3.2.382
+

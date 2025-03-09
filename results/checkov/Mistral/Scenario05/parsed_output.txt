@@ -1,0 +1,90 @@
+Check Type: terraform
+Failed Checks:
+- Check ID: CKV_AWS_118
+  Check Name: Ensure that enhanced monitoring is enabled for Amazon RDS instances
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [17, 29]
+  Resource: aws_db_instance.example_db
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-enhanced-monitoring-is-enabled-for-amazon-rds-instances
+
+- Check ID: CKV_AWS_161
+  Check Name: Ensure RDS database has IAM authentication enabled
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [17, 29]
+  Resource: aws_db_instance.example_db
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-rds-database-has-iam-authentication-enabled
+
+- Check ID: CKV_AWS_16
+  Check Name: Ensure all data stored in the RDS is securely encrypted at rest
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [17, 29]
+  Resource: aws_db_instance.example_db
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-4
+
+- Check ID: CKV_AWS_129
+  Check Name: Ensure that respective logs of Amazon Relational Database Service (Amazon RDS) are enabled
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [17, 29]
+  Resource: aws_db_instance.example_db
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-that-respective-logs-of-amazon-relational-database-service-amazon-rds-are-enabled
+
+- Check ID: CKV_AWS_226
+  Check Name: Ensure DB instance gets all minor upgrades automatically
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [17, 29]
+  Resource: aws_db_instance.example_db
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-db-instance-gets-all-minor-upgrades-automatically
+
+- Check ID: CKV_AWS_157
+  Check Name: Ensure that RDS instances have Multi-AZ enabled
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [17, 29]
+  Resource: aws_db_instance.example_db
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-73
+
+- Check ID: CKV_AWS_293
+  Check Name: Ensure that AWS database instances have deletion protection enabled
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [17, 29]
+  Resource: aws_db_instance.example_db
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-293
+
+- Check ID: CKV_AWS_23
+  Check Name: Ensure every security group and rule has a description
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [38, 56]
+  Resource: aws_security_group.db_sg
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31
+
+- Check ID: CKV_AWS_382
+  Check Name: Ensure no security groups allow egress from 0.0.0.0:0 to port -1
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [38, 56]
+  Resource: aws_security_group.db_sg
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382
+
+- Check ID: CKV2_AWS_60
+  Check Name: Ensure RDS instance with copy tags to snapshots is enabled
+  Check Result: FAILED
+  File Path: /main.tf
+  File Line Range: [17, 29]
+  Resource: aws_db_instance.example_db
+  Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-2-60
+
+Summary:
+  Passed: 11
+  Failed: 10
+  Skipped: 0
+  Parsing Errors: 0
+  Resource Count: 4
+  Checkov Version: 3.2.382
+

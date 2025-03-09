@@ -1,0 +1,30 @@
+4 issue(s) found:
+
+Warning: Missing version constraint for provider "archive" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Anthropic_Claude/Scenario10/lambda.tf line 4:
+   4: data "archive_file" "dr_failover_zip" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+
+Warning: [Fixable] local.bucket_name is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario10/locals.tf line 22:
+  22:   bucket_name = "${local.resource_prefix}-backup-${data.aws_caller_identity.current.account_id}"
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.lambda_function_name is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario10/locals.tf line 25:
+  25:   lambda_function_name = "${local.resource_prefix}-failover"
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] local.kms_alias_prefix is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/Anthropic_Claude/Scenario10/locals.tf line 28:
+  28:   kms_alias_prefix = "alias/${local.resource_prefix}"
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+

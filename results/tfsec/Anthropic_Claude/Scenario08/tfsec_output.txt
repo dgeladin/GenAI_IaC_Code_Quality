@@ -1,0 +1,27 @@
+  timings
+  ──────────────────────────────────────────
+  disk i/o             85.094µs
+  parsing              4.995249ms
+  adaptation           75.371µs
+  checks               1.852934ms
+  total                7.008648ms
+
+  counts
+  ──────────────────────────────────────────
+  modules downloaded   0
+  modules processed    1
+  blocks processed     42
+  files read           7
+
+  results
+  ──────────────────────────────────────────
+  passed               2
+  ignored              0
+  critical             0
+  high                 0
+  medium               0
+  low                  0
+
+
+No problems detected!
+
