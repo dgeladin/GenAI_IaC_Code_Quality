@@ -1,6 +1,6 @@
 Check Type: terraform
 Failed Checks:
-- Check ID: CKV_AWS_130
+- Check ID: CKV_AWS_130 (Severity: LOW)
   Check Name: Ensure VPC subnets do not assign public IP by default
   Check Result: FAILED
   File Path: /modules/aws/main.tf
@@ -8,7 +8,7 @@ Failed Checks:
   Resource: module.aws_resources.aws_subnet.monitoring_subnet
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-vpc-subnets-do-not-assign-public-ip-by-default
 
-- Check ID: CKV_AWS_24
+- Check ID: CKV_AWS_24 (Severity: INFO)
   Check Name: Ensure no security groups allow ingress from 0.0.0.0:0 to port 22
   Check Result: FAILED
   File Path: /modules/aws/main.tf
@@ -16,7 +16,7 @@ Failed Checks:
   Resource: module.aws_resources.aws_security_group.monitoring_sg
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-1-port-security
 
-- Check ID: CKV_AWS_382
+- Check ID: CKV_AWS_382 (Severity: LOW)
   Check Name: Ensure no security groups allow egress from 0.0.0.0:0 to port -1
   Check Result: FAILED
   File Path: /modules/aws/main.tf
@@ -24,7 +24,7 @@ Failed Checks:
   Resource: module.aws_resources.aws_security_group.monitoring_sg
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382
 
-- Check ID: CKV_AWS_126
+- Check ID: CKV_AWS_126 (Severity: MEDIUM)
   Check Name: Ensure that detailed monitoring is enabled for EC2 instances
   Check Result: FAILED
   File Path: /modules/aws/main.tf
@@ -32,7 +32,7 @@ Failed Checks:
   Resource: module.aws_resources.aws_instance.monitoring_instance
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-detailed-monitoring-is-enabled-for-ec2-instances
 
-- Check ID: CKV_AWS_135
+- Check ID: CKV_AWS_135 (Severity: LOW)
   Check Name: Ensure that EC2 is EBS optimized
   Check Result: FAILED
   File Path: /modules/aws/main.tf
@@ -40,7 +40,7 @@ Failed Checks:
   Resource: module.aws_resources.aws_instance.monitoring_instance
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized
 
-- Check ID: CKV_AZURE_50
+- Check ID: CKV_AZURE_50 (Severity: MEDIUM)
   Check Name: Ensure Virtual Machine Extensions are not Installed
   Check Result: FAILED
   File Path: /modules/azure/main.tf
@@ -48,7 +48,7 @@ Failed Checks:
   Resource: module.azure_resources.azurerm_linux_virtual_machine.monitoring_vm
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/bc-azr-general-14
 
-- Check ID: CKV2_AWS_12
+- Check ID: CKV2_AWS_12 (Severity: LOW)
   Check Name: Ensure the default security group of every VPC restricts all traffic
   Check Result: FAILED
   File Path: /modules/aws/main.tf
@@ -56,7 +56,7 @@ Failed Checks:
   Resource: module.aws_resources.aws_vpc.monitoring_vpc
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4
 
-- Check ID: CKV2_AWS_11
+- Check ID: CKV2_AWS_11 (Severity: INFO)
   Check Name: Ensure VPC flow logging is enabled in all VPCs
   Check Result: FAILED
   File Path: /modules/aws/main.tf
@@ -64,7 +64,7 @@ Failed Checks:
   Resource: module.aws_resources.aws_vpc.monitoring_vpc
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-9-enable-vpc-flow-logging
 
-- Check ID: CKV2_AZURE_31
+- Check ID: CKV2_AZURE_31 (Severity: LOW)
   Check Name: Ensure VNET subnet is configured with a Network Security Group (NSG)
   Check Result: FAILED
   File Path: /modules/azure/main.tf
@@ -72,7 +72,7 @@ Failed Checks:
   Resource: module.azure_resources.azurerm_subnet.monitoring_subnet
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/bc-azure-2-31
 
-- Check ID: CKV_AZURE_119
+- Check ID: CKV_AZURE_119 (Severity: LOW)
   Check Name: Ensure that Network Interfaces don't use public IPs
   Check Result: FAILED
   File Path: /modules/azure/main.tf

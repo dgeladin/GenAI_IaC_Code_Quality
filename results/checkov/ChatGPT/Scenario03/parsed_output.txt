@@ -1,6 +1,6 @@
 Check Type: terraform
 Failed Checks:
-- Check ID: CKV_AWS_233
+- Check ID: CKV_AWS_233 (Severity: LOW)
   Check Name: Ensure Create before destroy for ACM certificates
   Check Result: FAILED
   File Path: /main.tf
@@ -8,7 +8,7 @@ Failed Checks:
   Resource: aws_acm_certificate.tls_cert
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-acm-certificate-enables-create-before-destroy
 
-- Check ID: CKV_K8S_21
+- Check ID: CKV_K8S_21 (Severity: LOW)
   Check Name: The default namespace should not be used
   Check Result: FAILED
   File Path: /main.tf
@@ -16,7 +16,7 @@ Failed Checks:
   Resource: kubernetes_ingress_v1.api_ingress
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-20
 
-- Check ID: CKV_TF_1
+- Check ID: CKV_TF_1 (Severity: MEDIUM)
   Check Name: Ensure Terraform module sources use a commit hash
   Check Result: FAILED
   File Path: /main.tf
@@ -24,7 +24,7 @@ Failed Checks:
   Resource: vpc
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision
 
-- Check ID: CKV_TF_1
+- Check ID: CKV_TF_1 (Severity: MEDIUM)
   Check Name: Ensure Terraform module sources use a commit hash
   Check Result: FAILED
   File Path: /main.tf

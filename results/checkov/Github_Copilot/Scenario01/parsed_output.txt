@@ -1,6 +1,6 @@
 Check Type: terraform
 Failed Checks:
-- Check ID: CKV2_AWS_41
+- Check ID: CKV2_AWS_41 (Severity: INFO)
   Check Name: Ensure an IAM role is attached to EC2 instance
   Check Result: FAILED
   File Path: /modules/instances/main.tf
@@ -8,7 +8,7 @@ Failed Checks:
   Resource: module.instances.aws_instance.windows_dev
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance
 
-- Check ID: CKV2_AWS_41
+- Check ID: CKV2_AWS_41 (Severity: INFO)
   Check Name: Ensure an IAM role is attached to EC2 instance
   Check Result: FAILED
   File Path: /modules/instances/main.tf
@@ -16,7 +16,7 @@ Failed Checks:
   Resource: module.instances.aws_instance.linux_dev
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance
 
-- Check ID: CKV2_AWS_41
+- Check ID: CKV2_AWS_41 (Severity: INFO)
   Check Name: Ensure an IAM role is attached to EC2 instance
   Check Result: FAILED
   File Path: /modules/instances/main.tf
@@ -24,7 +24,7 @@ Failed Checks:
   Resource: module.instances.aws_instance.windows_prod
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance
 
-- Check ID: CKV2_AWS_41
+- Check ID: CKV2_AWS_41 (Severity: INFO)
   Check Name: Ensure an IAM role is attached to EC2 instance
   Check Result: FAILED
   File Path: /modules/instances/main.tf

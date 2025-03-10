@@ -1,6 +1,6 @@
 Check Type: terraform
 Failed Checks:
-- Check ID: CKV_AWS_161
+- Check ID: CKV_AWS_161 (Severity: MEDIUM)
   Check Name: Ensure RDS database has IAM authentication enabled
   Check Result: FAILED
   File Path: /main.tf
@@ -8,7 +8,7 @@ Failed Checks:
   Resource: aws_db_instance.example
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-rds-database-has-iam-authentication-enabled
 
-- Check ID: CKV_AWS_157
+- Check ID: CKV_AWS_157 (Severity: LOW)
   Check Name: Ensure that RDS instances have Multi-AZ enabled
   Check Result: FAILED
   File Path: /main.tf
@@ -16,7 +16,7 @@ Failed Checks:
   Resource: aws_db_instance.example
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-73
 
-- Check ID: CKV_AWS_293
+- Check ID: CKV_AWS_293 (Severity: MEDIUM)
   Check Name: Ensure that AWS database instances have deletion protection enabled
   Check Result: FAILED
   File Path: /main.tf
@@ -24,7 +24,7 @@ Failed Checks:
   Resource: aws_db_instance.example
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-293
 
-- Check ID: CKV_AWS_337
+- Check ID: CKV_AWS_337 (Severity: HIGH)
   Check Name: Ensure SSM parameters are using KMS CMK
   Check Result: FAILED
   File Path: /main.tf
@@ -32,7 +32,7 @@ Failed Checks:
   Resource: aws_ssm_parameter.database_user
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-337
 
-- Check ID: CKV_AWS_337
+- Check ID: CKV_AWS_337 (Severity: HIGH)
   Check Name: Ensure SSM parameters are using KMS CMK
   Check Result: FAILED
   File Path: /main.tf
@@ -40,7 +40,7 @@ Failed Checks:
   Resource: aws_ssm_parameter.database_password
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-337
 
-- Check ID: CKV_AWS_26
+- Check ID: CKV_AWS_26 (Severity: MEDIUM)
   Check Name: Ensure all data stored in the SNS topic is encrypted
   Check Result: FAILED
   File Path: /main.tf
@@ -48,7 +48,7 @@ Failed Checks:
   Resource: aws_sns_topic.rds_events
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-15
 
-- Check ID: CKV_AWS_158
+- Check ID: CKV_AWS_158 (Severity: LOW)
   Check Name: Ensure that CloudWatch Log Group is encrypted by KMS
   Check Result: FAILED
   File Path: /migrations.tf
@@ -56,7 +56,7 @@ Failed Checks:
   Resource: aws_cloudwatch_log_group.migration_logs
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-cloudwatch-log-group-is-encrypted-by-kms
 
-- Check ID: CKV_AWS_338
+- Check ID: CKV_AWS_338 (Severity: INFO)
   Check Name: Ensure CloudWatch log groups retains logs for at least 1 year
   Check Result: FAILED
   File Path: /migrations.tf
@@ -64,7 +64,7 @@ Failed Checks:
   Resource: aws_cloudwatch_log_group.migration_logs
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-338
 
-- Check ID: CKV_AWS_382
+- Check ID: CKV_AWS_382 (Severity: LOW)
   Check Name: Ensure no security groups allow egress from 0.0.0.0:0 to port -1
   Check Result: FAILED
   File Path: /security.tf
@@ -72,7 +72,7 @@ Failed Checks:
   Resource: aws_security_group_rule.egress
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382
 
-- Check ID: CKV2_AWS_64
+- Check ID: CKV2_AWS_64 (Severity: MEDIUM)
   Check Name: Ensure KMS key Policy is defined
   Check Result: FAILED
   File Path: /security.tf
@@ -80,7 +80,7 @@ Failed Checks:
   Resource: aws_kms_key.rds[0]
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-2-64
 
-- Check ID: CKV2_AWS_69
+- Check ID: CKV2_AWS_69 (Severity: MEDIUM)
   Check Name: Ensure AWS RDS database instance configured with encryption in transit
   Check Result: FAILED
   File Path: /main.tf
@@ -88,7 +88,7 @@ Failed Checks:
   Resource: aws_db_instance.example
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-2-69
 
-- Check ID: CKV2_AWS_34
+- Check ID: CKV2_AWS_34 (Severity: LOW)
   Check Name: AWS SSM Parameter should be Encrypted
   Check Result: FAILED
   File Path: /main.tf
@@ -96,7 +96,7 @@ Failed Checks:
   Resource: aws_ssm_parameter.database_host
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-ssm-parameter-is-encrypted
 
-- Check ID: CKV2_AWS_34
+- Check ID: CKV2_AWS_34 (Severity: LOW)
   Check Name: AWS SSM Parameter should be Encrypted
   Check Result: FAILED
   File Path: /main.tf
@@ -104,7 +104,7 @@ Failed Checks:
   Resource: aws_ssm_parameter.database_name
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-ssm-parameter-is-encrypted
 
-- Check ID: CKV2_AWS_34
+- Check ID: CKV2_AWS_34 (Severity: LOW)
   Check Name: AWS SSM Parameter should be Encrypted
   Check Result: FAILED
   File Path: /migrations.tf
@@ -112,7 +112,7 @@ Failed Checks:
   Resource: aws_ssm_parameter.migration_state
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-ssm-parameter-is-encrypted
 
-- Check ID: CKV2_AWS_34
+- Check ID: CKV2_AWS_34 (Severity: LOW)
   Check Name: AWS SSM Parameter should be Encrypted
   Check Result: FAILED
   File Path: /security.tf
@@ -120,7 +120,7 @@ Failed Checks:
   Resource: aws_ssm_parameter.db_endpoint
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-ssm-parameter-is-encrypted
 
-- Check ID: CKV2_AWS_34
+- Check ID: CKV2_AWS_34 (Severity: LOW)
   Check Name: AWS SSM Parameter should be Encrypted
   Check Result: FAILED
   File Path: /security.tf

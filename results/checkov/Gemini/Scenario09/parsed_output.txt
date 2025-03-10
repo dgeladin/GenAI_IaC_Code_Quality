@@ -1,6 +1,6 @@
 Check Type: terraform
 Failed Checks:
-- Check ID: CKV_AWS_8
+- Check ID: CKV_AWS_8 (Severity: INFO)
   Check Name: Ensure all data stored in the Launch configuration or instance Elastic Blocks Store is securely encrypted
   Check Result: FAILED
   File Path: /main.tf
@@ -8,7 +8,7 @@ Failed Checks:
   Resource: aws_instance.example_ec2
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-13
 
-- Check ID: CKV_AWS_126
+- Check ID: CKV_AWS_126 (Severity: MEDIUM)
   Check Name: Ensure that detailed monitoring is enabled for EC2 instances
   Check Result: FAILED
   File Path: /main.tf
@@ -16,7 +16,7 @@ Failed Checks:
   Resource: aws_instance.example_ec2
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-detailed-monitoring-is-enabled-for-ec2-instances
 
-- Check ID: CKV_AWS_79
+- Check ID: CKV_AWS_79 (Severity: HIGH)
   Check Name: Ensure Instance Metadata Service Version 1 is not enabled
   Check Result: FAILED
   File Path: /main.tf
@@ -24,7 +24,7 @@ Failed Checks:
   Resource: aws_instance.example_ec2
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31
 
-- Check ID: CKV_AWS_135
+- Check ID: CKV_AWS_135 (Severity: LOW)
   Check Name: Ensure that EC2 is EBS optimized
   Check Result: FAILED
   File Path: /main.tf
@@ -32,7 +32,7 @@ Failed Checks:
   Resource: aws_instance.example_ec2
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized
 
-- Check ID: CKV_AZURE_44
+- Check ID: CKV_AZURE_44 (Severity: LOW)
   Check Name: Ensure Storage Account is using the latest version of TLS encryption
   Check Result: FAILED
   File Path: /main.tf
@@ -40,7 +40,7 @@ Failed Checks:
   Resource: azurerm_storage_account.example_sa
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-storage-policies/bc-azr-storage-2
 
-- Check ID: CKV_AZURE_33
+- Check ID: CKV_AZURE_33 (Severity: INFO)
   Check Name: Ensure Storage logging is enabled for Queue service for read, write and delete requests
   Check Result: FAILED
   File Path: /main.tf
@@ -48,7 +48,7 @@ Failed Checks:
   Resource: azurerm_storage_account.example_sa
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-logging-policies/enable-requests-on-storage-logging-for-queue-service
 
-- Check ID: CKV_AZURE_59
+- Check ID: CKV_AZURE_59 (Severity: LOW)
   Check Name: Ensure that Storage accounts disallow public access
   Check Result: FAILED
   File Path: /main.tf
@@ -56,7 +56,7 @@ Failed Checks:
   Resource: azurerm_storage_account.example_sa
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/ensure-that-storage-accounts-disallow-public-access
 
-- Check ID: CKV_AZURE_190
+- Check ID: CKV_AZURE_190 (Severity: HIGH)
   Check Name: Ensure that Storage blobs restrict public access
   Check Result: FAILED
   File Path: /main.tf
@@ -64,7 +64,7 @@ Failed Checks:
   Resource: azurerm_storage_account.example_sa
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/azr-networking-190
 
-- Check ID: CKV_AZURE_206
+- Check ID: CKV_AZURE_206 (Severity: LOW)
   Check Name: Ensure that Storage Accounts use replication
   Check Result: FAILED
   File Path: /main.tf
@@ -72,7 +72,7 @@ Failed Checks:
   Resource: azurerm_storage_account.example_sa
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/azr-general-206
 
-- Check ID: CKV2_AWS_41
+- Check ID: CKV2_AWS_41 (Severity: INFO)
   Check Name: Ensure an IAM role is attached to EC2 instance
   Check Result: FAILED
   File Path: /main.tf
@@ -80,7 +80,7 @@ Failed Checks:
   Resource: aws_instance.example_ec2
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance
 
-- Check ID: CKV2_AZURE_38
+- Check ID: CKV2_AZURE_38 (Severity: LOW)
   Check Name: Ensure soft-delete is enabled on Azure storage account
   Check Result: FAILED
   File Path: /main.tf
@@ -88,7 +88,7 @@ Failed Checks:
   Resource: azurerm_storage_account.example_sa
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/bc-azure-2-38
 
-- Check ID: CKV2_AZURE_33
+- Check ID: CKV2_AZURE_33 (Severity: MEDIUM)
   Check Name: Ensure storage account is configured with private endpoint
   Check Result: FAILED
   File Path: /main.tf
@@ -96,7 +96,7 @@ Failed Checks:
   Resource: azurerm_storage_account.example_sa
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/bc-azure-2-33
 
-- Check ID: CKV2_AZURE_40
+- Check ID: CKV2_AZURE_40 (Severity: LOW)
   Check Name: Ensure storage account is not configured with Shared Key authorization
   Check Result: FAILED
   File Path: /main.tf
@@ -104,7 +104,7 @@ Failed Checks:
   Resource: azurerm_storage_account.example_sa
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-iam-policies/bc-azure-2-40
 
-- Check ID: CKV2_AZURE_12
+- Check ID: CKV2_AZURE_12 (Severity: LOW)
   Check Name: Ensure that virtual machines are backed up using Azure Backup
   Check Result: FAILED
   File Path: /main.tf
@@ -112,7 +112,7 @@ Failed Checks:
   Resource: azurerm_virtual_machine.example_vm
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/ensure-that-virtual-machines-are-backed-up-using-azure-backup
 
-- Check ID: CKV2_AZURE_31
+- Check ID: CKV2_AZURE_31 (Severity: LOW)
   Check Name: Ensure VNET subnet is configured with a Network Security Group (NSG)
   Check Result: FAILED
   File Path: /main.tf
@@ -120,7 +120,7 @@ Failed Checks:
   Resource: azurerm_subnet.example_subnet
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/bc-azure-2-31
 
-- Check ID: CKV2_AZURE_41
+- Check ID: CKV2_AZURE_41 (Severity: LOW)
   Check Name: Ensure storage account is configured with SAS expiration policy
   Check Result: FAILED
   File Path: /main.tf
@@ -128,7 +128,7 @@ Failed Checks:
   Resource: azurerm_storage_account.example_sa
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-iam-policies/bc-azure-2-41
 
-- Check ID: CKV2_AZURE_47
+- Check ID: CKV2_AZURE_47 (Severity: MEDIUM)
   Check Name: Ensure storage account is configured without blob anonymous access
   Check Result: FAILED
   File Path: /main.tf
@@ -136,7 +136,7 @@ Failed Checks:
   Resource: azurerm_storage_account.example_sa
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-iam-policies/bc-azure-2-47
 
-- Check ID: CKV2_AZURE_10
+- Check ID: CKV2_AZURE_10 (Severity: LOW)
   Check Name: Ensure that Microsoft Antimalware is configured to automatically updates for Virtual Machines
   Check Result: FAILED
   File Path: /main.tf
@@ -144,7 +144,7 @@ Failed Checks:
   Resource: azurerm_virtual_machine.example_vm
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/ensure-that-microsoft-antimalware-is-configured-to-automatically-updates-for-virtual-machines
 
-- Check ID: CKV2_AZURE_1
+- Check ID: CKV2_AZURE_1 (Severity: HIGH)
   Check Name: Ensure storage for critical data are encrypted with Customer Managed Key
   Check Result: FAILED
   File Path: /main.tf

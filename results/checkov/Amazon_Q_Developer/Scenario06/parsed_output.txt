@@ -1,6 +1,6 @@
 Check Type: terraform
 Failed Checks:
-- Check ID: CKV_AWS_237
+- Check ID: CKV_AWS_237 (Severity: LOW)
   Check Name: Ensure Create before destroy for API Gateway
   Check Result: FAILED
   File Path: /api_gateway.tf
@@ -8,7 +8,7 @@ Failed Checks:
   Resource: aws_api_gateway_rest_api.example_api
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-api-gateway-enables-create-before-destroy
 
-- Check ID: CKV_AWS_59
+- Check ID: CKV_AWS_59 (Severity: LOW)
   Check Name: Ensure there is no open access to back-end resources through API
   Check Result: FAILED
   File Path: /api_gateway.tf
@@ -16,7 +16,7 @@ Failed Checks:
   Resource: aws_api_gateway_method.example
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-6-api-gateway-authorizer-set
 
-- Check ID: CKV_AWS_120
+- Check ID: CKV_AWS_120 (Severity: LOW)
   Check Name: Ensure API Gateway caching is enabled
   Check Result: FAILED
   File Path: /api_gateway.tf
@@ -24,7 +24,7 @@ Failed Checks:
   Resource: aws_api_gateway_stage.prod
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-api-gateway-caching-is-enabled
 
-- Check ID: CKV_AWS_73
+- Check ID: CKV_AWS_73 (Severity: LOW)
   Check Name: Ensure API Gateway has X-Ray Tracing enabled
   Check Result: FAILED
   File Path: /api_gateway.tf
@@ -32,7 +32,7 @@ Failed Checks:
   Resource: aws_api_gateway_stage.prod
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-15
 
-- Check ID: CKV_AWS_158
+- Check ID: CKV_AWS_158 (Severity: LOW)
   Check Name: Ensure that CloudWatch Log Group is encrypted by KMS
   Check Result: FAILED
   File Path: /api_gateway.tf
@@ -40,7 +40,7 @@ Failed Checks:
   Resource: aws_cloudwatch_log_group.api_gateway
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-cloudwatch-log-group-is-encrypted-by-kms
 
-- Check ID: CKV_AWS_338
+- Check ID: CKV_AWS_338 (Severity: INFO)
   Check Name: Ensure CloudWatch log groups retains logs for at least 1 year
   Check Result: FAILED
   File Path: /api_gateway.tf
@@ -48,7 +48,7 @@ Failed Checks:
   Resource: aws_cloudwatch_log_group.api_gateway
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-338
 
-- Check ID: CKV_AWS_290
+- Check ID: CKV_AWS_290 (Severity: HIGH)
   Check Name: Ensure IAM policies does not allow write access without constraints
   Check Result: FAILED
   File Path: /iam.tf
@@ -56,7 +56,7 @@ Failed Checks:
   Resource: aws_iam_role_policy.api_gateway_cloudwatch
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290
 
-- Check ID: CKV_AWS_355
+- Check ID: CKV_AWS_355 (Severity: HIGH)
   Check Name: Ensure no IAM policies documents allow "*" as a statement's resource for restrictable actions
   Check Result: FAILED
   File Path: /iam.tf
@@ -64,7 +64,7 @@ Failed Checks:
   Resource: aws_iam_role_policy.api_gateway_cloudwatch
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355
 
-- Check ID: CKV_AWS_115
+- Check ID: CKV_AWS_115 (Severity: LOW)
   Check Name: Ensure that AWS Lambda function is configured for function-level concurrent execution limit
   Check Result: FAILED
   File Path: /lambda.tf
@@ -72,7 +72,7 @@ Failed Checks:
   Resource: aws_lambda_function.example_lambda_function
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-function-level-concurrent-execution-limit
 
-- Check ID: CKV_AWS_173
+- Check ID: CKV_AWS_173 (Severity: LOW)
   Check Name: Check encryption settings for Lambda environmental variable
   Check Result: FAILED
   File Path: /lambda.tf
@@ -80,7 +80,7 @@ Failed Checks:
   Resource: aws_lambda_function.example_lambda_function
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-5
 
-- Check ID: CKV_AWS_272
+- Check ID: CKV_AWS_272 (Severity: HIGH)
   Check Name: Ensure AWS Lambda function is configured to validate code-signing
   Check Result: FAILED
   File Path: /lambda.tf
@@ -88,7 +88,7 @@ Failed Checks:
   Resource: aws_lambda_function.example_lambda_function
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-272
 
-- Check ID: CKV_AWS_116
+- Check ID: CKV_AWS_116 (Severity: LOW)
   Check Name: Ensure that AWS Lambda function is configured for a Dead Letter Queue(DLQ)
   Check Result: FAILED
   File Path: /lambda.tf
@@ -96,7 +96,7 @@ Failed Checks:
   Resource: aws_lambda_function.example_lambda_function
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-a-dead-letter-queue-dlq
 
-- Check ID: CKV_AWS_158
+- Check ID: CKV_AWS_158 (Severity: LOW)
   Check Name: Ensure that CloudWatch Log Group is encrypted by KMS
   Check Result: FAILED
   File Path: /lambda.tf
@@ -104,7 +104,7 @@ Failed Checks:
   Resource: aws_cloudwatch_log_group.lambda_log_group
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-cloudwatch-log-group-is-encrypted-by-kms
 
-- Check ID: CKV_AWS_338
+- Check ID: CKV_AWS_338 (Severity: INFO)
   Check Name: Ensure CloudWatch log groups retains logs for at least 1 year
   Check Result: FAILED
   File Path: /lambda.tf
@@ -112,7 +112,7 @@ Failed Checks:
   Resource: aws_cloudwatch_log_group.lambda_log_group
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-338
 
-- Check ID: CKV2_AWS_51
+- Check ID: CKV2_AWS_51 (Severity: LOW)
   Check Name: Ensure AWS API Gateway endpoints uses client certificate authentication
   Check Result: FAILED
   File Path: /api_gateway.tf
@@ -120,7 +120,7 @@ Failed Checks:
   Resource: aws_api_gateway_stage.prod
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-2-51
 
-- Check ID: CKV2_AWS_4
+- Check ID: CKV2_AWS_4 (Severity: LOW)
   Check Name: Ensure API Gateway stage have logging level defined as appropriate
   Check Result: FAILED
   File Path: /api_gateway.tf
@@ -128,7 +128,7 @@ Failed Checks:
   Resource: aws_api_gateway_stage.prod
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-api-gateway-stage-have-logging-level-defined-as-appropiate
 
-- Check ID: CKV2_AWS_29
+- Check ID: CKV2_AWS_29 (Severity: MEDIUM)
   Check Name: Ensure public API gateway are protected by WAF
   Check Result: FAILED
   File Path: /api_gateway.tf
@@ -136,7 +136,7 @@ Failed Checks:
   Resource: aws_api_gateway_stage.prod
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-api-gateway-are-protected-by-waf
 
-- Check ID: CKV2_AWS_53
+- Check ID: CKV2_AWS_53 (Severity: LOW)
   Check Name: Ensure AWS API gateway request is validated
   Check Result: FAILED
   File Path: /api_gateway.tf

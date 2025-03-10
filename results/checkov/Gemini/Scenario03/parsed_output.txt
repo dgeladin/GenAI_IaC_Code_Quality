@@ -1,6 +1,6 @@
 Check Type: terraform
 Failed Checks:
-- Check ID: CKV_TF_1
+- Check ID: CKV_TF_1 (Severity: MEDIUM)
   Check Name: Ensure Terraform module sources use a commit hash
   Check Result: FAILED
   File Path: /main.tf
@@ -8,7 +8,7 @@ Failed Checks:
   Resource: vpc
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision
 
-- Check ID: CKV_TF_1
+- Check ID: CKV_TF_1 (Severity: MEDIUM)
   Check Name: Ensure Terraform module sources use a commit hash
   Check Result: FAILED
   File Path: /main.tf

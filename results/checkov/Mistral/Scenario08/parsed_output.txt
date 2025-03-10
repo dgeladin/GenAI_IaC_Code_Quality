@@ -1,6 +1,6 @@
 Check Type: terraform
 Failed Checks:
-- Check ID: CKV_AWS_79
+- Check ID: CKV_AWS_79 (Severity: HIGH)
   Check Name: Ensure Instance Metadata Service Version 1 is not enabled
   Check Result: FAILED
   File Path: /asg/launch_template.tf

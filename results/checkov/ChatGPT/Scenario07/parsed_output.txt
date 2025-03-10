@@ -1,6 +1,6 @@
 Check Type: terraform
 Failed Checks:
-- Check ID: CKV_TF_1
+- Check ID: CKV_TF_1 (Severity: MEDIUM)
   Check Name: Ensure Terraform module sources use a commit hash
   Check Result: FAILED
   File Path: /main.tf
@@ -8,7 +8,7 @@ Failed Checks:
   Resource: network
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision
 
-- Check ID: CKV_TF_2
+- Check ID: CKV_TF_2 (Severity: HIGH)
   Check Name: Ensure Terraform module sources use a tag with a version number
   Check Result: FAILED
   File Path: /main.tf
@@ -16,7 +16,7 @@ Failed Checks:
   Resource: network
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-tag
 
-- Check ID: CKV_TF_1
+- Check ID: CKV_TF_1 (Severity: MEDIUM)
   Check Name: Ensure Terraform module sources use a commit hash
   Check Result: FAILED
   File Path: /main.tf
@@ -24,7 +24,7 @@ Failed Checks:
   Resource: compute
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision
 
-- Check ID: CKV_TF_2
+- Check ID: CKV_TF_2 (Severity: HIGH)
   Check Name: Ensure Terraform module sources use a tag with a version number
   Check Result: FAILED
   File Path: /main.tf
@@ -32,7 +32,7 @@ Failed Checks:
   Resource: compute
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-tag
 
-- Check ID: CKV_TF_1
+- Check ID: CKV_TF_1 (Severity: MEDIUM)
   Check Name: Ensure Terraform module sources use a commit hash
   Check Result: FAILED
   File Path: /main.tf
@@ -40,7 +40,7 @@ Failed Checks:
   Resource: database
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision
 
-- Check ID: CKV_TF_2
+- Check ID: CKV_TF_2 (Severity: HIGH)
   Check Name: Ensure Terraform module sources use a tag with a version number
   Check Result: FAILED
   File Path: /main.tf
@@ -48,7 +48,7 @@ Failed Checks:
   Resource: database
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-tag
 
-- Check ID: CKV_TF_1
+- Check ID: CKV_TF_1 (Severity: MEDIUM)
   Check Name: Ensure Terraform module sources use a commit hash
   Check Result: FAILED
   File Path: /main.tf
@@ -56,7 +56,7 @@ Failed Checks:
   Resource: iam
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision
 
-- Check ID: CKV_TF_2
+- Check ID: CKV_TF_2 (Severity: HIGH)
   Check Name: Ensure Terraform module sources use a tag with a version number
   Check Result: FAILED
   File Path: /main.tf
@@ -64,7 +64,7 @@ Failed Checks:
   Resource: iam
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-tag
 
-- Check ID: CKV_AWS_79
+- Check ID: CKV_AWS_79 (Severity: HIGH)
   Check Name: Ensure Instance Metadata Service Version 1 is not enabled
   Check Result: FAILED
   File Path: /modules/compute/main.tf
@@ -72,7 +72,7 @@ Failed Checks:
   Resource: aws_launch_template.web_server
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31
 
-- Check ID: CKV_AWS_150
+- Check ID: CKV_AWS_150 (Severity: LOW)
   Check Name: Ensure that Load Balancer has deletion protection enabled
   Check Result: FAILED
   File Path: /modules/compute/main.tf
@@ -80,7 +80,7 @@ Failed Checks:
   Resource: aws_lb.web_alb
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-150
 
-- Check ID: CKV_AWS_91
+- Check ID: CKV_AWS_91 (Severity: INFO)
   Check Name: Ensure the ELBv2 (Application/Network) has access logging enabled
   Check Result: FAILED
   File Path: /modules/compute/main.tf
@@ -88,7 +88,7 @@ Failed Checks:
   Resource: aws_lb.web_alb
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-logging-22
 
-- Check ID: CKV_AWS_131
+- Check ID: CKV_AWS_131 (Severity: MEDIUM)
   Check Name: Ensure that ALB drops HTTP headers
   Check Result: FAILED
   File Path: /modules/compute/main.tf
@@ -96,7 +96,7 @@ Failed Checks:
   Resource: aws_lb.web_alb
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-drops-http-headers
 
-- Check ID: CKV_AWS_261
+- Check ID: CKV_AWS_261 (Severity: LOW)
   Check Name: Ensure HTTP HTTPS Target group defines Healthcheck
   Check Result: FAILED
   File Path: /modules/compute/main.tf
@@ -104,7 +104,7 @@ Failed Checks:
   Resource: aws_lb_target_group.web_tg
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-kendra-index-server-side-encryption-uses-customer-managed-keys-cmks
 
-- Check ID: CKV_AWS_118
+- Check ID: CKV_AWS_118 (Severity: LOW)
   Check Name: Ensure that enhanced monitoring is enabled for Amazon RDS instances
   Check Result: FAILED
   File Path: /modules/database/main.tf
@@ -112,7 +112,7 @@ Failed Checks:
   Resource: aws_db_instance.database
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-enhanced-monitoring-is-enabled-for-amazon-rds-instances
 
-- Check ID: CKV_AWS_161
+- Check ID: CKV_AWS_161 (Severity: MEDIUM)
   Check Name: Ensure RDS database has IAM authentication enabled
   Check Result: FAILED
   File Path: /modules/database/main.tf
@@ -120,7 +120,7 @@ Failed Checks:
   Resource: aws_db_instance.database
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-rds-database-has-iam-authentication-enabled
 
-- Check ID: CKV_AWS_16
+- Check ID: CKV_AWS_16 (Severity: LOW)
   Check Name: Ensure all data stored in the RDS is securely encrypted at rest
   Check Result: FAILED
   File Path: /modules/database/main.tf
@@ -128,7 +128,7 @@ Failed Checks:
   Resource: aws_db_instance.database
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-4
 
-- Check ID: CKV_AWS_353
+- Check ID: CKV_AWS_353 (Severity: LOW)
   Check Name: Ensure that RDS instances have performance insights enabled
   Check Result: FAILED
   File Path: /modules/database/main.tf
@@ -136,7 +136,7 @@ Failed Checks:
   Resource: aws_db_instance.database
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-353
 
-- Check ID: CKV_AWS_129
+- Check ID: CKV_AWS_129 (Severity: LOW)
   Check Name: Ensure that respective logs of Amazon Relational Database Service (Amazon RDS) are enabled
   Check Result: FAILED
   File Path: /modules/database/main.tf
@@ -144,7 +144,7 @@ Failed Checks:
   Resource: aws_db_instance.database
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-that-respective-logs-of-amazon-relational-database-service-amazon-rds-are-enabled
 
-- Check ID: CKV_AWS_226
+- Check ID: CKV_AWS_226 (Severity: LOW)
   Check Name: Ensure DB instance gets all minor upgrades automatically
   Check Result: FAILED
   File Path: /modules/database/main.tf
@@ -152,7 +152,7 @@ Failed Checks:
   Resource: aws_db_instance.database
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-db-instance-gets-all-minor-upgrades-automatically
 
-- Check ID: CKV_AWS_157
+- Check ID: CKV_AWS_157 (Severity: LOW)
   Check Name: Ensure that RDS instances have Multi-AZ enabled
   Check Result: FAILED
   File Path: /modules/database/main.tf
@@ -160,7 +160,7 @@ Failed Checks:
   Resource: aws_db_instance.database
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-73
 
-- Check ID: CKV_AWS_293
+- Check ID: CKV_AWS_293 (Severity: MEDIUM)
   Check Name: Ensure that AWS database instances have deletion protection enabled
   Check Result: FAILED
   File Path: /modules/database/main.tf
@@ -168,7 +168,7 @@ Failed Checks:
   Resource: aws_db_instance.database
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-293
 
-- Check ID: CKV_AWS_60
+- Check ID: CKV_AWS_60 (Severity: HIGH)
   Check Name: Ensure IAM role allows only specific services or principals to assume it
   Check Result: FAILED
   File Path: /modules/iam/iam.tf
@@ -176,7 +176,7 @@ Failed Checks:
   Resource: aws_iam_role.db_admin_role
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-44
 
-- Check ID: CKV_AWS_290
+- Check ID: CKV_AWS_290 (Severity: HIGH)
   Check Name: Ensure IAM policies does not allow write access without constraints
   Check Result: FAILED
   File Path: /modules/iam/iam.tf
@@ -184,7 +184,7 @@ Failed Checks:
   Resource: aws_iam_policy.db_admin_policy
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290
 
-- Check ID: CKV_AWS_289
+- Check ID: CKV_AWS_289 (Severity: HIGH)
   Check Name: Ensure IAM policies does not allow permissions management / resource exposure without constraints
   Check Result: FAILED
   File Path: /modules/iam/iam.tf
@@ -192,7 +192,7 @@ Failed Checks:
   Resource: aws_iam_policy.db_admin_policy
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-289
 
-- Check ID: CKV_AWS_355
+- Check ID: CKV_AWS_355 (Severity: HIGH)
   Check Name: Ensure no IAM policies documents allow "*" as a statement's resource for restrictable actions
   Check Result: FAILED
   File Path: /modules/iam/iam.tf
@@ -200,7 +200,7 @@ Failed Checks:
   Resource: aws_iam_policy.db_admin_policy
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355
 
-- Check ID: CKV_AWS_287
+- Check ID: CKV_AWS_287 (Severity: HIGH)
   Check Name: Ensure IAM policies does not allow credentials exposure
   Check Result: FAILED
   File Path: /modules/iam/iam.tf
@@ -208,7 +208,7 @@ Failed Checks:
   Resource: aws_iam_policy.db_admin_policy
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-287
 
-- Check ID: CKV_AWS_60
+- Check ID: CKV_AWS_60 (Severity: HIGH)
   Check Name: Ensure IAM role allows only specific services or principals to assume it
   Check Result: FAILED
   File Path: /modules/iam/iam.tf
@@ -216,7 +216,7 @@ Failed Checks:
   Resource: aws_iam_role.db_migration_role
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-44
 
-- Check ID: CKV_AWS_289
+- Check ID: CKV_AWS_289 (Severity: HIGH)
   Check Name: Ensure IAM policies does not allow permissions management / resource exposure without constraints
   Check Result: FAILED
   File Path: /modules/iam/iam.tf
@@ -224,7 +224,7 @@ Failed Checks:
   Resource: aws_iam_policy.db_migration_policy
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-289
 
-- Check ID: CKV_AWS_355
+- Check ID: CKV_AWS_355 (Severity: HIGH)
   Check Name: Ensure no IAM policies documents allow "*" as a statement's resource for restrictable actions
   Check Result: FAILED
   File Path: /modules/iam/iam.tf
@@ -232,7 +232,7 @@ Failed Checks:
   Resource: aws_iam_policy.db_migration_policy
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355
 
-- Check ID: CKV_AWS_287
+- Check ID: CKV_AWS_287 (Severity: HIGH)
   Check Name: Ensure IAM policies does not allow credentials exposure
   Check Result: FAILED
   File Path: /modules/iam/iam.tf
@@ -240,7 +240,7 @@ Failed Checks:
   Resource: aws_iam_policy.db_migration_policy
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-287
 
-- Check ID: CKV_AWS_273
+- Check ID: CKV_AWS_273 (Severity: LOW)
   Check Name: Ensure access is controlled through SSO and not AWS IAM defined users
   Check Result: FAILED
   File Path: /modules/iam/iam.tf
@@ -248,7 +248,7 @@ Failed Checks:
   Resource: aws_iam_user.db_admin_user
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-273
 
-- Check ID: CKV_AWS_130
+- Check ID: CKV_AWS_130 (Severity: LOW)
   Check Name: Ensure VPC subnets do not assign public IP by default
   Check Result: FAILED
   File Path: /modules/network/main.tf
@@ -256,7 +256,7 @@ Failed Checks:
   Resource: aws_subnet.public[0]
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-vpc-subnets-do-not-assign-public-ip-by-default
 
-- Check ID: CKV_AWS_260
+- Check ID: CKV_AWS_260 (Severity: LOW)
   Check Name: Ensure no security groups allow ingress from 0.0.0.0:0 to port 80
   Check Result: FAILED
   File Path: /modules/network/main.tf
@@ -264,7 +264,7 @@ Failed Checks:
   Resource: aws_security_group.web_server_sg
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-groups-do-not-allow-ingress-from-00000-to-port-80
 
-- Check ID: CKV_AWS_23
+- Check ID: CKV_AWS_23 (Severity: LOW)
   Check Name: Ensure every security group and rule has a description
   Check Result: FAILED
   File Path: /modules/network/main.tf
@@ -272,7 +272,7 @@ Failed Checks:
   Resource: aws_security_group.web_server_sg
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31
 
-- Check ID: CKV_AWS_382
+- Check ID: CKV_AWS_382 (Severity: LOW)
   Check Name: Ensure no security groups allow egress from 0.0.0.0:0 to port -1
   Check Result: FAILED
   File Path: /modules/network/main.tf
@@ -280,7 +280,7 @@ Failed Checks:
   Resource: aws_security_group.web_server_sg
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382
 
-- Check ID: CKV_AWS_130
+- Check ID: CKV_AWS_130 (Severity: LOW)
   Check Name: Ensure VPC subnets do not assign public IP by default
   Check Result: FAILED
   File Path: /modules/network/main.tf
@@ -288,7 +288,7 @@ Failed Checks:
   Resource: aws_subnet.public[1]
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-vpc-subnets-do-not-assign-public-ip-by-default
 
-- Check ID: CKV2_AWS_30
+- Check ID: CKV2_AWS_30 (Severity: LOW)
   Check Name: Ensure Postgres RDS as aws_db_instance has Query Logging enabled
   Check Result: FAILED
   File Path: /modules/database/main.tf
@@ -296,7 +296,7 @@ Failed Checks:
   Resource: aws_db_instance.database
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-postgres-rds-has-query-logging-enabled
 
-- Check ID: CKV_AWS_103
+- Check ID: CKV_AWS_103 (Severity: HIGH)
   Check Name: Ensure that load balancer is using at least TLS 1.2
   Check Result: FAILED
   File Path: /modules/compute/main.tf
@@ -304,7 +304,7 @@ Failed Checks:
   Resource: aws_lb_listener.https_listener
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-43
 
-- Check ID: CKV2_AWS_60
+- Check ID: CKV2_AWS_60 (Severity: INFO)
   Check Name: Ensure RDS instance with copy tags to snapshots is enabled
   Check Result: FAILED
   File Path: /modules/database/main.tf
@@ -312,7 +312,7 @@ Failed Checks:
   Resource: aws_db_instance.database
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-2-60
 
-- Check ID: CKV2_AWS_12
+- Check ID: CKV2_AWS_12 (Severity: LOW)
   Check Name: Ensure the default security group of every VPC restricts all traffic
   Check Result: FAILED
   File Path: /modules/network/main.tf
@@ -320,7 +320,7 @@ Failed Checks:
   Resource: aws_vpc.main
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4
 
-- Check ID: CKV2_AWS_5
+- Check ID: CKV2_AWS_5 (Severity: LOW)
   Check Name: Ensure that Security Groups are attached to another resource
   Check Result: FAILED
   File Path: /modules/network/main.tf
@@ -328,7 +328,7 @@ Failed Checks:
   Resource: aws_security_group.web_server_sg
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-security-groups-are-attached-to-ec2-instances-or-elastic-network-interfaces-enis
 
-- Check ID: CKV2_AWS_11
+- Check ID: CKV2_AWS_11 (Severity: INFO)
   Check Name: Ensure VPC flow logging is enabled in all VPCs
   Check Result: FAILED
   File Path: /modules/network/main.tf
@@ -336,7 +336,7 @@ Failed Checks:
   Resource: aws_vpc.main
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-9-enable-vpc-flow-logging
 
-- Check ID: CKV2_AWS_28
+- Check ID: CKV2_AWS_28 (Severity: LOW)
   Check Name: Ensure public facing ALB are protected by WAF
   Check Result: FAILED
   File Path: /modules/compute/main.tf

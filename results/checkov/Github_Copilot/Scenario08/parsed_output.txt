@@ -1,6 +1,6 @@
 Check Type: terraform
 Failed Checks:
-- Check ID: CKV_AWS_79
+- Check ID: CKV_AWS_79 (Severity: HIGH)
   Check Name: Ensure Instance Metadata Service Version 1 is not enabled
   Check Result: FAILED
   File Path: /launch_template.tf
@@ -8,7 +8,7 @@ Failed Checks:
   Resource: aws_launch_template.example_template
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31
 
-- Check ID: CKV_AWS_88
+- Check ID: CKV_AWS_88 (Severity: HIGH)
   Check Name: EC2 instance should not have public IP.
   Check Result: FAILED
   File Path: /launch_template.tf
@@ -16,7 +16,7 @@ Failed Checks:
   Resource: aws_launch_template.example_template
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-12
 
-- Check ID: CKV_AWS_24
+- Check ID: CKV_AWS_24 (Severity: INFO)
   Check Name: Ensure no security groups allow ingress from 0.0.0.0:0 to port 22
   Check Result: FAILED
   File Path: /main.tf
@@ -24,7 +24,7 @@ Failed Checks:
   Resource: aws_security_group.example
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-1-port-security
 
-- Check ID: CKV_AWS_23
+- Check ID: CKV_AWS_23 (Severity: LOW)
   Check Name: Ensure every security group and rule has a description
   Check Result: FAILED
   File Path: /main.tf
@@ -32,7 +32,7 @@ Failed Checks:
   Resource: aws_security_group.example
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31
 
-- Check ID: CKV_AWS_382
+- Check ID: CKV_AWS_382 (Severity: LOW)
   Check Name: Ensure no security groups allow egress from 0.0.0.0:0 to port -1
   Check Result: FAILED
   File Path: /main.tf
@@ -40,7 +40,7 @@ Failed Checks:
   Resource: aws_security_group.example
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382
 
-- Check ID: CKV_AWS_79
+- Check ID: CKV_AWS_79 (Severity: HIGH)
   Check Name: Ensure Instance Metadata Service Version 1 is not enabled
   Check Result: FAILED
   File Path: /main.tf
@@ -48,7 +48,7 @@ Failed Checks:
   Resource: aws_launch_template.example_template
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31
 
-- Check ID: CKV_AWS_88
+- Check ID: CKV_AWS_88 (Severity: HIGH)
   Check Name: EC2 instance should not have public IP.
   Check Result: FAILED
   File Path: /main.tf
@@ -56,7 +56,7 @@ Failed Checks:
   Resource: aws_launch_template.example_template
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-12
 
-- Check ID: CKV_TF_1
+- Check ID: CKV_TF_1 (Severity: MEDIUM)
   Check Name: Ensure Terraform module sources use a commit hash
   Check Result: FAILED
   File Path: /main.tf

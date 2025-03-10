@@ -1,6 +1,6 @@
 Check Type: terraform
 Failed Checks:
-- Check ID: CKV_AWS_79
+- Check ID: CKV_AWS_79 (Severity: HIGH)
   Check Name: Ensure Instance Metadata Service Version 1 is not enabled
   Check Result: FAILED
   File Path: /aws.tf
@@ -8,7 +8,7 @@ Failed Checks:
   Resource: aws_instance.monitoring_instance
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31
 
-- Check ID: CKV_AWS_135
+- Check ID: CKV_AWS_135 (Severity: LOW)
   Check Name: Ensure that EC2 is EBS optimized
   Check Result: FAILED
   File Path: /aws.tf
@@ -16,7 +16,7 @@ Failed Checks:
   Resource: aws_instance.monitoring_instance
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized
 
-- Check ID: CKV_AWS_23
+- Check ID: CKV_AWS_23 (Severity: LOW)
   Check Name: Ensure every security group and rule has a description
   Check Result: FAILED
   File Path: /aws.tf
@@ -24,7 +24,7 @@ Failed Checks:
   Resource: aws_security_group.monitoring_sg
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31
 
-- Check ID: CKV_AWS_382
+- Check ID: CKV_AWS_382 (Severity: LOW)
   Check Name: Ensure no security groups allow egress from 0.0.0.0:0 to port -1
   Check Result: FAILED
   File Path: /aws.tf
@@ -32,7 +32,7 @@ Failed Checks:
   Resource: aws_security_group.monitoring_sg
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382
 
-- Check ID: CKV_AZURE_50
+- Check ID: CKV_AZURE_50 (Severity: MEDIUM)
   Check Name: Ensure Virtual Machine Extensions are not Installed
   Check Result: FAILED
   File Path: /azure.tf
@@ -40,7 +40,7 @@ Failed Checks:
   Resource: azurerm_linux_virtual_machine.monitoring_vm
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/bc-azr-general-14
 
-- Check ID: CKV2_AWS_41
+- Check ID: CKV2_AWS_41 (Severity: INFO)
   Check Name: Ensure an IAM role is attached to EC2 instance
   Check Result: FAILED
   File Path: /aws.tf
@@ -48,7 +48,7 @@ Failed Checks:
   Resource: aws_instance.monitoring_instance
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance
 
-- Check ID: CKV2_AZURE_31
+- Check ID: CKV2_AZURE_31 (Severity: LOW)
   Check Name: Ensure VNET subnet is configured with a Network Security Group (NSG)
   Check Result: FAILED
   File Path: /azure.tf

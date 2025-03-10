@@ -1,6 +1,6 @@
 Check Type: terraform
 Failed Checks:
-- Check ID: CKV_AWS_290
+- Check ID: CKV_AWS_290 (Severity: HIGH)
   Check Name: Ensure IAM policies does not allow write access without constraints
   Check Result: FAILED
   File Path: /dr_lambda_iam_role.tf
@@ -8,7 +8,7 @@ Failed Checks:
   Resource: aws_iam_policy.dr_lambda_policy
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290
 
-- Check ID: CKV_AWS_355
+- Check ID: CKV_AWS_355 (Severity: HIGH)
   Check Name: Ensure no IAM policies documents allow "*" as a statement's resource for restrictable actions
   Check Result: FAILED
   File Path: /dr_lambda_iam_role.tf
@@ -16,7 +16,7 @@ Failed Checks:
   Resource: aws_iam_policy.dr_lambda_policy
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355
 
-- Check ID: CKV_AWS_290
+- Check ID: CKV_AWS_290 (Severity: HIGH)
   Check Name: Ensure IAM policies does not allow write access without constraints
   Check Result: FAILED
   File Path: /lambda_function.tf
@@ -24,7 +24,7 @@ Failed Checks:
   Resource: aws_iam_policy.lambda_execution_policy
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290
 
-- Check ID: CKV_AWS_355
+- Check ID: CKV_AWS_355 (Severity: HIGH)
   Check Name: Ensure no IAM policies documents allow "*" as a statement's resource for restrictable actions
   Check Result: FAILED
   File Path: /lambda_function.tf
@@ -32,7 +32,7 @@ Failed Checks:
   Resource: aws_iam_policy.lambda_execution_policy
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355
 
-- Check ID: CKV_AWS_117
+- Check ID: CKV_AWS_117 (Severity: LOW)
   Check Name: Ensure that AWS Lambda function is configured inside a VPC
   Check Result: FAILED
   File Path: /lambda_function.tf
@@ -40,7 +40,7 @@ Failed Checks:
   Resource: aws_lambda_function.dr_failover
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-inside-a-vpc-1
 
-- Check ID: CKV_AWS_115
+- Check ID: CKV_AWS_115 (Severity: LOW)
   Check Name: Ensure that AWS Lambda function is configured for function-level concurrent execution limit
   Check Result: FAILED
   File Path: /lambda_function.tf
@@ -48,7 +48,7 @@ Failed Checks:
   Resource: aws_lambda_function.dr_failover
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-function-level-concurrent-execution-limit
 
-- Check ID: CKV_AWS_50
+- Check ID: CKV_AWS_50 (Severity: LOW)
   Check Name: X-Ray tracing is enabled for Lambda
   Check Result: FAILED
   File Path: /lambda_function.tf
@@ -56,7 +56,7 @@ Failed Checks:
   Resource: aws_lambda_function.dr_failover
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-4
 
-- Check ID: CKV_AWS_173
+- Check ID: CKV_AWS_173 (Severity: LOW)
   Check Name: Check encryption settings for Lambda environmental variable
   Check Result: FAILED
   File Path: /lambda_function.tf
@@ -64,7 +64,7 @@ Failed Checks:
   Resource: aws_lambda_function.dr_failover
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-5
 
-- Check ID: CKV_AWS_363
+- Check ID: CKV_AWS_363 (Severity: MEDIUM)
   Check Name: Ensure Lambda Runtime is not deprecated
   Check Result: FAILED
   File Path: /lambda_function.tf
@@ -72,7 +72,7 @@ Failed Checks:
   Resource: aws_lambda_function.dr_failover
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-363
 
-- Check ID: CKV_AWS_272
+- Check ID: CKV_AWS_272 (Severity: HIGH)
   Check Name: Ensure AWS Lambda function is configured to validate code-signing
   Check Result: FAILED
   File Path: /lambda_function.tf
@@ -80,7 +80,7 @@ Failed Checks:
   Resource: aws_lambda_function.dr_failover
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-272
 
-- Check ID: CKV_AWS_116
+- Check ID: CKV_AWS_116 (Severity: LOW)
   Check Name: Ensure that AWS Lambda function is configured for a Dead Letter Queue(DLQ)
   Check Result: FAILED
   File Path: /lambda_function.tf
@@ -88,7 +88,7 @@ Failed Checks:
   Resource: aws_lambda_function.dr_failover
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-a-dead-letter-queue-dlq
 
-- Check ID: CKV_AWS_290
+- Check ID: CKV_AWS_290 (Severity: HIGH)
   Check Name: Ensure IAM policies does not allow write access without constraints
   Check Result: FAILED
   File Path: /modules/dr_lambda_iam_role/main.tf
@@ -96,7 +96,7 @@ Failed Checks:
   Resource: module.dr_lambda_iam_role.aws_iam_policy.dr_lambda_policy
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290
 
-- Check ID: CKV_AWS_355
+- Check ID: CKV_AWS_355 (Severity: HIGH)
   Check Name: Ensure no IAM policies documents allow "*" as a statement's resource for restrictable actions
   Check Result: FAILED
   File Path: /modules/dr_lambda_iam_role/main.tf
@@ -104,7 +104,7 @@ Failed Checks:
   Resource: module.dr_lambda_iam_role.aws_iam_policy.dr_lambda_policy
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355
 
-- Check ID: CKV_AWS_117
+- Check ID: CKV_AWS_117 (Severity: LOW)
   Check Name: Ensure that AWS Lambda function is configured inside a VPC
   Check Result: FAILED
   File Path: /modules/lambda_function/main.tf
@@ -112,7 +112,7 @@ Failed Checks:
   Resource: module.lambda_function.aws_lambda_function.dr_failover
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-inside-a-vpc-1
 
-- Check ID: CKV_AWS_115
+- Check ID: CKV_AWS_115 (Severity: LOW)
   Check Name: Ensure that AWS Lambda function is configured for function-level concurrent execution limit
   Check Result: FAILED
   File Path: /modules/lambda_function/main.tf
@@ -120,7 +120,7 @@ Failed Checks:
   Resource: module.lambda_function.aws_lambda_function.dr_failover
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-function-level-concurrent-execution-limit
 
-- Check ID: CKV_AWS_50
+- Check ID: CKV_AWS_50 (Severity: LOW)
   Check Name: X-Ray tracing is enabled for Lambda
   Check Result: FAILED
   File Path: /modules/lambda_function/main.tf
@@ -128,7 +128,7 @@ Failed Checks:
   Resource: module.lambda_function.aws_lambda_function.dr_failover
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-4
 
-- Check ID: CKV_AWS_173
+- Check ID: CKV_AWS_173 (Severity: LOW)
   Check Name: Check encryption settings for Lambda environmental variable
   Check Result: FAILED
   File Path: /modules/lambda_function/main.tf
@@ -136,7 +136,7 @@ Failed Checks:
   Resource: module.lambda_function.aws_lambda_function.dr_failover
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-5
 
-- Check ID: CKV_AWS_363
+- Check ID: CKV_AWS_363 (Severity: MEDIUM)
   Check Name: Ensure Lambda Runtime is not deprecated
   Check Result: FAILED
   File Path: /modules/lambda_function/main.tf
@@ -144,7 +144,7 @@ Failed Checks:
   Resource: module.lambda_function.aws_lambda_function.dr_failover
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-363
 
-- Check ID: CKV_AWS_272
+- Check ID: CKV_AWS_272 (Severity: HIGH)
   Check Name: Ensure AWS Lambda function is configured to validate code-signing
   Check Result: FAILED
   File Path: /modules/lambda_function/main.tf
@@ -152,7 +152,7 @@ Failed Checks:
   Resource: module.lambda_function.aws_lambda_function.dr_failover
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-272
 
-- Check ID: CKV_AWS_116
+- Check ID: CKV_AWS_116 (Severity: LOW)
   Check Name: Ensure that AWS Lambda function is configured for a Dead Letter Queue(DLQ)
   Check Result: FAILED
   File Path: /modules/lambda_function/main.tf
@@ -160,7 +160,7 @@ Failed Checks:
   Resource: module.lambda_function.aws_lambda_function.dr_failover
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-a-dead-letter-queue-dlq
 
-- Check ID: CKV_AWS_8
+- Check ID: CKV_AWS_8 (Severity: INFO)
   Check Name: Ensure all data stored in the Launch configuration or instance Elastic Blocks Store is securely encrypted
   Check Result: FAILED
   File Path: /modules/primary_instance_and_volume/main.tf
@@ -168,7 +168,7 @@ Failed Checks:
   Resource: module.primary_instance_and_volume.aws_instance.primary
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-13
 
-- Check ID: CKV_AWS_126
+- Check ID: CKV_AWS_126 (Severity: MEDIUM)
   Check Name: Ensure that detailed monitoring is enabled for EC2 instances
   Check Result: FAILED
   File Path: /modules/primary_instance_and_volume/main.tf
@@ -176,7 +176,7 @@ Failed Checks:
   Resource: module.primary_instance_and_volume.aws_instance.primary
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-detailed-monitoring-is-enabled-for-ec2-instances
 
-- Check ID: CKV_AWS_79
+- Check ID: CKV_AWS_79 (Severity: HIGH)
   Check Name: Ensure Instance Metadata Service Version 1 is not enabled
   Check Result: FAILED
   File Path: /modules/primary_instance_and_volume/main.tf
@@ -184,7 +184,7 @@ Failed Checks:
   Resource: module.primary_instance_and_volume.aws_instance.primary
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31
 
-- Check ID: CKV_AWS_135
+- Check ID: CKV_AWS_135 (Severity: LOW)
   Check Name: Ensure that EC2 is EBS optimized
   Check Result: FAILED
   File Path: /modules/primary_instance_and_volume/main.tf
@@ -192,7 +192,7 @@ Failed Checks:
   Resource: module.primary_instance_and_volume.aws_instance.primary
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized
 
-- Check ID: CKV_AWS_3
+- Check ID: CKV_AWS_3 (Severity: HIGH)
   Check Name: Ensure all data stored in the EBS is securely encrypted
   Check Result: FAILED
   File Path: /modules/primary_instance_and_volume/main.tf
@@ -200,7 +200,7 @@ Failed Checks:
   Resource: module.primary_instance_and_volume.aws_ebs_volume.primary_data
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-3-encrypt-ebs-volume
 
-- Check ID: CKV_AWS_189
+- Check ID: CKV_AWS_189 (Severity: LOW)
   Check Name: Ensure EBS Volume is encrypted by KMS using a customer managed Key (CMK)
   Check Result: FAILED
   File Path: /modules/primary_instance_and_volume/main.tf
@@ -208,7 +208,7 @@ Failed Checks:
   Resource: module.primary_instance_and_volume.aws_ebs_volume.primary_data
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-109
 
-- Check ID: CKV_AWS_8
+- Check ID: CKV_AWS_8 (Severity: INFO)
   Check Name: Ensure all data stored in the Launch configuration or instance Elastic Blocks Store is securely encrypted
   Check Result: FAILED
   File Path: /primary_instance_and_volume.tf
@@ -216,7 +216,7 @@ Failed Checks:
   Resource: aws_instance.primary
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-13
 
-- Check ID: CKV_AWS_126
+- Check ID: CKV_AWS_126 (Severity: MEDIUM)
   Check Name: Ensure that detailed monitoring is enabled for EC2 instances
   Check Result: FAILED
   File Path: /primary_instance_and_volume.tf
@@ -224,7 +224,7 @@ Failed Checks:
   Resource: aws_instance.primary
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-detailed-monitoring-is-enabled-for-ec2-instances
 
-- Check ID: CKV_AWS_79
+- Check ID: CKV_AWS_79 (Severity: HIGH)
   Check Name: Ensure Instance Metadata Service Version 1 is not enabled
   Check Result: FAILED
   File Path: /primary_instance_and_volume.tf
@@ -232,7 +232,7 @@ Failed Checks:
   Resource: aws_instance.primary
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31
 
-- Check ID: CKV_AWS_135
+- Check ID: CKV_AWS_135 (Severity: LOW)
   Check Name: Ensure that EC2 is EBS optimized
   Check Result: FAILED
   File Path: /primary_instance_and_volume.tf
@@ -240,7 +240,7 @@ Failed Checks:
   Resource: aws_instance.primary
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized
 
-- Check ID: CKV_AWS_3
+- Check ID: CKV_AWS_3 (Severity: HIGH)
   Check Name: Ensure all data stored in the EBS is securely encrypted
   Check Result: FAILED
   File Path: /primary_instance_and_volume.tf
@@ -248,7 +248,7 @@ Failed Checks:
   Resource: aws_ebs_volume.primary_data
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-3-encrypt-ebs-volume
 
-- Check ID: CKV_AWS_189
+- Check ID: CKV_AWS_189 (Severity: LOW)
   Check Name: Ensure EBS Volume is encrypted by KMS using a customer managed Key (CMK)
   Check Result: FAILED
   File Path: /primary_instance_and_volume.tf
@@ -256,7 +256,7 @@ Failed Checks:
   Resource: aws_ebs_volume.primary_data
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-109
 
-- Check ID: CKV2_AWS_41
+- Check ID: CKV2_AWS_41 (Severity: INFO)
   Check Name: Ensure an IAM role is attached to EC2 instance
   Check Result: FAILED
   File Path: /modules/primary_instance_and_volume/main.tf
@@ -264,7 +264,7 @@ Failed Checks:
   Resource: module.primary_instance_and_volume.aws_instance.primary
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance
 
-- Check ID: CKV2_AWS_41
+- Check ID: CKV2_AWS_41 (Severity: INFO)
   Check Name: Ensure an IAM role is attached to EC2 instance
   Check Result: FAILED
   File Path: /primary_instance_and_volume.tf
@@ -272,7 +272,7 @@ Failed Checks:
   Resource: aws_instance.primary
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance
 
-- Check ID: CKV_AWS_144
+- Check ID: CKV_AWS_144 (Severity: LOW)
   Check Name: Ensure that S3 bucket has cross-region replication enabled
   Check Result: FAILED
   File Path: /modules/s3_backup_bucket/main.tf
@@ -280,7 +280,7 @@ Failed Checks:
   Resource: module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-bucket-has-cross-region-replication-enabled
 
-- Check ID: CKV_AWS_144
+- Check ID: CKV_AWS_144 (Severity: LOW)
   Check Name: Ensure that S3 bucket has cross-region replication enabled
   Check Result: FAILED
   File Path: /s3_backup_bucket.tf
@@ -288,7 +288,7 @@ Failed Checks:
   Resource: aws_s3_bucket.example_dr_backup_bucket
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-bucket-has-cross-region-replication-enabled
 
-- Check ID: CKV2_AWS_62
+- Check ID: CKV2_AWS_62 (Severity: LOW)
   Check Name: Ensure S3 buckets should have event notifications enabled
   Check Result: FAILED
   File Path: /modules/s3_backup_bucket/main.tf
@@ -296,7 +296,7 @@ Failed Checks:
   Resource: module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-62
 
-- Check ID: CKV2_AWS_62
+- Check ID: CKV2_AWS_62 (Severity: LOW)
   Check Name: Ensure S3 buckets should have event notifications enabled
   Check Result: FAILED
   File Path: /s3_backup_bucket.tf
@@ -304,7 +304,7 @@ Failed Checks:
   Resource: aws_s3_bucket.example_dr_backup_bucket
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-62
 
-- Check ID: CKV2_AWS_64
+- Check ID: CKV2_AWS_64 (Severity: MEDIUM)
   Check Name: Ensure KMS key Policy is defined
   Check Result: FAILED
   File Path: /dr_kms_key.tf
@@ -312,7 +312,7 @@ Failed Checks:
   Resource: aws_kms_key.dr_key
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-2-64
 
-- Check ID: CKV2_AWS_64
+- Check ID: CKV2_AWS_64 (Severity: MEDIUM)
   Check Name: Ensure KMS key Policy is defined
   Check Result: FAILED
   File Path: /modules/dr_kms_key/main.tf
@@ -320,7 +320,7 @@ Failed Checks:
   Resource: module.dr_kms_key.aws_kms_key.dr_key
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-2-64
 
-- Check ID: CKV_AWS_18
+- Check ID: CKV_AWS_18 (Severity: INFO)
   Check Name: Ensure the S3 bucket has access logging enabled
   Check Result: FAILED
   File Path: /modules/s3_backup_bucket/main.tf
@@ -328,7 +328,7 @@ Failed Checks:
   Resource: module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-13-enable-logging
 
-- Check ID: CKV_AWS_18
+- Check ID: CKV_AWS_18 (Severity: INFO)
   Check Name: Ensure the S3 bucket has access logging enabled
   Check Result: FAILED
   File Path: /s3_backup_bucket.tf
@@ -336,7 +336,7 @@ Failed Checks:
   Resource: aws_s3_bucket.example_dr_backup_bucket
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-13-enable-logging
 
-- Check ID: CKV2_AWS_6
+- Check ID: CKV2_AWS_6 (Severity: LOW)
   Check Name: Ensure that S3 bucket has a Public Access block
   Check Result: FAILED
   File Path: /modules/s3_backup_bucket/main.tf
@@ -344,7 +344,7 @@ Failed Checks:
   Resource: module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/s3-bucket-should-have-public-access-blocks-defaults-to-false-if-the-public-access-block-is-not-attached
 
-- Check ID: CKV2_AWS_6
+- Check ID: CKV2_AWS_6 (Severity: LOW)
   Check Name: Ensure that S3 bucket has a Public Access block
   Check Result: FAILED
   File Path: /s3_backup_bucket.tf
@@ -352,7 +352,7 @@ Failed Checks:
   Resource: aws_s3_bucket.example_dr_backup_bucket
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/s3-bucket-should-have-public-access-blocks-defaults-to-false-if-the-public-access-block-is-not-attached
 
-- Check ID: CKV_AWS_145
+- Check ID: CKV_AWS_145 (Severity: LOW)
   Check Name: Ensure that S3 buckets are encrypted with KMS by default
   Check Result: FAILED
   File Path: /modules/s3_backup_bucket/main.tf
@@ -360,7 +360,7 @@ Failed Checks:
   Resource: module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-buckets-are-encrypted-with-kms-by-default
 
-- Check ID: CKV_AWS_145
+- Check ID: CKV_AWS_145 (Severity: LOW)
   Check Name: Ensure that S3 buckets are encrypted with KMS by default
   Check Result: FAILED
   File Path: /s3_backup_bucket.tf
@@ -368,7 +368,7 @@ Failed Checks:
   Resource: aws_s3_bucket.example_dr_backup_bucket
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-buckets-are-encrypted-with-kms-by-default
 
-- Check ID: CKV2_AWS_2
+- Check ID: CKV2_AWS_2 (Severity: LOW)
   Check Name: Ensure that only encrypted EBS volumes are attached to EC2 instances
   Check Result: FAILED
   File Path: /modules/primary_instance_and_volume/main.tf
@@ -376,7 +376,7 @@ Failed Checks:
   Resource: module.primary_instance_and_volume.aws_ebs_volume.primary_data
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-only-encrypted-ebs-volumes-are-attached-to-ec2-instances
 
-- Check ID: CKV2_AWS_2
+- Check ID: CKV2_AWS_2 (Severity: LOW)
   Check Name: Ensure that only encrypted EBS volumes are attached to EC2 instances
   Check Result: FAILED
   File Path: /primary_instance_and_volume.tf

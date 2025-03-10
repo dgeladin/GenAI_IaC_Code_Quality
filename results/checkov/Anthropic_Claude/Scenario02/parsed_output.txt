@@ -1,6 +1,6 @@
 Check Type: terraform
 Failed Checks:
-- Check ID: CKV_K8S_21
+- Check ID: CKV_K8S_21 (Severity: LOW)
   Check Name: The default namespace should not be used
   Check Result: FAILED
   File Path: /api_security.tf
@@ -8,7 +8,7 @@ Failed Checks:
   Resource: kubernetes_ingress_v1.api_ingress
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-20
 
-- Check ID: CKV_TF_1
+- Check ID: CKV_TF_1 (Severity: MEDIUM)
   Check Name: Ensure Terraform module sources use a commit hash
   Check Result: FAILED
   File Path: /eks.tf
@@ -16,7 +16,7 @@ Failed Checks:
   Resource: eks
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision
 
-- Check ID: CKV_K8S_28
+- Check ID: CKV_K8S_28 (Severity: LOW)
   Check Name: Minimize the admission of containers with the NET_RAW capability
   Check Result: FAILED
   File Path: /example_app.tf
@@ -24,7 +24,7 @@ Failed Checks:
   Resource: kubernetes_deployment.example_app
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-27
 
-- Check ID: CKV_K8S_43
+- Check ID: CKV_K8S_43 (Severity: LOW)
   Check Name: Image should use digest
   Check Result: FAILED
   File Path: /example_app.tf
@@ -32,7 +32,7 @@ Failed Checks:
   Resource: kubernetes_deployment.example_app
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-39
 
-- Check ID: CKV_K8S_14
+- Check ID: CKV_K8S_14 (Severity: LOW)
   Check Name: Image Tag should be fixed - not latest or blank
   Check Result: FAILED
   File Path: /example_app.tf
@@ -40,7 +40,7 @@ Failed Checks:
   Resource: kubernetes_deployment.example_app
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-13
 
-- Check ID: CKV_K8S_30
+- Check ID: CKV_K8S_30 (Severity: LOW)
   Check Name: Apply security context to your pods and containers
   Check Result: FAILED
   File Path: /example_app.tf
@@ -48,7 +48,7 @@ Failed Checks:
   Resource: kubernetes_deployment.example_app
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-28
 
-- Check ID: CKV_K8S_29
+- Check ID: CKV_K8S_29 (Severity: LOW)
   Check Name: Apply security context to your pods, deployments and daemon_sets
   Check Result: FAILED
   File Path: /example_app.tf
@@ -56,7 +56,7 @@ Failed Checks:
   Resource: kubernetes_deployment.example_app
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/ensure-securitycontext-is-applied-to-pods-and-containers
 
-- Check ID: CKV_AWS_382
+- Check ID: CKV_AWS_382 (Severity: LOW)
   Check Name: Ensure no security groups allow egress from 0.0.0.0:0 to port -1
   Check Result: FAILED
   File Path: /security.tf
@@ -64,7 +64,7 @@ Failed Checks:
   Resource: aws_security_group.eks_additional_sg
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382
 
-- Check ID: CKV_AWS_290
+- Check ID: CKV_AWS_290 (Severity: HIGH)
   Check Name: Ensure IAM policies does not allow write access without constraints
   Check Result: FAILED
   File Path: /security.tf
@@ -72,7 +72,7 @@ Failed Checks:
   Resource: aws_iam_policy.cluster_autoscaler
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290
 
-- Check ID: CKV_AWS_355
+- Check ID: CKV_AWS_355 (Severity: HIGH)
   Check Name: Ensure no IAM policies documents allow "*" as a statement's resource for restrictable actions
   Check Result: FAILED
   File Path: /security.tf
@@ -80,7 +80,7 @@ Failed Checks:
   Resource: aws_iam_policy.cluster_autoscaler
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355
 
-- Check ID: CKV_TF_1
+- Check ID: CKV_TF_1 (Severity: MEDIUM)
   Check Name: Ensure Terraform module sources use a commit hash
   Check Result: FAILED
   File Path: /vpc.tf
@@ -88,7 +88,7 @@ Failed Checks:
   Resource: eks
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision
 
-- Check ID: CKV2_AWS_5
+- Check ID: CKV2_AWS_5 (Severity: LOW)
   Check Name: Ensure that Security Groups are attached to another resource
   Check Result: FAILED
   File Path: /security.tf
@@ -96,7 +96,7 @@ Failed Checks:
   Resource: aws_security_group.eks_additional_sg
   Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-security-groups-are-attached-to-ec2-instances-or-elastic-network-interfaces-enis
 
-- Check ID: CKV2_AWS_71
+- Check ID: CKV2_AWS_71 (Severity: LOW)
   Check Name: Ensure AWS ACM Certificate domain name does not include wildcards
   Check Result: FAILED
   File Path: /api_security.tf
