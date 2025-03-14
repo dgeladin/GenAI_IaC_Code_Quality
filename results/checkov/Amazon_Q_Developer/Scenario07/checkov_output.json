@@ -51,6 +51,14 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/main.tf",
                 "breadcrumbs": {
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/main.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "vpc_id": [
                         {
                             "type": "module",
@@ -65,14 +73,6 @@
                             "module_connection": false
                         }
                     ],
-                    "tags": [
-                        {
-                            "type": "locals",
-                            "name": "common_tags",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -84,6 +84,12 @@
                             "type": "variable",
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_autoscaling_group.web",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/main.tf",
                             "module_connection": false
                         }
                     ],
@@ -147,14 +153,6 @@
                             "module_connection": false
                         }
                     ],
-                    "tag_specifications.tags": [
-                        {
-                            "type": "locals",
-                            "name": "common_tags",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "network_interfaces.security_groups.0": [
                         {
                             "type": "module",
@@ -195,10 +193,12 @@
                             "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/variables.tf",
                             "module_connection": false
-                        },
+                        }
+                    ],
+                    "tag_specifications.tags": [
                         {
-                            "type": "resource",
-                            "name": "aws_autoscaling_group.web",
+                            "type": "locals",
+                            "name": "common_tags",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/main.tf",
                             "module_connection": false
                         }
@@ -263,14 +263,6 @@
                             "module_connection": false
                         }
                     ],
-                    "tag_specifications.tags": [
-                        {
-                            "type": "locals",
-                            "name": "common_tags",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "network_interfaces.security_groups.0": [
                         {
                             "type": "module",
@@ -311,10 +303,12 @@
                             "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/variables.tf",
                             "module_connection": false
-                        },
+                        }
+                    ],
+                    "tag_specifications.tags": [
                         {
-                            "type": "resource",
-                            "name": "aws_autoscaling_group.web",
+                            "type": "locals",
+                            "name": "common_tags",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/main.tf",
                             "module_connection": false
                         }
@@ -375,20 +369,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/main.tf",
                 "breadcrumbs": {
-                    "subnets": [
-                        {
-                            "type": "module",
-                            "name": "compute",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "public_subnet_ids",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name": [
                         {
                             "type": "module",
@@ -398,7 +378,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "project",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/variables.tf",
                             "module_connection": false
                         },
@@ -419,6 +399,26 @@
                         {
                             "type": "variable",
                             "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_autoscaling_group.web",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "subnets": [
+                        {
+                            "type": "module",
+                            "name": "compute",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "public_subnet_ids",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/variables.tf",
                             "module_connection": false
                         }
@@ -487,20 +487,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/main.tf",
                 "breadcrumbs": {
-                    "subnets": [
-                        {
-                            "type": "module",
-                            "name": "compute",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "public_subnet_ids",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name": [
                         {
                             "type": "module",
@@ -510,7 +496,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "project",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/variables.tf",
                             "module_connection": false
                         },
@@ -531,6 +517,26 @@
                         {
                             "type": "variable",
                             "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_autoscaling_group.web",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "subnets": [
+                        {
+                            "type": "module",
+                            "name": "compute",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "public_subnet_ids",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/variables.tf",
                             "module_connection": false
                         }
@@ -619,7 +625,7 @@
                             "module_connection": false
                         }
                     ],
-                    "name_prefix": [
+                    "vpc_id": [
                         {
                             "type": "module",
                             "name": "database",
@@ -628,22 +634,8 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "vpc_id",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags": [
-                        {
-                            "type": "locals",
-                            "name": "common_tags",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
                     ],
@@ -659,15 +651,17 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
-                        },
+                        }
+                    ],
+                    "tags": [
                         {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
+                            "type": "locals",
+                            "name": "common_tags",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
                     ],
-                    "vpc_id": [
+                    "name_prefix": [
                         {
                             "type": "module",
                             "name": "database",
@@ -676,8 +670,14 @@
                         },
                         {
                             "type": "variable",
-                            "name": "vpc_id",
+                            "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_db_subnet_group.main",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
                     ],
@@ -777,12 +777,6 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
                         }
                     ],
                     "allocated_storage": [
@@ -819,80 +813,6 @@
                             "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
-                        }
-                    ],
-                    "skip_final_snapshot": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "deletion_protection": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "monitoring_role_arn": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "performance_insights_enabled": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
                         },
                         {
                             "type": "resource",
@@ -910,7 +830,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         },
@@ -933,11 +853,33 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "deletion_protection": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
                         },
                         {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "skip_final_snapshot": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -953,11 +895,33 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "monitoring_role_arn": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
                         },
                         {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "performance_insights_enabled": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -978,7 +942,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         },
@@ -1057,12 +1021,6 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
                         }
                     ],
                     "allocated_storage": [
@@ -1099,80 +1057,6 @@
                             "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
-                        }
-                    ],
-                    "skip_final_snapshot": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "deletion_protection": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "monitoring_role_arn": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "performance_insights_enabled": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
                         },
                         {
                             "type": "resource",
@@ -1190,7 +1074,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         },
@@ -1213,11 +1097,33 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "deletion_protection": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
                         },
                         {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "skip_final_snapshot": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -1233,11 +1139,33 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "monitoring_role_arn": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
                         },
                         {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "performance_insights_enabled": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -1258,7 +1186,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         },
@@ -1337,12 +1265,6 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
                         }
                     ],
                     "allocated_storage": [
@@ -1379,80 +1301,6 @@
                             "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
-                        }
-                    ],
-                    "skip_final_snapshot": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "deletion_protection": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "monitoring_role_arn": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "performance_insights_enabled": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
                         },
                         {
                             "type": "resource",
@@ -1470,7 +1318,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         },
@@ -1493,11 +1341,33 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "deletion_protection": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
                         },
                         {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "skip_final_snapshot": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -1513,11 +1383,33 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "monitoring_role_arn": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
                         },
                         {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "performance_insights_enabled": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -1538,7 +1430,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         },
@@ -1617,12 +1509,6 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
                         }
                     ],
                     "allocated_storage": [
@@ -1659,80 +1545,6 @@
                             "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
-                        }
-                    ],
-                    "skip_final_snapshot": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "deletion_protection": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "monitoring_role_arn": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "performance_insights_enabled": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
                         },
                         {
                             "type": "resource",
@@ -1750,7 +1562,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         },
@@ -1773,11 +1585,33 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "deletion_protection": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
                         },
                         {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "skip_final_snapshot": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -1793,11 +1627,33 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "monitoring_role_arn": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
                         },
                         {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "performance_insights_enabled": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -1818,7 +1674,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         },
@@ -1955,14 +1811,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/network/main.tf",
                 "breadcrumbs": {
-                    "tags": [
-                        {
-                            "type": "locals",
-                            "name": "common_tags",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/network/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -1972,8 +1820,16 @@
                         },
                         {
                             "type": "variable",
-                            "name": "project",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/network/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/network/main.tf",
                             "module_connection": false
                         }
                     ],
@@ -2037,14 +1893,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/network/main.tf",
                 "breadcrumbs": {
-                    "tags": [
-                        {
-                            "type": "locals",
-                            "name": "common_tags",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/network/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -2054,8 +1902,16 @@
                         },
                         {
                             "type": "variable",
-                            "name": "project",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/network/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/network/main.tf",
                             "module_connection": false
                         }
                     ],
@@ -2241,8 +2097,8 @@
                     },
                     "evaluated_keys": [
                         "resource_type",
-                        "engine",
-                        "parameter/*/name"
+                        "parameter/*/name",
+                        "engine"
                     ]
                 },
                 "code_block": null,
@@ -2289,12 +2145,6 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
                         }
                     ],
                     "allocated_storage": [
@@ -2331,80 +2181,6 @@
                             "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
-                        }
-                    ],
-                    "skip_final_snapshot": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "deletion_protection": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "monitoring_role_arn": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "performance_insights_enabled": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
                         },
                         {
                             "type": "resource",
@@ -2422,7 +2198,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         },
@@ -2445,11 +2221,33 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "deletion_protection": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
                         },
                         {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "skip_final_snapshot": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -2465,11 +2263,33 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "monitoring_role_arn": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
                         },
                         {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "performance_insights_enabled": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -2490,7 +2310,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         },
@@ -2546,8 +2366,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "policy",
-                        "resource_type"
+                        "resource_type",
+                        "policy"
                     ]
                 },
                 "code_block": null,
@@ -2637,14 +2457,14 @@
                     },
                     "evaluated_keys": [
                         "ingress/protocol",
-                        "egress/protocol",
-                        "ingress/from_port",
                         "ingress/self",
+                        "egress/to_port",
                         "ingress/to_port",
                         "egress/from_port",
+                        "egress/protocol",
                         "egress/cidr_blocks",
                         "resource_type",
-                        "egress/to_port"
+                        "ingress/from_port"
                     ]
                 },
                 "code_block": null,
@@ -2865,12 +2685,6 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
                         }
                     ],
                     "allocated_storage": [
@@ -2907,80 +2721,6 @@
                             "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
-                        }
-                    ],
-                    "skip_final_snapshot": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "deletion_protection": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "monitoring_role_arn": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "performance_insights_enabled": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
-                            "module_connection": false
                         },
                         {
                             "type": "resource",
@@ -2998,7 +2738,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         },
@@ -3021,11 +2761,33 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "deletion_protection": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
                         },
                         {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "skip_final_snapshot": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -3041,11 +2803,33 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "monitoring_role_arn": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
                         },
                         {
-                            "type": "resource",
-                            "name": "aws_db_subnet_group.main",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/main.tf",
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "performance_insights_enabled": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -3066,7 +2850,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "project",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/database/variables.tf",
                             "module_connection": false
                         },
@@ -3227,14 +3011,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/network/main.tf",
                 "breadcrumbs": {
-                    "tags": [
-                        {
-                            "type": "locals",
-                            "name": "common_tags",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/network/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -3244,8 +3020,16 @@
                         },
                         {
                             "type": "variable",
-                            "name": "project",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/network/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "locals",
+                            "name": "common_tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/network/main.tf",
                             "module_connection": false
                         }
                     ],
@@ -3408,8 +3192,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
                         "load_balancer_type",
+                        "resource_type",
                         "internal"
                     ]
                 },
@@ -3445,20 +3229,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/main.tf",
                 "breadcrumbs": {
-                    "subnets": [
-                        {
-                            "type": "module",
-                            "name": "compute",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "public_subnet_ids",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name": [
                         {
                             "type": "module",
@@ -3468,7 +3238,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "project",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/variables.tf",
                             "module_connection": false
                         },
@@ -3489,6 +3259,26 @@
                         {
                             "type": "variable",
                             "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_autoscaling_group.web",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "subnets": [
+                        {
+                            "type": "module",
+                            "name": "compute",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "public_subnet_ids",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario07/modules/compute/variables.tf",
                             "module_connection": false
                         }

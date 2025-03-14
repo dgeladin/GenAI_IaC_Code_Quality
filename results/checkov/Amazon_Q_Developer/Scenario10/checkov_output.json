@@ -66,90 +66,6 @@
                 }
             },
             {
-                "check_id": "CKV_AWS_300",
-                "bc_check_id": "BC_AWS_GENERAL_214",
-                "check_name": "Ensure S3 lifecycle configuration sets period for aborting failed uploads",
-                "check_result": {
-                    "result": "FAILED",
-                    "evaluated_keys": [
-                        "rule"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/dr_backup/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/main.tf",
-                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/main.tf",
-                "file_line_range": [
-                    92,
-                    122
-                ],
-                "resource": "module.dr_backup.aws_s3_bucket_lifecycle_configuration.dr_backup",
-                "evaluations": null,
-                "check_class": "checkov.terraform.checks.resource.aws.S3AbortIncompleteUploads",
-                "fixed_definition": null,
-                "entity_tags": null,
-                "caller_file_path": "/environments/prod/main.tf",
-                "caller_file_line_range": [
-                    13,
-                    25
-                ],
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-300",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/main.tf",
-                "breadcrumbs": {
-                    "rule.expiration.days": [
-                        {
-                            "type": "variable",
-                            "name": "backup_retention_days",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "rule.expiration": [
-                        {
-                            "type": "variable",
-                            "name": "backup_retention_days",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "rule.noncurrent_version_expiration.noncurrent_days": [
-                        {
-                            "type": "variable",
-                            "name": "backup_retention_days",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "rule.noncurrent_version_expiration": [
-                        {
-                            "type": "variable",
-                            "name": "backup_retention_days",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "source_module_": [
-                        {
-                            "type": "module",
-                            "name": "dr_backup",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "idx": 1,
-                            "source_module_object": null
-                        }
-                    ]
-                }
-            },
-            {
                 "check_id": "CKV_AWS_111",
                 "bc_check_id": "BC_AWS_IAM_57",
                 "check_name": "Ensure IAM policies does not allow write access without constraints",
@@ -306,6 +222,90 @@
                 }
             },
             {
+                "check_id": "CKV_AWS_300",
+                "bc_check_id": "BC_AWS_GENERAL_214",
+                "check_name": "Ensure S3 lifecycle configuration sets period for aborting failed uploads",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "rule"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/dr_backup/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/main.tf",
+                "repo_file_path": "/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/main.tf",
+                "file_line_range": [
+                    92,
+                    122
+                ],
+                "resource": "module.dr_backup.aws_s3_bucket_lifecycle_configuration.dr_backup",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.S3AbortIncompleteUploads",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": "/environments/prod/main.tf",
+                "caller_file_line_range": [
+                    13,
+                    25
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-300",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/main.tf",
+                "breadcrumbs": {
+                    "rule.expiration.days": [
+                        {
+                            "type": "variable",
+                            "name": "backup_retention_days",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "rule.expiration": [
+                        {
+                            "type": "variable",
+                            "name": "backup_retention_days",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "rule.noncurrent_version_expiration.noncurrent_days": [
+                        {
+                            "type": "variable",
+                            "name": "backup_retention_days",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "rule.noncurrent_version_expiration": [
+                        {
+                            "type": "variable",
+                            "name": "backup_retention_days",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "dr_backup",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "idx": 1,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
                 "check_id": "CKV_AWS_115",
                 "bc_check_id": "BC_AWS_GENERAL_63",
                 "check_name": "Ensure that AWS Lambda function is configured for function-level concurrent execution limit",
@@ -369,40 +369,6 @@
                             "module_connection": false
                         }
                     ],
-                    "environment.variables.LOG_LEVEL": [
-                        {
-                            "type": "module",
-                            "name": "dr_lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_lambda_function.dr_failover",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "environment.variables": [
-                        {
-                            "type": "module",
-                            "name": "dr_lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "sns_topic_arn",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "tags": [
                         {
                             "type": "module",
@@ -415,11 +381,53 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "function_name": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "function_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
+                            "module_connection": false
                         },
                         {
                             "type": "resource",
                             "name": "aws_lambda_function.dr_failover",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "environment.variables.LOG_LEVEL": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "environment.variables": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -437,46 +445,6 @@
                             "module_connection": false
                         }
                     ],
-                    "environment.variables.ENVIRONMENT": [
-                        {
-                            "type": "module",
-                            "name": "dr_lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_lambda_function.dr_failover",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "function_name": [
-                        {
-                            "type": "module",
-                            "name": "dr_lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_lambda_function.dr_failover",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "environment.variables.SNS_TOPIC_ARN": [
                         {
                             "type": "module",
@@ -487,6 +455,20 @@
                         {
                             "type": "variable",
                             "name": "sns_topic_arn",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "environment.variables.ENVIRONMENT": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
                             "module_connection": false
                         }
@@ -574,40 +556,6 @@
                             "module_connection": false
                         }
                     ],
-                    "environment.variables.LOG_LEVEL": [
-                        {
-                            "type": "module",
-                            "name": "dr_lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_lambda_function.dr_failover",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "environment.variables": [
-                        {
-                            "type": "module",
-                            "name": "dr_lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "sns_topic_arn",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "tags": [
                         {
                             "type": "module",
@@ -620,11 +568,53 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "function_name": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "function_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
+                            "module_connection": false
                         },
                         {
                             "type": "resource",
                             "name": "aws_lambda_function.dr_failover",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "environment.variables.LOG_LEVEL": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "environment.variables": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -642,46 +632,6 @@
                             "module_connection": false
                         }
                     ],
-                    "environment.variables.ENVIRONMENT": [
-                        {
-                            "type": "module",
-                            "name": "dr_lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_lambda_function.dr_failover",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "function_name": [
-                        {
-                            "type": "module",
-                            "name": "dr_lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_lambda_function.dr_failover",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "environment.variables.SNS_TOPIC_ARN": [
                         {
                             "type": "module",
@@ -692,6 +642,20 @@
                         {
                             "type": "variable",
                             "name": "sns_topic_arn",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "environment.variables.ENVIRONMENT": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
                             "module_connection": false
                         }
@@ -779,40 +743,6 @@
                             "module_connection": false
                         }
                     ],
-                    "environment.variables.LOG_LEVEL": [
-                        {
-                            "type": "module",
-                            "name": "dr_lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_lambda_function.dr_failover",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "environment.variables": [
-                        {
-                            "type": "module",
-                            "name": "dr_lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "sns_topic_arn",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "tags": [
                         {
                             "type": "module",
@@ -825,11 +755,53 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "function_name": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "function_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
+                            "module_connection": false
                         },
                         {
                             "type": "resource",
                             "name": "aws_lambda_function.dr_failover",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "environment.variables.LOG_LEVEL": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "environment.variables": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -847,46 +819,6 @@
                             "module_connection": false
                         }
                     ],
-                    "environment.variables.ENVIRONMENT": [
-                        {
-                            "type": "module",
-                            "name": "dr_lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_lambda_function.dr_failover",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "function_name": [
-                        {
-                            "type": "module",
-                            "name": "dr_lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_lambda_function.dr_failover",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "environment.variables.SNS_TOPIC_ARN": [
                         {
                             "type": "module",
@@ -897,6 +829,20 @@
                         {
                             "type": "variable",
                             "name": "sns_topic_arn",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "environment.variables.ENVIRONMENT": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
                             "module_connection": false
                         }
@@ -984,40 +930,6 @@
                             "module_connection": false
                         }
                     ],
-                    "environment.variables.LOG_LEVEL": [
-                        {
-                            "type": "module",
-                            "name": "dr_lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_lambda_function.dr_failover",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "environment.variables": [
-                        {
-                            "type": "module",
-                            "name": "dr_lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "sns_topic_arn",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "tags": [
                         {
                             "type": "module",
@@ -1030,11 +942,53 @@
                             "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "function_name": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "function_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
+                            "module_connection": false
                         },
                         {
                             "type": "resource",
                             "name": "aws_lambda_function.dr_failover",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "environment.variables.LOG_LEVEL": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "environment.variables": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -1052,46 +1006,6 @@
                             "module_connection": false
                         }
                     ],
-                    "environment.variables.ENVIRONMENT": [
-                        {
-                            "type": "module",
-                            "name": "dr_lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_lambda_function.dr_failover",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "function_name": [
-                        {
-                            "type": "module",
-                            "name": "dr_lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_lambda_function.dr_failover",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "environment.variables.SNS_TOPIC_ARN": [
                         {
                             "type": "module",
@@ -1102,6 +1016,20 @@
                         {
                             "type": "variable",
                             "name": "sns_topic_arn",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "environment.variables.ENVIRONMENT": [
+                        {
+                            "type": "module",
+                            "name": "dr_lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
                             "module_connection": false
                         }
@@ -1190,7 +1118,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "function_name",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
                             "module_connection": false
                         }
@@ -1204,7 +1132,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "function_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_lambda/variables.tf",
                             "module_connection": false
                         },
@@ -1274,20 +1202,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/drs_config/main.tf",
                 "breadcrumbs": {
-                    "tags": [
-                        {
-                            "type": "module",
-                            "name": "drs_config",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "tags",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/drs_config/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name": [
                         {
                             "type": "module",
@@ -1311,6 +1225,20 @@
                             "type": "resource",
                             "name": "aws_ssm_parameter.drs_config",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/drs_config/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "type": "module",
+                            "name": "drs_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "tags",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/drs_config/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -1372,34 +1300,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/main.tf",
                 "breadcrumbs": {
-                    "root_block_device.volume_type": [
-                        {
-                            "type": "module",
-                            "name": "primary_instance",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "volume_type",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "root_block_device.volume_size": [
-                        {
-                            "type": "module",
-                            "name": "primary_instance",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "volume_size",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "tags": [
                         {
                             "type": "module",
@@ -1409,8 +1309,26 @@
                         },
                         {
                             "type": "variable",
-                            "name": "tags",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_iam_role.primary",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_iam_instance_profile.primary",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_cloudwatch_dashboard.primary",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/main.tf",
                             "module_connection": false
                         }
                     ],
@@ -1478,20 +1396,6 @@
                             "module_connection": false
                         }
                     ],
-                    "instance_type": [
-                        {
-                            "type": "module",
-                            "name": "primary_instance",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "instance_type",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "ami": [
                         {
                             "type": "module",
@@ -1502,6 +1406,34 @@
                         {
                             "type": "variable",
                             "name": "ami_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "root_block_device.volume_size": [
+                        {
+                            "type": "module",
+                            "name": "primary_instance",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "volume_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "root_block_device.volume_type": [
+                        {
+                            "type": "module",
+                            "name": "primary_instance",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "volume_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/variables.tf",
                             "module_connection": false
                         }
@@ -1535,6 +1467,20 @@
                             "type": "resource",
                             "name": "aws_cloudwatch_dashboard.primary",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "primary_instance",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -1628,34 +1574,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/main.tf",
                 "breadcrumbs": {
-                    "root_block_device.volume_type": [
-                        {
-                            "type": "module",
-                            "name": "primary_instance",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "volume_type",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "root_block_device.volume_size": [
-                        {
-                            "type": "module",
-                            "name": "primary_instance",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "volume_size",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "tags": [
                         {
                             "type": "module",
@@ -1665,8 +1583,26 @@
                         },
                         {
                             "type": "variable",
-                            "name": "tags",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_iam_role.primary",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_iam_instance_profile.primary",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_cloudwatch_dashboard.primary",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/main.tf",
                             "module_connection": false
                         }
                     ],
@@ -1734,20 +1670,6 @@
                             "module_connection": false
                         }
                     ],
-                    "instance_type": [
-                        {
-                            "type": "module",
-                            "name": "primary_instance",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "instance_type",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "ami": [
                         {
                             "type": "module",
@@ -1758,6 +1680,34 @@
                         {
                             "type": "variable",
                             "name": "ami_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "root_block_device.volume_size": [
+                        {
+                            "type": "module",
+                            "name": "primary_instance",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "volume_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "root_block_device.volume_type": [
+                        {
+                            "type": "module",
+                            "name": "primary_instance",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "volume_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/variables.tf",
                             "module_connection": false
                         }
@@ -1791,6 +1741,20 @@
                             "type": "resource",
                             "name": "aws_cloudwatch_dashboard.primary",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "primary_instance",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/environments/prod/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/primary_instance/variables.tf",
                             "module_connection": false
                         }
                     ],
@@ -2146,9 +2110,9 @@
                         }
                     },
                     "evaluated_keys": [
+                        "resource_type",
                         "replication_configuration/rules/*/status",
-                        "rule/*/status",
-                        "resource_type"
+                        "rule/*/status"
                     ]
                 },
                 "code_block": null,
@@ -2186,7 +2150,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/main.tf",
                 "breadcrumbs": {
-                    "tags": [
+                    "lifecycle.prevent_destroy": [
                         {
                             "type": "module",
                             "name": "dr_backup",
@@ -2195,12 +2159,12 @@
                         },
                         {
                             "type": "variable",
-                            "name": "tags",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/variables.tf",
                             "module_connection": false
                         }
                     ],
-                    "lifecycle.prevent_destroy": [
+                    "tags": [
                         {
                             "type": "module",
                             "name": "dr_backup",
@@ -2313,7 +2277,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/main.tf",
                 "breadcrumbs": {
-                    "tags": [
+                    "lifecycle.prevent_destroy": [
                         {
                             "type": "module",
                             "name": "dr_backup",
@@ -2322,12 +2286,12 @@
                         },
                         {
                             "type": "variable",
-                            "name": "tags",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/variables.tf",
                             "module_connection": false
                         }
                     ],
-                    "lifecycle.prevent_destroy": [
+                    "tags": [
                         {
                             "type": "module",
                             "name": "dr_backup",
@@ -2441,7 +2405,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/main.tf",
                 "breadcrumbs": {
-                    "tags": [
+                    "lifecycle.prevent_destroy": [
                         {
                             "type": "module",
                             "name": "dr_backup",
@@ -2450,12 +2414,12 @@
                         },
                         {
                             "type": "variable",
-                            "name": "tags",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/variables.tf",
                             "module_connection": false
                         }
                     ],
-                    "lifecycle.prevent_destroy": [
+                    "tags": [
                         {
                             "type": "module",
                             "name": "dr_backup",
@@ -2530,8 +2494,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "versioning/enabled",
                         "resource_type",
+                        "versioning/enabled",
                         "versioning_configuration/status"
                     ]
                 },
@@ -2570,7 +2534,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/main.tf",
                 "breadcrumbs": {
-                    "tags": [
+                    "lifecycle.prevent_destroy": [
                         {
                             "type": "module",
                             "name": "dr_backup",
@@ -2579,12 +2543,12 @@
                         },
                         {
                             "type": "variable",
-                            "name": "tags",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario10/modules/dr_backup/variables.tf",
                             "module_connection": false
                         }
                     ],
-                    "lifecycle.prevent_destroy": [
+                    "tags": [
                         {
                             "type": "module",
                             "name": "dr_backup",

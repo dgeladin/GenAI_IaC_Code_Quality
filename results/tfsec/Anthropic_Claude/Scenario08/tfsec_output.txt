@@ -1,10 +1,10 @@
   timings
   ──────────────────────────────────────────
-  disk i/o             85.094µs
-  parsing              4.995249ms
-  adaptation           75.371µs
-  checks               1.852934ms
-  total                7.008648ms
+  disk i/o             83.721µs
+  parsing              4.657254ms
+  adaptation           95.998µs
+  checks               1.871008ms
+  total                6.707981ms
 
   counts
   ──────────────────────────────────────────

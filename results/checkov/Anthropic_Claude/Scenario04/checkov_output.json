@@ -562,12 +562,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "protocol",
-                        "default_action/type",
                         "load_balancer_type",
+                        "protocol",
                         "ssl_policy",
-                        "resource_type",
-                        "default_action/redirect/protocol"
+                        "default_action/type",
+                        "default_action/redirect/protocol",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -663,12 +663,12 @@
                         }
                     },
                     "evaluated_keys": [
+                        "default_action/redirect/*/protocol",
+                        "default_action/redirect/*/port",
                         "protocol",
                         "default_action/type",
-                        "default_action/redirect/*/port",
                         "resource_type",
-                        "port",
-                        "default_action/redirect/*/protocol"
+                        "port"
                     ]
                 },
                 "code_block": null,
@@ -1004,9 +1004,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "load_balancer_type",
+                        "internal",
                         "resource_type",
-                        "internal"
+                        "load_balancer_type"
                     ]
                 },
                 "code_block": null,

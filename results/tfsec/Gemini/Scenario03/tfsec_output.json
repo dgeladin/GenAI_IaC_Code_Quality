@@ -126,7 +126,7 @@
 				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/eks/enable-control-plane-logging/",
 				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_cluster#enabled_cluster_log_types"
 			],
-			"description": "Control plane scheduler logging is not enabled.",
+			"description": "Control plane controller manager logging is not enabled.",
 			"severity": "MEDIUM",
 			"warning": false,
 			"status": 0,
@@ -149,7 +149,7 @@
 				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/eks/enable-control-plane-logging/",
 				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_cluster#enabled_cluster_log_types"
 			],
-			"description": "Control plane controller manager logging is not enabled.",
+			"description": "Control plane scheduler logging is not enabled.",
 			"severity": "MEDIUM",
 			"warning": false,
 			"status": 0,

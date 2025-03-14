@@ -56,7 +56,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "ec2_instance",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
                             "module_connection": false
                         }
@@ -79,20 +93,6 @@
                         {
                             "type": "variable",
                             "name": "ami_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "instance_type": [
-                        {
-                            "type": "module",
-                            "name": "ec2_instance",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
                             "module_connection": false
                         }
@@ -162,7 +162,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "ec2_instance",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
                             "module_connection": false
                         }
@@ -185,20 +199,6 @@
                         {
                             "type": "variable",
                             "name": "ami_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "instance_type": [
-                        {
-                            "type": "module",
-                            "name": "ec2_instance",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
                             "module_connection": false
                         }
@@ -268,7 +268,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "ec2_instance",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
                             "module_connection": false
                         }
@@ -291,20 +305,6 @@
                         {
                             "type": "variable",
                             "name": "ami_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "instance_type": [
-                        {
-                            "type": "module",
-                            "name": "ec2_instance",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
                             "module_connection": false
                         }
@@ -374,7 +374,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "ec2_instance",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
                             "module_connection": false
                         }
@@ -397,20 +411,6 @@
                         {
                             "type": "variable",
                             "name": "ami_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "instance_type": [
-                        {
-                            "type": "module",
-                            "name": "ec2_instance",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
                             "module_connection": false
                         }
@@ -503,7 +503,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "ec2_instance",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
                             "module_connection": false
                         }
@@ -526,20 +540,6 @@
                         {
                             "type": "variable",
                             "name": "ami_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "instance_type": [
-                        {
-                            "type": "module",
-                            "name": "ec2_instance",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario01/modules/ec2/main.tf",
                             "module_connection": false
                         }

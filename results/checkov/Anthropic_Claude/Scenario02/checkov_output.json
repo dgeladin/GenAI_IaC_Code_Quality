@@ -3,104 +3,35 @@
     "results": {
         "failed_checks": [
             {
-                "check_id": "CKV_K8S_21",
-                "bc_check_id": "BC_K8S_20",
-                "check_name": "The default namespace should not be used",
+                "check_id": "CKV_AWS_150",
+                "bc_check_id": "BC_AWS_NETWORKING_62",
+                "check_name": "Ensure that Load Balancer has deletion protection enabled",
                 "check_result": {
                     "result": "FAILED",
                     "evaluated_keys": [
-                        "metadata/[0]/namespace"
+                        "enable_deletion_protection"
                     ]
                 },
                 "code_block": null,
-                "file_path": "/api_security.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/api_security.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/api_security.tf",
-                "file_line_range": [
-                    90,
-                    157
-                ],
-                "resource": "kubernetes_ingress_v1.api_ingress",
-                "evaluations": null,
-                "check_class": "checkov.terraform.checks.resource.kubernetes.DefaultNamespace",
-                "fixed_definition": null,
-                "entity_tags": null,
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-20",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/api_security.tf"
-            },
-            {
-                "check_id": "CKV_TF_1",
-                "bc_check_id": "BC_CROSS_1",
-                "check_name": "Ensure Terraform module sources use a commit hash",
-                "check_result": {
-                    "result": "FAILED",
-                    "evaluated_keys": []
-                },
-                "code_block": null,
-                "file_path": "/eks.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/eks.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/eks.tf",
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
                 "file_line_range": [
                     2,
-                    41
+                    14
                 ],
-                "resource": "eks",
+                "resource": "module.alb_east.aws_lb.app_lb",
                 "evaluations": null,
-                "check_class": "checkov.terraform.checks.module.generic.RevisionHash",
+                "check_class": "checkov.terraform.checks.resource.aws.LBDeletionProtection",
                 "fixed_definition": null,
-                "entity_tags": null,
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/eks.tf"
-            },
-            {
-                "check_id": "CKV_K8S_28",
-                "bc_check_id": "BC_K8S_27",
-                "check_name": "Minimize the admission of containers with the NET_RAW capability",
-                "check_result": {
-                    "result": "FAILED",
-                    "evaluated_keys": [
-                        "spec/[0]/template/[0]/spec/[0]/container/0"
-                    ]
+                "entity_tags": {
+                    "Name": "${var.application_name}-application-lb"
                 },
-                "code_block": null,
-                "file_path": "/example_app.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/example_app.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/example_app.tf",
-                "file_line_range": [
-                    20,
-                    100
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    22,
+                    33
                 ],
-                "resource": "kubernetes_deployment.example_app",
-                "evaluations": null,
-                "check_class": "checkov.terraform.checks.resource.kubernetes.DropCapabilities",
-                "fixed_definition": null,
-                "entity_tags": null,
-                "caller_file_path": null,
-                "caller_file_line_range": null,
                 "resource_address": null,
                 "severity": null,
                 "bc_category": null,
@@ -109,78 +40,52 @@
                 "short_description": null,
                 "vulnerability_details": null,
                 "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-27",
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-150",
                 "details": [],
                 "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/example_app.tf",
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
                 "breadcrumbs": {
-                    "spec.template.spec.container.env.value": [
+                    "source_module_": [
                         {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "spec.template.spec.container.env": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "spec.template.spec.container": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "spec.template.spec": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "spec.template": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
+                            "type": "module",
+                            "name": "alb_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 8,
+                            "source_module_object": null
                         }
                     ]
                 }
             },
             {
-                "check_id": "CKV_K8S_43",
-                "bc_check_id": "BC_K8S_39",
-                "check_name": "Image should use digest",
+                "check_id": "CKV_AWS_91",
+                "bc_check_id": "BC_AWS_LOGGING_22",
+                "check_name": "Ensure the ELBv2 (Application/Network) has access logging enabled",
                 "check_result": {
                     "result": "FAILED",
                     "evaluated_keys": [
-                        "spec/[0]/template/[0]/spec/[0]/container/[0]/image"
+                        "access_logs/0/enabled/0"
                     ]
                 },
                 "code_block": null,
-                "file_path": "/example_app.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/example_app.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/example_app.tf",
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
                 "file_line_range": [
-                    20,
-                    100
+                    2,
+                    14
                 ],
-                "resource": "kubernetes_deployment.example_app",
+                "resource": "module.alb_east.aws_lb.app_lb",
                 "evaluations": null,
-                "check_class": "checkov.terraform.checks.resource.kubernetes.ImageDigest",
+                "check_class": "checkov.terraform.checks.resource.aws.ELBv2AccessLogs",
                 "fixed_definition": null,
-                "entity_tags": null,
-                "caller_file_path": null,
-                "caller_file_line_range": null,
+                "entity_tags": {
+                    "Name": "${var.application_name}-application-lb"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    22,
+                    33
+                ],
                 "resource_address": null,
                 "severity": null,
                 "bc_category": null,
@@ -189,78 +94,52 @@
                 "short_description": null,
                 "vulnerability_details": null,
                 "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-39",
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-logging-22",
                 "details": [],
                 "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/example_app.tf",
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
                 "breadcrumbs": {
-                    "spec.template.spec.container.env.value": [
+                    "source_module_": [
                         {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "spec.template.spec.container.env": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "spec.template.spec.container": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "spec.template.spec": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "spec.template": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
+                            "type": "module",
+                            "name": "alb_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 8,
+                            "source_module_object": null
                         }
                     ]
                 }
             },
             {
-                "check_id": "CKV_K8S_14",
-                "bc_check_id": "BC_K8S_13",
-                "check_name": "Image Tag should be fixed - not latest or blank",
+                "check_id": "CKV_AWS_131",
+                "bc_check_id": "BC_AWS_NETWORKING_41",
+                "check_name": "Ensure that ALB drops HTTP headers",
                 "check_result": {
                     "result": "FAILED",
                     "evaluated_keys": [
-                        "spec/[0]/template/[0]/spec/[0]/container/[0]/image"
+                        "drop_invalid_header_fields"
                     ]
                 },
                 "code_block": null,
-                "file_path": "/example_app.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/example_app.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/example_app.tf",
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
                 "file_line_range": [
-                    20,
-                    100
+                    2,
+                    14
                 ],
-                "resource": "kubernetes_deployment.example_app",
+                "resource": "module.alb_east.aws_lb.app_lb",
                 "evaluations": null,
-                "check_class": "checkov.terraform.checks.resource.kubernetes.ImageTagFixed",
+                "check_class": "checkov.terraform.checks.resource.aws.ALBDropHttpHeaders",
                 "fixed_definition": null,
-                "entity_tags": null,
-                "caller_file_path": null,
-                "caller_file_line_range": null,
+                "entity_tags": {
+                    "Name": "${var.application_name}-application-lb"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    22,
+                    33
+                ],
                 "resource_address": null,
                 "severity": null,
                 "bc_category": null,
@@ -269,78 +148,50 @@
                 "short_description": null,
                 "vulnerability_details": null,
                 "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-13",
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-drops-http-headers",
                 "details": [],
                 "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/example_app.tf",
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
                 "breadcrumbs": {
-                    "spec.template.spec.container.env.value": [
+                    "source_module_": [
                         {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "spec.template.spec.container.env": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "spec.template.spec.container": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "spec.template.spec": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "spec.template": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
+                            "type": "module",
+                            "name": "alb_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 8,
+                            "source_module_object": null
                         }
                     ]
                 }
             },
             {
-                "check_id": "CKV_K8S_30",
-                "bc_check_id": "BC_K8S_28",
-                "check_name": "Apply security context to your pods and containers",
+                "check_id": "CKV_AWS_2",
+                "bc_check_id": "BC_AWS_NETWORKING_29",
+                "check_name": "Ensure ALB protocol is HTTPS",
                 "check_result": {
                     "result": "FAILED",
                     "evaluated_keys": [
-                        "spec/[0]/template/[0]/spec/[0]/container/[0]/security_context"
+                        "protocol"
                     ]
                 },
                 "code_block": null,
-                "file_path": "/example_app.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/example_app.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/example_app.tf",
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
                 "file_line_range": [
-                    20,
-                    100
+                    29,
+                    38
                 ],
-                "resource": "kubernetes_deployment.example_app",
+                "resource": "module.alb_east.aws_lb_listener.front_end",
                 "evaluations": null,
-                "check_class": "checkov.terraform.checks.resource.kubernetes.ContainerSecurityContext",
+                "check_class": "checkov.terraform.checks.resource.aws.ALBListenerHTTPS",
                 "fixed_definition": null,
                 "entity_tags": null,
-                "caller_file_path": null,
-                "caller_file_line_range": null,
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    22,
+                    33
+                ],
                 "resource_address": null,
                 "severity": null,
                 "bc_category": null,
@@ -349,78 +200,52 @@
                 "short_description": null,
                 "vulnerability_details": null,
                 "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-28",
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-29",
                 "details": [],
                 "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/example_app.tf",
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
                 "breadcrumbs": {
-                    "spec.template.spec.container.env.value": [
+                    "source_module_": [
                         {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "spec.template.spec.container.env": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "spec.template.spec.container": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "spec.template.spec": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "spec.template": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
+                            "type": "module",
+                            "name": "alb_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 8,
+                            "source_module_object": null
                         }
                     ]
                 }
             },
             {
-                "check_id": "CKV_K8S_29",
-                "bc_check_id": "BC_K8S_43",
-                "check_name": "Apply security context to your pods, deployments and daemon_sets",
+                "check_id": "CKV_AWS_150",
+                "bc_check_id": "BC_AWS_NETWORKING_62",
+                "check_name": "Ensure that Load Balancer has deletion protection enabled",
                 "check_result": {
                     "result": "FAILED",
                     "evaluated_keys": [
-                        "spec/[0]/template/[0]/spec/[0]/container/0"
+                        "enable_deletion_protection"
                     ]
                 },
                 "code_block": null,
-                "file_path": "/example_app.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/example_app.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/example_app.tf",
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
                 "file_line_range": [
-                    20,
-                    100
+                    2,
+                    14
                 ],
-                "resource": "kubernetes_deployment.example_app",
+                "resource": "module.alb_west.aws_lb.app_lb",
                 "evaluations": null,
-                "check_class": "checkov.terraform.checks.resource.kubernetes.PodSecurityContext",
+                "check_class": "checkov.terraform.checks.resource.aws.LBDeletionProtection",
                 "fixed_definition": null,
-                "entity_tags": null,
-                "caller_file_path": null,
-                "caller_file_line_range": null,
+                "entity_tags": {
+                    "Name": "${var.application_name}-application-lb"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    55,
+                    66
+                ],
                 "resource_address": null,
                 "severity": null,
                 "bc_category": null,
@@ -429,49 +254,473 @@
                 "short_description": null,
                 "vulnerability_details": null,
                 "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/ensure-securitycontext-is-applied-to-pods-and-containers",
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-150",
                 "details": [],
                 "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/example_app.tf",
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
                 "breadcrumbs": {
-                    "spec.template.spec.container.env.value": [
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "alb_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 10,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_91",
+                "bc_check_id": "BC_AWS_LOGGING_22",
+                "check_name": "Ensure the ELBv2 (Application/Network) has access logging enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "access_logs/0/enabled/0"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "file_line_range": [
+                    2,
+                    14
+                ],
+                "resource": "module.alb_west.aws_lb.app_lb",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.ELBv2AccessLogs",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "${var.application_name}-application-lb"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    55,
+                    66
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-logging-22",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "alb_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 10,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_131",
+                "bc_check_id": "BC_AWS_NETWORKING_41",
+                "check_name": "Ensure that ALB drops HTTP headers",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "drop_invalid_header_fields"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "file_line_range": [
+                    2,
+                    14
+                ],
+                "resource": "module.alb_west.aws_lb.app_lb",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.ALBDropHttpHeaders",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "${var.application_name}-application-lb"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    55,
+                    66
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-drops-http-headers",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "alb_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 10,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_2",
+                "bc_check_id": "BC_AWS_NETWORKING_29",
+                "check_name": "Ensure ALB protocol is HTTPS",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "protocol"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "file_line_range": [
+                    29,
+                    38
+                ],
+                "resource": "module.alb_west.aws_lb_listener.front_end",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.ALBListenerHTTPS",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    55,
+                    66
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-29",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "alb_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 10,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_24",
+                "bc_check_id": "BC_AWS_NETWORKING_1",
+                "check_name": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 22",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "ingress/[1]/from_port",
+                        "ingress/[1]/to_port",
+                        "ingress/[1]/cidr_blocks",
+                        "ingress/[1]/ipv6_cidr_blocks"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/asg/asg.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "file_line_range": [
+                    21,
+                    52
+                ],
+                "resource": "module.asg_east.aws_security_group.asg_sg",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.SecurityGroupUnrestrictedIngress22",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-app-security-group"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    2,
+                    20
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-1-port-security",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "breadcrumbs": {
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
                         {
                             "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                             "module_connection": false
                         }
                     ],
-                    "spec.template.spec.container.env": [
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
                         {
                             "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                             "module_connection": false
                         }
                     ],
-                    "spec.template.spec.container": [
+                    "name_prefix": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
                         {
                             "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                             "module_connection": false
                         }
                     ],
-                    "spec.template.spec": [
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 7,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_260",
+                "bc_check_id": "BC_AWS_NETWORKING_67",
+                "check_name": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 80",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "ingress/[0]/from_port",
+                        "ingress/[0]/to_port",
+                        "ingress/[0]/cidr_blocks",
+                        "ingress/[0]/ipv6_cidr_blocks"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/asg/asg.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "file_line_range": [
+                    21,
+                    52
+                ],
+                "resource": "module.asg_east.aws_security_group.asg_sg",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.SecurityGroupUnrestrictedIngress80",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-app-security-group"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    2,
+                    20
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-groups-do-not-allow-ingress-from-00000-to-port-80",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "breadcrumbs": {
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
                         {
                             "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                             "module_connection": false
                         }
                     ],
-                    "spec.template": [
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
                         {
                             "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "name_prefix": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 7,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_23",
+                "bc_check_id": "BC_AWS_NETWORKING_31",
+                "check_name": "Ensure every security group and rule has a description",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "egress/[0]",
+                        "ingress/[0]"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/asg/asg.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "file_line_range": [
+                    21,
+                    52
+                ],
+                "resource": "module.asg_east.aws_security_group.asg_sg",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.SecurityGroupRuleDescription",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-app-security-group"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    2,
+                    20
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "breadcrumbs": {
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name_prefix": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 7,
+                            "source_module_object": null
                         }
                     ]
                 }
@@ -490,23 +739,25 @@
                     ]
                 },
                 "code_block": null,
-                "file_path": "/security.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/security.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/security.tf",
+                "file_path": "/modules/asg/asg.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                 "file_line_range": [
-                    4,
-                    31
+                    21,
+                    52
                 ],
-                "resource": "aws_security_group.eks_additional_sg",
+                "resource": "module.asg_east.aws_security_group.asg_sg",
                 "evaluations": null,
                 "check_class": "checkov.terraform.checks.resource.aws.SecurityGroupUnrestrictedEgressAny",
                 "fixed_definition": null,
                 "entity_tags": {
-                    "Environment": "production",
-                    "Name": "my-eks-cluster-additional-sg"
+                    "Name": "example-app-security-group"
                 },
-                "caller_file_path": null,
-                "caller_file_line_range": null,
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    2,
+                    20
+                ],
                 "resource_address": null,
                 "severity": null,
                 "bc_category": null,
@@ -518,59 +769,91 @@
                 "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382",
                 "details": [],
                 "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/security.tf",
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                 "breadcrumbs": {
-                    "name": [
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
                         {
                             "type": "variable",
-                            "name": "cluster_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                             "module_connection": false
                         }
                     ],
                     "tags.Name": [
                         {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
                             "type": "variable",
-                            "name": "cluster_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                             "module_connection": false
                         }
                     ],
-                    "tags.Environment": [
+                    "name_prefix": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
                         {
                             "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 7,
+                            "source_module_object": null
                         }
                     ]
                 }
             },
             {
-                "check_id": "CKV_AWS_290",
-                "bc_check_id": "BC_AWS_IAM_85",
-                "check_name": "Ensure IAM policies does not allow write access without constraints",
+                "check_id": "CKV_AWS_79",
+                "bc_check_id": "BC_AWS_GENERAL_31",
+                "check_name": "Ensure Instance Metadata Service Version 1 is not enabled",
                 "check_result": {
                     "result": "FAILED",
                     "evaluated_keys": [
-                        "policy/Statement/[0]/Action"
+                        "metadata_options/[0]/http_tokens"
                     ]
                 },
                 "code_block": null,
-                "file_path": "/security.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/security.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/security.tf",
+                "file_path": "/modules/asg/asg.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                 "file_line_range": [
-                    34,
-                    56
+                    55,
+                    76
                 ],
-                "resource": "aws_iam_policy.cluster_autoscaler",
+                "resource": "module.asg_east.aws_launch_template.app_launch_template",
                 "evaluations": null,
-                "check_class": "checkov.terraform.checks.resource.aws.IAMWriteAccess",
+                "check_class": "checkov.terraform.checks.resource.aws.IMDSv1Disabled",
                 "fixed_definition": null,
-                "entity_tags": null,
-                "caller_file_path": null,
-                "caller_file_line_range": null,
+                "entity_tags": {
+                    "Name": "example-app-launch-template"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    2,
+                    20
+                ],
                 "resource_address": null,
                 "severity": null,
                 "bc_category": null,
@@ -579,46 +862,122 @@
                 "short_description": null,
                 "vulnerability_details": null,
                 "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290",
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31",
                 "details": [],
                 "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/security.tf",
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                 "breadcrumbs": {
-                    "name": [
+                    "image_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
                         {
                             "type": "variable",
-                            "name": "cluster_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
+                            "name": "ami_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "user_data": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name_prefix": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 7,
+                            "source_module_object": null
                         }
                     ]
                 }
             },
             {
-                "check_id": "CKV_AWS_355",
-                "bc_check_id": "BC_AWS_IAM_88",
-                "check_name": "Ensure no IAM policies documents allow \"*\" as a statement's resource for restrictable actions",
+                "check_id": "CKV_AWS_88",
+                "bc_check_id": "BC_AWS_PUBLIC_12",
+                "check_name": "EC2 instance should not have public IP.",
                 "check_result": {
                     "result": "FAILED",
                     "evaluated_keys": [
-                        "policy/Statement/[0]/Action"
+                        "network_interfaces/[0]/associate_public_ip_address"
                     ]
                 },
                 "code_block": null,
-                "file_path": "/security.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/security.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/security.tf",
+                "file_path": "/modules/asg/asg.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                 "file_line_range": [
-                    34,
-                    56
+                    55,
+                    76
                 ],
-                "resource": "aws_iam_policy.cluster_autoscaler",
+                "resource": "module.asg_east.aws_launch_template.app_launch_template",
                 "evaluations": null,
-                "check_class": "checkov.terraform.checks.resource.aws.IAMStarResourcePolicyDocument",
+                "check_class": "checkov.terraform.checks.resource.aws.EC2PublicIP",
                 "fixed_definition": null,
-                "entity_tags": null,
-                "caller_file_path": null,
-                "caller_file_line_range": null,
+                "entity_tags": {
+                    "Name": "example-app-launch-template"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    2,
+                    20
+                ],
                 "resource_address": null,
                 "severity": null,
                 "bc_category": null,
@@ -627,17 +986,730 @@
                 "short_description": null,
                 "vulnerability_details": null,
                 "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355",
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-12",
                 "details": [],
                 "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/security.tf",
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                 "breadcrumbs": {
-                    "name": [
+                    "image_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
                         {
                             "type": "variable",
-                            "name": "cluster_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
+                            "name": "ami_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                             "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "user_data": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name_prefix": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 7,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_24",
+                "bc_check_id": "BC_AWS_NETWORKING_1",
+                "check_name": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 22",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "ingress/[1]/from_port",
+                        "ingress/[1]/to_port",
+                        "ingress/[1]/cidr_blocks",
+                        "ingress/[1]/ipv6_cidr_blocks"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/asg/asg.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "file_line_range": [
+                    21,
+                    52
+                ],
+                "resource": "module.asg_west.aws_security_group.asg_sg",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.SecurityGroupUnrestrictedIngress22",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-app-security-group"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    35,
+                    53
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-1-port-security",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "breadcrumbs": {
+                    "name_prefix": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 9,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_260",
+                "bc_check_id": "BC_AWS_NETWORKING_67",
+                "check_name": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 80",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "ingress/[0]/from_port",
+                        "ingress/[0]/to_port",
+                        "ingress/[0]/cidr_blocks",
+                        "ingress/[0]/ipv6_cidr_blocks"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/asg/asg.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "file_line_range": [
+                    21,
+                    52
+                ],
+                "resource": "module.asg_west.aws_security_group.asg_sg",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.SecurityGroupUnrestrictedIngress80",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-app-security-group"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    35,
+                    53
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-groups-do-not-allow-ingress-from-00000-to-port-80",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "breadcrumbs": {
+                    "name_prefix": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 9,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_23",
+                "bc_check_id": "BC_AWS_NETWORKING_31",
+                "check_name": "Ensure every security group and rule has a description",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "egress/[0]",
+                        "ingress/[0]"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/asg/asg.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "file_line_range": [
+                    21,
+                    52
+                ],
+                "resource": "module.asg_west.aws_security_group.asg_sg",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.SecurityGroupRuleDescription",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-app-security-group"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    35,
+                    53
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "breadcrumbs": {
+                    "name_prefix": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 9,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_382",
+                "bc_check_id": "BC_AWS_IAM_93",
+                "check_name": "Ensure no security groups allow egress from 0.0.0.0:0 to port -1",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "egress/[0]/from_port",
+                        "egress/[0]/to_port",
+                        "egress/[0]/cidr_blocks",
+                        "egress/[0]/ipv6_cidr_blocks"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/asg/asg.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "file_line_range": [
+                    21,
+                    52
+                ],
+                "resource": "module.asg_west.aws_security_group.asg_sg",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.SecurityGroupUnrestrictedEgressAny",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-app-security-group"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    35,
+                    53
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "breadcrumbs": {
+                    "name_prefix": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 9,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_79",
+                "bc_check_id": "BC_AWS_GENERAL_31",
+                "check_name": "Ensure Instance Metadata Service Version 1 is not enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "metadata_options/[0]/http_tokens"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/asg/asg.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "file_line_range": [
+                    55,
+                    76
+                ],
+                "resource": "module.asg_west.aws_launch_template.app_launch_template",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.IMDSv1Disabled",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-app-launch-template"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    35,
+                    53
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "breadcrumbs": {
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name_prefix": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "user_data": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "image_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "ami_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 9,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_88",
+                "bc_check_id": "BC_AWS_PUBLIC_12",
+                "check_name": "EC2 instance should not have public IP.",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "network_interfaces/[0]/associate_public_ip_address"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/asg/asg.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "file_line_range": [
+                    55,
+                    76
+                ],
+                "resource": "module.asg_west.aws_launch_template.app_launch_template",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.EC2PublicIP",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-app-launch-template"
+                },
+                "caller_file_path": "/main.tf",
+                "caller_file_line_range": [
+                    35,
+                    53
+                ],
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-12",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                "breadcrumbs": {
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name_prefix": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "user_data": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "image_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "ami_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 9,
+                            "source_module_object": null
                         }
                     ]
                 }
@@ -651,14 +1723,14 @@
                     "evaluated_keys": []
                 },
                 "code_block": null,
-                "file_path": "/vpc.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/vpc.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/vpc.tf",
+                "file_path": "/providers.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/providers.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/providers.tf",
                 "file_line_range": [
-                    2,
-                    41
+                    37,
+                    60
                 ],
-                "resource": "eks",
+                "resource": "vpc_east",
                 "evaluations": null,
                 "check_class": "checkov.terraform.checks.module.generic.RevisionHash",
                 "fixed_definition": null,
@@ -676,184 +1748,562 @@
                 "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision",
                 "details": [],
                 "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/vpc.tf"
-            },
-            {
-                "check_id": "CKV2_AWS_5",
-                "bc_check_id": "BC_AWS_NETWORKING_51",
-                "check_name": "Ensure that Security Groups are attached to another resource",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_security_group": {
-                            "eks_additional_sg": {
-                                "__end_line__": 31,
-                                "__start_line__": 4,
-                                "description": [
-                                    "Additional security group for EKS cluster"
-                                ],
-                                "egress": [
-                                    {
-                                        "cidr_blocks": [
-                                            [
-                                                "0.0.0.0/0"
-                                            ]
-                                        ],
-                                        "description": [
-                                            "Allow all outbound traffic"
-                                        ],
-                                        "from_port": [
-                                            0
-                                        ],
-                                        "protocol": [
-                                            "-1"
-                                        ],
-                                        "to_port": [
-                                            0
-                                        ]
-                                    }
-                                ],
-                                "name": [
-                                    "my-eks-cluster-additional-sg"
-                                ],
-                                "tags": [
-                                    {
-                                        "Environment": "production",
-                                        "Name": "my-eks-cluster-additional-sg"
-                                    }
-                                ],
-                                "vpc_id": [
-                                    "module.vpc.vpc_id"
-                                ],
-                                "__address__": "aws_security_group.eks_additional_sg"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "resource_type",
-                        "networking"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/security.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/security.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/security.tf",
-                "file_line_range": [
-                    4,
-                    31
-                ],
-                "resource": "aws_security_group.eks_additional_sg",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {
-                    "Environment": "production",
-                    "Name": "my-eks-cluster-additional-sg"
-                },
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-security-groups-are-attached-to-ec2-instances-or-elastic-network-interfaces-enis",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/security.tf",
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/providers.tf",
                 "breadcrumbs": {
-                    "name": [
+                    "cidr": [
                         {
                             "type": "variable",
-                            "name": "cluster_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Name": [
-                        {
-                            "type": "variable",
-                            "name": "cluster_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Environment": [
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/variables.tf",
+                            "name": "east_vpc_cidr",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/providers.tf",
                             "module_connection": false
                         }
                     ]
                 }
             },
             {
-                "check_id": "CKV2_AWS_71",
-                "bc_check_id": "BC_AWS_NETWORKING_95",
-                "check_name": "Ensure AWS ACM Certificate domain name does not include wildcards",
+                "check_id": "CKV_TF_1",
+                "bc_check_id": "BC_CROSS_1",
+                "check_name": "Ensure Terraform module sources use a commit hash",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": []
+                },
+                "code_block": null,
+                "file_path": "/providers.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/providers.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/providers.tf",
+                "file_line_range": [
+                    63,
+                    86
+                ],
+                "resource": "vpc_west",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.module.generic.RevisionHash",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/providers.tf",
+                "breadcrumbs": {
+                    "cidr": [
+                        {
+                            "type": "variable",
+                            "name": "west_vpc_cidr",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/providers.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_144",
+                "bc_check_id": "BC_AWS_GENERAL_72",
+                "check_name": "Ensure that S3 bucket has cross-region replication enabled",
                 "check_result": {
                     "result": "FAILED",
                     "entity": {
-                        "aws_acm_certificate": {
-                            "api_cert": {
-                                "__end_line__": 19,
-                                "__start_line__": 2,
-                                "domain_name": [
-                                    "api.example.com"
+                        "aws_s3_bucket": {
+                            "flow_logs_bucket": {
+                                "__end_line__": 55,
+                                "__start_line__": 52,
+                                "bucket": [
+                                    "example-app-global-accelerator-logs"
                                 ],
-                                "lifecycle": [
-                                    {
-                                        "create_before_destroy": [
-                                            true
-                                        ]
-                                    }
+                                "force_destroy": [
+                                    true
                                 ],
-                                "subject_alternative_names": [
-                                    [
-                                        "*.api.example.com"
-                                    ]
-                                ],
-                                "tags": [
-                                    {
-                                        "Environment": "production",
-                                        "Name": "api-certificate",
-                                        "Terraform": true
-                                    }
-                                ],
-                                "validation_method": [
-                                    "DNS"
-                                ],
-                                "__address__": "aws_acm_certificate.api_cert",
-                                "__provider_address__": "kubernetes.default"
+                                "__address__": "aws_s3_bucket.flow_logs_bucket"
                             }
                         }
                     },
                     "evaluated_keys": [
-                        "subject_alternative_names/*",
-                        "subject_alternative_names",
-                        "domain_name"
+                        "resource_type",
+                        "replication_configuration/rules/*/status",
+                        "rule/*/status"
                     ]
                 },
                 "code_block": null,
-                "file_path": "/api_security.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/api_security.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/api_security.tf",
+                "file_path": "/global_accelerator.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf",
+                "file_line_range": [
+                    52,
+                    55
+                ],
+                "resource": "aws_s3_bucket.flow_logs_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-bucket-has-cross-region-replication-enabled",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_61",
+                "bc_check_id": "BC_AWS_LOGGING_35",
+                "check_name": "Ensure that an S3 bucket has a lifecycle configuration",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "flow_logs_bucket": {
+                                "__end_line__": 55,
+                                "__start_line__": 52,
+                                "bucket": [
+                                    "example-app-global-accelerator-logs"
+                                ],
+                                "force_destroy": [
+                                    true
+                                ],
+                                "__address__": "aws_s3_bucket.flow_logs_bucket"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "lifecycle_rule"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/global_accelerator.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf",
+                "file_line_range": [
+                    52,
+                    55
+                ],
+                "resource": "aws_s3_bucket.flow_logs_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-61",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_62",
+                "bc_check_id": "BC_AWS_LOGGING_36",
+                "check_name": "Ensure S3 buckets should have event notifications enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "flow_logs_bucket": {
+                                "__end_line__": 55,
+                                "__start_line__": 52,
+                                "bucket": [
+                                    "example-app-global-accelerator-logs"
+                                ],
+                                "force_destroy": [
+                                    true
+                                ],
+                                "__address__": "aws_s3_bucket.flow_logs_bucket"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/global_accelerator.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf",
+                "file_line_range": [
+                    52,
+                    55
+                ],
+                "resource": "aws_s3_bucket.flow_logs_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-62",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf"
+            },
+            {
+                "check_id": "CKV_AWS_18",
+                "bc_check_id": "BC_AWS_S3_13",
+                "check_name": "Ensure the S3 bucket has access logging enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "flow_logs_bucket": {
+                                "__end_line__": 55,
+                                "__start_line__": 52,
+                                "bucket": [
+                                    "example-app-global-accelerator-logs"
+                                ],
+                                "force_destroy": [
+                                    true
+                                ],
+                                "__address__": "aws_s3_bucket.flow_logs_bucket"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "logging"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/global_accelerator.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf",
+                "file_line_range": [
+                    52,
+                    55
+                ],
+                "resource": "aws_s3_bucket.flow_logs_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-13-enable-logging",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf"
+            },
+            {
+                "check_id": "CKV_AWS_103",
+                "bc_check_id": "BC_AWS_GENERAL_43",
+                "check_name": "Ensure that load balancer is using at least TLS 1.2",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_lb_listener": {
+                            "front_end": {
+                                "__end_line__": 38,
+                                "__start_line__": 29,
+                                "default_action": [
+                                    {
+                                        "target_group_arn": [
+                                            "aws_lb_target_group.app_tg.arn"
+                                        ],
+                                        "type": [
+                                            "forward"
+                                        ]
+                                    }
+                                ],
+                                "load_balancer_arn": [
+                                    "aws_lb.app_lb.arn"
+                                ],
+                                "port": [
+                                    "80"
+                                ],
+                                "protocol": [
+                                    "HTTP"
+                                ],
+                                "__address__": "module.alb_east.aws_lb_listener.front_end"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "default_action/redirect/protocol",
+                        "protocol",
+                        "load_balancer_type",
+                        "ssl_policy",
+                        "default_action/type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "file_line_range": [
+                    29,
+                    38
+                ],
+                "resource": "module.alb_east.aws_lb_listener.front_end",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-43",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "alb_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 8,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_103",
+                "bc_check_id": "BC_AWS_GENERAL_43",
+                "check_name": "Ensure that load balancer is using at least TLS 1.2",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_lb_listener": {
+                            "front_end": {
+                                "__end_line__": 38,
+                                "__start_line__": 29,
+                                "default_action": [
+                                    {
+                                        "target_group_arn": [
+                                            "aws_lb_target_group.app_tg.arn"
+                                        ],
+                                        "type": [
+                                            "forward"
+                                        ]
+                                    }
+                                ],
+                                "load_balancer_arn": [
+                                    "aws_lb.app_lb.arn"
+                                ],
+                                "port": [
+                                    "80"
+                                ],
+                                "protocol": [
+                                    "HTTP"
+                                ],
+                                "__address__": "module.alb_west.aws_lb_listener.front_end"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "default_action/redirect/protocol",
+                        "protocol",
+                        "load_balancer_type",
+                        "ssl_policy",
+                        "default_action/type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "file_line_range": [
+                    29,
+                    38
+                ],
+                "resource": "module.alb_west.aws_lb_listener.front_end",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-43",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "alb_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 10,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_6",
+                "bc_check_id": "BC_AWS_NETWORKING_52",
+                "check_name": "Ensure that S3 bucket has a Public Access block",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "flow_logs_bucket": {
+                                "__end_line__": 55,
+                                "__start_line__": 52,
+                                "bucket": [
+                                    "example-app-global-accelerator-logs"
+                                ],
+                                "force_destroy": [
+                                    true
+                                ],
+                                "__address__": "aws_s3_bucket.flow_logs_bucket"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "block_public_policy",
+                        "block_public_acls"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/global_accelerator.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf",
+                "file_line_range": [
+                    52,
+                    55
+                ],
+                "resource": "aws_s3_bucket.flow_logs_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/s3-bucket-should-have-public-access-blocks-defaults-to-false-if-the-public-access-block-is-not-attached",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_20",
+                "bc_check_id": "BC_AWS_NETWORKING_49",
+                "check_name": "Ensure that ALB redirects HTTP requests into HTTPS ones",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_lb": {
+                            "app_lb": {
+                                "__end_line__": 14,
+                                "__start_line__": 2,
+                                "enable_deletion_protection": [
+                                    false
+                                ],
+                                "internal": [
+                                    false
+                                ],
+                                "load_balancer_type": [
+                                    "application"
+                                ],
+                                "name": [
+                                    "${var.application_name}-alb"
+                                ],
+                                "security_groups": [
+                                    [
+                                        "var.security_group_id"
+                                    ]
+                                ],
+                                "subnets": [
+                                    "var.subnet_ids"
+                                ],
+                                "tags": [
+                                    {
+                                        "Name": "${var.application_name}-application-lb"
+                                    }
+                                ],
+                                "__address__": "module.alb_east.aws_lb.app_lb"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "default_action/redirect/*/port",
+                        "protocol",
+                        "default_action/redirect/*/protocol",
+                        "port",
+                        "default_action/type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
                 "file_line_range": [
                     2,
-                    19
+                    14
                 ],
-                "resource": "aws_acm_certificate.api_cert",
+                "resource": "module.alb_east.aws_lb.app_lb",
                 "evaluations": null,
                 "check_class": "checkov.common.graph.checks_infra.base_check",
                 "fixed_definition": null,
                 "entity_tags": {
-                    "Environment": "production",
-                    "Name": "api-certificate",
-                    "Terraform": true
+                    "Name": "${var.application_name}-application-lb"
                 },
                 "caller_file_path": null,
                 "caller_file_line_range": null,
@@ -865,16 +2315,569 @@
                 "short_description": null,
                 "vulnerability_details": null,
                 "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-2-71",
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-redirects-http-requests-into-https-ones",
                 "details": [],
                 "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/api_security.tf"
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "alb_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 8,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_20",
+                "bc_check_id": "BC_AWS_NETWORKING_49",
+                "check_name": "Ensure that ALB redirects HTTP requests into HTTPS ones",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_lb": {
+                            "app_lb": {
+                                "__end_line__": 14,
+                                "__start_line__": 2,
+                                "enable_deletion_protection": [
+                                    false
+                                ],
+                                "internal": [
+                                    false
+                                ],
+                                "load_balancer_type": [
+                                    "application"
+                                ],
+                                "name": [
+                                    "${var.application_name}-alb"
+                                ],
+                                "security_groups": [
+                                    [
+                                        "var.security_group_id"
+                                    ]
+                                ],
+                                "subnets": [
+                                    "var.subnet_ids"
+                                ],
+                                "tags": [
+                                    {
+                                        "Name": "${var.application_name}-application-lb"
+                                    }
+                                ],
+                                "__address__": "module.alb_west.aws_lb.app_lb"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "default_action/redirect/*/port",
+                        "protocol",
+                        "default_action/redirect/*/protocol",
+                        "port",
+                        "default_action/type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "file_line_range": [
+                    2,
+                    14
+                ],
+                "resource": "module.alb_west.aws_lb.app_lb",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "${var.application_name}-application-lb"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-redirects-http-requests-into-https-ones",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "alb_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 10,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_145",
+                "bc_check_id": "BC_AWS_GENERAL_56",
+                "check_name": "Ensure that S3 buckets are encrypted with KMS by default",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "flow_logs_bucket": {
+                                "__end_line__": 55,
+                                "__start_line__": 52,
+                                "bucket": [
+                                    "example-app-global-accelerator-logs"
+                                ],
+                                "force_destroy": [
+                                    true
+                                ],
+                                "__address__": "aws_s3_bucket.flow_logs_bucket"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "rule/apply_server_side_encryption_by_default/sse_algorithm",
+                        "server_side_encryption_configuration/rule/apply_server_side_encryption_by_default/sse_algorithm"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/global_accelerator.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf",
+                "file_line_range": [
+                    52,
+                    55
+                ],
+                "resource": "aws_s3_bucket.flow_logs_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-buckets-are-encrypted-with-kms-by-default",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf"
+            },
+            {
+                "check_id": "CKV_AWS_21",
+                "bc_check_id": "BC_AWS_S3_16",
+                "check_name": "Ensure all data stored in the S3 bucket have versioning enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "flow_logs_bucket": {
+                                "__end_line__": 55,
+                                "__start_line__": 52,
+                                "bucket": [
+                                    "example-app-global-accelerator-logs"
+                                ],
+                                "force_destroy": [
+                                    true
+                                ],
+                                "__address__": "aws_s3_bucket.flow_logs_bucket"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "versioning/enabled",
+                        "versioning_configuration/status"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/global_accelerator.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf",
+                "file_line_range": [
+                    52,
+                    55
+                ],
+                "resource": "aws_s3_bucket.flow_logs_bucket",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-16-enable-versioning",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_28",
+                "bc_check_id": "BC_AWS_NETWORKING_58",
+                "check_name": "Ensure public facing ALB are protected by WAF",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_lb": {
+                            "app_lb": {
+                                "__end_line__": 14,
+                                "__start_line__": 2,
+                                "enable_deletion_protection": [
+                                    false
+                                ],
+                                "internal": [
+                                    false
+                                ],
+                                "load_balancer_type": [
+                                    "application"
+                                ],
+                                "name": [
+                                    "${var.application_name}-alb"
+                                ],
+                                "security_groups": [
+                                    [
+                                        "var.security_group_id"
+                                    ]
+                                ],
+                                "subnets": [
+                                    "var.subnet_ids"
+                                ],
+                                "tags": [
+                                    {
+                                        "Name": "${var.application_name}-application-lb"
+                                    }
+                                ],
+                                "__address__": "module.alb_east.aws_lb.app_lb"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "internal",
+                        "load_balancer_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "file_line_range": [
+                    2,
+                    14
+                ],
+                "resource": "module.alb_east.aws_lb.app_lb",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "${var.application_name}-application-lb"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-facing-alb-are-protected-by-waf",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "alb_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 8,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_28",
+                "bc_check_id": "BC_AWS_NETWORKING_58",
+                "check_name": "Ensure public facing ALB are protected by WAF",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_lb": {
+                            "app_lb": {
+                                "__end_line__": 14,
+                                "__start_line__": 2,
+                                "enable_deletion_protection": [
+                                    false
+                                ],
+                                "internal": [
+                                    false
+                                ],
+                                "load_balancer_type": [
+                                    "application"
+                                ],
+                                "name": [
+                                    "${var.application_name}-alb"
+                                ],
+                                "security_groups": [
+                                    [
+                                        "var.security_group_id"
+                                    ]
+                                ],
+                                "subnets": [
+                                    "var.subnet_ids"
+                                ],
+                                "tags": [
+                                    {
+                                        "Name": "${var.application_name}-application-lb"
+                                    }
+                                ],
+                                "__address__": "module.alb_west.aws_lb.app_lb"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "internal",
+                        "load_balancer_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "file_line_range": [
+                    2,
+                    14
+                ],
+                "resource": "module.alb_west.aws_lb.app_lb",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "${var.application_name}-application-lb"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-facing-alb-are-protected-by-waf",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "alb_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 10,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_378",
+                "bc_check_id": "BC_AWS_NETWORKING_103",
+                "check_name": "Ensure AWS Load Balancer doesn't use HTTP protocol",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_lb_target_group": {
+                            "app_tg": {
+                                "__end_line__": 27,
+                                "__start_line__": 16,
+                                "health_check": [
+                                    {
+                                        "healthy_threshold": [
+                                            2
+                                        ],
+                                        "path": [
+                                            "/"
+                                        ],
+                                        "unhealthy_threshold": [
+                                            10
+                                        ]
+                                    }
+                                ],
+                                "name": [
+                                    "${var.application_name}-tg"
+                                ],
+                                "port": [
+                                    80
+                                ],
+                                "protocol": [
+                                    "HTTP"
+                                ],
+                                "vpc_id": [
+                                    "var.vpc_id"
+                                ],
+                                "__address__": "module.alb_east.aws_lb_target_group.app_tg"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "protocol",
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "file_line_range": [
+                    16,
+                    27
+                ],
+                "resource": "module.alb_east.aws_lb_target_group.app_tg",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-378",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "alb_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 8,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_378",
+                "bc_check_id": "BC_AWS_NETWORKING_103",
+                "check_name": "Ensure AWS Load Balancer doesn't use HTTP protocol",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_lb_target_group": {
+                            "app_tg": {
+                                "__end_line__": 27,
+                                "__start_line__": 16,
+                                "health_check": [
+                                    {
+                                        "healthy_threshold": [
+                                            2
+                                        ],
+                                        "path": [
+                                            "/"
+                                        ],
+                                        "unhealthy_threshold": [
+                                            10
+                                        ]
+                                    }
+                                ],
+                                "name": [
+                                    "${var.application_name}-tg"
+                                ],
+                                "port": [
+                                    80
+                                ],
+                                "protocol": [
+                                    "HTTP"
+                                ],
+                                "vpc_id": [
+                                    "var.vpc_id"
+                                ],
+                                "__address__": "module.alb_west.aws_lb_target_group.app_tg"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "protocol",
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "file_line_range": [
+                    16,
+                    27
+                ],
+                "resource": "module.alb_west.aws_lb_target_group.app_tg",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-378",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "alb_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 10,
+                            "source_module_object": null
+                        }
+                    ]
+                }
             }
         ]
     },
     "summary": {
-        "passed": 59,
-        "failed": 13,
+        "passed": 28,
+        "failed": 37,
         "skipped": 0,
         "parsing_errors": 0,
         "resource_count": 21,

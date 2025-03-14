@@ -142,6 +142,14 @@
                             "module_connection": false
                         }
                     ],
+                    "final_snapshot_identifier": [
+                        {
+                            "type": "locals",
+                            "name": "db_settings",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "identifier": [
                         {
                             "type": "locals",
@@ -162,57 +170,7 @@
                             "module_connection": false
                         }
                     ],
-                    "final_snapshot_identifier": [
-                        {
-                            "type": "locals",
-                            "name": "db_settings",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "backup_retention_period": [
-                        {
-                            "type": "locals",
-                            "name": "is_production",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "locals",
-                            "name": "db_settings",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "instance_class": [
-                        {
-                            "type": "locals",
-                            "name": "is_production",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "locals",
-                            "name": "db_settings",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "deletion_protection": [
-                        {
-                            "type": "locals",
-                            "name": "is_production",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "locals",
-                            "name": "db_settings",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "allocated_storage": [
                         {
                             "type": "locals",
                             "name": "is_production",
@@ -240,7 +198,49 @@
                             "module_connection": false
                         }
                     ],
+                    "instance_class": [
+                        {
+                            "type": "locals",
+                            "name": "is_production",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "locals",
+                            "name": "db_settings",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "allocated_storage": [
+                        {
+                            "type": "locals",
+                            "name": "is_production",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "locals",
+                            "name": "db_settings",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "multi_az": [
+                        {
+                            "type": "locals",
+                            "name": "is_production",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "locals",
+                            "name": "db_settings",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "backup_retention_period": [
                         {
                             "type": "locals",
                             "name": "is_production",
@@ -396,6 +396,14 @@
                             "module_connection": false
                         }
                     ],
+                    "final_snapshot_identifier": [
+                        {
+                            "type": "locals",
+                            "name": "db_settings",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "identifier": [
                         {
                             "type": "locals",
@@ -416,57 +424,7 @@
                             "module_connection": false
                         }
                     ],
-                    "final_snapshot_identifier": [
-                        {
-                            "type": "locals",
-                            "name": "db_settings",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "backup_retention_period": [
-                        {
-                            "type": "locals",
-                            "name": "is_production",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "locals",
-                            "name": "db_settings",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "instance_class": [
-                        {
-                            "type": "locals",
-                            "name": "is_production",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "locals",
-                            "name": "db_settings",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "deletion_protection": [
-                        {
-                            "type": "locals",
-                            "name": "is_production",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "locals",
-                            "name": "db_settings",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "allocated_storage": [
                         {
                             "type": "locals",
                             "name": "is_production",
@@ -494,7 +452,49 @@
                             "module_connection": false
                         }
                     ],
+                    "instance_class": [
+                        {
+                            "type": "locals",
+                            "name": "is_production",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "locals",
+                            "name": "db_settings",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "allocated_storage": [
+                        {
+                            "type": "locals",
+                            "name": "is_production",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "locals",
+                            "name": "db_settings",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "multi_az": [
+                        {
+                            "type": "locals",
+                            "name": "is_production",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "locals",
+                            "name": "db_settings",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "backup_retention_period": [
                         {
                             "type": "locals",
                             "name": "is_production",
@@ -650,6 +650,14 @@
                             "module_connection": false
                         }
                     ],
+                    "final_snapshot_identifier": [
+                        {
+                            "type": "locals",
+                            "name": "db_settings",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "identifier": [
                         {
                             "type": "locals",
@@ -670,57 +678,7 @@
                             "module_connection": false
                         }
                     ],
-                    "final_snapshot_identifier": [
-                        {
-                            "type": "locals",
-                            "name": "db_settings",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "backup_retention_period": [
-                        {
-                            "type": "locals",
-                            "name": "is_production",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "locals",
-                            "name": "db_settings",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "instance_class": [
-                        {
-                            "type": "locals",
-                            "name": "is_production",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "locals",
-                            "name": "db_settings",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "deletion_protection": [
-                        {
-                            "type": "locals",
-                            "name": "is_production",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "locals",
-                            "name": "db_settings",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "allocated_storage": [
                         {
                             "type": "locals",
                             "name": "is_production",
@@ -748,7 +706,49 @@
                             "module_connection": false
                         }
                     ],
+                    "instance_class": [
+                        {
+                            "type": "locals",
+                            "name": "is_production",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "locals",
+                            "name": "db_settings",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "allocated_storage": [
+                        {
+                            "type": "locals",
+                            "name": "is_production",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "locals",
+                            "name": "db_settings",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "multi_az": [
+                        {
+                            "type": "locals",
+                            "name": "is_production",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "locals",
+                            "name": "db_settings",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "backup_retention_period": [
                         {
                             "type": "locals",
                             "name": "is_production",
@@ -1173,8 +1173,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "policy"
+                        "policy",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -1368,11 +1368,11 @@
                         }
                     },
                     "evaluated_keys": [
-                        "parameter[?(@/name=='rds/force_ssl')]/value",
                         "family",
                         "parameter[?(@/name=='require_secure_transport')]/value",
                         "resource_type",
-                        "parameter[?(@/name=='db2comm')]/value"
+                        "parameter[?(@/name=='db2comm')]/value",
+                        "parameter[?(@/name=='rds/force_ssl')]/value"
                     ]
                 },
                 "code_block": null,
@@ -1505,6 +1505,14 @@
                             "module_connection": false
                         }
                     ],
+                    "final_snapshot_identifier": [
+                        {
+                            "type": "locals",
+                            "name": "db_settings",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "identifier": [
                         {
                             "type": "locals",
@@ -1525,57 +1533,7 @@
                             "module_connection": false
                         }
                     ],
-                    "final_snapshot_identifier": [
-                        {
-                            "type": "locals",
-                            "name": "db_settings",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "backup_retention_period": [
-                        {
-                            "type": "locals",
-                            "name": "is_production",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "locals",
-                            "name": "db_settings",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "instance_class": [
-                        {
-                            "type": "locals",
-                            "name": "is_production",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "locals",
-                            "name": "db_settings",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "deletion_protection": [
-                        {
-                            "type": "locals",
-                            "name": "is_production",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "locals",
-                            "name": "db_settings",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "allocated_storage": [
                         {
                             "type": "locals",
                             "name": "is_production",
@@ -1603,7 +1561,49 @@
                             "module_connection": false
                         }
                     ],
+                    "instance_class": [
+                        {
+                            "type": "locals",
+                            "name": "is_production",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "locals",
+                            "name": "db_settings",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "allocated_storage": [
+                        {
+                            "type": "locals",
+                            "name": "is_production",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "locals",
+                            "name": "db_settings",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "multi_az": [
+                        {
+                            "type": "locals",
+                            "name": "is_production",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "locals",
+                            "name": "db_settings",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario05/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "backup_retention_period": [
                         {
                             "type": "locals",
                             "name": "is_production",

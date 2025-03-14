@@ -77,21 +77,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "instance_type",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "ami": [
-                        {
-                            "type": "module",
-                            "name": "instances",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "ami_id",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
                             "module_connection": false
                         }
@@ -106,6 +92,20 @@
                         {
                             "type": "variable",
                             "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "ami": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "ami_id",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
                             "module_connection": false
                         }
@@ -196,7 +196,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "instance_type",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
                             "module_connection": false
                         }
@@ -306,6 +306,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
                 "breadcrumbs": {
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "ami": [
                         {
                             "type": "module",
@@ -321,20 +335,6 @@
                         }
                     ],
                     "count": [
-                        {
-                            "type": "module",
-                            "name": "instances",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "instance_type": [
                         {
                             "type": "module",
                             "name": "instances",
@@ -434,21 +434,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "count": [
-                        {
-                            "type": "module",
-                            "name": "instances",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
+                            "name": "instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
                             "module_connection": false
                         }
@@ -463,6 +449,20 @@
                         {
                             "type": "variable",
                             "name": "ami_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "count": [
+                        {
+                            "type": "module",
+                            "name": "instances",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario01/modules/instances/main.tf",
                             "module_connection": false
                         }

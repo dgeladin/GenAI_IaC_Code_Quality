@@ -1716,8 +1716,8 @@
                     },
                     "evaluated_keys": [
                         "replication_configuration/rules/*/status",
-                        "resource_type",
-                        "rule/*/status"
+                        "rule/*/status",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -1829,8 +1829,8 @@
                     },
                     "evaluated_keys": [
                         "replication_configuration/rules/*/status",
-                        "resource_type",
-                        "rule/*/status"
+                        "rule/*/status",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2110,8 +2110,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "policy"
+                        "policy",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2180,8 +2180,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "policy"
+                        "policy",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2292,8 +2292,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "logging"
+                        "logging",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2404,8 +2404,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "logging"
+                        "logging",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2505,9 +2505,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
+                        "block_public_policy",
                         "block_public_acls",
-                        "block_public_policy"
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2618,9 +2618,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
+                        "block_public_policy",
                         "block_public_acls",
-                        "block_public_policy"
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2720,9 +2720,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
+                        "rule/apply_server_side_encryption_by_default/sse_algorithm",
                         "server_side_encryption_configuration/rule/apply_server_side_encryption_by_default/sse_algorithm",
-                        "rule/apply_server_side_encryption_by_default/sse_algorithm"
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2833,9 +2833,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
+                        "rule/apply_server_side_encryption_by_default/sse_algorithm",
                         "server_side_encryption_configuration/rule/apply_server_side_encryption_by_default/sse_algorithm",
-                        "rule/apply_server_side_encryption_by_default/sse_algorithm"
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2904,8 +2904,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "encrypted"
+                        "encrypted",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2985,8 +2985,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "encrypted"
+                        "encrypted",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,

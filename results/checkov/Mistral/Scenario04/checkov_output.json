@@ -3,6 +3,42 @@
     "results": {
         "failed_checks": [
             {
+                "check_id": "CKV_TF_1",
+                "bc_check_id": "BC_CROSS_1",
+                "check_name": "Ensure Terraform module sources use a commit hash",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": []
+                },
+                "code_block": null,
+                "file_path": "/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario04/main.tf",
+                "repo_file_path": "/data/outputs/Mistral/Scenario04/main.tf",
+                "file_line_range": [
+                    18,
+                    31
+                ],
+                "resource": "vpc",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.module.generic.RevisionHash",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario04/main.tf"
+            },
+            {
                 "check_id": "CKV_AWS_23",
                 "bc_check_id": "BC_AWS_NETWORKING_31",
                 "check_name": "Ensure every security group and rule has a description",
@@ -387,42 +423,6 @@
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario04/main.tf"
             },
             {
-                "check_id": "CKV_TF_1",
-                "bc_check_id": "BC_CROSS_1",
-                "check_name": "Ensure Terraform module sources use a commit hash",
-                "check_result": {
-                    "result": "FAILED",
-                    "evaluated_keys": []
-                },
-                "code_block": null,
-                "file_path": "/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario04/main.tf",
-                "repo_file_path": "/data/outputs/Mistral/Scenario04/main.tf",
-                "file_line_range": [
-                    18,
-                    31
-                ],
-                "resource": "vpc",
-                "evaluations": null,
-                "check_class": "checkov.terraform.checks.module.generic.RevisionHash",
-                "fixed_definition": null,
-                "entity_tags": null,
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario04/main.tf"
-            },
-            {
                 "check_id": "CKV_AWS_103",
                 "bc_check_id": "BC_AWS_GENERAL_43",
                 "check_name": "Ensure that load balancer is using at least TLS 1.2",
@@ -458,11 +458,11 @@
                         }
                     },
                     "evaluated_keys": [
-                        "protocol",
-                        "load_balancer_type",
-                        "resource_type",
-                        "default_action/type",
                         "default_action/redirect/protocol",
+                        "default_action/type",
+                        "load_balancer_type",
+                        "protocol",
+                        "resource_type",
                         "ssl_policy"
                     ]
                 },
@@ -531,12 +531,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "protocol",
                         "default_action/redirect/*/protocol",
-                        "resource_type",
                         "default_action/type",
                         "port",
-                        "default_action/redirect/*/port"
+                        "default_action/redirect/*/port",
+                        "protocol",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -563,76 +563,6 @@
                 "vulnerability_details": null,
                 "connected_node": null,
                 "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-redirects-http-requests-into-https-ones",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario04/main.tf"
-            },
-            {
-                "check_id": "CKV2_AWS_28",
-                "bc_check_id": "BC_AWS_NETWORKING_58",
-                "check_name": "Ensure public facing ALB are protected by WAF",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_lb": {
-                            "app_lb": {
-                                "__end_line__": 180,
-                                "__start_line__": 172,
-                                "enable_deletion_protection": [
-                                    false
-                                ],
-                                "internal": [
-                                    false
-                                ],
-                                "load_balancer_type": [
-                                    "application"
-                                ],
-                                "name": [
-                                    "app-lb"
-                                ],
-                                "security_groups": [
-                                    [
-                                        "aws_security_group.lb_sg.id"
-                                    ]
-                                ],
-                                "subnets": [
-                                    "module.vpc.public_subnets"
-                                ],
-                                "__address__": "aws_lb.app_lb",
-                                "__provider_address__": "aws.default"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "load_balancer_type",
-                        "resource_type",
-                        "internal"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario04/main.tf",
-                "repo_file_path": "/data/outputs/Mistral/Scenario04/main.tf",
-                "file_line_range": [
-                    172,
-                    180
-                ],
-                "resource": "aws_lb.app_lb",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {},
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-facing-alb-are-protected-by-waf",
                 "details": [],
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario04/main.tf"
@@ -685,8 +615,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "protocol",
-                        "resource_type"
+                        "resource_type",
+                        "protocol"
                     ]
                 },
                 "code_block": null,
@@ -765,8 +695,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "protocol",
-                        "resource_type"
+                        "resource_type",
+                        "protocol"
                     ]
                 },
                 "code_block": null,
@@ -793,6 +723,76 @@
                 "vulnerability_details": null,
                 "connected_node": null,
                 "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-378",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario04/main.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_28",
+                "bc_check_id": "BC_AWS_NETWORKING_58",
+                "check_name": "Ensure public facing ALB are protected by WAF",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_lb": {
+                            "app_lb": {
+                                "__end_line__": 180,
+                                "__start_line__": 172,
+                                "enable_deletion_protection": [
+                                    false
+                                ],
+                                "internal": [
+                                    false
+                                ],
+                                "load_balancer_type": [
+                                    "application"
+                                ],
+                                "name": [
+                                    "app-lb"
+                                ],
+                                "security_groups": [
+                                    [
+                                        "aws_security_group.lb_sg.id"
+                                    ]
+                                ],
+                                "subnets": [
+                                    "module.vpc.public_subnets"
+                                ],
+                                "__address__": "aws_lb.app_lb",
+                                "__provider_address__": "aws.default"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "internal",
+                        "load_balancer_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario04/main.tf",
+                "repo_file_path": "/data/outputs/Mistral/Scenario04/main.tf",
+                "file_line_range": [
+                    172,
+                    180
+                ],
+                "resource": "aws_lb.app_lb",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-facing-alb-are-protected-by-waf",
                 "details": [],
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario04/main.tf"

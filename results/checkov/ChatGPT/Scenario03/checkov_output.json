@@ -3,82 +3,6 @@
     "results": {
         "failed_checks": [
             {
-                "check_id": "CKV_AWS_233",
-                "bc_check_id": "BC_AWS_NETWORKING_69",
-                "check_name": "Ensure Create before destroy for ACM certificates",
-                "check_result": {
-                    "result": "FAILED",
-                    "evaluated_keys": [
-                        "lifecycle/[0]/create_before_destroy"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario03/main.tf",
-                "repo_file_path": "/data/outputs/ChatGPT/Scenario03/main.tf",
-                "file_line_range": [
-                    59,
-                    62
-                ],
-                "resource": "aws_acm_certificate.tls_cert",
-                "evaluations": null,
-                "check_class": "checkov.terraform.checks.resource.aws.ACMCertCreateBeforeDestroy",
-                "fixed_definition": null,
-                "entity_tags": null,
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-acm-certificate-enables-create-before-destroy",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario03/main.tf"
-            },
-            {
-                "check_id": "CKV_K8S_21",
-                "bc_check_id": "BC_K8S_20",
-                "check_name": "The default namespace should not be used",
-                "check_result": {
-                    "result": "FAILED",
-                    "evaluated_keys": [
-                        "metadata/[0]/namespace"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario03/main.tf",
-                "repo_file_path": "/data/outputs/ChatGPT/Scenario03/main.tf",
-                "file_line_range": [
-                    64,
-                    100
-                ],
-                "resource": "kubernetes_ingress_v1.api_ingress",
-                "evaluations": null,
-                "check_class": "checkov.terraform.checks.resource.kubernetes.DefaultNamespace",
-                "fixed_definition": null,
-                "entity_tags": null,
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-20",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario03/main.tf"
-            },
-            {
                 "check_id": "CKV_TF_1",
                 "bc_check_id": "BC_CROSS_1",
                 "check_name": "Ensure Terraform module sources use a commit hash",
@@ -225,6 +149,82 @@
                         }
                     ]
                 }
+            },
+            {
+                "check_id": "CKV_AWS_233",
+                "bc_check_id": "BC_AWS_NETWORKING_69",
+                "check_name": "Ensure Create before destroy for ACM certificates",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "lifecycle/[0]/create_before_destroy"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario03/main.tf",
+                "repo_file_path": "/data/outputs/ChatGPT/Scenario03/main.tf",
+                "file_line_range": [
+                    59,
+                    62
+                ],
+                "resource": "aws_acm_certificate.tls_cert",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.ACMCertCreateBeforeDestroy",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-acm-certificate-enables-create-before-destroy",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario03/main.tf"
+            },
+            {
+                "check_id": "CKV_K8S_21",
+                "bc_check_id": "BC_K8S_20",
+                "check_name": "The default namespace should not be used",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "metadata/[0]/namespace"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario03/main.tf",
+                "repo_file_path": "/data/outputs/ChatGPT/Scenario03/main.tf",
+                "file_line_range": [
+                    64,
+                    100
+                ],
+                "resource": "kubernetes_ingress_v1.api_ingress",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.kubernetes.DefaultNamespace",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-20",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario03/main.tf"
             }
         ]
     },

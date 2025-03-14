@@ -430,9 +430,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
+                        "delegation/service_delegation/name",
                         "name",
-                        "delegation/service_delegation/name"
+                        "resource_type"
                     ]
                 },
                 "code_block": null,

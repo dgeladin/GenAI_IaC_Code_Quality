@@ -113,59 +113,35 @@
 			"severity": "LOW",
 			"warning": false,
 			"status": 0,
+			"resource": "module.asg_east",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
+				"start_line": 17,
+				"end_line": 22
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0124",
+			"long_id": "aws-ec2-add-description-to-security-group-rule",
+			"rule_description": "Missing description for security group rule.",
+			"rule_provider": "aws",
+			"rule_service": "ec2",
+			"impact": "Descriptions provide context for the firewall rule reasons",
+			"resolution": "Add descriptions for all security groups rules",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/add-description-to-security-group-rule/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule"
+			],
+			"description": "Security group rule does not have a description.",
+			"severity": "LOW",
+			"warning": false,
+			"status": 0,
 			"resource": "module.asg_west",
 			"location": {
 				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
 				"start_line": 17,
 				"end_line": 22
-			}
-		},
-		{
-			"rule_id": "AVD-AWS-0124",
-			"long_id": "aws-ec2-add-description-to-security-group-rule",
-			"rule_description": "Missing description for security group rule.",
-			"rule_provider": "aws",
-			"rule_service": "ec2",
-			"impact": "Descriptions provide context for the firewall rule reasons",
-			"resolution": "Add descriptions for all security groups rules",
-			"links": [
-				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/add-description-to-security-group-rule/",
-				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group",
-				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule"
-			],
-			"description": "Security group rule does not have a description.",
-			"severity": "LOW",
-			"warning": false,
-			"status": 0,
-			"resource": "module.asg_east",
-			"location": {
-				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
-				"start_line": 17,
-				"end_line": 22
-			}
-		},
-		{
-			"rule_id": "AVD-AWS-0124",
-			"long_id": "aws-ec2-add-description-to-security-group-rule",
-			"rule_description": "Missing description for security group rule.",
-			"rule_provider": "aws",
-			"rule_service": "ec2",
-			"impact": "Descriptions provide context for the firewall rule reasons",
-			"resolution": "Add descriptions for all security groups rules",
-			"links": [
-				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/add-description-to-security-group-rule/",
-				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group",
-				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule"
-			],
-			"description": "Security group rule does not have a description.",
-			"severity": "LOW",
-			"warning": false,
-			"status": 0,
-			"resource": "module.asg_east",
-			"location": {
-				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
-				"start_line": 117,
-				"end_line": 122
 			}
 		},
 		{
@@ -209,11 +185,11 @@
 			"severity": "LOW",
 			"warning": false,
 			"status": 0,
-			"resource": "module.asg_west",
+			"resource": "module.asg_east",
 			"location": {
 				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
-				"start_line": 110,
-				"end_line": 115
+				"start_line": 117,
+				"end_line": 122
 			}
 		},
 		{
@@ -258,6 +234,30 @@
 			"warning": false,
 			"status": 0,
 			"resource": "module.asg_west",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
+				"start_line": 110,
+				"end_line": 115
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0124",
+			"long_id": "aws-ec2-add-description-to-security-group-rule",
+			"rule_description": "Missing description for security group rule.",
+			"rule_provider": "aws",
+			"rule_service": "ec2",
+			"impact": "Descriptions provide context for the firewall rule reasons",
+			"resolution": "Add descriptions for all security groups rules",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/add-description-to-security-group-rule/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule"
+			],
+			"description": "Security group rule does not have a description.",
+			"severity": "LOW",
+			"warning": false,
+			"status": 0,
+			"resource": "module.asg_east",
 			"location": {
 				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
 				"start_line": 10,
@@ -281,7 +281,7 @@
 			"severity": "LOW",
 			"warning": false,
 			"status": 0,
-			"resource": "module.asg_east",
+			"resource": "module.asg_west",
 			"location": {
 				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
 				"start_line": 10,
@@ -350,7 +350,7 @@
 			"severity": "CRITICAL",
 			"warning": false,
 			"status": 0,
-			"resource": "module.asg_east",
+			"resource": "module.asg_west",
 			"location": {
 				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
 				"start_line": 21,
@@ -373,7 +373,7 @@
 			"severity": "CRITICAL",
 			"warning": false,
 			"status": 0,
-			"resource": "module.asg_west",
+			"resource": "module.asg_east",
 			"location": {
 				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
 				"start_line": 21,
@@ -442,29 +442,6 @@
 			"severity": "CRITICAL",
 			"warning": false,
 			"status": 0,
-			"resource": "module.asg_east",
-			"location": {
-				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
-				"start_line": 14,
-				"end_line": 14
-			}
-		},
-		{
-			"rule_id": "AVD-AWS-0107",
-			"long_id": "aws-ec2-no-public-ingress-sgr",
-			"rule_description": "An ingress security group rule allows traffic from /0.",
-			"rule_provider": "aws",
-			"rule_service": "ec2",
-			"impact": "Your port exposed to the internet",
-			"resolution": "Set a more restrictive cidr range",
-			"links": [
-				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/no-public-ingress-sgr/",
-				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule#cidr_blocks"
-			],
-			"description": "Security group rule allows ingress from public internet.",
-			"severity": "CRITICAL",
-			"warning": false,
-			"status": 0,
 			"resource": "module.asg_west",
 			"location": {
 				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
@@ -489,6 +466,29 @@
 			"warning": false,
 			"status": 0,
 			"resource": "module.asg_east",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
+				"start_line": 14,
+				"end_line": 14
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0107",
+			"long_id": "aws-ec2-no-public-ingress-sgr",
+			"rule_description": "An ingress security group rule allows traffic from /0.",
+			"rule_provider": "aws",
+			"rule_service": "ec2",
+			"impact": "Your port exposed to the internet",
+			"resolution": "Set a more restrictive cidr range",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/no-public-ingress-sgr/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule#cidr_blocks"
+			],
+			"description": "Security group rule allows ingress from public internet.",
+			"severity": "CRITICAL",
+			"warning": false,
+			"status": 0,
+			"resource": "module.asg_west",
 			"location": {
 				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
 				"start_line": 114,
@@ -511,7 +511,7 @@
 			"severity": "CRITICAL",
 			"warning": false,
 			"status": 0,
-			"resource": "module.asg_west",
+			"resource": "module.asg_east",
 			"location": {
 				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
 				"start_line": 114,
@@ -578,7 +578,7 @@
 			"severity": "HIGH",
 			"warning": false,
 			"status": 0,
-			"resource": "module.asg_west",
+			"resource": "module.asg_east",
 			"location": {
 				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
 				"start_line": 95,
@@ -601,7 +601,7 @@
 			"severity": "HIGH",
 			"warning": false,
 			"status": 0,
-			"resource": "module.asg_east",
+			"resource": "module.asg_west",
 			"location": {
 				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
 				"start_line": 95,
@@ -624,7 +624,7 @@
 			"severity": "HIGH",
 			"warning": false,
 			"status": 0,
-			"resource": "module.asg_east",
+			"resource": "module.asg_west",
 			"location": {
 				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
 				"start_line": 93,
@@ -647,7 +647,7 @@
 			"severity": "HIGH",
 			"warning": false,
 			"status": 0,
-			"resource": "module.asg_west",
+			"resource": "module.asg_east",
 			"location": {
 				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
 				"start_line": 93,
@@ -693,7 +693,7 @@
 			"severity": "CRITICAL",
 			"warning": false,
 			"status": 0,
-			"resource": "module.asg_west",
+			"resource": "module.asg_east",
 			"location": {
 				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
 				"start_line": 147,
@@ -716,7 +716,7 @@
 			"severity": "CRITICAL",
 			"warning": false,
 			"status": 0,
-			"resource": "module.asg_east",
+			"resource": "module.asg_west",
 			"location": {
 				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario02/modules/asg/main.tf",
 				"start_line": 147,

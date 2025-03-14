@@ -59,7 +59,7 @@
 				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
 				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
 			],
-			"description": "IAM policy document uses sensitive action 's3:ReplicateObject' on wildcarded resource '506e4381-3faa-4b5f-bbc7-8acb7cfb1a7c/*'",
+			"description": "IAM policy document uses sensitive action 's3:GetObjectVersionForReplication' on wildcarded resource '7249434e-6a2c-4161-82fe-02eb961ded42/*'",
 			"severity": "HIGH",
 			"warning": false,
 			"status": 0,
@@ -82,7 +82,7 @@
 				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
 				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
 			],
-			"description": "IAM policy document uses sensitive action 's3:GetObjectVersionForReplication' on wildcarded resource '506e4381-3faa-4b5f-bbc7-8acb7cfb1a7c/*'",
+			"description": "IAM policy document uses sensitive action 's3:ReplicateObject' on wildcarded resource '7249434e-6a2c-4161-82fe-02eb961ded42/*'",
 			"severity": "HIGH",
 			"warning": false,
 			"status": 0,
@@ -174,7 +174,7 @@
 				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
 				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
 			],
-			"description": "IAM policy document uses sensitive action 's3:GetObjectVersionForReplication' on wildcarded resource 'ae2ab0d2-ccbe-4a35-89e2-a465040b3c53/*'",
+			"description": "IAM policy document uses sensitive action 's3:GetObjectVersionForReplication' on wildcarded resource '25dda09f-b7db-4ab8-84c2-04293cbaf95a/*'",
 			"severity": "HIGH",
 			"warning": false,
 			"status": 0,
@@ -197,7 +197,7 @@
 				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
 				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
 			],
-			"description": "IAM policy document uses sensitive action 's3:ReplicateObject' on wildcarded resource 'ae2ab0d2-ccbe-4a35-89e2-a465040b3c53/*'",
+			"description": "IAM policy document uses sensitive action 's3:ReplicateObject' on wildcarded resource '25dda09f-b7db-4ab8-84c2-04293cbaf95a/*'",
 			"severity": "HIGH",
 			"warning": false,
 			"status": 0,

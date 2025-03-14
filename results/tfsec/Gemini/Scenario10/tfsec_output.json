@@ -126,7 +126,7 @@
 				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
 				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
 			],
-			"description": "IAM policy document uses sensitive action 'drs:StartRecoveryInstances' on wildcarded resource '29121824-b997-4f2a-adcb-50a9cb5aa375'",
+			"description": "IAM policy document uses sensitive action 'logs:CreateLogGroup' on wildcarded resource 'arn:aws:logs:us-east-1:123456789012:log-group:/aws/lambda/dr-failover-function:*'",
 			"severity": "HIGH",
 			"warning": false,
 			"status": 0,
@@ -149,7 +149,7 @@
 				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
 				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
 			],
-			"description": "IAM policy document uses sensitive action 'drs:StartRecoveryInstances' on wildcarded resource '29121824-b997-4f2a-adcb-50a9cb5aa375'",
+			"description": "IAM policy document uses sensitive action 'drs:StartRecoveryInstances' on wildcarded resource 'dbc2925b-a523-42aa-91b4-7d80930e9623'",
 			"severity": "HIGH",
 			"warning": false,
 			"status": 0,
@@ -195,7 +195,7 @@
 				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
 				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
 			],
-			"description": "IAM policy document uses sensitive action 'logs:CreateLogGroup' on wildcarded resource 'arn:aws:logs:us-east-1:123456789012:log-group:/aws/lambda/dr-failover-function:*'",
+			"description": "IAM policy document uses sensitive action 'drs:StartRecoveryInstances' on wildcarded resource 'dbc2925b-a523-42aa-91b4-7d80930e9623'",
 			"severity": "HIGH",
 			"warning": false,
 			"status": 0,

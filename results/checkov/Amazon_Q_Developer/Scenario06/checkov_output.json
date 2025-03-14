@@ -1144,9 +1144,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "protocol_type",
+                        "client_certificate_id",
                         "resource_type",
-                        "client_certificate_id"
+                        "protocol_type"
                     ]
                 },
                 "code_block": null,
@@ -1269,9 +1269,9 @@
                         }
                     },
                     "evaluated_keys": [
+                        "resource_type",
                         "settings/logging_level",
-                        "settings/metrics_enabled",
-                        "resource_type"
+                        "settings/metrics_enabled"
                     ]
                 },
                 "code_block": null,
@@ -1394,8 +1394,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "endpoint_configuration/types",
-                        "resource_type"
+                        "resource_type",
+                        "endpoint_configuration/types"
                     ]
                 },
                 "code_block": null,

@@ -498,12 +498,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "load_balancer_type",
+                        "default_action/redirect/protocol",
                         "resource_type",
                         "default_action/type",
-                        "default_action/redirect/protocol",
-                        "protocol",
-                        "ssl_policy"
+                        "load_balancer_type",
+                        "ssl_policy",
+                        "protocol"
                     ]
                 },
                 "code_block": null,
@@ -567,12 +567,12 @@
                         }
                     },
                     "evaluated_keys": [
+                        "port",
+                        "default_action/redirect/*/port",
                         "resource_type",
                         "default_action/type",
-                        "default_action/redirect/*/port",
-                        "protocol",
                         "default_action/redirect/*/protocol",
-                        "port"
+                        "protocol"
                     ]
                 },
                 "code_block": null,
@@ -631,8 +631,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "protocol"
+                        "protocol",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -691,8 +691,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "protocol"
+                        "protocol",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -756,8 +756,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "load_balancer_type",
                         "internal",
+                        "load_balancer_type",
                         "resource_type"
                     ]
                 },

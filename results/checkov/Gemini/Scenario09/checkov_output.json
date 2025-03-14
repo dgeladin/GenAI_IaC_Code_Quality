@@ -535,8 +535,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "blob_properties/delete_retention_policy/days",
                         "account_kind",
+                        "blob_properties/delete_retention_policy/days",
                         "blob_properties/delete_retention_policy"
                     ]
                 },
@@ -892,88 +892,6 @@
                 }
             },
             {
-                "check_id": "CKV2_AZURE_31",
-                "bc_check_id": "BC_AZR_GENERAL_124",
-                "check_name": "Ensure VNET subnet is configured with a Network Security Group (NSG)",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "azurerm_subnet": {
-                            "example_subnet": {
-                                "__end_line__": 109,
-                                "__start_line__": 104,
-                                "address_prefixes": [
-                                    [
-                                        "10.0.1.0/24"
-                                    ]
-                                ],
-                                "name": [
-                                    "example-subnet"
-                                ],
-                                "resource_group_name": [
-                                    "example-resources"
-                                ],
-                                "virtual_network_name": [
-                                    "example-vnet"
-                                ],
-                                "__address__": "azurerm_subnet.example_subnet",
-                                "__provider_address__": "aws.default"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "delegation/service_delegation/name",
-                        "resource_type",
-                        "name"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario09/main.tf",
-                "repo_file_path": "/data/outputs/Gemini/Scenario09/main.tf",
-                "file_line_range": [
-                    104,
-                    109
-                ],
-                "resource": "azurerm_subnet.example_subnet",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {},
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/bc-azure-2-31",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario09/main.tf",
-                "breadcrumbs": {
-                    "resource_group_name": [
-                        {
-                            "type": "resource",
-                            "name": "azurerm_resource_group.example_rg",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario09/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "virtual_network_name": [
-                        {
-                            "type": "resource",
-                            "name": "azurerm_virtual_network.example_vnet",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario09/main.tf",
-                            "module_connection": false
-                        }
-                    ]
-                }
-            },
-            {
                 "check_id": "CKV2_AZURE_41",
                 "bc_check_id": "BC_AZR_IAM_21",
                 "check_name": "Ensure storage account is configured with SAS expiration policy",
@@ -1005,8 +923,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "sas_policy",
                         "shared_access_key_enabled",
+                        "sas_policy",
                         "sas_policy/expiration_period"
                     ]
                 },
@@ -1138,6 +1056,88 @@
                 }
             },
             {
+                "check_id": "CKV2_AZURE_31",
+                "bc_check_id": "BC_AZR_GENERAL_124",
+                "check_name": "Ensure VNET subnet is configured with a Network Security Group (NSG)",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "azurerm_subnet": {
+                            "example_subnet": {
+                                "__end_line__": 109,
+                                "__start_line__": 104,
+                                "address_prefixes": [
+                                    [
+                                        "10.0.1.0/24"
+                                    ]
+                                ],
+                                "name": [
+                                    "example-subnet"
+                                ],
+                                "resource_group_name": [
+                                    "example-resources"
+                                ],
+                                "virtual_network_name": [
+                                    "example-vnet"
+                                ],
+                                "__address__": "azurerm_subnet.example_subnet",
+                                "__provider_address__": "aws.default"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "name",
+                        "delegation/service_delegation/name"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario09/main.tf",
+                "repo_file_path": "/data/outputs/Gemini/Scenario09/main.tf",
+                "file_line_range": [
+                    104,
+                    109
+                ],
+                "resource": "azurerm_subnet.example_subnet",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/bc-azure-2-31",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario09/main.tf",
+                "breadcrumbs": {
+                    "resource_group_name": [
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.example_rg",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario09/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "virtual_network_name": [
+                        {
+                            "type": "resource",
+                            "name": "azurerm_virtual_network.example_vnet",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario09/main.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
                 "check_id": "CKV2_AZURE_10",
                 "bc_check_id": "BC_AZR_GENERAL_68",
                 "check_name": "Ensure that Microsoft Antimalware is configured to automatically updates for Virtual Machines",
@@ -1228,10 +1228,10 @@
                         }
                     },
                     "evaluated_keys": [
-                        "auto_upgrade_minor_version",
+                        "publisher",
                         "resource_type",
-                        "type",
-                        "publisher"
+                        "auto_upgrade_minor_version",
+                        "type"
                     ]
                 },
                 "code_block": null,
@@ -1314,8 +1314,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "customer_managed_key/key_vault_key_id"
+                        "customer_managed_key/key_vault_key_id",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,

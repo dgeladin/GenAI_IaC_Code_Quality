@@ -188,9 +188,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "subject_alternative_names",
+                        "domain_name",
                         "subject_alternative_names/*",
-                        "domain_name"
+                        "subject_alternative_names"
                     ]
                 },
                 "code_block": null,

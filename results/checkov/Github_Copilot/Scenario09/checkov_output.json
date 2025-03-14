@@ -589,9 +589,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
                         "delegation/service_delegation/name",
-                        "name"
+                        "name",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -731,10 +731,10 @@
                         }
                     },
                     "evaluated_keys": [
-                        "auto_upgrade_minor_version",
-                        "resource_type",
                         "publisher",
-                        "type"
+                        "auto_upgrade_minor_version",
+                        "type",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,

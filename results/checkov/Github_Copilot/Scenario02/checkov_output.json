@@ -153,6 +153,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "tag_specifications.tags.Name": [
                         {
                             "type": "module",
@@ -177,20 +191,6 @@
                         {
                             "type": "variable",
                             "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "instance_type": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -263,20 +263,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -292,6 +278,20 @@
                         }
                     ],
                     "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
                         {
                             "type": "module",
                             "name": "asg_east",
@@ -359,20 +359,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -388,6 +374,20 @@
                         }
                     ],
                     "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
                         {
                             "type": "module",
                             "name": "asg_east",
@@ -455,20 +455,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -484,6 +470,20 @@
                         }
                     ],
                     "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
                         {
                             "type": "module",
                             "name": "asg_east",
@@ -554,20 +554,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "description": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "tags.Name": [
                         {
                             "type": "module",
@@ -592,6 +578,20 @@
                         {
                             "type": "variable",
                             "name": "vpc_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "description": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -666,20 +666,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "description": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "tags.Name": [
                         {
                             "type": "module",
@@ -704,6 +690,20 @@
                         {
                             "type": "variable",
                             "name": "vpc_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "description": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -779,20 +779,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "description": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "tags.Name": [
                         {
                             "type": "module",
@@ -817,6 +803,20 @@
                         {
                             "type": "variable",
                             "name": "vpc_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "description": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -967,20 +967,6 @@
                             "module_connection": false
                         }
                     ],
-                    "instance_type": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "instance_type",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -991,6 +977,20 @@
                         {
                             "type": "variable",
                             "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -1049,6 +1049,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -1064,20 +1078,6 @@
                         }
                     ],
                     "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Name": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -1145,6 +1145,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -1160,20 +1174,6 @@
                         }
                     ],
                     "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Name": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -1241,6 +1241,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -1256,20 +1270,6 @@
                         }
                     ],
                     "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Name": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -1340,20 +1340,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "vpc_id": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "vpc_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name": [
                         {
                             "type": "module",
@@ -1364,6 +1350,20 @@
                         {
                             "type": "variable",
                             "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "vpc_id",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -1452,20 +1452,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "vpc_id": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "vpc_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name": [
                         {
                             "type": "module",
@@ -1476,6 +1462,20 @@
                         {
                             "type": "variable",
                             "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "vpc_id",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -1565,20 +1565,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "vpc_id": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "vpc_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name": [
                         {
                             "type": "module",
@@ -1589,6 +1575,20 @@
                         {
                             "type": "variable",
                             "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "vpc_id",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -1685,272 +1685,6 @@
                 }
             },
             {
-                "check_id": "CKV2_AWS_20",
-                "bc_check_id": "BC_AWS_NETWORKING_49",
-                "check_name": "Ensure that ALB redirects HTTP requests into HTTPS ones",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_lb": {
-                            "this": {
-                                "__end_line__": 81,
-                                "__start_line__": 69,
-                                "enable_deletion_protection": [
-                                    false
-                                ],
-                                "internal": [
-                                    false
-                                ],
-                                "load_balancer_type": [
-                                    "application"
-                                ],
-                                "name": [
-                                    "example-app-alb"
-                                ],
-                                "security_groups": [
-                                    [
-                                        "aws_security_group.lb_sg.id"
-                                    ]
-                                ],
-                                "subnets": [
-                                    "module.vpc_us_east_1.public_subnets"
-                                ],
-                                "tags": [
-                                    {
-                                        "Name": "example-app-alb"
-                                    }
-                                ],
-                                "__address__": "module.asg_east.aws_lb.this",
-                                "__provider_address__": "aws.us_east_1"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "port",
-                        "resource_type",
-                        "default_action/redirect/*/port",
-                        "default_action/type",
-                        "protocol",
-                        "default_action/redirect/*/protocol"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/asg/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                "repo_file_path": "/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                "file_line_range": [
-                    69,
-                    81
-                ],
-                "resource": "module.asg_east.aws_lb.this",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {
-                    "Name": "example-app-alb"
-                },
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-redirects-http-requests-into-https-ones",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                "breadcrumbs": {
-                    "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "subnets": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "subnet_ids",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "source_module_": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "idx": 2,
-                            "source_module_object": null
-                        }
-                    ]
-                }
-            },
-            {
-                "check_id": "CKV2_AWS_20",
-                "bc_check_id": "BC_AWS_NETWORKING_49",
-                "check_name": "Ensure that ALB redirects HTTP requests into HTTPS ones",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_lb": {
-                            "this": {
-                                "__end_line__": 81,
-                                "__start_line__": 69,
-                                "enable_deletion_protection": [
-                                    false
-                                ],
-                                "internal": [
-                                    false
-                                ],
-                                "load_balancer_type": [
-                                    "application"
-                                ],
-                                "name": [
-                                    "example-app-alb"
-                                ],
-                                "security_groups": [
-                                    [
-                                        "aws_security_group.lb_sg.id"
-                                    ]
-                                ],
-                                "subnets": [
-                                    "module.vpc_us_west_2.public_subnets"
-                                ],
-                                "tags": [
-                                    {
-                                        "Name": "example-app-alb"
-                                    }
-                                ],
-                                "__address__": "module.asg_west.aws_lb.this",
-                                "__provider_address__": "aws.us_west_2"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "port",
-                        "resource_type",
-                        "default_action/redirect/*/port",
-                        "default_action/type",
-                        "protocol",
-                        "default_action/redirect/*/protocol"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/asg/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                "repo_file_path": "/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                "file_line_range": [
-                    69,
-                    81
-                ],
-                "resource": "module.asg_west.aws_lb.this",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {
-                    "Name": "example-app-alb"
-                },
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-redirects-http-requests-into-https-ones",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                "breadcrumbs": {
-                    "subnets": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "subnet_ids",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "source_module_": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "idx": 3,
-                            "source_module_object": null
-                        }
-                    ]
-                }
-            },
-            {
                 "check_id": "CKV_AWS_103",
                 "bc_check_id": "BC_AWS_GENERAL_43",
                 "check_name": "Ensure that load balancer is using at least TLS 1.2",
@@ -1986,12 +1720,12 @@
                         }
                     },
                     "evaluated_keys": [
+                        "default_action/redirect/protocol",
                         "resource_type",
                         "default_action/type",
-                        "default_action/redirect/protocol",
-                        "protocol",
                         "load_balancer_type",
-                        "ssl_policy"
+                        "ssl_policy",
+                        "protocol"
                     ]
                 },
                 "code_block": null,
@@ -2069,12 +1803,12 @@
                         }
                     },
                     "evaluated_keys": [
+                        "default_action/redirect/protocol",
                         "resource_type",
                         "default_action/type",
-                        "default_action/redirect/protocol",
-                        "protocol",
                         "load_balancer_type",
-                        "ssl_policy"
+                        "ssl_policy",
+                        "protocol"
                     ]
                 },
                 "code_block": null,
@@ -2105,6 +1839,272 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "idx": 3,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_20",
+                "bc_check_id": "BC_AWS_NETWORKING_49",
+                "check_name": "Ensure that ALB redirects HTTP requests into HTTPS ones",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_lb": {
+                            "this": {
+                                "__end_line__": 81,
+                                "__start_line__": 69,
+                                "enable_deletion_protection": [
+                                    false
+                                ],
+                                "internal": [
+                                    false
+                                ],
+                                "load_balancer_type": [
+                                    "application"
+                                ],
+                                "name": [
+                                    "example-app-alb"
+                                ],
+                                "security_groups": [
+                                    [
+                                        "aws_security_group.lb_sg.id"
+                                    ]
+                                ],
+                                "subnets": [
+                                    "module.vpc_us_east_1.public_subnets"
+                                ],
+                                "tags": [
+                                    {
+                                        "Name": "example-app-alb"
+                                    }
+                                ],
+                                "__address__": "module.asg_east.aws_lb.this",
+                                "__provider_address__": "aws.us_east_1"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "default_action/redirect/*/port",
+                        "resource_type",
+                        "default_action/type",
+                        "port",
+                        "default_action/redirect/*/protocol",
+                        "protocol"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/asg/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                "file_line_range": [
+                    69,
+                    81
+                ],
+                "resource": "module.asg_east.aws_lb.this",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-app-alb"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-redirects-http-requests-into-https-ones",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                "breadcrumbs": {
+                    "subnets": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "idx": 2,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_20",
+                "bc_check_id": "BC_AWS_NETWORKING_49",
+                "check_name": "Ensure that ALB redirects HTTP requests into HTTPS ones",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_lb": {
+                            "this": {
+                                "__end_line__": 81,
+                                "__start_line__": 69,
+                                "enable_deletion_protection": [
+                                    false
+                                ],
+                                "internal": [
+                                    false
+                                ],
+                                "load_balancer_type": [
+                                    "application"
+                                ],
+                                "name": [
+                                    "example-app-alb"
+                                ],
+                                "security_groups": [
+                                    [
+                                        "aws_security_group.lb_sg.id"
+                                    ]
+                                ],
+                                "subnets": [
+                                    "module.vpc_us_west_2.public_subnets"
+                                ],
+                                "tags": [
+                                    {
+                                        "Name": "example-app-alb"
+                                    }
+                                ],
+                                "__address__": "module.asg_west.aws_lb.this",
+                                "__provider_address__": "aws.us_west_2"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "default_action/redirect/*/port",
+                        "resource_type",
+                        "default_action/type",
+                        "port",
+                        "default_action/redirect/*/protocol",
+                        "protocol"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/asg/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                "file_line_range": [
+                    69,
+                    81
+                ],
+                "resource": "module.asg_west.aws_lb.this",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "example-app-alb"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-redirects-http-requests-into-https-ones",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                "breadcrumbs": {
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "subnets": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "source_module_": [
                         {
                             "type": "module",
@@ -2158,9 +2158,9 @@
                         }
                     },
                     "evaluated_keys": [
+                        "resource_type",
                         "internal",
-                        "load_balancer_type",
-                        "resource_type"
+                        "load_balancer_type"
                     ]
                 },
                 "code_block": null,
@@ -2193,20 +2193,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -2222,6 +2208,20 @@
                         }
                     ],
                     "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
                         {
                             "type": "module",
                             "name": "asg_east",
@@ -2288,9 +2288,9 @@
                         }
                     },
                     "evaluated_keys": [
+                        "resource_type",
                         "internal",
-                        "load_balancer_type",
-                        "resource_type"
+                        "load_balancer_type"
                     ]
                 },
                 "code_block": null,
@@ -2323,6 +2323,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -2338,20 +2352,6 @@
                         }
                     ],
                     "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Name": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -2435,8 +2435,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "protocol",
-                        "resource_type"
+                        "resource_type",
+                        "protocol"
                     ]
                 },
                 "code_block": null,
@@ -2469,6 +2469,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "vpc_id": [
                         {
                             "type": "module",
@@ -2484,20 +2498,6 @@
                         }
                     ],
                     "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Name": [
                         {
                             "type": "module",
                             "name": "asg_east",
@@ -2581,8 +2581,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "protocol",
-                        "resource_type"
+                        "resource_type",
+                        "protocol"
                     ]
                 },
                 "code_block": null,
@@ -2615,6 +2615,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "vpc_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "tags.Name": [
                         {
                             "type": "module",
@@ -2639,20 +2653,6 @@
                         {
                             "type": "variable",
                             "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "vpc_id": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "vpc_id",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }

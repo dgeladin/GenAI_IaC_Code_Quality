@@ -242,7 +242,76 @@
 				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
 				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
 			],
+			"description": "IAM policy document uses sensitive action 'logs:CreateLogGroup' on wildcarded resource 'arn:aws:logs:*:*:*'",
+			"severity": "HIGH",
+			"warning": false,
+			"status": 0,
+			"resource": "module.dr_lambda_iam_role",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/dr_lambda_iam_role/main.tf",
+				"start_line": 28,
+				"end_line": 28
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0057",
+			"long_id": "aws-iam-no-policy-wildcards",
+			"rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
+			"rule_provider": "aws",
+			"rule_service": "iam",
+			"impact": "Overly permissive policies may grant access to sensitive resources",
+			"resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
+			],
 			"description": "IAM policy document uses sensitive action 'sns:Publish' on wildcarded resource '*'",
+			"severity": "HIGH",
+			"warning": false,
+			"status": 0,
+			"resource": "module.dr_lambda_iam_role",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/dr_lambda_iam_role/main.tf",
+				"start_line": 28,
+				"end_line": 28
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0057",
+			"long_id": "aws-iam-no-policy-wildcards",
+			"rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
+			"rule_provider": "aws",
+			"rule_service": "iam",
+			"impact": "Overly permissive policies may grant access to sensitive resources",
+			"resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
+			],
+			"description": "IAM policy document uses sensitive action 'drs:StartFailbackLaunch' on wildcarded resource '*'",
+			"severity": "HIGH",
+			"warning": false,
+			"status": 0,
+			"resource": "module.dr_lambda_iam_role",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/dr_lambda_iam_role/main.tf",
+				"start_line": 28,
+				"end_line": 28
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0057",
+			"long_id": "aws-iam-no-policy-wildcards",
+			"rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
+			"rule_provider": "aws",
+			"rule_service": "iam",
+			"impact": "Overly permissive policies may grant access to sensitive resources",
+			"resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
+			],
+			"description": "IAM policy document uses sensitive action 'logs:CreateLogGroup' on wildcarded resource 'arn:aws:logs:*:*:*'",
 			"severity": "HIGH",
 			"warning": false,
 			"status": 0,
@@ -334,122 +403,7 @@
 				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
 				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
 			],
-			"description": "IAM policy document uses sensitive action 'logs:CreateLogGroup' on wildcarded resource 'arn:aws:logs:*:*:*'",
-			"severity": "HIGH",
-			"warning": false,
-			"status": 0,
-			"resource": "module.dr_lambda_iam_role",
-			"location": {
-				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/dr_lambda_iam_role/main.tf",
-				"start_line": 28,
-				"end_line": 28
-			}
-		},
-		{
-			"rule_id": "AVD-AWS-0057",
-			"long_id": "aws-iam-no-policy-wildcards",
-			"rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
-			"rule_provider": "aws",
-			"rule_service": "iam",
-			"impact": "Overly permissive policies may grant access to sensitive resources",
-			"resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
-			"links": [
-				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
-				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
-			],
-			"description": "IAM policy document uses sensitive action 'logs:CreateLogGroup' on wildcarded resource 'arn:aws:logs:*:*:*'",
-			"severity": "HIGH",
-			"warning": false,
-			"status": 0,
-			"resource": "module.dr_lambda_iam_role",
-			"location": {
-				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/dr_lambda_iam_role/main.tf",
-				"start_line": 28,
-				"end_line": 28
-			}
-		},
-		{
-			"rule_id": "AVD-AWS-0057",
-			"long_id": "aws-iam-no-policy-wildcards",
-			"rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
-			"rule_provider": "aws",
-			"rule_service": "iam",
-			"impact": "Overly permissive policies may grant access to sensitive resources",
-			"resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
-			"links": [
-				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
-				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
-			],
 			"description": "IAM policy document uses sensitive action 'drs:StartFailbackLaunch' on wildcarded resource '*'",
-			"severity": "HIGH",
-			"warning": false,
-			"status": 0,
-			"resource": "module.dr_lambda_iam_role",
-			"location": {
-				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/modules/dr_lambda_iam_role/main.tf",
-				"start_line": 28,
-				"end_line": 28
-			}
-		},
-		{
-			"rule_id": "AVD-AWS-0057",
-			"long_id": "aws-iam-no-policy-wildcards",
-			"rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
-			"rule_provider": "aws",
-			"rule_service": "iam",
-			"impact": "Overly permissive policies may grant access to sensitive resources",
-			"resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
-			"links": [
-				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
-				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
-			],
-			"description": "IAM policy document uses sensitive action 'sns:Publish' on wildcarded resource '*'",
-			"severity": "HIGH",
-			"warning": false,
-			"status": 0,
-			"resource": "aws_iam_policy.lambda_execution_policy",
-			"location": {
-				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
-				"start_line": 49,
-				"end_line": 49
-			}
-		},
-		{
-			"rule_id": "AVD-AWS-0057",
-			"long_id": "aws-iam-no-policy-wildcards",
-			"rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
-			"rule_provider": "aws",
-			"rule_service": "iam",
-			"impact": "Overly permissive policies may grant access to sensitive resources",
-			"resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
-			"links": [
-				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
-				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
-			],
-			"description": "IAM policy document uses sensitive action 'drs:StartFailbackLaunch' on wildcarded resource '*'",
-			"severity": "HIGH",
-			"warning": false,
-			"status": 0,
-			"resource": "aws_iam_policy.lambda_execution_policy",
-			"location": {
-				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
-				"start_line": 49,
-				"end_line": 49
-			}
-		},
-		{
-			"rule_id": "AVD-AWS-0057",
-			"long_id": "aws-iam-no-policy-wildcards",
-			"rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
-			"rule_provider": "aws",
-			"rule_service": "iam",
-			"impact": "Overly permissive policies may grant access to sensitive resources",
-			"resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
-			"links": [
-				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
-				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
-			],
-			"description": "IAM policy document uses sensitive action 'logs:CreateLogGroup' on wildcarded resource 'arn:aws:logs:*:*:*'",
 			"severity": "HIGH",
 			"warning": false,
 			"status": 0,
@@ -519,6 +473,52 @@
 				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
 			],
 			"description": "IAM policy document uses sensitive action 'sns:Publish' on wildcarded resource '*'",
+			"severity": "HIGH",
+			"warning": false,
+			"status": 0,
+			"resource": "aws_iam_policy.lambda_execution_policy",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+				"start_line": 49,
+				"end_line": 49
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0057",
+			"long_id": "aws-iam-no-policy-wildcards",
+			"rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
+			"rule_provider": "aws",
+			"rule_service": "iam",
+			"impact": "Overly permissive policies may grant access to sensitive resources",
+			"resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
+			],
+			"description": "IAM policy document uses sensitive action 'sns:Publish' on wildcarded resource '*'",
+			"severity": "HIGH",
+			"warning": false,
+			"status": 0,
+			"resource": "aws_iam_policy.lambda_execution_policy",
+			"location": {
+				"filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario10/lambda_function.tf",
+				"start_line": 49,
+				"end_line": 49
+			}
+		},
+		{
+			"rule_id": "AVD-AWS-0057",
+			"long_id": "aws-iam-no-policy-wildcards",
+			"rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
+			"rule_provider": "aws",
+			"rule_service": "iam",
+			"impact": "Overly permissive policies may grant access to sensitive resources",
+			"resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
+			"links": [
+				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
+				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
+			],
+			"description": "IAM policy document uses sensitive action 'logs:CreateLogGroup' on wildcarded resource 'arn:aws:logs:*:*:*'",
 			"severity": "HIGH",
 			"warning": false,
 			"status": 0,
@@ -564,7 +564,7 @@
 				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
 				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
 			],
-			"description": "IAM policy document uses sensitive action 'sns:Publish' on wildcarded resource '*'",
+			"description": "IAM policy document uses sensitive action 'logs:CreateLogGroup' on wildcarded resource 'arn:aws:logs:*:*:*'",
 			"severity": "HIGH",
 			"warning": false,
 			"status": 0,
@@ -587,7 +587,7 @@
 				"https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
 				"https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
 			],
-			"description": "IAM policy document uses sensitive action 'logs:CreateLogGroup' on wildcarded resource 'arn:aws:logs:*:*:*'",
+			"description": "IAM policy document uses sensitive action 'sns:Publish' on wildcarded resource '*'",
 			"severity": "HIGH",
 			"warning": false,
 			"status": 0,

@@ -528,9 +528,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "rule/*/status",
                         "resource_type",
-                        "replication_configuration/rules/*/status"
+                        "replication_configuration/rules/*/status",
+                        "rule/*/status"
                     ]
                 },
                 "code_block": null,
@@ -698,8 +698,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "logging"
+                        "logging",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -797,12 +797,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "default_action/type",
-                        "protocol",
-                        "ssl_policy",
                         "default_action/redirect/protocol",
-                        "load_balancer_type"
+                        "load_balancer_type",
+                        "default_action/type",
+                        "ssl_policy",
+                        "protocol",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -893,12 +893,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "default_action/type",
-                        "protocol",
-                        "ssl_policy",
                         "default_action/redirect/protocol",
-                        "load_balancer_type"
+                        "load_balancer_type",
+                        "default_action/type",
+                        "ssl_policy",
+                        "protocol",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -975,9 +975,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "rule/apply_server_side_encryption_by_default/sse_algorithm",
+                        "server_side_encryption_configuration/rule/apply_server_side_encryption_by_default/sse_algorithm",
                         "resource_type",
-                        "server_side_encryption_configuration/rule/apply_server_side_encryption_by_default/sse_algorithm"
+                        "rule/apply_server_side_encryption_by_default/sse_algorithm"
                     ]
                 },
                 "code_block": null,
@@ -1089,11 +1089,11 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "default_action/redirect/*/port",
                         "port",
                         "default_action/type",
                         "protocol",
+                        "default_action/redirect/*/port",
+                        "resource_type",
                         "default_action/redirect/*/protocol"
                     ]
                 },
@@ -1215,9 +1215,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
+                        "internal",
                         "load_balancer_type",
-                        "internal"
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -1371,8 +1371,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "protocol",
-                        "resource_type"
+                        "resource_type",
+                        "protocol"
                     ]
                 },
                 "code_block": null,
@@ -1510,8 +1510,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "protocol",
-                        "resource_type"
+                        "resource_type",
+                        "protocol"
                     ]
                 },
                 "code_block": null,

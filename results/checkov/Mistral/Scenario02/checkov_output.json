@@ -43,20 +43,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "instance_type": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "instance_type",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -67,6 +53,20 @@
                         {
                             "type": "variable",
                             "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
                             "module_connection": false
                         }
@@ -151,20 +151,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "instance_type": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "instance_type",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -175,6 +161,20 @@
                         {
                             "type": "variable",
                             "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
                             "module_connection": false
                         }
@@ -506,20 +506,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -530,6 +516,20 @@
                         {
                             "type": "variable",
                             "name": "public_subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
                             "module_connection": false
                         }
@@ -586,20 +586,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -610,6 +596,20 @@
                         {
                             "type": "variable",
                             "name": "public_subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
                             "module_connection": false
                         }
@@ -666,20 +666,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -690,6 +676,20 @@
                         {
                             "type": "variable",
                             "name": "public_subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
                             "module_connection": false
                         }
@@ -798,21 +798,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "tag_specifications.tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tag_specifications.tags": [
+                    "name_prefix": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -840,7 +826,21 @@
                             "module_connection": false
                         }
                     ],
-                    "name_prefix": [
+                    "tag_specifications.tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tag_specifications.tags": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -906,21 +906,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "tag_specifications.tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tag_specifications.tags": [
+                    "name_prefix": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -948,7 +934,21 @@
                             "module_connection": false
                         }
                     ],
-                    "name_prefix": [
+                    "tag_specifications.tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tag_specifications.tags": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -1017,20 +1017,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "vpc_id": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "vpc_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -1041,6 +1027,20 @@
                         {
                             "type": "variable",
                             "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "vpc_id",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
                             "module_connection": false
                         }
@@ -1098,20 +1098,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "vpc_id": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "vpc_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -1122,6 +1108,20 @@
                         {
                             "type": "variable",
                             "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "vpc_id",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
                             "module_connection": false
                         }
@@ -1181,20 +1181,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "vpc_id": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "vpc_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -1205,6 +1191,20 @@
                         {
                             "type": "variable",
                             "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "vpc_id",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
                             "module_connection": false
                         }
@@ -1565,216 +1565,6 @@
                 }
             },
             {
-                "check_id": "CKV2_AWS_12",
-                "bc_check_id": "BC_AWS_NETWORKING_4",
-                "check_name": "Ensure the default security group of every VPC restricts all traffic",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_vpc": {
-                            "main": {
-                                "__end_line__": 9,
-                                "__start_line__": 3,
-                                "cidr_block": [
-                                    "10.0.0.0/16"
-                                ],
-                                "tags": [
-                                    {
-                                        "Name": "main-vpc-us-east-1"
-                                    }
-                                ],
-                                "__address__": "module.vpc_east.aws_vpc.main",
-                                "__provider_address__": "aws.east"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "ingress/to_port",
-                        "egress/protocol",
-                        "ingress/protocol",
-                        "resource_type",
-                        "egress/to_port",
-                        "egress/from_port",
-                        "ingress/self",
-                        "ingress/from_port",
-                        "egress/cidr_blocks"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/vpc/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/main.tf",
-                "repo_file_path": "/data/outputs/Mistral/Scenario02/vpc/main.tf",
-                "file_line_range": [
-                    3,
-                    9
-                ],
-                "resource": "module.vpc_east.aws_vpc.main",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {
-                    "Name": "main-vpc-us-east-1"
-                },
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/main.tf",
-                "breadcrumbs": {
-                    "cidr_block": [
-                        {
-                            "type": "module",
-                            "name": "vpc_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "cidr_block",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "vpc_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "region",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "source_module_": [
-                        {
-                            "type": "module",
-                            "name": "vpc_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "idx": 39,
-                            "source_module_object": null
-                        }
-                    ]
-                }
-            },
-            {
-                "check_id": "CKV2_AWS_12",
-                "bc_check_id": "BC_AWS_NETWORKING_4",
-                "check_name": "Ensure the default security group of every VPC restricts all traffic",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_vpc": {
-                            "main": {
-                                "__end_line__": 9,
-                                "__start_line__": 3,
-                                "cidr_block": [
-                                    "10.1.0.0/16"
-                                ],
-                                "tags": [
-                                    {
-                                        "Name": "main-vpc-us-west-2"
-                                    }
-                                ],
-                                "__address__": "module.vpc_west.aws_vpc.main",
-                                "__provider_address__": "aws.west"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "ingress/to_port",
-                        "egress/protocol",
-                        "ingress/protocol",
-                        "resource_type",
-                        "egress/to_port",
-                        "egress/from_port",
-                        "ingress/self",
-                        "ingress/from_port",
-                        "egress/cidr_blocks"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/vpc/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/main.tf",
-                "repo_file_path": "/data/outputs/Mistral/Scenario02/vpc/main.tf",
-                "file_line_range": [
-                    3,
-                    9
-                ],
-                "resource": "module.vpc_west.aws_vpc.main",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {
-                    "Name": "main-vpc-us-west-2"
-                },
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/main.tf",
-                "breadcrumbs": {
-                    "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "vpc_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "region",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "cidr_block": [
-                        {
-                            "type": "module",
-                            "name": "vpc_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "cidr_block",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "source_module_": [
-                        {
-                            "type": "module",
-                            "name": "vpc_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "idx": 40,
-                            "source_module_object": null
-                        }
-                    ]
-                }
-            },
-            {
                 "check_id": "CKV2_AWS_20",
                 "bc_check_id": "BC_AWS_NETWORKING_49",
                 "check_name": "Ensure that ALB redirects HTTP requests into HTTPS ones",
@@ -1811,12 +1601,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "default_action/redirect/*/port",
                         "default_action/redirect/*/protocol",
-                        "port",
-                        "resource_type",
                         "default_action/type",
-                        "protocol"
+                        "default_action/redirect/*/port",
+                        "resource_type",
+                        "protocol",
+                        "port"
                     ]
                 },
                 "code_block": null,
@@ -1847,20 +1637,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -1871,6 +1647,20 @@
                         {
                             "type": "variable",
                             "name": "public_subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
                             "module_connection": false
                         }
@@ -1923,12 +1713,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "default_action/redirect/*/port",
                         "default_action/redirect/*/protocol",
-                        "port",
-                        "resource_type",
                         "default_action/type",
-                        "protocol"
+                        "default_action/redirect/*/port",
+                        "resource_type",
+                        "protocol",
+                        "port"
                     ]
                 },
                 "code_block": null,
@@ -2034,12 +1824,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
                         "default_action/type",
-                        "ssl_policy",
                         "load_balancer_type",
                         "default_action/redirect/protocol",
-                        "protocol"
+                        "resource_type",
+                        "protocol",
+                        "ssl_policy"
                     ]
                 },
                 "code_block": null,
@@ -2117,12 +1907,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
                         "default_action/type",
-                        "ssl_policy",
                         "load_balancer_type",
                         "default_action/redirect/protocol",
-                        "protocol"
+                        "resource_type",
+                        "protocol",
+                        "ssl_policy"
                     ]
                 },
                 "code_block": null,
@@ -2165,6 +1955,216 @@
                 }
             },
             {
+                "check_id": "CKV2_AWS_12",
+                "bc_check_id": "BC_AWS_NETWORKING_4",
+                "check_name": "Ensure the default security group of every VPC restricts all traffic",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_vpc": {
+                            "main": {
+                                "__end_line__": 9,
+                                "__start_line__": 3,
+                                "cidr_block": [
+                                    "10.0.0.0/16"
+                                ],
+                                "tags": [
+                                    {
+                                        "Name": "main-vpc-us-east-1"
+                                    }
+                                ],
+                                "__address__": "module.vpc_east.aws_vpc.main",
+                                "__provider_address__": "aws.east"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "ingress/from_port",
+                        "egress/from_port",
+                        "egress/to_port",
+                        "egress/protocol",
+                        "ingress/self",
+                        "resource_type",
+                        "ingress/protocol",
+                        "ingress/to_port",
+                        "egress/cidr_blocks"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/vpc/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/main.tf",
+                "repo_file_path": "/data/outputs/Mistral/Scenario02/vpc/main.tf",
+                "file_line_range": [
+                    3,
+                    9
+                ],
+                "resource": "module.vpc_east.aws_vpc.main",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "main-vpc-us-east-1"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/main.tf",
+                "breadcrumbs": {
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "vpc_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "region",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "cidr_block": [
+                        {
+                            "type": "module",
+                            "name": "vpc_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "cidr_block",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "vpc_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "idx": 39,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_12",
+                "bc_check_id": "BC_AWS_NETWORKING_4",
+                "check_name": "Ensure the default security group of every VPC restricts all traffic",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_vpc": {
+                            "main": {
+                                "__end_line__": 9,
+                                "__start_line__": 3,
+                                "cidr_block": [
+                                    "10.1.0.0/16"
+                                ],
+                                "tags": [
+                                    {
+                                        "Name": "main-vpc-us-west-2"
+                                    }
+                                ],
+                                "__address__": "module.vpc_west.aws_vpc.main",
+                                "__provider_address__": "aws.west"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "ingress/from_port",
+                        "egress/from_port",
+                        "egress/to_port",
+                        "egress/protocol",
+                        "ingress/self",
+                        "resource_type",
+                        "ingress/protocol",
+                        "ingress/to_port",
+                        "egress/cidr_blocks"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/vpc/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/main.tf",
+                "repo_file_path": "/data/outputs/Mistral/Scenario02/vpc/main.tf",
+                "file_line_range": [
+                    3,
+                    9
+                ],
+                "resource": "module.vpc_west.aws_vpc.main",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "main-vpc-us-west-2"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/main.tf",
+                "breadcrumbs": {
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "vpc_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "region",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "cidr_block": [
+                        {
+                            "type": "module",
+                            "name": "vpc_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "cidr_block",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "vpc_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "idx": 40,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
                 "check_id": "CKV2_AWS_11",
                 "bc_check_id": "BC_AWS_LOGGING_9",
                 "check_name": "Ensure VPC flow logging is enabled in all VPCs",
@@ -2189,8 +2189,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "networking"
+                        "networking",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2223,20 +2223,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/main.tf",
                 "breadcrumbs": {
-                    "cidr_block": [
-                        {
-                            "type": "module",
-                            "name": "vpc_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "cidr_block",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "tags.Name": [
                         {
                             "type": "module",
@@ -2247,6 +2233,20 @@
                         {
                             "type": "variable",
                             "name": "region",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "cidr_block": [
+                        {
+                            "type": "module",
+                            "name": "vpc_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "cidr_block",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/vpc/variables.tf",
                             "module_connection": false
                         }
@@ -2287,8 +2287,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "networking"
+                        "networking",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2383,8 +2383,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
                         "health_check",
+                        "resource_type",
                         "health_check_type"
                     ]
                 },
@@ -2450,8 +2450,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
                         "health_check",
+                        "resource_type",
                         "health_check_type"
                     ]
                 },
@@ -2532,8 +2532,8 @@
                     },
                     "evaluated_keys": [
                         "resource_type",
-                        "internal",
-                        "load_balancer_type"
+                        "load_balancer_type",
+                        "internal"
                     ]
                 },
                 "code_block": null,
@@ -2564,20 +2564,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -2588,6 +2574,20 @@
                         {
                             "type": "variable",
                             "name": "public_subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
                             "module_connection": false
                         }
@@ -2641,8 +2641,8 @@
                     },
                     "evaluated_keys": [
                         "resource_type",
-                        "internal",
-                        "load_balancer_type"
+                        "load_balancer_type",
+                        "internal"
                     ]
                 },
                 "code_block": null,
@@ -2760,8 +2760,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "protocol"
+                        "protocol",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2792,20 +2792,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "vpc_id": [
                         {
                             "type": "module",
@@ -2816,6 +2802,20 @@
                         {
                             "type": "variable",
                             "name": "vpc_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
                             "module_connection": false
                         }
@@ -2879,8 +2879,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "protocol"
+                        "protocol",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,

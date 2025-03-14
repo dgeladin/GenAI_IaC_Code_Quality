@@ -332,14 +332,6 @@
                             "module_connection": false
                         }
                     ],
-                    "resource_group_name": [
-                        {
-                            "type": "resource",
-                            "name": "azurerm_resource_group.example",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario09/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "location": [
                         {
                             "type": "variable",
@@ -347,6 +339,14 @@
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario09/variables.tf",
                             "module_connection": false
                         },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.example",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario09/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "resource_group_name": [
                         {
                             "type": "resource",
                             "name": "azurerm_resource_group.example",
@@ -537,8 +537,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "networking"
+                        "networking",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -596,14 +596,6 @@
                             "module_connection": false
                         }
                     ],
-                    "resource_group_name": [
-                        {
-                            "type": "resource",
-                            "name": "azurerm_resource_group.example",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario09/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "location": [
                         {
                             "type": "variable",
@@ -611,6 +603,14 @@
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario09/variables.tf",
                             "module_connection": false
                         },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.example",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario09/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "resource_group_name": [
                         {
                             "type": "resource",
                             "name": "azurerm_resource_group.example",
@@ -651,9 +651,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "name",
+                        "resource_type",
                         "delegation/service_delegation/name",
-                        "resource_type"
+                        "name"
                     ]
                 },
                 "code_block": null,
@@ -794,8 +794,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "auto_upgrade_minor_version",
                         "resource_type",
+                        "auto_upgrade_minor_version",
                         "publisher",
                         "type"
                     ]
@@ -855,14 +855,6 @@
                             "module_connection": false
                         }
                     ],
-                    "resource_group_name": [
-                        {
-                            "type": "resource",
-                            "name": "azurerm_resource_group.example",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario09/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "location": [
                         {
                             "type": "variable",
@@ -870,6 +862,14 @@
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario09/variables.tf",
                             "module_connection": false
                         },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.example",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario09/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "resource_group_name": [
                         {
                             "type": "resource",
                             "name": "azurerm_resource_group.example",

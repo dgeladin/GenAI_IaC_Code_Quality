@@ -628,8 +628,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "replication_configuration/rules/*/status",
                         "rule/*/status",
+                        "replication_configuration/rules/*/status",
                         "resource_type"
                     ]
                 },
@@ -663,6 +663,76 @@
                 "details": [],
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario10/modules/dr_site/s3_backup_bucket.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_64",
+                "bc_check_id": "BC_AWS_IAM_76",
+                "check_name": "Ensure KMS key Policy is defined",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_kms_key": {
+                            "dr_key": {
+                                "__end_line__": 16,
+                                "__start_line__": 6,
+                                "deletion_window_in_days": [
+                                    10
+                                ],
+                                "description": [
+                                    "KMS key for encrypting data replicated to the DR region"
+                                ],
+                                "enable_key_rotation": [
+                                    true
+                                ],
+                                "provider": [
+                                    "aws.dr"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "dr",
+                                        "Name": "dr-key"
+                                    }
+                                ],
+                                "__address__": "aws_kms_key.dr_key",
+                                "__provider_address__": "aws.dr"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "policy",
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/dr_site/kms_key.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario10/modules/dr_site/kms_key.tf",
+                "repo_file_path": "/data/outputs/Mistral/Scenario10/modules/dr_site/kms_key.tf",
+                "file_line_range": [
+                    6,
+                    16
+                ],
+                "resource": "aws_kms_key.dr_key",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "dr",
+                    "Name": "dr-key"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-2-64",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario10/modules/dr_site/kms_key.tf"
             },
             {
                 "check_id": "CKV2_AWS_62",
@@ -896,76 +966,6 @@
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario10/modules/dr_site/s3_backup_bucket.tf"
             },
             {
-                "check_id": "CKV2_AWS_64",
-                "bc_check_id": "BC_AWS_IAM_76",
-                "check_name": "Ensure KMS key Policy is defined",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_kms_key": {
-                            "dr_key": {
-                                "__end_line__": 16,
-                                "__start_line__": 6,
-                                "deletion_window_in_days": [
-                                    10
-                                ],
-                                "description": [
-                                    "KMS key for encrypting data replicated to the DR region"
-                                ],
-                                "enable_key_rotation": [
-                                    true
-                                ],
-                                "provider": [
-                                    "aws.dr"
-                                ],
-                                "tags": [
-                                    {
-                                        "Environment": "dr",
-                                        "Name": "dr-key"
-                                    }
-                                ],
-                                "__address__": "aws_kms_key.dr_key",
-                                "__provider_address__": "aws.dr"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "policy",
-                        "resource_type"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/dr_site/kms_key.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario10/modules/dr_site/kms_key.tf",
-                "repo_file_path": "/data/outputs/Mistral/Scenario10/modules/dr_site/kms_key.tf",
-                "file_line_range": [
-                    6,
-                    16
-                ],
-                "resource": "aws_kms_key.dr_key",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {
-                    "Environment": "dr",
-                    "Name": "dr-key"
-                },
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-2-64",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario10/modules/dr_site/kms_key.tf"
-            },
-            {
                 "check_id": "CKV_AWS_145",
                 "bc_check_id": "BC_AWS_GENERAL_56",
                 "check_name": "Ensure that S3 buckets are encrypted with KMS by default",
@@ -1046,9 +1046,9 @@
                         }
                     },
                     "evaluated_keys": [
+                        "rule/apply_server_side_encryption_by_default/sse_algorithm",
                         "server_side_encryption_configuration/rule/apply_server_side_encryption_by_default/sse_algorithm",
-                        "resource_type",
-                        "rule/apply_server_side_encryption_by_default/sse_algorithm"
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -1111,15 +1111,15 @@
                         }
                     },
                     "evaluated_keys": [
-                        "egress/to_port",
-                        "ingress/self",
+                        "egress/from_port",
                         "egress/protocol",
+                        "egress/cidr_blocks",
                         "resource_type",
                         "ingress/from_port",
-                        "egress/from_port",
                         "ingress/to_port",
-                        "egress/cidr_blocks",
-                        "ingress/protocol"
+                        "ingress/self",
+                        "ingress/protocol",
+                        "egress/to_port"
                     ]
                 },
                 "code_block": null,
@@ -1257,70 +1257,6 @@
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario10/modules/dr_site/drs_replication.tf"
             },
             {
-                "check_id": "CKV2_AWS_11",
-                "bc_check_id": "BC_AWS_LOGGING_9",
-                "check_name": "Ensure VPC flow logging is enabled in all VPCs",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_vpc": {
-                            "drs_vpc": {
-                                "__end_line__": 73,
-                                "__start_line__": 65,
-                                "cidr_block": [
-                                    "10.0.0.0/16"
-                                ],
-                                "provider": [
-                                    "aws.dr"
-                                ],
-                                "tags": [
-                                    {
-                                        "Environment": "dr",
-                                        "Name": "drs-vpc"
-                                    }
-                                ],
-                                "__address__": "aws_vpc.drs_vpc",
-                                "__provider_address__": "aws.dr"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "networking",
-                        "resource_type"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/dr_site/drs_replication.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario10/modules/dr_site/drs_replication.tf",
-                "repo_file_path": "/data/outputs/Mistral/Scenario10/modules/dr_site/drs_replication.tf",
-                "file_line_range": [
-                    65,
-                    73
-                ],
-                "resource": "aws_vpc.drs_vpc",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {
-                    "Environment": "dr",
-                    "Name": "drs-vpc"
-                },
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-9-enable-vpc-flow-logging",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario10/modules/dr_site/drs_replication.tf"
-            },
-            {
                 "check_id": "CKV2_AWS_2",
                 "bc_check_id": "BC_AWS_GENERAL_60",
                 "check_name": "Ensure that only encrypted EBS volumes are attached to EC2 instances",
@@ -1389,6 +1325,70 @@
                 "details": [],
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario10/modules/primary_site/primary_site_resources.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_11",
+                "bc_check_id": "BC_AWS_LOGGING_9",
+                "check_name": "Ensure VPC flow logging is enabled in all VPCs",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_vpc": {
+                            "drs_vpc": {
+                                "__end_line__": 73,
+                                "__start_line__": 65,
+                                "cidr_block": [
+                                    "10.0.0.0/16"
+                                ],
+                                "provider": [
+                                    "aws.dr"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "dr",
+                                        "Name": "drs-vpc"
+                                    }
+                                ],
+                                "__address__": "aws_vpc.drs_vpc",
+                                "__provider_address__": "aws.dr"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "networking",
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/dr_site/drs_replication.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario10/modules/dr_site/drs_replication.tf",
+                "repo_file_path": "/data/outputs/Mistral/Scenario10/modules/dr_site/drs_replication.tf",
+                "file_line_range": [
+                    65,
+                    73
+                ],
+                "resource": "aws_vpc.drs_vpc",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "dr",
+                    "Name": "drs-vpc"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-9-enable-vpc-flow-logging",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario10/modules/dr_site/drs_replication.tf"
             }
         ]
     },

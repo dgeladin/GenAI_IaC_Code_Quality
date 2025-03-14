@@ -111,6 +111,14 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario08/security_groups.tf",
                 "breadcrumbs": {
+                    "name_prefix": [
+                        {
+                            "type": "locals",
+                            "name": "name_prefix",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario08/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "tags": [
                         {
                             "type": "locals",
@@ -121,14 +129,6 @@
                         {
                             "type": "locals",
                             "name": "common_tags",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario08/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "name_prefix": [
-                        {
-                            "type": "locals",
-                            "name": "name_prefix",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario08/locals.tf",
                             "module_connection": false
                         }
@@ -361,8 +361,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "networking"
+                        "networking",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,

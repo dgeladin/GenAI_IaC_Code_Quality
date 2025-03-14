@@ -1466,9 +1466,9 @@
                         }
                     },
                     "evaluated_keys": [
+                        "engine",
                         "parameter/*/name",
-                        "resource_type",
-                        "engine"
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -1569,12 +1569,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "protocol",
-                        "load_balancer_type",
-                        "default_action/type",
                         "ssl_policy",
                         "default_action/redirect/protocol",
-                        "resource_type"
+                        "resource_type",
+                        "protocol",
+                        "load_balancer_type",
+                        "default_action/type"
                     ]
                 },
                 "code_block": null,
@@ -1633,15 +1633,15 @@
                         }
                     },
                     "evaluated_keys": [
-                        "egress/cidr_blocks",
                         "ingress/protocol",
-                        "egress/from_port",
+                        "egress/to_port",
                         "ingress/to_port",
+                        "ingress/self",
+                        "resource_type",
+                        "egress/from_port",
                         "egress/protocol",
                         "ingress/from_port",
-                        "resource_type",
-                        "egress/to_port",
-                        "ingress/self"
+                        "egress/cidr_blocks"
                     ]
                 },
                 "code_block": null,
@@ -1884,8 +1884,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "networking"
+                        "networking",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -1962,8 +1962,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "networking"
+                        "networking",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2025,8 +2025,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "networking"
+                        "networking",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2093,8 +2093,8 @@
                     },
                     "evaluated_keys": [
                         "health_check",
-                        "resource_type",
-                        "health_check_type"
+                        "health_check_type",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2161,9 +2161,9 @@
                         }
                     },
                     "evaluated_keys": [
+                        "load_balancer_type",
                         "internal",
-                        "resource_type",
-                        "load_balancer_type"
+                        "resource_type"
                     ]
                 },
                 "code_block": null,

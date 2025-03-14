@@ -530,8 +530,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "copy_tags_to_snapshot",
-                        "engine"
+                        "engine",
+                        "copy_tags_to_snapshot"
                     ]
                 },
                 "code_block": null,
