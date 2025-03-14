@@ -1,0 +1,9 @@
+1 issue(s) found:
+
+Warning: module "vpc" should specify a version (terraform_module_version)
+
+  on ../data/outputs/ChatGPT/Scenario04/vpc.tf line 2:
+   2: module "vpc" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_module_version.md
+

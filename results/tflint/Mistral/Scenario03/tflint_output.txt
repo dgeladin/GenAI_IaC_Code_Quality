@@ -1,23 +1,23 @@
 6 issue(s) found:
 
-Warning: Missing version constraint for provider "helm" in `required_providers` (terraform_required_providers)
-
-  on ../data/outputs/Mistral/Scenario03/helm.tf line 3:
-   3: resource "helm_release" "ingress_nginx" {
-
-Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
-
 Warning: Missing version constraint for provider "aws" in `required_providers` (terraform_required_providers)
 
-  on ../data/outputs/Mistral/Scenario03/ingress.tf line 38:
-  38: resource "aws_acm_certificate" "api_cert" {
+  on ../data/outputs/Mistral/Scenario03/providers.tf line 3:
+   3: provider "aws" {
 
 Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
 
 Warning: Missing version constraint for provider "kubernetes" in `required_providers` (terraform_required_providers)
 
-  on ../data/outputs/Mistral/Scenario03/ingress.tf line 51:
-  51: resource "kubernetes_secret_v1" "api_tls_secret" {
+  on ../data/outputs/Mistral/Scenario03/providers.tf line 7:
+   7: provider "kubernetes" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
+
+Warning: Missing version constraint for provider "helm" in `required_providers` (terraform_required_providers)
+
+  on ../data/outputs/Mistral/Scenario03/providers.tf line 13:
+  13: provider "helm" {
 
 Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_required_providers.md
 

@@ -1,0 +1,58 @@
+8 issue(s) found:
+
+Warning: [Fixable] variable "primary_region" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/ChatGPT/Scenario10/variables.tf line 1:
+   1: variable "primary_region" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "dr_region" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/ChatGPT/Scenario10/variables.tf line 7:
+   7: variable "dr_region" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "primary_instance_ami" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/ChatGPT/Scenario10/variables.tf line 13:
+  13: variable "primary_instance_ami" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "primary_instance_type" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/ChatGPT/Scenario10/variables.tf line 19:
+  19: variable "primary_instance_type" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "primary_volume_size" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/ChatGPT/Scenario10/variables.tf line 25:
+  25: variable "primary_volume_size" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "primary_volume_type" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/ChatGPT/Scenario10/variables.tf line 31:
+  31: variable "primary_volume_type" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "s3_backup_bucket_name" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/ChatGPT/Scenario10/variables.tf line 37:
+  37: variable "s3_backup_bucket_name" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
+Warning: [Fixable] variable "kms_key_deletion_window" is declared but not used (terraform_unused_declarations)
+
+  on ../data/outputs/ChatGPT/Scenario10/variables.tf line 43:
+  43: variable "kms_key_deletion_window" {
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.7.0/docs/rules/terraform_unused_declarations.md
+
