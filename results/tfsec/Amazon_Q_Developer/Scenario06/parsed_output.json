@@ -1,0 +1,156 @@
+{
+  "failed_checks": [
+    {
+      "rule_id": "AVD-AWS-0003",
+      "long_id": "aws-api-gateway-enable-tracing",
+      "rule_description": "API Gateway must have X-Ray tracing enabled",
+      "rule_provider": "aws",
+      "rule_service": "api-gateway",
+      "impact": "Without full tracing enabled it is difficult to trace the flow of logs",
+      "resolution": "Enable tracing",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/api-gateway/enable-tracing/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/api_gateway_stage#xray_tracing_enabled"
+      ],
+      "description": "X-Ray tracing is not enabled,",
+      "severity": "LOW",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_api_gateway_stage.prod",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+        "start_line": 109,
+        "end_line": 109
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0004",
+      "long_id": "aws-api-gateway-no-public-access",
+      "rule_description": "No unauthorized access to API Gateway methods",
+      "rule_provider": "aws",
+      "rule_service": "api-gateway",
+      "impact": "API gateway methods can be accessed without authorization.",
+      "resolution": "Use and authorization method or require API Key",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/api-gateway/no-public-access/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/api_gateway_method#authorization"
+      ],
+      "description": "Authorization is not enabled for this method.",
+      "severity": "LOW",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_api_gateway_method.example",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+        "start_line": 27,
+        "end_line": 27
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0017",
+      "long_id": "aws-cloudwatch-log-group-customer-key",
+      "rule_description": "CloudWatch log groups should be encrypted using CMK",
+      "rule_provider": "aws",
+      "rule_service": "cloudwatch",
+      "impact": "Log data may be leaked if the logs are compromised. No auditing of who have viewed the logs.",
+      "resolution": "Enable CMK encryption of CloudWatch Log Groups",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/cloudwatch/log-group-customer-key/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group#kms_key_id"
+      ],
+      "description": "Log group is not encrypted.",
+      "severity": "LOW",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_cloudwatch_log_group.lambda_log_group",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+        "start_line": 50,
+        "end_line": 55
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0017",
+      "long_id": "aws-cloudwatch-log-group-customer-key",
+      "rule_description": "CloudWatch log groups should be encrypted using CMK",
+      "rule_provider": "aws",
+      "rule_service": "cloudwatch",
+      "impact": "Log data may be leaked if the logs are compromised. No auditing of who have viewed the logs.",
+      "resolution": "Enable CMK encryption of CloudWatch Log Groups",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/cloudwatch/log-group-customer-key/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group#kms_key_id"
+      ],
+      "description": "Log group is not encrypted.",
+      "severity": "LOW",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_cloudwatch_log_group.api_gateway",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/api_gateway.tf",
+        "start_line": 129,
+        "end_line": 134
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0057",
+      "long_id": "aws-iam-no-policy-wildcards",
+      "rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
+      "rule_provider": "aws",
+      "rule_service": "iam",
+      "impact": "Overly permissive policies may grant access to sensitive resources",
+      "resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
+      ],
+      "description": "IAM policy document uses sensitive action 'logs:CreateLogGroup' on wildcarded resource '*'",
+      "severity": "HIGH",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_iam_role_policy.api_gateway_cloudwatch",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/iam.tf",
+        "start_line": 58,
+        "end_line": 58
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0066",
+      "long_id": "aws-lambda-enable-tracing",
+      "rule_description": "Lambda functions should have X-Ray tracing enabled",
+      "rule_provider": "aws",
+      "rule_service": "lambda",
+      "impact": "Without full tracing enabled it is difficult to trace the flow of logs",
+      "resolution": "Enable tracing",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/lambda/enable-tracing/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_function#mode"
+      ],
+      "description": "Function does not have tracing enabled.",
+      "severity": "LOW",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_lambda_function.example_lambda_function",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario06/lambda.tf",
+        "start_line": 38,
+        "end_line": 38
+      },
+      "duplicate": false
+    }
+  ],
+  "summary": {
+    "CRITICAL": 0,
+    "HIGH": 1,
+    "MEDIUM": 0,
+    "LOW": 5,
+    "UNKNOWN": 0,
+    "INFO": 0
+  }
+}

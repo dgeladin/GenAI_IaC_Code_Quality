@@ -1,0 +1,60 @@
+{
+  "failed_checks": [
+    {
+      "rule_id": "AVD-AWS-0004",
+      "long_id": "aws-api-gateway-no-public-access",
+      "rule_description": "No unauthorized access to API Gateway methods",
+      "rule_provider": "aws",
+      "rule_service": "api-gateway",
+      "impact": "API gateway methods can be accessed without authorization.",
+      "resolution": "Use and authorization method or require API Key",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/api-gateway/no-public-access/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/api_gateway_method#authorization"
+      ],
+      "description": "Authorization is not enabled for this method.",
+      "severity": "LOW",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_api_gateway_method.example",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario06/api_gateway.tf",
+        "start_line": 21,
+        "end_line": 21
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0066",
+      "long_id": "aws-lambda-enable-tracing",
+      "rule_description": "Lambda functions should have X-Ray tracing enabled",
+      "rule_provider": "aws",
+      "rule_service": "lambda",
+      "impact": "Without full tracing enabled it is difficult to trace the flow of logs",
+      "resolution": "Enable tracing",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/lambda/enable-tracing/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_function#mode"
+      ],
+      "description": "Function does not have tracing enabled.",
+      "severity": "LOW",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_lambda_function.example_lambda_function",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario06/lambda.tf",
+        "start_line": 1,
+        "end_line": 19
+      },
+      "duplicate": false
+    }
+  ],
+  "summary": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 2,
+    "UNKNOWN": 0,
+    "INFO": 0
+  }
+}

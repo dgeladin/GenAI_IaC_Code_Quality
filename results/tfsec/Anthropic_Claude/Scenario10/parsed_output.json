@@ -1,0 +1,180 @@
+{
+  "failed_checks": [
+    {
+      "rule_id": "AVD-AWS-0017",
+      "long_id": "aws-cloudwatch-log-group-customer-key",
+      "rule_description": "CloudWatch log groups should be encrypted using CMK",
+      "rule_provider": "aws",
+      "rule_service": "cloudwatch",
+      "impact": "Log data may be leaked if the logs are compromised. No auditing of who have viewed the logs.",
+      "resolution": "Enable CMK encryption of CloudWatch Log Groups",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/cloudwatch/log-group-customer-key/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group#kms_key_id"
+      ],
+      "description": "Log group is not encrypted.",
+      "severity": "LOW",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_cloudwatch_log_group.dr_lambda_logs",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario10/lambda.tf",
+        "start_line": 89,
+        "end_line": 94
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0057",
+      "long_id": "aws-iam-no-policy-wildcards",
+      "rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
+      "rule_provider": "aws",
+      "rule_service": "iam",
+      "impact": "Overly permissive policies may grant access to sensitive resources",
+      "resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
+      ],
+      "description": "IAM policy document uses sensitive action 'drs:StartRecoveryJob' on wildcarded resource '*'",
+      "severity": "HIGH",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_iam_role_policy.dr_lambda_policy",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario10/lambda.tf",
+        "start_line": 36,
+        "end_line": 36
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0057",
+      "long_id": "aws-iam-no-policy-wildcards",
+      "rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
+      "rule_provider": "aws",
+      "rule_service": "iam",
+      "impact": "Overly permissive policies may grant access to sensitive resources",
+      "resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
+      ],
+      "description": "IAM policy document uses sensitive action 'logs:CreateLogGroup' on wildcarded resource 'arn:aws:logs:*:*:*'",
+      "severity": "HIGH",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_iam_role_policy.dr_lambda_policy",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario10/lambda.tf",
+        "start_line": 36,
+        "end_line": 36
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0057",
+      "long_id": "aws-iam-no-policy-wildcards",
+      "rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
+      "rule_provider": "aws",
+      "rule_service": "iam",
+      "impact": "Overly permissive policies may grant access to sensitive resources",
+      "resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
+      ],
+      "description": "IAM policy document uses sensitive action 'logs:CreateLogGroup' on wildcarded resource 'arn:aws:logs:*:*:log-group:/aws/lambda/dr-failover-*:*'",
+      "severity": "HIGH",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_iam_role_policy.lambda_logging",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario10/iam.tf",
+        "start_line": 85,
+        "end_line": 85
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0057",
+      "long_id": "aws-iam-no-policy-wildcards",
+      "rule_description": "IAM policy should avoid use of wildcards and instead apply the principle of least privilege",
+      "rule_provider": "aws",
+      "rule_service": "iam",
+      "impact": "Overly permissive policies may grant access to sensitive resources",
+      "resolution": "Specify the exact permissions required, and to which resources they should apply instead of using wildcards.",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/iam/no-policy-wildcards/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document"
+      ],
+      "description": "IAM policy document uses sensitive action 'drs:StartRecoveryJob' on wildcarded resource '*'",
+      "severity": "HIGH",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_iam_role_policy.dr_failover_policy",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario10/cloudwatch_events.tf",
+        "start_line": 29,
+        "end_line": 29
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0066",
+      "long_id": "aws-lambda-enable-tracing",
+      "rule_description": "Lambda functions should have X-Ray tracing enabled",
+      "rule_provider": "aws",
+      "rule_service": "lambda",
+      "impact": "Without full tracing enabled it is difficult to trace the flow of logs",
+      "resolution": "Enable tracing",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/lambda/enable-tracing/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_function#mode"
+      ],
+      "description": "Function does not have tracing enabled.",
+      "severity": "LOW",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_lambda_function.dr_failover",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario10/lambda.tf",
+        "start_line": 62,
+        "end_line": 86
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0089",
+      "long_id": "aws-s3-enable-bucket-logging",
+      "rule_description": "S3 Bucket does not have logging enabled.",
+      "rule_provider": "aws",
+      "rule_service": "s3",
+      "impact": "There is no way to determine the access to this bucket",
+      "resolution": "Add a logging block to the resource to enable access logging",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/s3/enable-bucket-logging/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket"
+      ],
+      "description": "Bucket does not have logging enabled",
+      "severity": "MEDIUM",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_s3_bucket.dr_backup",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario10/s3_backup.tf",
+        "start_line": 2,
+        "end_line": 15
+      },
+      "duplicate": false
+    }
+  ],
+  "summary": {
+    "CRITICAL": 0,
+    "HIGH": 4,
+    "MEDIUM": 1,
+    "LOW": 2,
+    "UNKNOWN": 0,
+    "INFO": 0
+  }
+}

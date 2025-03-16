@@ -1,0 +1,255 @@
+{
+  "failed_checks": [
+    {
+      "rule_id": "AVD-AWS-0124",
+      "long_id": "aws-ec2-add-description-to-security-group-rule",
+      "rule_description": "Missing description for security group rule.",
+      "rule_provider": "aws",
+      "rule_service": "ec2",
+      "impact": "Descriptions provide context for the firewall rule reasons",
+      "resolution": "Add descriptions for all security groups rules",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/add-description-to-security-group-rule/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule"
+      ],
+      "description": "Security group rule does not have a description.",
+      "severity": "LOW",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_security_group.lb_sg",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario04/security_groups.tf",
+        "start_line": 7,
+        "end_line": 12
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0124",
+      "long_id": "aws-ec2-add-description-to-security-group-rule",
+      "rule_description": "Missing description for security group rule.",
+      "rule_provider": "aws",
+      "rule_service": "ec2",
+      "impact": "Descriptions provide context for the firewall rule reasons",
+      "resolution": "Add descriptions for all security groups rules",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/add-description-to-security-group-rule/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule"
+      ],
+      "description": "Security group rule does not have a description.",
+      "severity": "LOW",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_security_group.app_sg",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario04/security_groups.tf",
+        "start_line": 34,
+        "end_line": 39
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0124",
+      "long_id": "aws-ec2-add-description-to-security-group-rule",
+      "rule_description": "Missing description for security group rule.",
+      "rule_provider": "aws",
+      "rule_service": "ec2",
+      "impact": "Descriptions provide context for the firewall rule reasons",
+      "resolution": "Add descriptions for all security groups rules",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/add-description-to-security-group-rule/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule"
+      ],
+      "description": "Security group rule does not have a description.",
+      "severity": "LOW",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_security_group.app_sg",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario04/security_groups.tf",
+        "start_line": 27,
+        "end_line": 32
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0124",
+      "long_id": "aws-ec2-add-description-to-security-group-rule",
+      "rule_description": "Missing description for security group rule.",
+      "rule_provider": "aws",
+      "rule_service": "ec2",
+      "impact": "Descriptions provide context for the firewall rule reasons",
+      "resolution": "Add descriptions for all security groups rules",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/add-description-to-security-group-rule/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule"
+      ],
+      "description": "Security group rule does not have a description.",
+      "severity": "LOW",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_security_group.lb_sg",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario04/security_groups.tf",
+        "start_line": 14,
+        "end_line": 19
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0130",
+      "long_id": "aws-ec2-enforce-launch-config-http-token-imds",
+      "rule_description": "aws_instance should activate session tokens for Instance Metadata Service.",
+      "rule_provider": "aws",
+      "rule_service": "ec2",
+      "impact": "Instance metadata service can be interacted with freely",
+      "resolution": "Enable HTTP token requirement for IMDS",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/enforce-launch-config-http-token-imds/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#metadata-options"
+      ],
+      "description": "Launch template does not require IMDS access to require a token",
+      "severity": "HIGH",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_launch_template.green_lt",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario04/launch_templates.tf",
+        "start_line": 23,
+        "end_line": 42
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0130",
+      "long_id": "aws-ec2-enforce-launch-config-http-token-imds",
+      "rule_description": "aws_instance should activate session tokens for Instance Metadata Service.",
+      "rule_provider": "aws",
+      "rule_service": "ec2",
+      "impact": "Instance metadata service can be interacted with freely",
+      "resolution": "Enable HTTP token requirement for IMDS",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/enforce-launch-config-http-token-imds/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#metadata-options"
+      ],
+      "description": "Launch template does not require IMDS access to require a token",
+      "severity": "HIGH",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_launch_template.blue_lt",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario04/launch_templates.tf",
+        "start_line": 2,
+        "end_line": 21
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0178",
+      "long_id": "aws-ec2-require-vpc-flow-logs-for-all-vpcs",
+      "rule_description": "VPC Flow Logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in your VPC. After you've created a flow log, you can view and retrieve its data in Amazon CloudWatch Logs. It is recommended that VPC Flow Logs be enabled for packet \"Rejects\" for VPCs.",
+      "rule_provider": "aws",
+      "rule_service": "ec2",
+      "impact": "Without VPC flow logs, you risk not having enough information about network traffic flow to investigate incidents or identify security issues.",
+      "resolution": "Enable flow logs for VPC",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/require-vpc-flow-logs-for-all-vpcs/"
+      ],
+      "description": "VPC Flow Logs is not enabled for VPC ",
+      "severity": "MEDIUM",
+      "warning": false,
+      "status": 0,
+      "resource": "module.vpc",
+      "location": {
+        "filename": "terraform-aws-modules/vpc/aws/main.tf",
+        "start_line": 28,
+        "end_line": 51
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0053",
+      "long_id": "aws-elb-alb-not-public",
+      "rule_description": "Load balancer is exposed to the internet.",
+      "rule_provider": "aws",
+      "rule_service": "elb",
+      "impact": "The load balancer is exposed on the internet",
+      "resolution": "Switch to an internal load balancer or add a tfsec ignore",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/elb/alb-not-public/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb"
+      ],
+      "description": "Load balancer is exposed publicly.",
+      "severity": "HIGH",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_lb.app_lb",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario04/alb.tf",
+        "start_line": 4,
+        "end_line": 4
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0052",
+      "long_id": "aws-elb-drop-invalid-headers",
+      "rule_description": "Load balancers should drop invalid headers",
+      "rule_provider": "aws",
+      "rule_service": "elb",
+      "impact": "Invalid headers being passed through to the target of the load balance may exploit vulnerabilities",
+      "resolution": "Set drop_invalid_header_fields to true",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/elb/drop-invalid-headers/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb#drop_invalid_header_fields"
+      ],
+      "description": "Application load balancer is not set to drop invalid headers.",
+      "severity": "HIGH",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_lb.app_lb",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario04/alb.tf",
+        "start_line": 2,
+        "end_line": 8
+      },
+      "duplicate": false
+    },
+    {
+      "rule_id": "AVD-AWS-0054",
+      "long_id": "aws-elb-http-not-used",
+      "rule_description": "Use of plain HTTP.",
+      "rule_provider": "aws",
+      "rule_service": "elb",
+      "impact": "Your traffic is not protected",
+      "resolution": "Switch to HTTPS to benefit from TLS security features",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/elb/http-not-used/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener"
+      ],
+      "description": "Listener for application load balancer does not use HTTPS.",
+      "severity": "CRITICAL",
+      "warning": false,
+      "status": 0,
+      "resource": "aws_lb_listener.front_end",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario04/listener.tf",
+        "start_line": 5,
+        "end_line": 5
+      },
+      "duplicate": false
+    }
+  ],
+  "summary": {
+    "CRITICAL": 1,
+    "HIGH": 4,
+    "MEDIUM": 1,
+    "LOW": 4,
+    "UNKNOWN": 0,
+    "INFO": 0
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "failed_checks": [
+    {
+      "rule_id": "AVD-AWS-0130",
+      "long_id": "aws-ec2-enforce-launch-config-http-token-imds",
+      "rule_description": "aws_instance should activate session tokens for Instance Metadata Service.",
+      "rule_provider": "aws",
+      "rule_service": "ec2",
+      "impact": "Instance metadata service can be interacted with freely",
+      "resolution": "Enable HTTP token requirement for IMDS",
+      "links": [
+        "https://aquasecurity.github.io/tfsec/v1.28.11/checks/aws/ec2/enforce-launch-config-http-token-imds/",
+        "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#metadata-options"
+      ],
+      "description": "Launch template does not require IMDS access to require a token",
+      "severity": "HIGH",
+      "warning": false,
+      "status": 0,
+      "resource": "module.asg",
+      "location": {
+        "filename": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario08/asg/launch_template.tf",
+        "start_line": 2,
+        "end_line": 25
+      },
+      "duplicate": false
+    }
+  ],
+  "summary": {
+    "CRITICAL": 0,
+    "HIGH": 1,
+    "MEDIUM": 0,
+    "LOW": 0,
+    "UNKNOWN": 0,
+    "INFO": 0
+  }
+}
