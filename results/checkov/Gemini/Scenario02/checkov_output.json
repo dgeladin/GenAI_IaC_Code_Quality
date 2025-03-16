@@ -3,6 +3,44 @@
     "results": {
         "failed_checks": [
             {
+                "check_id": "CKV_AWS_75",
+                "bc_check_id": "BC_AWS_LOGGING_16",
+                "check_name": "Ensure Global Accelerator accelerator has flow logs enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "attributes/[0]/flow_logs_enabled"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                "repo_file_path": "/data/outputs/Gemini/Scenario02/main.tf",
+                "file_line_range": [
+                    113,
+                    120
+                ],
+                "resource": "aws_globalaccelerator_accelerator.example_accelerator",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.GlobalAcceleratorAcceleratorFlowLogs",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-16",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf"
+            },
+            {
                 "check_id": "CKV_TF_1",
                 "bc_check_id": "BC_CROSS_1",
                 "check_name": "Ensure Terraform module sources use a commit hash",
@@ -70,44 +108,6 @@
                 "vulnerability_details": null,
                 "connected_node": null,
                 "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf"
-            },
-            {
-                "check_id": "CKV_AWS_75",
-                "bc_check_id": "BC_AWS_LOGGING_16",
-                "check_name": "Ensure Global Accelerator accelerator has flow logs enabled",
-                "check_result": {
-                    "result": "FAILED",
-                    "evaluated_keys": [
-                        "attributes/[0]/flow_logs_enabled"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                "repo_file_path": "/data/outputs/Gemini/Scenario02/main.tf",
-                "file_line_range": [
-                    113,
-                    120
-                ],
-                "resource": "aws_globalaccelerator_accelerator.example_accelerator",
-                "evaluations": null,
-                "check_class": "checkov.terraform.checks.resource.aws.GlobalAcceleratorAcceleratorFlowLogs",
-                "fixed_definition": null,
-                "entity_tags": null,
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-16",
                 "details": [],
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf"
@@ -248,20 +248,6 @@
                             "module_connection": false
                         }
                     ],
-                    "desired_capacity": [
-                        {
-                            "type": "module",
-                            "name": "asg",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "desired_capacity",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name": [
                         {
                             "type": "module",
@@ -282,20 +268,6 @@
                             "module_connection": false
                         }
                     ],
-                    "min_size": [
-                        {
-                            "type": "module",
-                            "name": "asg",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "min_size",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "max_size": [
                         {
                             "type": "module",
@@ -306,6 +278,34 @@
                         {
                             "type": "variable",
                             "name": "max_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "desired_capacity": [
+                        {
+                            "type": "module",
+                            "name": "asg",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "desired_capacity",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "min_size": [
+                        {
+                            "type": "module",
+                            "name": "asg",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "min_size",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -766,20 +766,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "instance_type": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "instance_type",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -796,6 +782,20 @@
                         {
                             "type": "resource",
                             "name": "aws_autoscaling_group.asg",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -853,7 +853,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "vpc_zone_identifier": [
+                    "desired_capacity": [
                         {
                             "type": "module",
                             "name": "asg_east",
@@ -862,7 +862,27 @@
                         },
                         {
                             "type": "variable",
-                            "name": "subnet_ids",
+                            "name": "desired_capacity",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_autoscaling_group.asg",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -895,7 +915,7 @@
                             "module_connection": false
                         }
                     ],
-                    "desired_capacity": [
+                    "vpc_zone_identifier": [
                         {
                             "type": "module",
                             "name": "asg_east",
@@ -904,27 +924,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "desired_capacity",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_autoscaling_group.asg",
+                            "name": "subnet_ids",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -984,20 +984,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "vpc_id": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "vpc_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name": [
                         {
                             "type": "module",
@@ -1014,6 +1000,20 @@
                         {
                             "type": "resource",
                             "name": "aws_autoscaling_group.asg",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "vpc_id",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -1072,20 +1072,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "vpc_id": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "vpc_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name": [
                         {
                             "type": "module",
@@ -1102,6 +1088,20 @@
                         {
                             "type": "resource",
                             "name": "aws_autoscaling_group.asg",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "vpc_id",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -1161,20 +1161,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "vpc_id": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "vpc_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name": [
                         {
                             "type": "module",
@@ -1191,6 +1177,20 @@
                         {
                             "type": "resource",
                             "name": "aws_autoscaling_group.asg",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "vpc_id",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -1532,7 +1532,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "desired_capacity": [
+                    "vpc_zone_identifier": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -1541,21 +1541,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "desired_capacity",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "min_size": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "min_size",
+                            "name": "subnet_ids",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -1594,7 +1580,7 @@
                             "module_connection": false
                         }
                     ],
-                    "vpc_zone_identifier": [
+                    "min_size": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -1603,7 +1589,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "subnet_ids",
+                            "name": "min_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "desired_capacity": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "desired_capacity",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -2084,6 +2084,267 @@
                 }
             },
             {
+                "check_id": "CKV2_AWS_15",
+                "bc_check_id": "BC_AWS_NETWORKING_46",
+                "check_name": "Ensure that auto Scaling groups that are associated with a load balancer are using Elastic Load Balancing health checks.",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_autoscaling_attachment": {
+                            "asg_attachment": {
+                                "__end_line__": 133,
+                                "__start_line__": 130,
+                                "autoscaling_group_name": [
+                                    "example-app-asg"
+                                ],
+                                "lb_target_group_arn": [
+                                    "aws_lb_target_group.app_tg.arn"
+                                ],
+                                "__address__": "module.asg.aws_autoscaling_attachment.asg_attachment",
+                                "__provider_address__": ""
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "health_check_type",
+                        "health_check",
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/asg/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                "repo_file_path": "/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                "file_line_range": [
+                    130,
+                    133
+                ],
+                "resource": "module.asg.aws_autoscaling_attachment.asg_attachment",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-auto-scaling-groups-that-are-associated-with-a-load-balancer-are-using-elastic-load-balancing-health-checks",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                "breadcrumbs": {
+                    "autoscaling_group_name": [
+                        {
+                            "type": "module",
+                            "name": "asg",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_autoscaling_group.asg",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                            "idx": 2,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_15",
+                "bc_check_id": "BC_AWS_NETWORKING_46",
+                "check_name": "Ensure that auto Scaling groups that are associated with a load balancer are using Elastic Load Balancing health checks.",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_autoscaling_attachment": {
+                            "asg_attachment": {
+                                "__end_line__": 133,
+                                "__start_line__": 130,
+                                "autoscaling_group_name": [
+                                    "${module.asg.application_name}-asg"
+                                ],
+                                "lb_target_group_arn": [
+                                    "aws_lb_target_group.app_tg.arn"
+                                ],
+                                "__address__": "module.asg_east.aws_autoscaling_attachment.asg_attachment",
+                                "__provider_address__": "aws.east"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "health_check_type",
+                        "health_check",
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/asg/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                "repo_file_path": "/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                "file_line_range": [
+                    130,
+                    133
+                ],
+                "resource": "module.asg_east.aws_autoscaling_attachment.asg_attachment",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-auto-scaling-groups-that-are-associated-with-a-load-balancer-are-using-elastic-load-balancing-health-checks",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                "breadcrumbs": {
+                    "autoscaling_group_name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_autoscaling_group.asg",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                            "idx": 3,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_15",
+                "bc_check_id": "BC_AWS_NETWORKING_46",
+                "check_name": "Ensure that auto Scaling groups that are associated with a load balancer are using Elastic Load Balancing health checks.",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_autoscaling_attachment": {
+                            "asg_attachment": {
+                                "__end_line__": 133,
+                                "__start_line__": 130,
+                                "autoscaling_group_name": [
+                                    "${module.asg.application_name}-asg"
+                                ],
+                                "lb_target_group_arn": [
+                                    "aws_lb_target_group.app_tg.arn"
+                                ],
+                                "__address__": "module.asg_west.aws_autoscaling_attachment.asg_attachment",
+                                "__provider_address__": "aws.west"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "health_check_type",
+                        "health_check",
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/asg/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                "repo_file_path": "/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                "file_line_range": [
+                    130,
+                    133
+                ],
+                "resource": "module.asg_west.aws_autoscaling_attachment.asg_attachment",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-auto-scaling-groups-that-are-associated-with-a-load-balancer-are-using-elastic-load-balancing-health-checks",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                "breadcrumbs": {
+                    "autoscaling_group_name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_autoscaling_group.asg",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                            "idx": 4,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
                 "check_id": "CKV_AWS_378",
                 "bc_check_id": "BC_AWS_NETWORKING_103",
                 "check_name": "Ensure AWS Load Balancer doesn't use HTTP protocol",
@@ -2137,8 +2398,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "protocol"
+                        "protocol",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2226,117 +2487,6 @@
                                     "HTTP"
                                 ],
                                 "vpc_id": [
-                                    "module.vpc_west.vpc_id"
-                                ],
-                                "__address__": "module.asg_west.aws_lb_target_group.app_tg",
-                                "__provider_address__": "aws.west"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "resource_type",
-                        "protocol"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/asg/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                "repo_file_path": "/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                "file_line_range": [
-                    113,
-                    128
-                ],
-                "resource": "module.asg_west.aws_lb_target_group.app_tg",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {},
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-378",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                "breadcrumbs": {
-                    "vpc_id": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "vpc_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "source_module_": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                            "idx": 4,
-                            "source_module_object": null
-                        }
-                    ]
-                }
-            },
-            {
-                "check_id": "CKV_AWS_378",
-                "bc_check_id": "BC_AWS_NETWORKING_103",
-                "check_name": "Ensure AWS Load Balancer doesn't use HTTP protocol",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_lb_target_group": {
-                            "app_tg": {
-                                "__end_line__": 128,
-                                "__start_line__": 113,
-                                "health_check": [
-                                    {
-                                        "healthy_threshold": [
-                                            3
-                                        ],
-                                        "interval": [
-                                            30
-                                        ],
-                                        "matcher": [
-                                            "200"
-                                        ],
-                                        "path": [
-                                            "/"
-                                        ],
-                                        "protocol": [
-                                            "HTTP"
-                                        ],
-                                        "timeout": [
-                                            10
-                                        ],
-                                        "unhealthy_threshold": [
-                                            3
-                                        ]
-                                    }
-                                ],
-                                "name": [
-                                    "example-app-tg"
-                                ],
-                                "port": [
-                                    80
-                                ],
-                                "protocol": [
-                                    "HTTP"
-                                ],
-                                "vpc_id": [
                                     "module.vpc_east.vpc_id"
                                 ],
                                 "__address__": "module.asg_east.aws_lb_target_group.app_tg",
@@ -2345,8 +2495,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "protocol"
+                        "protocol",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2403,6 +2553,117 @@
                 }
             },
             {
+                "check_id": "CKV_AWS_378",
+                "bc_check_id": "BC_AWS_NETWORKING_103",
+                "check_name": "Ensure AWS Load Balancer doesn't use HTTP protocol",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_lb_target_group": {
+                            "app_tg": {
+                                "__end_line__": 128,
+                                "__start_line__": 113,
+                                "health_check": [
+                                    {
+                                        "healthy_threshold": [
+                                            3
+                                        ],
+                                        "interval": [
+                                            30
+                                        ],
+                                        "matcher": [
+                                            "200"
+                                        ],
+                                        "path": [
+                                            "/"
+                                        ],
+                                        "protocol": [
+                                            "HTTP"
+                                        ],
+                                        "timeout": [
+                                            10
+                                        ],
+                                        "unhealthy_threshold": [
+                                            3
+                                        ]
+                                    }
+                                ],
+                                "name": [
+                                    "example-app-tg"
+                                ],
+                                "port": [
+                                    80
+                                ],
+                                "protocol": [
+                                    "HTTP"
+                                ],
+                                "vpc_id": [
+                                    "module.vpc_west.vpc_id"
+                                ],
+                                "__address__": "module.asg_west.aws_lb_target_group.app_tg",
+                                "__provider_address__": "aws.west"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "protocol",
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/asg/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                "repo_file_path": "/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                "file_line_range": [
+                    113,
+                    128
+                ],
+                "resource": "module.asg_west.aws_lb_target_group.app_tg",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-378",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                "breadcrumbs": {
+                    "vpc_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "vpc_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
+                            "idx": 4,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
                 "check_id": "CKV2_AWS_28",
                 "bc_check_id": "BC_AWS_NETWORKING_58",
                 "check_name": "Ensure public facing ALB are protected by WAF",
@@ -2431,8 +2692,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
                         "load_balancer_type",
+                        "resource_type",
                         "internal"
                     ]
                 },
@@ -2504,93 +2765,6 @@
                                     "example-app-lb"
                                 ],
                                 "subnets": [
-                                    "module.vpc_east.public_subnets"
-                                ],
-                                "__address__": "module.asg_east.aws_lb.app_lb",
-                                "__provider_address__": "aws.east"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "resource_type",
-                        "load_balancer_type",
-                        "internal"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/asg/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                "repo_file_path": "/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                "file_line_range": [
-                    102,
-                    111
-                ],
-                "resource": "module.asg_east.aws_lb.app_lb",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {},
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-facing-alb-are-protected-by-waf",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                "breadcrumbs": {
-                    "subnets": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "subnet_ids",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "source_module_": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                            "idx": 3,
-                            "source_module_object": null
-                        }
-                    ]
-                }
-            },
-            {
-                "check_id": "CKV2_AWS_28",
-                "bc_check_id": "BC_AWS_NETWORKING_58",
-                "check_name": "Ensure public facing ALB are protected by WAF",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_lb": {
-                            "app_lb": {
-                                "__end_line__": 111,
-                                "__start_line__": 102,
-                                "internal": [
-                                    false
-                                ],
-                                "load_balancer_type": [
-                                    "application"
-                                ],
-                                "name": [
-                                    "example-app-lb"
-                                ],
-                                "subnets": [
                                     "module.vpc_west.public_subnets"
                                 ],
                                 "__address__": "module.asg_west.aws_lb.app_lb",
@@ -2599,8 +2773,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
                         "load_balancer_type",
+                        "resource_type",
                         "internal"
                     ]
                 },
@@ -2658,118 +2832,37 @@
                 }
             },
             {
-                "check_id": "CKV2_AWS_15",
-                "bc_check_id": "BC_AWS_NETWORKING_46",
-                "check_name": "Ensure that auto Scaling groups that are associated with a load balancer are using Elastic Load Balancing health checks.",
+                "check_id": "CKV2_AWS_28",
+                "bc_check_id": "BC_AWS_NETWORKING_58",
+                "check_name": "Ensure public facing ALB are protected by WAF",
                 "check_result": {
                     "result": "FAILED",
                     "entity": {
-                        "aws_autoscaling_attachment": {
-                            "asg_attachment": {
-                                "__end_line__": 133,
-                                "__start_line__": 130,
-                                "autoscaling_group_name": [
-                                    "example-app-asg"
+                        "aws_lb": {
+                            "app_lb": {
+                                "__end_line__": 111,
+                                "__start_line__": 102,
+                                "internal": [
+                                    false
                                 ],
-                                "lb_target_group_arn": [
-                                    "aws_lb_target_group.app_tg.arn"
+                                "load_balancer_type": [
+                                    "application"
                                 ],
-                                "__address__": "module.asg.aws_autoscaling_attachment.asg_attachment",
-                                "__provider_address__": ""
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "resource_type",
-                        "health_check",
-                        "health_check_type"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/asg/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                "repo_file_path": "/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                "file_line_range": [
-                    130,
-                    133
-                ],
-                "resource": "module.asg.aws_autoscaling_attachment.asg_attachment",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {},
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-auto-scaling-groups-that-are-associated-with-a-load-balancer-are-using-elastic-load-balancing-health-checks",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                "breadcrumbs": {
-                    "autoscaling_group_name": [
-                        {
-                            "type": "module",
-                            "name": "asg",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_autoscaling_group.asg",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "source_module_": [
-                        {
-                            "type": "module",
-                            "name": "asg",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                            "idx": 2,
-                            "source_module_object": null
-                        }
-                    ]
-                }
-            },
-            {
-                "check_id": "CKV2_AWS_15",
-                "bc_check_id": "BC_AWS_NETWORKING_46",
-                "check_name": "Ensure that auto Scaling groups that are associated with a load balancer are using Elastic Load Balancing health checks.",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_autoscaling_attachment": {
-                            "asg_attachment": {
-                                "__end_line__": 133,
-                                "__start_line__": 130,
-                                "autoscaling_group_name": [
-                                    "${module.asg.application_name}-asg"
+                                "name": [
+                                    "example-app-lb"
                                 ],
-                                "lb_target_group_arn": [
-                                    "aws_lb_target_group.app_tg.arn"
+                                "subnets": [
+                                    "module.vpc_east.public_subnets"
                                 ],
-                                "__address__": "module.asg_east.aws_autoscaling_attachment.asg_attachment",
+                                "__address__": "module.asg_east.aws_lb.app_lb",
                                 "__provider_address__": "aws.east"
                             }
                         }
                     },
                     "evaluated_keys": [
+                        "load_balancer_type",
                         "resource_type",
-                        "health_check",
-                        "health_check_type"
+                        "internal"
                     ]
                 },
                 "code_block": null,
@@ -2777,10 +2870,10 @@
                 "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                 "repo_file_path": "/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                 "file_line_range": [
-                    130,
-                    133
+                    102,
+                    111
                 ],
-                "resource": "module.asg_east.aws_autoscaling_attachment.asg_attachment",
+                "resource": "module.asg_east.aws_lb.app_lb",
                 "evaluations": null,
                 "check_class": "checkov.common.graph.checks_infra.base_check",
                 "fixed_definition": null,
@@ -2795,12 +2888,12 @@
                 "short_description": null,
                 "vulnerability_details": null,
                 "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-auto-scaling-groups-that-are-associated-with-a-load-balancer-are-using-elastic-load-balancing-health-checks",
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-facing-alb-are-protected-by-waf",
                 "details": [],
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "autoscaling_group_name": [
+                    "subnets": [
                         {
                             "type": "module",
                             "name": "asg_east",
@@ -2809,13 +2902,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_autoscaling_group.asg",
+                            "name": "subnet_ids",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
                             "module_connection": false
                         }
@@ -2826,93 +2913,6 @@
                             "name": "asg_east",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
                             "idx": 3,
-                            "source_module_object": null
-                        }
-                    ]
-                }
-            },
-            {
-                "check_id": "CKV2_AWS_15",
-                "bc_check_id": "BC_AWS_NETWORKING_46",
-                "check_name": "Ensure that auto Scaling groups that are associated with a load balancer are using Elastic Load Balancing health checks.",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_autoscaling_attachment": {
-                            "asg_attachment": {
-                                "__end_line__": 133,
-                                "__start_line__": 130,
-                                "autoscaling_group_name": [
-                                    "${module.asg.application_name}-asg"
-                                ],
-                                "lb_target_group_arn": [
-                                    "aws_lb_target_group.app_tg.arn"
-                                ],
-                                "__address__": "module.asg_west.aws_autoscaling_attachment.asg_attachment",
-                                "__provider_address__": "aws.west"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "resource_type",
-                        "health_check",
-                        "health_check_type"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/asg/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                "repo_file_path": "/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                "file_line_range": [
-                    130,
-                    133
-                ],
-                "resource": "module.asg_west.aws_autoscaling_attachment.asg_attachment",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {},
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-auto-scaling-groups-that-are-associated-with-a-load-balancer-are-using-elastic-load-balancing-health-checks",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                "breadcrumbs": {
-                    "autoscaling_group_name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_autoscaling_group.asg",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/modules/asg/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "source_module_": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario02/main.tf",
-                            "idx": 4,
                             "source_module_object": null
                         }
                     ]

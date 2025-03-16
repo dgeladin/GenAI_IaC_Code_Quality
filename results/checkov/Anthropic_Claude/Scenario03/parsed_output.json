@@ -1,0 +1,72 @@
+{
+  "check_type": "terraform",
+  "failed_checks": [
+    {
+      "check_id": "CKV_TF_1",
+      "severity": "MEDIUM",
+      "check_name": "Ensure Terraform module sources use a commit hash",
+      "check_result": "FAILED",
+      "file_path": "/eks-cluster.tf",
+      "file_line_range": [
+        3,
+        62
+      ],
+      "resource": "eks_cluster",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision"
+    },
+    {
+      "check_id": "CKV_K8S_21",
+      "severity": "LOW",
+      "check_name": "The default namespace should not be used",
+      "check_result": "FAILED",
+      "file_path": "/tls-ingress.tf",
+      "file_line_range": [
+        10,
+        73
+      ],
+      "resource": "kubernetes_ingress_v1.api_ingress",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-20"
+    },
+    {
+      "check_id": "CKV_K8S_21",
+      "severity": "LOW",
+      "check_name": "The default namespace should not be used",
+      "check_result": "FAILED",
+      "file_path": "/tls-ingress.tf",
+      "file_line_range": [
+        76,
+        90
+      ],
+      "resource": "kubernetes_secret_v1.api_tls_secret",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-20"
+    },
+    {
+      "check_id": "CKV_TF_1",
+      "severity": "MEDIUM",
+      "check_name": "Ensure Terraform module sources use a commit hash",
+      "check_result": "FAILED",
+      "file_path": "/vpc.tf",
+      "file_line_range": [
+        3,
+        49
+      ],
+      "resource": "eks_vpc",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision"
+    }
+  ],
+  "summary": {
+    "passed": 9,
+    "failed": 4,
+    "skipped": 0,
+    "parsing_errors": 0,
+    "resource_count": 6,
+    "checkov_version": "3.2.382",
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 2,
+      "LOW": 2,
+      "UNKNOWN": 0
+    }
+  }
+}

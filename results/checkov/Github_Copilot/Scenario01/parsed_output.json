@@ -1,0 +1,73 @@
+{
+  "check_type": "terraform",
+  "failed_checks": [
+    {
+      "check_id": "CKV2_AWS_41",
+      "severity": "INFO",
+      "check_name": "Ensure an IAM role is attached to EC2 instance",
+      "check_result": "FAILED",
+      "file_path": "/modules/instances/main.tf",
+      "file_line_range": [
+        20,
+        28
+      ],
+      "resource": "module.instances.aws_instance.windows_dev",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance"
+    },
+    {
+      "check_id": "CKV2_AWS_41",
+      "severity": "INFO",
+      "check_name": "Ensure an IAM role is attached to EC2 instance",
+      "check_result": "FAILED",
+      "file_path": "/modules/instances/main.tf",
+      "file_line_range": [
+        42,
+        50
+      ],
+      "resource": "module.instances.aws_instance.linux_dev",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance"
+    },
+    {
+      "check_id": "CKV2_AWS_41",
+      "severity": "INFO",
+      "check_name": "Ensure an IAM role is attached to EC2 instance",
+      "check_result": "FAILED",
+      "file_path": "/modules/instances/main.tf",
+      "file_line_range": [
+        31,
+        39
+      ],
+      "resource": "module.instances.aws_instance.windows_prod",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance"
+    },
+    {
+      "check_id": "CKV2_AWS_41",
+      "severity": "INFO",
+      "check_name": "Ensure an IAM role is attached to EC2 instance",
+      "check_result": "FAILED",
+      "file_path": "/modules/instances/main.tf",
+      "file_line_range": [
+        53,
+        61
+      ],
+      "resource": "module.instances.aws_instance.linux_prod",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance"
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 4,
+    "skipped": 0,
+    "parsing_errors": 0,
+    "resource_count": 4,
+    "checkov_version": "3.2.382",
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "UNKNOWN": 0,
+      "INFO": 4
+    }
+  }
+}

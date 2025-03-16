@@ -1,0 +1,46 @@
+{
+  "check_type": "terraform",
+  "failed_checks": [
+    {
+      "check_id": "CKV_TF_1",
+      "severity": "MEDIUM",
+      "check_name": "Ensure Terraform module sources use a commit hash",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        27,
+        73
+      ],
+      "resource": "vpc",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision"
+    },
+    {
+      "check_id": "CKV_TF_1",
+      "severity": "MEDIUM",
+      "check_name": "Ensure Terraform module sources use a commit hash",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        75,
+        98
+      ],
+      "resource": "eks",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 2,
+    "skipped": 0,
+    "parsing_errors": 0,
+    "resource_count": 5,
+    "checkov_version": "3.2.382",
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 2,
+      "LOW": 0,
+      "UNKNOWN": 0
+    }
+  }
+}

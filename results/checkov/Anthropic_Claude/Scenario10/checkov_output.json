@@ -1029,8 +1029,8 @@
                     },
                     "evaluated_keys": [
                         "replication_configuration/rules/*/status",
-                        "rule/*/status",
-                        "resource_type"
+                        "resource_type",
+                        "rule/*/status"
                     ]
                 },
                 "code_block": null,
@@ -1198,8 +1198,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "logging",
-                        "resource_type"
+                        "resource_type",
+                        "logging"
                     ]
                 },
                 "code_block": null,

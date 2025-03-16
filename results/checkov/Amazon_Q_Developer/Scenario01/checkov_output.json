@@ -224,20 +224,6 @@
                             "module_connection": false
                         }
                     ],
-                    "instance_type": [
-                        {
-                            "type": "variable",
-                            "name": "instance_type",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario01/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "locals",
-                            "name": "active_instance_type",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario01/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "count": [
                         {
                             "type": "locals",
@@ -248,6 +234,20 @@
                         {
                             "type": "locals",
                             "name": "active_linux_count",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario01/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario01/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "locals",
+                            "name": "active_instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario01/locals.tf",
                             "module_connection": false
                         }
@@ -308,20 +308,6 @@
                             "module_connection": false
                         }
                     ],
-                    "instance_type": [
-                        {
-                            "type": "variable",
-                            "name": "instance_type",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario01/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "locals",
-                            "name": "active_instance_type",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario01/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "count": [
                         {
                             "type": "locals",
@@ -332,6 +318,20 @@
                         {
                             "type": "locals",
                             "name": "active_linux_count",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario01/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario01/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "locals",
+                            "name": "active_instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario01/locals.tf",
                             "module_connection": false
                         }
@@ -592,20 +592,6 @@
                             "module_connection": false
                         }
                     ],
-                    "instance_type": [
-                        {
-                            "type": "variable",
-                            "name": "instance_type",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario01/variables.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "locals",
-                            "name": "active_instance_type",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario01/locals.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "count": [
                         {
                             "type": "locals",
@@ -616,6 +602,20 @@
                         {
                             "type": "locals",
                             "name": "active_linux_count",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario01/locals.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
+                        {
+                            "type": "variable",
+                            "name": "instance_type",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario01/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "locals",
+                            "name": "active_instance_type",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Amazon_Q_Developer/Scenario01/locals.tf",
                             "module_connection": false
                         }

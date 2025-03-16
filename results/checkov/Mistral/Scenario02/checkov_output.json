@@ -506,20 +506,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "subnets": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "public_subnet_ids",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name": [
                         {
                             "type": "module",
@@ -530,6 +516,20 @@
                         {
                             "type": "variable",
                             "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "subnets": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "public_subnet_ids",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
                             "module_connection": false
                         }
@@ -586,20 +586,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "subnets": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "public_subnet_ids",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name": [
                         {
                             "type": "module",
@@ -610,6 +596,20 @@
                         {
                             "type": "variable",
                             "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "subnets": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "public_subnet_ids",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
                             "module_connection": false
                         }
@@ -666,20 +666,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "subnets": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "public_subnet_ids",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name": [
                         {
                             "type": "module",
@@ -690,6 +676,20 @@
                         {
                             "type": "variable",
                             "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "subnets": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "public_subnet_ids",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
                             "module_connection": false
                         }
@@ -798,20 +798,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "name_prefix": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "instance_type": [
                         {
                             "type": "module",
@@ -841,6 +827,20 @@
                         }
                     ],
                     "tag_specifications.tags": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name_prefix": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -906,20 +906,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "name_prefix": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "instance_type": [
                         {
                             "type": "module",
@@ -949,6 +935,20 @@
                         }
                     ],
                     "tag_specifications.tags": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name_prefix": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -1601,12 +1601,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "default_action/redirect/*/protocol",
-                        "default_action/type",
-                        "default_action/redirect/*/port",
-                        "resource_type",
                         "protocol",
-                        "port"
+                        "resource_type",
+                        "port",
+                        "default_action/redirect/*/port",
+                        "default_action/type",
+                        "default_action/redirect/*/protocol"
                     ]
                 },
                 "code_block": null,
@@ -1637,20 +1637,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "subnets": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "public_subnet_ids",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name": [
                         {
                             "type": "module",
@@ -1661,6 +1647,20 @@
                         {
                             "type": "variable",
                             "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "subnets": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "public_subnet_ids",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
                             "module_connection": false
                         }
@@ -1713,12 +1713,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "default_action/redirect/*/protocol",
-                        "default_action/type",
-                        "default_action/redirect/*/port",
-                        "resource_type",
                         "protocol",
-                        "port"
+                        "resource_type",
+                        "port",
+                        "default_action/redirect/*/port",
+                        "default_action/type",
+                        "default_action/redirect/*/protocol"
                     ]
                 },
                 "code_block": null,
@@ -1824,11 +1824,11 @@
                         }
                     },
                     "evaluated_keys": [
-                        "default_action/type",
-                        "load_balancer_type",
-                        "default_action/redirect/protocol",
-                        "resource_type",
                         "protocol",
+                        "resource_type",
+                        "default_action/redirect/protocol",
+                        "load_balancer_type",
+                        "default_action/type",
                         "ssl_policy"
                     ]
                 },
@@ -1907,11 +1907,11 @@
                         }
                     },
                     "evaluated_keys": [
-                        "default_action/type",
-                        "load_balancer_type",
-                        "default_action/redirect/protocol",
-                        "resource_type",
                         "protocol",
+                        "resource_type",
+                        "default_action/redirect/protocol",
+                        "load_balancer_type",
+                        "default_action/type",
                         "ssl_policy"
                     ]
                 },
@@ -1979,15 +1979,15 @@
                         }
                     },
                     "evaluated_keys": [
-                        "ingress/from_port",
+                        "resource_type",
+                        "ingress/to_port",
                         "egress/from_port",
+                        "ingress/protocol",
+                        "ingress/self",
                         "egress/to_port",
                         "egress/protocol",
-                        "ingress/self",
-                        "resource_type",
-                        "ingress/protocol",
-                        "ingress/to_port",
-                        "egress/cidr_blocks"
+                        "egress/cidr_blocks",
+                        "ingress/from_port"
                     ]
                 },
                 "code_block": null,
@@ -2084,15 +2084,15 @@
                         }
                     },
                     "evaluated_keys": [
-                        "ingress/from_port",
+                        "resource_type",
+                        "ingress/to_port",
                         "egress/from_port",
+                        "ingress/protocol",
+                        "ingress/self",
                         "egress/to_port",
                         "egress/protocol",
-                        "ingress/self",
-                        "resource_type",
-                        "ingress/protocol",
-                        "ingress/to_port",
-                        "egress/cidr_blocks"
+                        "egress/cidr_blocks",
+                        "ingress/from_port"
                     ]
                 },
                 "code_block": null,
@@ -2383,9 +2383,9 @@
                         }
                     },
                     "evaluated_keys": [
+                        "health_check_type",
                         "health_check",
-                        "resource_type",
-                        "health_check_type"
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2450,9 +2450,9 @@
                         }
                     },
                     "evaluated_keys": [
+                        "health_check_type",
                         "health_check",
-                        "resource_type",
-                        "health_check_type"
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2531,9 +2531,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
                         "load_balancer_type",
-                        "internal"
+                        "internal",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2564,20 +2564,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/main.tf",
                 "breadcrumbs": {
-                    "subnets": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "public_subnet_ids",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name": [
                         {
                             "type": "module",
@@ -2588,6 +2574,20 @@
                         {
                             "type": "variable",
                             "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "subnets": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "public_subnet_ids",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario02/asg/variables.tf",
                             "module_connection": false
                         }
@@ -2640,9 +2640,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
                         "load_balancer_type",
-                        "internal"
+                        "internal",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2760,8 +2760,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "protocol",
-                        "resource_type"
+                        "resource_type",
+                        "protocol"
                     ]
                 },
                 "code_block": null,
@@ -2879,8 +2879,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "protocol",
-                        "resource_type"
+                        "resource_type",
+                        "protocol"
                     ]
                 },
                 "code_block": null,

@@ -81,6 +81,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
+                    "name_prefix": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "instance_type": [
                         {
                             "type": "module",
@@ -110,20 +124,6 @@
                         }
                     ],
                     "tag_specifications.tags": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "name_prefix": [
                         {
                             "type": "module",
                             "name": "asg_east",
@@ -189,20 +189,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -213,6 +199,20 @@
                         {
                             "type": "variable",
                             "name": "subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
                             "module_connection": false
                         }
@@ -269,20 +269,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -293,6 +279,20 @@
                         {
                             "type": "variable",
                             "name": "subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
                             "module_connection": false
                         }
@@ -349,20 +349,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -373,6 +359,20 @@
                         {
                             "type": "variable",
                             "name": "subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
                             "module_connection": false
                         }
@@ -728,6 +728,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
+                    "name_prefix": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "tag_specifications.tags.Name": [
                         {
                             "type": "module",
@@ -743,20 +757,6 @@
                         }
                     ],
                     "tag_specifications.tags": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "name_prefix": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -836,20 +836,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -860,6 +846,20 @@
                         {
                             "type": "variable",
                             "name": "subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
                             "module_connection": false
                         }
@@ -916,20 +916,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -940,6 +926,20 @@
                         {
                             "type": "variable",
                             "name": "subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
                             "module_connection": false
                         }
@@ -996,20 +996,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -1020,6 +1006,20 @@
                         {
                             "type": "variable",
                             "name": "subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
                             "module_connection": false
                         }
@@ -1131,20 +1131,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "vpc_id": [
                         {
                             "type": "module",
@@ -1155,6 +1141,20 @@
                         {
                             "type": "variable",
                             "name": "vpc_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
                             "module_connection": false
                         }
@@ -1212,20 +1212,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "vpc_id": [
                         {
                             "type": "module",
@@ -1236,6 +1222,20 @@
                         {
                             "type": "variable",
                             "name": "vpc_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
                             "module_connection": false
                         }
@@ -1295,20 +1295,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "vpc_id": [
                         {
                             "type": "module",
@@ -1319,6 +1305,20 @@
                         {
                             "type": "variable",
                             "name": "vpc_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
                             "module_connection": false
                         }
@@ -1377,20 +1377,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/main.tf",
                 "breadcrumbs": {
-                    "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "vpc_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "availability_zone": [
                         {
                             "type": "module",
@@ -1401,6 +1387,20 @@
                         {
                             "type": "variable",
                             "name": "availability_zones",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "vpc_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/variables.tf",
                             "module_connection": false
                         }
@@ -1663,6 +1663,226 @@
                 }
             },
             {
+                "check_id": "CKV2_AWS_12",
+                "bc_check_id": "BC_AWS_NETWORKING_4",
+                "check_name": "Ensure the default security group of every VPC restricts all traffic",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_vpc": {
+                            "this": {
+                                "__end_line__": 9,
+                                "__start_line__": 1,
+                                "cidr_block": [
+                                    "10.0.0.0/16"
+                                ],
+                                "enable_dns_hostnames": [
+                                    true
+                                ],
+                                "enable_dns_support": [
+                                    true
+                                ],
+                                "tags": [
+                                    {
+                                        "Name": "vpc-east"
+                                    }
+                                ],
+                                "__address__": "module.vpc_east.aws_vpc.this"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "egress/protocol",
+                        "resource_type",
+                        "ingress/to_port",
+                        "ingress/self",
+                        "ingress/protocol",
+                        "egress/to_port",
+                        "egress/cidr_blocks",
+                        "ingress/from_port",
+                        "egress/from_port"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/vpc/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/main.tf",
+                "repo_file_path": "/data/outputs/ChatGPT/Scenario02/modules/vpc/main.tf",
+                "file_line_range": [
+                    1,
+                    9
+                ],
+                "resource": "module.vpc_east.aws_vpc.this",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "vpc-east"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/main.tf",
+                "breadcrumbs": {
+                    "cidr_block": [
+                        {
+                            "type": "module",
+                            "name": "vpc_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "cidr_block",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "vpc_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "vpc_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "idx": 0,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_12",
+                "bc_check_id": "BC_AWS_NETWORKING_4",
+                "check_name": "Ensure the default security group of every VPC restricts all traffic",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_vpc": {
+                            "this": {
+                                "__end_line__": 9,
+                                "__start_line__": 1,
+                                "cidr_block": [
+                                    "10.1.0.0/16"
+                                ],
+                                "enable_dns_hostnames": [
+                                    true
+                                ],
+                                "enable_dns_support": [
+                                    true
+                                ],
+                                "tags": [
+                                    {
+                                        "Name": "vpc-west"
+                                    }
+                                ],
+                                "__address__": "module.vpc_west.aws_vpc.this"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "egress/protocol",
+                        "resource_type",
+                        "ingress/to_port",
+                        "ingress/self",
+                        "ingress/protocol",
+                        "egress/to_port",
+                        "egress/cidr_blocks",
+                        "ingress/from_port",
+                        "egress/from_port"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/vpc/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/main.tf",
+                "repo_file_path": "/data/outputs/ChatGPT/Scenario02/modules/vpc/main.tf",
+                "file_line_range": [
+                    1,
+                    9
+                ],
+                "resource": "module.vpc_west.aws_vpc.this",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Name": "vpc-west"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/main.tf",
+                "breadcrumbs": {
+                    "cidr_block": [
+                        {
+                            "type": "module",
+                            "name": "vpc_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "cidr_block",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "vpc_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "vpc_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "idx": 1,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
                 "check_id": "CKV2_AWS_20",
                 "bc_check_id": "BC_AWS_NETWORKING_49",
                 "check_name": "Ensure that ALB redirects HTTP requests into HTTPS ones",
@@ -1698,12 +1918,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "default_action/redirect/*/port",
-                        "default_action/type",
-                        "default_action/redirect/*/protocol",
+                        "resource_type",
                         "port",
+                        "default_action/redirect/*/protocol",
                         "protocol",
-                        "resource_type"
+                        "default_action/redirect/*/port",
+                        "default_action/type"
                     ]
                 },
                 "code_block": null,
@@ -1734,20 +1954,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -1758,6 +1964,20 @@
                         {
                             "type": "variable",
                             "name": "subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
                             "module_connection": false
                         }
@@ -1809,12 +2029,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "default_action/redirect/*/port",
-                        "default_action/type",
-                        "default_action/redirect/*/protocol",
+                        "resource_type",
                         "port",
+                        "default_action/redirect/*/protocol",
                         "protocol",
-                        "resource_type"
+                        "default_action/redirect/*/port",
+                        "default_action/type"
                     ]
                 },
                 "code_block": null,
@@ -1845,20 +2065,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -1869,6 +2075,20 @@
                         {
                             "type": "variable",
                             "name": "subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
                             "module_connection": false
                         }
@@ -1929,12 +2149,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "default_action/redirect/protocol",
-                        "ssl_policy",
-                        "default_action/type",
-                        "protocol",
                         "resource_type",
-                        "load_balancer_type"
+                        "default_action/redirect/protocol",
+                        "load_balancer_type",
+                        "ssl_policy",
+                        "protocol",
+                        "default_action/type"
                     ]
                 },
                 "code_block": null,
@@ -2021,12 +2241,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "default_action/redirect/protocol",
-                        "ssl_policy",
-                        "default_action/type",
-                        "protocol",
                         "resource_type",
-                        "load_balancer_type"
+                        "default_action/redirect/protocol",
+                        "load_balancer_type",
+                        "ssl_policy",
+                        "protocol",
+                        "default_action/type"
                     ]
                 },
                 "code_block": null,
@@ -2069,226 +2289,6 @@
                 }
             },
             {
-                "check_id": "CKV2_AWS_12",
-                "bc_check_id": "BC_AWS_NETWORKING_4",
-                "check_name": "Ensure the default security group of every VPC restricts all traffic",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_vpc": {
-                            "this": {
-                                "__end_line__": 9,
-                                "__start_line__": 1,
-                                "cidr_block": [
-                                    "10.0.0.0/16"
-                                ],
-                                "enable_dns_hostnames": [
-                                    true
-                                ],
-                                "enable_dns_support": [
-                                    true
-                                ],
-                                "tags": [
-                                    {
-                                        "Name": "vpc-east"
-                                    }
-                                ],
-                                "__address__": "module.vpc_east.aws_vpc.this"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "ingress/to_port",
-                        "egress/to_port",
-                        "ingress/protocol",
-                        "egress/cidr_blocks",
-                        "egress/from_port",
-                        "resource_type",
-                        "ingress/from_port",
-                        "egress/protocol",
-                        "ingress/self"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/vpc/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/main.tf",
-                "repo_file_path": "/data/outputs/ChatGPT/Scenario02/modules/vpc/main.tf",
-                "file_line_range": [
-                    1,
-                    9
-                ],
-                "resource": "module.vpc_east.aws_vpc.this",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {
-                    "Name": "vpc-east"
-                },
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/main.tf",
-                "breadcrumbs": {
-                    "cidr_block": [
-                        {
-                            "type": "module",
-                            "name": "vpc_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "cidr_block",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "vpc_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "source_module_": [
-                        {
-                            "type": "module",
-                            "name": "vpc_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "idx": 0,
-                            "source_module_object": null
-                        }
-                    ]
-                }
-            },
-            {
-                "check_id": "CKV2_AWS_12",
-                "bc_check_id": "BC_AWS_NETWORKING_4",
-                "check_name": "Ensure the default security group of every VPC restricts all traffic",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_vpc": {
-                            "this": {
-                                "__end_line__": 9,
-                                "__start_line__": 1,
-                                "cidr_block": [
-                                    "10.1.0.0/16"
-                                ],
-                                "enable_dns_hostnames": [
-                                    true
-                                ],
-                                "enable_dns_support": [
-                                    true
-                                ],
-                                "tags": [
-                                    {
-                                        "Name": "vpc-west"
-                                    }
-                                ],
-                                "__address__": "module.vpc_west.aws_vpc.this"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "ingress/to_port",
-                        "egress/to_port",
-                        "ingress/protocol",
-                        "egress/cidr_blocks",
-                        "egress/from_port",
-                        "resource_type",
-                        "ingress/from_port",
-                        "egress/protocol",
-                        "ingress/self"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/vpc/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/main.tf",
-                "repo_file_path": "/data/outputs/ChatGPT/Scenario02/modules/vpc/main.tf",
-                "file_line_range": [
-                    1,
-                    9
-                ],
-                "resource": "module.vpc_west.aws_vpc.this",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {
-                    "Name": "vpc-west"
-                },
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/main.tf",
-                "breadcrumbs": {
-                    "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "vpc_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "cidr_block": [
-                        {
-                            "type": "module",
-                            "name": "vpc_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "cidr_block",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "source_module_": [
-                        {
-                            "type": "module",
-                            "name": "vpc_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "idx": 1,
-                            "source_module_object": null
-                        }
-                    ]
-                }
-            },
-            {
                 "check_id": "CKV2_AWS_11",
                 "bc_check_id": "BC_AWS_LOGGING_9",
                 "check_name": "Ensure VPC flow logging is enabled in all VPCs",
@@ -2455,20 +2455,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/main.tf",
                 "breadcrumbs": {
-                    "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "vpc_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "cidr_block": [
                         {
                             "type": "module",
@@ -2479,6 +2465,20 @@
                         {
                             "type": "variable",
                             "name": "cidr_block",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "vpc_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/vpc/variables.tf",
                             "module_connection": false
                         }
@@ -2531,8 +2531,8 @@
                     },
                     "evaluated_keys": [
                         "load_balancer_type",
-                        "internal",
-                        "resource_type"
+                        "resource_type",
+                        "internal"
                     ]
                 },
                 "code_block": null,
@@ -2563,20 +2563,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -2587,6 +2573,20 @@
                         {
                             "type": "variable",
                             "name": "subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
                             "module_connection": false
                         }
@@ -2639,8 +2639,8 @@
                     },
                     "evaluated_keys": [
                         "load_balancer_type",
-                        "internal",
-                        "resource_type"
+                        "resource_type",
+                        "internal"
                     ]
                 },
                 "code_block": null,
@@ -2671,20 +2671,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/main.tf",
                 "breadcrumbs": {
-                    "name": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "application_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "subnets": [
                         {
                             "type": "module",
@@ -2695,6 +2681,20 @@
                         {
                             "type": "variable",
                             "name": "subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "application_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario02/modules/asg/variables.tf",
                             "module_connection": false
                         }

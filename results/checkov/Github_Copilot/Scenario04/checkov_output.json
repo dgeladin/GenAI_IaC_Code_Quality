@@ -3,42 +3,6 @@
     "results": {
         "failed_checks": [
             {
-                "check_id": "CKV_TF_1",
-                "bc_check_id": "BC_CROSS_1",
-                "check_name": "Ensure Terraform module sources use a commit hash",
-                "check_result": {
-                    "result": "FAILED",
-                    "evaluated_keys": []
-                },
-                "code_block": null,
-                "file_path": "/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario04/main.tf",
-                "repo_file_path": "/data/outputs/Github_Copilot/Scenario04/main.tf",
-                "file_line_range": [
-                    5,
-                    23
-                ],
-                "resource": "vpc",
-                "evaluations": null,
-                "check_class": "checkov.terraform.checks.module.generic.RevisionHash",
-                "fixed_definition": null,
-                "entity_tags": null,
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario04/main.tf"
-            },
-            {
                 "check_id": "CKV_AWS_79",
                 "bc_check_id": "BC_AWS_GENERAL_31",
                 "check_name": "Ensure Instance Metadata Service Version 1 is not enabled",
@@ -273,6 +237,42 @@
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario04/main.tf"
             },
             {
+                "check_id": "CKV_TF_1",
+                "bc_check_id": "BC_CROSS_1",
+                "check_name": "Ensure Terraform module sources use a commit hash",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": []
+                },
+                "code_block": null,
+                "file_path": "/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario04/main.tf",
+                "repo_file_path": "/data/outputs/Github_Copilot/Scenario04/main.tf",
+                "file_line_range": [
+                    5,
+                    23
+                ],
+                "resource": "vpc",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.module.generic.RevisionHash",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Github_Copilot/Scenario04/main.tf"
+            },
+            {
                 "check_id": "CKV_AWS_103",
                 "bc_check_id": "BC_AWS_GENERAL_43",
                 "check_name": "Ensure that load balancer is using at least TLS 1.2",
@@ -308,11 +308,11 @@
                         }
                     },
                     "evaluated_keys": [
-                        "ssl_policy",
-                        "load_balancer_type",
                         "default_action/type",
-                        "resource_type",
                         "default_action/redirect/protocol",
+                        "resource_type",
+                        "load_balancer_type",
+                        "ssl_policy",
                         "protocol"
                     ]
                 },
@@ -386,11 +386,11 @@
                         }
                     },
                     "evaluated_keys": [
-                        "port",
                         "default_action/type",
-                        "default_action/redirect/*/protocol",
-                        "resource_type",
                         "default_action/redirect/*/port",
+                        "resource_type",
+                        "port",
+                        "default_action/redirect/*/protocol",
                         "protocol"
                     ]
                 },
@@ -638,9 +638,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
                         "internal",
-                        "load_balancer_type"
+                        "load_balancer_type",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,

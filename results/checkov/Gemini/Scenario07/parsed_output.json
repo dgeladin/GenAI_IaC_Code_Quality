@@ -1,0 +1,424 @@
+{
+  "check_type": "terraform",
+  "failed_checks": [
+    {
+      "check_id": "CKV_AWS_290",
+      "severity": "HIGH",
+      "check_name": "Ensure IAM policies does not allow write access without constraints",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        65,
+        77
+      ],
+      "resource": "aws_iam_policy.db_admin_policy",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290"
+    },
+    {
+      "check_id": "CKV_AWS_289",
+      "severity": "HIGH",
+      "check_name": "Ensure IAM policies does not allow permissions management / resource exposure without constraints",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        65,
+        77
+      ],
+      "resource": "aws_iam_policy.db_admin_policy",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-289"
+    },
+    {
+      "check_id": "CKV_AWS_355",
+      "severity": "HIGH",
+      "check_name": "Ensure no IAM policies documents allow \"*\" as a statement's resource for restrictable actions",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        65,
+        77
+      ],
+      "resource": "aws_iam_policy.db_admin_policy",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355"
+    },
+    {
+      "check_id": "CKV_AWS_290",
+      "severity": "HIGH",
+      "check_name": "Ensure IAM policies does not allow write access without constraints",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        101,
+        116
+      ],
+      "resource": "aws_iam_policy.db_migration_policy",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290"
+    },
+    {
+      "check_id": "CKV_AWS_289",
+      "severity": "HIGH",
+      "check_name": "Ensure IAM policies does not allow permissions management / resource exposure without constraints",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        101,
+        116
+      ],
+      "resource": "aws_iam_policy.db_migration_policy",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-289"
+    },
+    {
+      "check_id": "CKV_AWS_355",
+      "severity": "HIGH",
+      "check_name": "Ensure no IAM policies documents allow \"*\" as a statement's resource for restrictable actions",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        101,
+        116
+      ],
+      "resource": "aws_iam_policy.db_migration_policy",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355"
+    },
+    {
+      "check_id": "CKV_AWS_287",
+      "severity": "HIGH",
+      "check_name": "Ensure IAM policies does not allow credentials exposure",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        101,
+        116
+      ],
+      "resource": "aws_iam_policy.db_migration_policy",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-287"
+    },
+    {
+      "check_id": "CKV_AWS_79",
+      "severity": "HIGH",
+      "check_name": "Ensure Instance Metadata Service Version 1 is not enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/compute/main.tf",
+      "file_line_range": [
+        63,
+        76
+      ],
+      "resource": "module.compute.aws_launch_template.web_server",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31"
+    },
+    {
+      "check_id": "CKV_AWS_150",
+      "severity": "LOW",
+      "check_name": "Ensure that Load Balancer has deletion protection enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/compute/main.tf",
+      "file_line_range": [
+        99,
+        110
+      ],
+      "resource": "module.compute.aws_lb.web_server",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-150"
+    },
+    {
+      "check_id": "CKV_AWS_91",
+      "severity": "INFO",
+      "check_name": "Ensure the ELBv2 (Application/Network) has access logging enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/compute/main.tf",
+      "file_line_range": [
+        99,
+        110
+      ],
+      "resource": "module.compute.aws_lb.web_server",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-logging-22"
+    },
+    {
+      "check_id": "CKV_AWS_131",
+      "severity": "MEDIUM",
+      "check_name": "Ensure that ALB drops HTTP headers",
+      "check_result": "FAILED",
+      "file_path": "/modules/compute/main.tf",
+      "file_line_range": [
+        99,
+        110
+      ],
+      "resource": "module.compute.aws_lb.web_server",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-drops-http-headers"
+    },
+    {
+      "check_id": "CKV_AWS_261",
+      "severity": "LOW",
+      "check_name": "Ensure HTTP HTTPS Target group defines Healthcheck",
+      "check_result": "FAILED",
+      "file_path": "/modules/compute/main.tf",
+      "file_line_range": [
+        112,
+        122
+      ],
+      "resource": "module.compute.aws_lb_target_group.web_server",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-kendra-index-server-side-encryption-uses-customer-managed-keys-cmks"
+    },
+    {
+      "check_id": "CKV_AWS_118",
+      "severity": "LOW",
+      "check_name": "Ensure that enhanced monitoring is enabled for Amazon RDS instances",
+      "check_result": "FAILED",
+      "file_path": "/modules/database/main.tf",
+      "file_line_range": [
+        57,
+        76
+      ],
+      "resource": "module.database.aws_db_instance.main",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-enhanced-monitoring-is-enabled-for-amazon-rds-instances"
+    },
+    {
+      "check_id": "CKV_AWS_161",
+      "severity": "MEDIUM",
+      "check_name": "Ensure RDS database has IAM authentication enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/database/main.tf",
+      "file_line_range": [
+        57,
+        76
+      ],
+      "resource": "module.database.aws_db_instance.main",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-rds-database-has-iam-authentication-enabled"
+    },
+    {
+      "check_id": "CKV_AWS_16",
+      "severity": "LOW",
+      "check_name": "Ensure all data stored in the RDS is securely encrypted at rest",
+      "check_result": "FAILED",
+      "file_path": "/modules/database/main.tf",
+      "file_line_range": [
+        57,
+        76
+      ],
+      "resource": "module.database.aws_db_instance.main",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-4"
+    },
+    {
+      "check_id": "CKV_AWS_353",
+      "severity": "LOW",
+      "check_name": "Ensure that RDS instances have performance insights enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/database/main.tf",
+      "file_line_range": [
+        57,
+        76
+      ],
+      "resource": "module.database.aws_db_instance.main",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-353"
+    },
+    {
+      "check_id": "CKV_AWS_129",
+      "severity": "LOW",
+      "check_name": "Ensure that respective logs of Amazon Relational Database Service (Amazon RDS) are enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/database/main.tf",
+      "file_line_range": [
+        57,
+        76
+      ],
+      "resource": "module.database.aws_db_instance.main",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-that-respective-logs-of-amazon-relational-database-service-amazon-rds-are-enabled"
+    },
+    {
+      "check_id": "CKV_AWS_226",
+      "severity": "LOW",
+      "check_name": "Ensure DB instance gets all minor upgrades automatically",
+      "check_result": "FAILED",
+      "file_path": "/modules/database/main.tf",
+      "file_line_range": [
+        57,
+        76
+      ],
+      "resource": "module.database.aws_db_instance.main",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-db-instance-gets-all-minor-upgrades-automatically"
+    },
+    {
+      "check_id": "CKV_AWS_157",
+      "severity": "LOW",
+      "check_name": "Ensure that RDS instances have Multi-AZ enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/database/main.tf",
+      "file_line_range": [
+        57,
+        76
+      ],
+      "resource": "module.database.aws_db_instance.main",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-73"
+    },
+    {
+      "check_id": "CKV_AWS_293",
+      "severity": "MEDIUM",
+      "check_name": "Ensure that AWS database instances have deletion protection enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/database/main.tf",
+      "file_line_range": [
+        57,
+        76
+      ],
+      "resource": "module.database.aws_db_instance.main",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-293"
+    },
+    {
+      "check_id": "CKV_AWS_260",
+      "severity": "LOW",
+      "check_name": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 80",
+      "check_result": "FAILED",
+      "file_path": "/modules/network/main.tf",
+      "file_line_range": [
+        76,
+        107
+      ],
+      "resource": "module.network.aws_security_group.web_server",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-groups-do-not-allow-ingress-from-00000-to-port-80"
+    },
+    {
+      "check_id": "CKV_AWS_23",
+      "severity": "LOW",
+      "check_name": "Ensure every security group and rule has a description",
+      "check_result": "FAILED",
+      "file_path": "/modules/network/main.tf",
+      "file_line_range": [
+        76,
+        107
+      ],
+      "resource": "module.network.aws_security_group.web_server",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31"
+    },
+    {
+      "check_id": "CKV_AWS_382",
+      "severity": "LOW",
+      "check_name": "Ensure no security groups allow egress from 0.0.0.0:0 to port -1",
+      "check_result": "FAILED",
+      "file_path": "/modules/network/main.tf",
+      "file_line_range": [
+        76,
+        107
+      ],
+      "resource": "module.network.aws_security_group.web_server",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382"
+    },
+    {
+      "check_id": "CKV2_AWS_30",
+      "severity": "LOW",
+      "check_name": "Ensure Postgres RDS as aws_db_instance has Query Logging enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/database/main.tf",
+      "file_line_range": [
+        57,
+        76
+      ],
+      "resource": "module.database.aws_db_instance.main",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-postgres-rds-has-query-logging-enabled"
+    },
+    {
+      "check_id": "CKV_AWS_103",
+      "severity": "HIGH",
+      "check_name": "Ensure that load balancer is using at least TLS 1.2",
+      "check_result": "FAILED",
+      "file_path": "/modules/compute/main.tf",
+      "file_line_range": [
+        124,
+        136
+      ],
+      "resource": "module.compute.aws_lb_listener.https",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-43"
+    },
+    {
+      "check_id": "CKV2_AWS_60",
+      "severity": "INFO",
+      "check_name": "Ensure RDS instance with copy tags to snapshots is enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/database/main.tf",
+      "file_line_range": [
+        57,
+        76
+      ],
+      "resource": "module.database.aws_db_instance.main",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-2-60"
+    },
+    {
+      "check_id": "CKV2_AWS_12",
+      "severity": "LOW",
+      "check_name": "Ensure the default security group of every VPC restricts all traffic",
+      "check_result": "FAILED",
+      "file_path": "/modules/network/main.tf",
+      "file_line_range": [
+        39,
+        47
+      ],
+      "resource": "module.network.aws_vpc.main",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4"
+    },
+    {
+      "check_id": "CKV2_AWS_5",
+      "severity": "LOW",
+      "check_name": "Ensure that Security Groups are attached to another resource",
+      "check_result": "FAILED",
+      "file_path": "/modules/network/main.tf",
+      "file_line_range": [
+        76,
+        107
+      ],
+      "resource": "module.network.aws_security_group.web_server",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-security-groups-are-attached-to-ec2-instances-or-elastic-network-interfaces-enis"
+    },
+    {
+      "check_id": "CKV2_AWS_11",
+      "severity": "INFO",
+      "check_name": "Ensure VPC flow logging is enabled in all VPCs",
+      "check_result": "FAILED",
+      "file_path": "/modules/network/main.tf",
+      "file_line_range": [
+        39,
+        47
+      ],
+      "resource": "module.network.aws_vpc.main",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-9-enable-vpc-flow-logging"
+    },
+    {
+      "check_id": "CKV2_AWS_15",
+      "severity": "LOW",
+      "check_name": "Ensure that auto Scaling groups that are associated with a load balancer are using Elastic Load Balancing health checks.",
+      "check_result": "FAILED",
+      "file_path": "/modules/compute/main.tf",
+      "file_line_range": [
+        138,
+        141
+      ],
+      "resource": "module.compute.aws_autoscaling_attachment.asg_attachment",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-auto-scaling-groups-that-are-associated-with-a-load-balancer-are-using-elastic-load-balancing-health-checks"
+    },
+    {
+      "check_id": "CKV2_AWS_28",
+      "severity": "LOW",
+      "check_name": "Ensure public facing ALB are protected by WAF",
+      "check_result": "FAILED",
+      "file_path": "/modules/compute/main.tf",
+      "file_line_range": [
+        99,
+        110
+      ],
+      "resource": "module.compute.aws_lb.web_server",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-facing-alb-are-protected-by-waf"
+    }
+  ],
+  "summary": {
+    "passed": 42,
+    "failed": 31,
+    "skipped": 0,
+    "parsing_errors": 0,
+    "resource_count": 21,
+    "checkov_version": "3.2.382",
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 9,
+      "MEDIUM": 3,
+      "LOW": 16,
+      "UNKNOWN": 0,
+      "INFO": 3
+    }
+  }
+}

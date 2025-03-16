@@ -1,0 +1,138 @@
+{
+  "check_type": "terraform",
+  "failed_checks": [
+    {
+      "check_id": "CKV_AWS_8",
+      "severity": "INFO",
+      "check_name": "Ensure all data stored in the Launch configuration or instance Elastic Blocks Store is securely encrypted",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        16,
+        24
+      ],
+      "resource": "aws_instance.example",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-13"
+    },
+    {
+      "check_id": "CKV_AWS_126",
+      "severity": "MEDIUM",
+      "check_name": "Ensure that detailed monitoring is enabled for EC2 instances",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        16,
+        24
+      ],
+      "resource": "aws_instance.example",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-detailed-monitoring-is-enabled-for-ec2-instances"
+    },
+    {
+      "check_id": "CKV_AWS_79",
+      "severity": "HIGH",
+      "check_name": "Ensure Instance Metadata Service Version 1 is not enabled",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        16,
+        24
+      ],
+      "resource": "aws_instance.example",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31"
+    },
+    {
+      "check_id": "CKV_AWS_135",
+      "severity": "LOW",
+      "check_name": "Ensure that EC2 is EBS optimized",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        16,
+        24
+      ],
+      "resource": "aws_instance.example",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized"
+    },
+    {
+      "check_id": "CKV_AZURE_1",
+      "severity": "LOW",
+      "check_name": "Ensure Azure Instance does not use basic authentication(Use SSH Key Instead)",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        62,
+        97
+      ],
+      "resource": "azurerm_virtual_machine.example",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/bc-azr-networking-1"
+    },
+    {
+      "check_id": "CKV2_AWS_41",
+      "severity": "INFO",
+      "check_name": "Ensure an IAM role is attached to EC2 instance",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        16,
+        24
+      ],
+      "resource": "aws_instance.example",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance"
+    },
+    {
+      "check_id": "CKV2_AZURE_12",
+      "severity": "LOW",
+      "check_name": "Ensure that virtual machines are backed up using Azure Backup",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        62,
+        97
+      ],
+      "resource": "azurerm_virtual_machine.example",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/ensure-that-virtual-machines-are-backed-up-using-azure-backup"
+    },
+    {
+      "check_id": "CKV2_AZURE_31",
+      "severity": "LOW",
+      "check_name": "Ensure VNET subnet is configured with a Network Security Group (NSG)",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        41,
+        46
+      ],
+      "resource": "azurerm_subnet.example",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/bc-azure-2-31"
+    },
+    {
+      "check_id": "CKV2_AZURE_10",
+      "severity": "LOW",
+      "check_name": "Ensure that Microsoft Antimalware is configured to automatically updates for Virtual Machines",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        62,
+        97
+      ],
+      "resource": "azurerm_virtual_machine.example",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/ensure-that-microsoft-antimalware-is-configured-to-automatically-updates-for-virtual-machines"
+    }
+  ],
+  "summary": {
+    "passed": 11,
+    "failed": 9,
+    "skipped": 0,
+    "parsing_errors": 0,
+    "resource_count": 9,
+    "checkov_version": "3.2.382",
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 1,
+      "MEDIUM": 1,
+      "LOW": 5,
+      "UNKNOWN": 0,
+      "INFO": 2
+    }
+  }
+}

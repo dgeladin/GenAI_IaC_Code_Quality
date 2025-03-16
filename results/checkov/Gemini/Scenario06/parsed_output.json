@@ -1,0 +1,150 @@
+{
+  "check_type": "terraform",
+  "failed_checks": [
+    {
+      "check_id": "CKV_AWS_117",
+      "severity": "LOW",
+      "check_name": "Ensure that AWS Lambda function is configured inside a VPC",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        46,
+        53
+      ],
+      "resource": "aws_lambda_function.example_lambda_function",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-inside-a-vpc-1"
+    },
+    {
+      "check_id": "CKV_AWS_115",
+      "severity": "LOW",
+      "check_name": "Ensure that AWS Lambda function is configured for function-level concurrent execution limit",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        46,
+        53
+      ],
+      "resource": "aws_lambda_function.example_lambda_function",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-function-level-concurrent-execution-limit"
+    },
+    {
+      "check_id": "CKV_AWS_50",
+      "severity": "LOW",
+      "check_name": "X-Ray tracing is enabled for Lambda",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        46,
+        53
+      ],
+      "resource": "aws_lambda_function.example_lambda_function",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-4"
+    },
+    {
+      "check_id": "CKV_AWS_363",
+      "severity": "MEDIUM",
+      "check_name": "Ensure Lambda Runtime is not deprecated",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        46,
+        53
+      ],
+      "resource": "aws_lambda_function.example_lambda_function",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-363"
+    },
+    {
+      "check_id": "CKV_AWS_272",
+      "severity": "HIGH",
+      "check_name": "Ensure AWS Lambda function is configured to validate code-signing",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        46,
+        53
+      ],
+      "resource": "aws_lambda_function.example_lambda_function",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-272"
+    },
+    {
+      "check_id": "CKV_AWS_116",
+      "severity": "LOW",
+      "check_name": "Ensure that AWS Lambda function is configured for a Dead Letter Queue(DLQ)",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        46,
+        53
+      ],
+      "resource": "aws_lambda_function.example_lambda_function",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-a-dead-letter-queue-dlq"
+    },
+    {
+      "check_id": "CKV_AWS_237",
+      "severity": "LOW",
+      "check_name": "Ensure Create before destroy for API Gateway",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        56,
+        59
+      ],
+      "resource": "aws_api_gateway_rest_api.example_api",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-api-gateway-enables-create-before-destroy"
+    },
+    {
+      "check_id": "CKV_AWS_59",
+      "severity": "LOW",
+      "check_name": "Ensure there is no open access to back-end resources through API",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        66,
+        71
+      ],
+      "resource": "aws_api_gateway_method.example",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-6-api-gateway-authorizer-set"
+    },
+    {
+      "check_id": "CKV_AWS_217",
+      "severity": "LOW",
+      "check_name": "Ensure Create before destroy for API deployments",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        87,
+        93
+      ],
+      "resource": "aws_api_gateway_deployment.example",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-api-deployments-enable-create-before-destroy"
+    },
+    {
+      "check_id": "CKV2_AWS_53",
+      "severity": "LOW",
+      "check_name": "Ensure AWS API gateway request is validated",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        66,
+        71
+      ],
+      "resource": "aws_api_gateway_method.example",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-2-53"
+    }
+  ],
+  "summary": {
+    "passed": 11,
+    "failed": 10,
+    "skipped": 0,
+    "parsing_errors": 0,
+    "resource_count": 9,
+    "checkov_version": "3.2.382",
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 1,
+      "MEDIUM": 1,
+      "LOW": 8,
+      "UNKNOWN": 0
+    }
+  }
+}

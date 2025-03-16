@@ -628,9 +628,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "rule/*/status",
                         "replication_configuration/rules/*/status",
-                        "resource_type"
+                        "resource_type",
+                        "rule/*/status"
                     ]
                 },
                 "code_block": null,
@@ -1111,15 +1111,15 @@
                         }
                     },
                     "evaluated_keys": [
-                        "egress/from_port",
-                        "egress/protocol",
-                        "egress/cidr_blocks",
-                        "resource_type",
-                        "ingress/from_port",
                         "ingress/to_port",
                         "ingress/self",
                         "ingress/protocol",
-                        "egress/to_port"
+                        "ingress/from_port",
+                        "egress/to_port",
+                        "egress/from_port",
+                        "egress/cidr_blocks",
+                        "egress/protocol",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,

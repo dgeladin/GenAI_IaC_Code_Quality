@@ -867,7 +867,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                 "breadcrumbs": {
-                    "image_id": [
+                    "user_data": [
                         {
                             "type": "module",
                             "name": "asg_east",
@@ -876,7 +876,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "ami_id",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name_prefix": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                             "module_connection": false
                         }
@@ -895,35 +909,21 @@
                             "module_connection": false
                         }
                     ],
+                    "image_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "ami_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "asg_config",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "user_data": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "asg_config",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "name_prefix": [
                         {
                             "type": "module",
                             "name": "asg_east",
@@ -991,7 +991,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                 "breadcrumbs": {
-                    "image_id": [
+                    "user_data": [
                         {
                             "type": "module",
                             "name": "asg_east",
@@ -1000,7 +1000,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "ami_id",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "name_prefix": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                             "module_connection": false
                         }
@@ -1019,35 +1033,21 @@
                             "module_connection": false
                         }
                     ],
+                    "image_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "ami_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "asg_config",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "user_data": [
-                        {
-                            "type": "module",
-                            "name": "asg_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "asg_config",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "name_prefix": [
                         {
                             "type": "module",
                             "name": "asg_east",
@@ -1118,6 +1118,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                 "breadcrumbs": {
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -1133,20 +1147,6 @@
                         }
                     ],
                     "vpc_id": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "asg_config",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Name": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -1217,6 +1217,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                 "breadcrumbs": {
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -1232,20 +1246,6 @@
                         }
                     ],
                     "vpc_id": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "asg_config",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Name": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -1314,6 +1314,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                 "breadcrumbs": {
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -1329,20 +1343,6 @@
                         }
                     ],
                     "vpc_id": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "asg_config",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Name": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -1413,6 +1413,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                 "breadcrumbs": {
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "asg_config",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -1428,20 +1442,6 @@
                         }
                     ],
                     "vpc_id": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "asg_config",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Name": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -1509,20 +1509,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                 "breadcrumbs": {
-                    "instance_type": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "asg_config",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -1537,7 +1523,21 @@
                             "module_connection": false
                         }
                     ],
-                    "tags.Name": [
+                    "image_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "ami_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -1565,7 +1565,7 @@
                             "module_connection": false
                         }
                     ],
-                    "image_id": [
+                    "tags.Name": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -1574,7 +1574,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "ami_id",
+                            "name": "asg_config",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                             "module_connection": false
                         }
@@ -1633,20 +1633,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                 "breadcrumbs": {
-                    "instance_type": [
-                        {
-                            "type": "module",
-                            "name": "asg_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "asg_config",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -1661,7 +1647,21 @@
                             "module_connection": false
                         }
                     ],
-                    "tags.Name": [
+                    "image_id": [
+                        {
+                            "type": "module",
+                            "name": "asg_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "ami_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "instance_type": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -1689,7 +1689,7 @@
                             "module_connection": false
                         }
                     ],
-                    "image_id": [
+                    "tags.Name": [
                         {
                             "type": "module",
                             "name": "asg_west",
@@ -1698,7 +1698,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "ami_id",
+                            "name": "asg_config",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/asg/asg.tf",
                             "module_connection": false
                         }
@@ -1828,8 +1828,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
                         "replication_configuration/rules/*/status",
+                        "resource_type",
                         "rule/*/status"
                     ]
                 },
@@ -1990,8 +1990,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "logging"
+                        "logging",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2057,12 +2057,12 @@
                         }
                     },
                     "evaluated_keys": [
+                        "default_action/type",
+                        "protocol",
                         "resource_type",
                         "default_action/redirect/protocol",
-                        "protocol",
                         "load_balancer_type",
-                        "ssl_policy",
-                        "default_action/type"
+                        "ssl_policy"
                     ]
                 },
                 "code_block": null,
@@ -2139,12 +2139,12 @@
                         }
                     },
                     "evaluated_keys": [
+                        "default_action/type",
+                        "protocol",
                         "resource_type",
                         "default_action/redirect/protocol",
-                        "protocol",
                         "load_balancer_type",
-                        "ssl_policy",
-                        "default_action/type"
+                        "ssl_policy"
                     ]
                 },
                 "code_block": null,
@@ -2282,12 +2282,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "default_action/redirect/*/port",
+                        "default_action/type",
                         "protocol",
                         "default_action/redirect/*/protocol",
-                        "port",
-                        "default_action/type"
+                        "resource_type",
+                        "default_action/redirect/*/port",
+                        "port"
                     ]
                 },
                 "code_block": null,
@@ -2372,12 +2372,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "default_action/redirect/*/port",
+                        "default_action/type",
                         "protocol",
                         "default_action/redirect/*/protocol",
-                        "port",
-                        "default_action/type"
+                        "resource_type",
+                        "default_action/redirect/*/port",
+                        "port"
                     ]
                 },
                 "code_block": null,
@@ -2443,9 +2443,9 @@
                         }
                     },
                     "evaluated_keys": [
+                        "server_side_encryption_configuration/rule/apply_server_side_encryption_by_default/sse_algorithm",
                         "resource_type",
-                        "rule/apply_server_side_encryption_by_default/sse_algorithm",
-                        "server_side_encryption_configuration/rule/apply_server_side_encryption_by_default/sse_algorithm"
+                        "rule/apply_server_side_encryption_by_default/sse_algorithm"
                     ]
                 },
                 "code_block": null,
@@ -2498,8 +2498,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
                         "versioning/enabled",
+                        "resource_type",
                         "versioning_configuration/status"
                     ]
                 },
@@ -2530,6 +2530,174 @@
                 "details": [],
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/global_accelerator.tf"
+            },
+            {
+                "check_id": "CKV_AWS_378",
+                "bc_check_id": "BC_AWS_NETWORKING_103",
+                "check_name": "Ensure AWS Load Balancer doesn't use HTTP protocol",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_lb_target_group": {
+                            "app_tg": {
+                                "__end_line__": 27,
+                                "__start_line__": 16,
+                                "health_check": [
+                                    {
+                                        "healthy_threshold": [
+                                            2
+                                        ],
+                                        "path": [
+                                            "/"
+                                        ],
+                                        "unhealthy_threshold": [
+                                            10
+                                        ]
+                                    }
+                                ],
+                                "name": [
+                                    "${var.application_name}-tg"
+                                ],
+                                "port": [
+                                    80
+                                ],
+                                "protocol": [
+                                    "HTTP"
+                                ],
+                                "vpc_id": [
+                                    "var.vpc_id"
+                                ],
+                                "__address__": "module.alb_east.aws_lb_target_group.app_tg"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "protocol"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "file_line_range": [
+                    16,
+                    27
+                ],
+                "resource": "module.alb_east.aws_lb_target_group.app_tg",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-378",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "alb_east",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 8,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AWS_378",
+                "bc_check_id": "BC_AWS_NETWORKING_103",
+                "check_name": "Ensure AWS Load Balancer doesn't use HTTP protocol",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_lb_target_group": {
+                            "app_tg": {
+                                "__end_line__": 27,
+                                "__start_line__": 16,
+                                "health_check": [
+                                    {
+                                        "healthy_threshold": [
+                                            2
+                                        ],
+                                        "path": [
+                                            "/"
+                                        ],
+                                        "unhealthy_threshold": [
+                                            10
+                                        ]
+                                    }
+                                ],
+                                "name": [
+                                    "${var.application_name}-tg"
+                                ],
+                                "port": [
+                                    80
+                                ],
+                                "protocol": [
+                                    "HTTP"
+                                ],
+                                "vpc_id": [
+                                    "var.vpc_id"
+                                ],
+                                "__address__": "module.alb_west.aws_lb_target_group.app_tg"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "protocol"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/alb/alb.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "file_line_range": [
+                    16,
+                    27
+                ],
+                "resource": "module.alb_west.aws_lb_target_group.app_tg",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {},
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-378",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
+                "breadcrumbs": {
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "alb_west",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
+                            "idx": 10,
+                            "source_module_object": null
+                        }
+                    ]
+                }
             },
             {
                 "check_id": "CKV2_AWS_28",
@@ -2573,8 +2741,8 @@
                     },
                     "evaluated_keys": [
                         "resource_type",
-                        "internal",
-                        "load_balancer_type"
+                        "load_balancer_type",
+                        "internal"
                     ]
                 },
                 "code_block": null,
@@ -2660,8 +2828,8 @@
                     },
                     "evaluated_keys": [
                         "resource_type",
-                        "internal",
-                        "load_balancer_type"
+                        "load_balancer_type",
+                        "internal"
                     ]
                 },
                 "code_block": null,
@@ -2690,174 +2858,6 @@
                 "vulnerability_details": null,
                 "connected_node": null,
                 "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-facing-alb-are-protected-by-waf",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
-                "breadcrumbs": {
-                    "source_module_": [
-                        {
-                            "type": "module",
-                            "name": "alb_west",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
-                            "idx": 10,
-                            "source_module_object": null
-                        }
-                    ]
-                }
-            },
-            {
-                "check_id": "CKV_AWS_378",
-                "bc_check_id": "BC_AWS_NETWORKING_103",
-                "check_name": "Ensure AWS Load Balancer doesn't use HTTP protocol",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_lb_target_group": {
-                            "app_tg": {
-                                "__end_line__": 27,
-                                "__start_line__": 16,
-                                "health_check": [
-                                    {
-                                        "healthy_threshold": [
-                                            2
-                                        ],
-                                        "path": [
-                                            "/"
-                                        ],
-                                        "unhealthy_threshold": [
-                                            10
-                                        ]
-                                    }
-                                ],
-                                "name": [
-                                    "${var.application_name}-tg"
-                                ],
-                                "port": [
-                                    80
-                                ],
-                                "protocol": [
-                                    "HTTP"
-                                ],
-                                "vpc_id": [
-                                    "var.vpc_id"
-                                ],
-                                "__address__": "module.alb_east.aws_lb_target_group.app_tg"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "protocol",
-                        "resource_type"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/alb/alb.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
-                "file_line_range": [
-                    16,
-                    27
-                ],
-                "resource": "module.alb_east.aws_lb_target_group.app_tg",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {},
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-378",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
-                "breadcrumbs": {
-                    "source_module_": [
-                        {
-                            "type": "module",
-                            "name": "alb_east",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/main.tf",
-                            "idx": 8,
-                            "source_module_object": null
-                        }
-                    ]
-                }
-            },
-            {
-                "check_id": "CKV_AWS_378",
-                "bc_check_id": "BC_AWS_NETWORKING_103",
-                "check_name": "Ensure AWS Load Balancer doesn't use HTTP protocol",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_lb_target_group": {
-                            "app_tg": {
-                                "__end_line__": 27,
-                                "__start_line__": 16,
-                                "health_check": [
-                                    {
-                                        "healthy_threshold": [
-                                            2
-                                        ],
-                                        "path": [
-                                            "/"
-                                        ],
-                                        "unhealthy_threshold": [
-                                            10
-                                        ]
-                                    }
-                                ],
-                                "name": [
-                                    "${var.application_name}-tg"
-                                ],
-                                "port": [
-                                    80
-                                ],
-                                "protocol": [
-                                    "HTTP"
-                                ],
-                                "vpc_id": [
-                                    "var.vpc_id"
-                                ],
-                                "__address__": "module.alb_west.aws_lb_target_group.app_tg"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "protocol",
-                        "resource_type"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/alb/alb.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",
-                "file_line_range": [
-                    16,
-                    27
-                ],
-                "resource": "module.alb_west.aws_lb_target_group.app_tg",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {},
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-378",
                 "details": [],
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario02/modules/alb/alb.tf",

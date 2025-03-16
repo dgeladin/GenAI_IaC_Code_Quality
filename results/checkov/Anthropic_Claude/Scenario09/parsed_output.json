@@ -1,0 +1,112 @@
+{
+  "check_type": "terraform",
+  "failed_checks": [
+    {
+      "check_id": "CKV_AWS_79",
+      "severity": "HIGH",
+      "check_name": "Ensure Instance Metadata Service Version 1 is not enabled",
+      "check_result": "FAILED",
+      "file_path": "/aws.tf",
+      "file_line_range": [
+        2,
+        21
+      ],
+      "resource": "aws_instance.monitoring_instance",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31"
+    },
+    {
+      "check_id": "CKV_AWS_135",
+      "severity": "LOW",
+      "check_name": "Ensure that EC2 is EBS optimized",
+      "check_result": "FAILED",
+      "file_path": "/aws.tf",
+      "file_line_range": [
+        2,
+        21
+      ],
+      "resource": "aws_instance.monitoring_instance",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized"
+    },
+    {
+      "check_id": "CKV_AWS_23",
+      "severity": "LOW",
+      "check_name": "Ensure every security group and rule has a description",
+      "check_result": "FAILED",
+      "file_path": "/aws.tf",
+      "file_line_range": [
+        23,
+        37
+      ],
+      "resource": "aws_security_group.monitoring_sg",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31"
+    },
+    {
+      "check_id": "CKV_AWS_382",
+      "severity": "LOW",
+      "check_name": "Ensure no security groups allow egress from 0.0.0.0:0 to port -1",
+      "check_result": "FAILED",
+      "file_path": "/aws.tf",
+      "file_line_range": [
+        23,
+        37
+      ],
+      "resource": "aws_security_group.monitoring_sg",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382"
+    },
+    {
+      "check_id": "CKV_AZURE_50",
+      "severity": "MEDIUM",
+      "check_name": "Ensure Virtual Machine Extensions are not Installed",
+      "check_result": "FAILED",
+      "file_path": "/azure.tf",
+      "file_line_range": [
+        33,
+        60
+      ],
+      "resource": "azurerm_linux_virtual_machine.monitoring_vm",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/bc-azr-general-14"
+    },
+    {
+      "check_id": "CKV2_AWS_41",
+      "severity": "INFO",
+      "check_name": "Ensure an IAM role is attached to EC2 instance",
+      "check_result": "FAILED",
+      "file_path": "/aws.tf",
+      "file_line_range": [
+        2,
+        21
+      ],
+      "resource": "aws_instance.monitoring_instance",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance"
+    },
+    {
+      "check_id": "CKV2_AZURE_31",
+      "severity": "LOW",
+      "check_name": "Ensure VNET subnet is configured with a Network Security Group (NSG)",
+      "check_result": "FAILED",
+      "file_path": "/azure.tf",
+      "file_line_range": [
+        14,
+        19
+      ],
+      "resource": "azurerm_subnet.monitoring_subnet",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/bc-azure-2-31"
+    }
+  ],
+  "summary": {
+    "passed": 20,
+    "failed": 7,
+    "skipped": 0,
+    "parsing_errors": 0,
+    "resource_count": 15,
+    "checkov_version": "3.2.382",
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 1,
+      "MEDIUM": 1,
+      "LOW": 4,
+      "UNKNOWN": 0,
+      "INFO": 1
+    }
+  }
+}

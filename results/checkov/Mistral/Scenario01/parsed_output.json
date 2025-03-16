@@ -1,0 +1,151 @@
+{
+  "check_type": "terraform",
+  "failed_checks": [
+    {
+      "check_id": "CKV_AWS_8",
+      "severity": "INFO",
+      "check_name": "Ensure all data stored in the Launch configuration or instance Elastic Blocks Store is securely encrypted",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        20,
+        30
+      ],
+      "resource": "aws_instance.windows",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-13"
+    },
+    {
+      "check_id": "CKV_AWS_126",
+      "severity": "MEDIUM",
+      "check_name": "Ensure that detailed monitoring is enabled for EC2 instances",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        20,
+        30
+      ],
+      "resource": "aws_instance.windows",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-detailed-monitoring-is-enabled-for-ec2-instances"
+    },
+    {
+      "check_id": "CKV_AWS_79",
+      "severity": "HIGH",
+      "check_name": "Ensure Instance Metadata Service Version 1 is not enabled",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        20,
+        30
+      ],
+      "resource": "aws_instance.windows",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31"
+    },
+    {
+      "check_id": "CKV_AWS_135",
+      "severity": "LOW",
+      "check_name": "Ensure that EC2 is EBS optimized",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        20,
+        30
+      ],
+      "resource": "aws_instance.windows",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized"
+    },
+    {
+      "check_id": "CKV_AWS_8",
+      "severity": "INFO",
+      "check_name": "Ensure all data stored in the Launch configuration or instance Elastic Blocks Store is securely encrypted",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        33,
+        43
+      ],
+      "resource": "aws_instance.linux",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-13"
+    },
+    {
+      "check_id": "CKV_AWS_126",
+      "severity": "MEDIUM",
+      "check_name": "Ensure that detailed monitoring is enabled for EC2 instances",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        33,
+        43
+      ],
+      "resource": "aws_instance.linux",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-detailed-monitoring-is-enabled-for-ec2-instances"
+    },
+    {
+      "check_id": "CKV_AWS_79",
+      "severity": "HIGH",
+      "check_name": "Ensure Instance Metadata Service Version 1 is not enabled",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        33,
+        43
+      ],
+      "resource": "aws_instance.linux",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31"
+    },
+    {
+      "check_id": "CKV_AWS_135",
+      "severity": "LOW",
+      "check_name": "Ensure that EC2 is EBS optimized",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        33,
+        43
+      ],
+      "resource": "aws_instance.linux",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized"
+    },
+    {
+      "check_id": "CKV2_AWS_41",
+      "severity": "INFO",
+      "check_name": "Ensure an IAM role is attached to EC2 instance",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        20,
+        30
+      ],
+      "resource": "aws_instance.windows",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance"
+    },
+    {
+      "check_id": "CKV2_AWS_41",
+      "severity": "INFO",
+      "check_name": "Ensure an IAM role is attached to EC2 instance",
+      "check_result": "FAILED",
+      "file_path": "/main.tf",
+      "file_line_range": [
+        33,
+        43
+      ],
+      "resource": "aws_instance.linux",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 10,
+    "skipped": 0,
+    "parsing_errors": 0,
+    "resource_count": 2,
+    "checkov_version": "3.2.382",
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 2,
+      "MEDIUM": 2,
+      "LOW": 2,
+      "UNKNOWN": 0,
+      "INFO": 4
+    }
+  }
+}

@@ -922,7 +922,7 @@
                             "module_connection": false
                         }
                     ],
-                    "multi_az": [
+                    "allocated_storage": [
                         {
                             "type": "variable",
                             "name": "environment",
@@ -936,7 +936,7 @@
                             "module_connection": false
                         }
                     ],
-                    "allocated_storage": [
+                    "multi_az": [
                         {
                             "type": "variable",
                             "name": "environment",
@@ -1057,7 +1057,7 @@
                             "module_connection": false
                         }
                     ],
-                    "multi_az": [
+                    "allocated_storage": [
                         {
                             "type": "variable",
                             "name": "environment",
@@ -1071,7 +1071,7 @@
                             "module_connection": false
                         }
                     ],
-                    "allocated_storage": [
+                    "multi_az": [
                         {
                             "type": "variable",
                             "name": "environment",
@@ -1192,7 +1192,7 @@
                             "module_connection": false
                         }
                     ],
-                    "multi_az": [
+                    "allocated_storage": [
                         {
                             "type": "variable",
                             "name": "environment",
@@ -1206,7 +1206,7 @@
                             "module_connection": false
                         }
                     ],
-                    "allocated_storage": [
+                    "multi_az": [
                         {
                             "type": "variable",
                             "name": "environment",
@@ -1327,7 +1327,7 @@
                             "module_connection": false
                         }
                     ],
-                    "multi_az": [
+                    "allocated_storage": [
                         {
                             "type": "variable",
                             "name": "environment",
@@ -1341,7 +1341,7 @@
                             "module_connection": false
                         }
                     ],
-                    "allocated_storage": [
+                    "multi_az": [
                         {
                             "type": "variable",
                             "name": "environment",
@@ -1462,7 +1462,7 @@
                             "module_connection": false
                         }
                     ],
-                    "multi_az": [
+                    "allocated_storage": [
                         {
                             "type": "variable",
                             "name": "environment",
@@ -1476,7 +1476,7 @@
                             "module_connection": false
                         }
                     ],
-                    "allocated_storage": [
+                    "multi_az": [
                         {
                             "type": "variable",
                             "name": "environment",
@@ -1950,8 +1950,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "parameter/*/name",
                         "resource_type",
+                        "parameter/*/name",
                         "engine"
                     ]
                 },
@@ -2042,7 +2042,7 @@
                             "module_connection": false
                         }
                     ],
-                    "multi_az": [
+                    "allocated_storage": [
                         {
                             "type": "variable",
                             "name": "environment",
@@ -2056,7 +2056,7 @@
                             "module_connection": false
                         }
                     ],
-                    "allocated_storage": [
+                    "multi_az": [
                         {
                             "type": "variable",
                             "name": "environment",
@@ -2115,12 +2115,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
+                        "default_action/redirect/protocol",
+                        "load_balancer_type",
+                        "protocol",
                         "default_action/type",
                         "ssl_policy",
-                        "load_balancer_type",
-                        "default_action/redirect/protocol",
-                        "protocol"
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2195,12 +2195,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
+                        "default_action/redirect/protocol",
+                        "load_balancer_type",
+                        "protocol",
                         "default_action/type",
                         "ssl_policy",
-                        "load_balancer_type",
-                        "default_action/redirect/protocol",
-                        "protocol"
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2230,6 +2230,89 @@
                 "details": [],
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario07/modules/compute/main.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_12",
+                "bc_check_id": "BC_AWS_NETWORKING_4",
+                "check_name": "Ensure the default security group of every VPC restricts all traffic",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_vpc": {
+                            "main": {
+                                "__end_line__": 40,
+                                "__start_line__": 31,
+                                "cidr_block": [
+                                    "10.0.0.0/16"
+                                ],
+                                "enable_dns_hostnames": [
+                                    true
+                                ],
+                                "enable_dns_support": [
+                                    true
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "var.environment",
+                                        "Name": "${var.environment}-vpc"
+                                    }
+                                ],
+                                "__address__": "aws_vpc.main"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "ingress/from_port",
+                        "egress/cidr_blocks",
+                        "egress/protocol",
+                        "ingress/self",
+                        "ingress/protocol",
+                        "egress/to_port",
+                        "resource_type",
+                        "ingress/to_port",
+                        "egress/from_port"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/network/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario07/modules/network/main.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario07/modules/network/main.tf",
+                "file_line_range": [
+                    31,
+                    40
+                ],
+                "resource": "aws_vpc.main",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "var.environment",
+                    "Name": "${var.environment}-vpc"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario07/modules/network/main.tf",
+                "breadcrumbs": {
+                    "cidr_block": [
+                        {
+                            "type": "variable",
+                            "name": "vpc_cidr",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario07/modules/network/main.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
             },
             {
                 "check_id": "CKV2_AWS_20",
@@ -2273,11 +2356,11 @@
                         }
                     },
                     "evaluated_keys": [
-                        "default_action/type",
-                        "resource_type",
-                        "default_action/redirect/*/port",
                         "default_action/redirect/*/protocol",
                         "protocol",
+                        "default_action/redirect/*/port",
+                        "default_action/type",
+                        "resource_type",
                         "port"
                     ]
                 },
@@ -2317,89 +2400,6 @@
                             "type": "variable",
                             "name": "public_subnet_ids",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario07/modules/compute/main.tf",
-                            "module_connection": false
-                        }
-                    ]
-                }
-            },
-            {
-                "check_id": "CKV2_AWS_12",
-                "bc_check_id": "BC_AWS_NETWORKING_4",
-                "check_name": "Ensure the default security group of every VPC restricts all traffic",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_vpc": {
-                            "main": {
-                                "__end_line__": 40,
-                                "__start_line__": 31,
-                                "cidr_block": [
-                                    "10.0.0.0/16"
-                                ],
-                                "enable_dns_hostnames": [
-                                    true
-                                ],
-                                "enable_dns_support": [
-                                    true
-                                ],
-                                "tags": [
-                                    {
-                                        "Environment": "var.environment",
-                                        "Name": "${var.environment}-vpc"
-                                    }
-                                ],
-                                "__address__": "aws_vpc.main"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "egress/from_port",
-                        "resource_type",
-                        "ingress/protocol",
-                        "egress/protocol",
-                        "ingress/to_port",
-                        "egress/to_port",
-                        "ingress/from_port",
-                        "egress/cidr_blocks",
-                        "ingress/self"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/network/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario07/modules/network/main.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario07/modules/network/main.tf",
-                "file_line_range": [
-                    31,
-                    40
-                ],
-                "resource": "aws_vpc.main",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {
-                    "Environment": "var.environment",
-                    "Name": "${var.environment}-vpc"
-                },
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario07/modules/network/main.tf",
-                "breadcrumbs": {
-                    "cidr_block": [
-                        {
-                            "type": "variable",
-                            "name": "vpc_cidr",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario07/modules/network/main.tf",
                             "module_connection": false
                         }
                     ]
@@ -2717,94 +2717,6 @@
                 }
             },
             {
-                "check_id": "CKV2_AWS_28",
-                "bc_check_id": "BC_AWS_NETWORKING_58",
-                "check_name": "Ensure public facing ALB are protected by WAF",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_lb": {
-                            "web": {
-                                "__end_line__": 167,
-                                "__start_line__": 154,
-                                "enable_deletion_protection": [
-                                    false
-                                ],
-                                "internal": [
-                                    false
-                                ],
-                                "load_balancer_type": [
-                                    "application"
-                                ],
-                                "name": [
-                                    "${var.environment}-web-alb"
-                                ],
-                                "security_groups": [
-                                    [
-                                        "aws_security_group.alb.id"
-                                    ]
-                                ],
-                                "subnets": [
-                                    []
-                                ],
-                                "tags": [
-                                    {
-                                        "Environment": "var.environment",
-                                        "Name": "${var.environment}-web-alb"
-                                    }
-                                ],
-                                "__address__": "aws_lb.web"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "resource_type",
-                        "internal",
-                        "load_balancer_type"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/compute/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario07/modules/compute/main.tf",
-                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario07/modules/compute/main.tf",
-                "file_line_range": [
-                    154,
-                    167
-                ],
-                "resource": "aws_lb.web",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {
-                    "Environment": "var.environment",
-                    "Name": "${var.environment}-web-alb"
-                },
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-facing-alb-are-protected-by-waf",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario07/modules/compute/main.tf",
-                "breadcrumbs": {
-                    "subnets": [
-                        {
-                            "type": "variable",
-                            "name": "public_subnet_ids",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario07/modules/compute/main.tf",
-                            "module_connection": false
-                        }
-                    ]
-                }
-            },
-            {
                 "check_id": "CKV_AWS_378",
                 "bc_check_id": "BC_AWS_NETWORKING_103",
                 "check_name": "Ensure AWS Load Balancer doesn't use HTTP protocol",
@@ -2863,8 +2775,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "protocol"
+                        "protocol",
+                        "resource_type"
                     ]
                 },
                 "code_block": null,
@@ -2897,6 +2809,94 @@
                 "details": [],
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario07/modules/compute/main.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_28",
+                "bc_check_id": "BC_AWS_NETWORKING_58",
+                "check_name": "Ensure public facing ALB are protected by WAF",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_lb": {
+                            "web": {
+                                "__end_line__": 167,
+                                "__start_line__": 154,
+                                "enable_deletion_protection": [
+                                    false
+                                ],
+                                "internal": [
+                                    false
+                                ],
+                                "load_balancer_type": [
+                                    "application"
+                                ],
+                                "name": [
+                                    "${var.environment}-web-alb"
+                                ],
+                                "security_groups": [
+                                    [
+                                        "aws_security_group.alb.id"
+                                    ]
+                                ],
+                                "subnets": [
+                                    []
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "var.environment",
+                                        "Name": "${var.environment}-web-alb"
+                                    }
+                                ],
+                                "__address__": "aws_lb.web"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "load_balancer_type",
+                        "resource_type",
+                        "internal"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/compute/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario07/modules/compute/main.tf",
+                "repo_file_path": "/data/outputs/Anthropic_Claude/Scenario07/modules/compute/main.tf",
+                "file_line_range": [
+                    154,
+                    167
+                ],
+                "resource": "aws_lb.web",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "var.environment",
+                    "Name": "${var.environment}-web-alb"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-facing-alb-are-protected-by-waf",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario07/modules/compute/main.tf",
+                "breadcrumbs": {
+                    "subnets": [
+                        {
+                            "type": "variable",
+                            "name": "public_subnet_ids",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario07/modules/compute/main.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
             }
         ]
     },

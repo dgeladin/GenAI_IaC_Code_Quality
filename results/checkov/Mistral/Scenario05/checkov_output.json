@@ -40,20 +40,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/main.tf",
                 "breadcrumbs": {
-                    "username": [
-                        {
-                            "type": "tfvar",
-                            "name": "db_username",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/terraform.tfvars",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_username",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "password": [
                         {
                             "type": "tfvar",
@@ -64,6 +50,20 @@
                         {
                             "type": "variable",
                             "name": "db_password",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "tfvar",
+                            "name": "db_username",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/terraform.tfvars",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
                             "module_connection": false
                         }
@@ -116,20 +116,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/main.tf",
                 "breadcrumbs": {
-                    "username": [
-                        {
-                            "type": "tfvar",
-                            "name": "db_username",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/terraform.tfvars",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_username",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "password": [
                         {
                             "type": "tfvar",
@@ -140,6 +126,20 @@
                         {
                             "type": "variable",
                             "name": "db_password",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "tfvar",
+                            "name": "db_username",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/terraform.tfvars",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
                             "module_connection": false
                         }
@@ -192,20 +192,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/main.tf",
                 "breadcrumbs": {
-                    "username": [
-                        {
-                            "type": "tfvar",
-                            "name": "db_username",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/terraform.tfvars",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_username",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "password": [
                         {
                             "type": "tfvar",
@@ -216,6 +202,20 @@
                         {
                             "type": "variable",
                             "name": "db_password",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "tfvar",
+                            "name": "db_username",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/terraform.tfvars",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
                             "module_connection": false
                         }
@@ -268,20 +268,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/main.tf",
                 "breadcrumbs": {
-                    "username": [
-                        {
-                            "type": "tfvar",
-                            "name": "db_username",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/terraform.tfvars",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_username",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "password": [
                         {
                             "type": "tfvar",
@@ -292,6 +278,20 @@
                         {
                             "type": "variable",
                             "name": "db_password",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "tfvar",
+                            "name": "db_username",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/terraform.tfvars",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
                             "module_connection": false
                         }
@@ -344,20 +344,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/main.tf",
                 "breadcrumbs": {
-                    "username": [
-                        {
-                            "type": "tfvar",
-                            "name": "db_username",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/terraform.tfvars",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_username",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "password": [
                         {
                             "type": "tfvar",
@@ -368,6 +354,20 @@
                         {
                             "type": "variable",
                             "name": "db_password",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "tfvar",
+                            "name": "db_username",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/terraform.tfvars",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
                             "module_connection": false
                         }
@@ -420,20 +420,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/main.tf",
                 "breadcrumbs": {
-                    "username": [
-                        {
-                            "type": "tfvar",
-                            "name": "db_username",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/terraform.tfvars",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_username",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "password": [
                         {
                             "type": "tfvar",
@@ -444,6 +430,20 @@
                         {
                             "type": "variable",
                             "name": "db_password",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "tfvar",
+                            "name": "db_username",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/terraform.tfvars",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
                             "module_connection": false
                         }
@@ -496,20 +496,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/main.tf",
                 "breadcrumbs": {
-                    "username": [
-                        {
-                            "type": "tfvar",
-                            "name": "db_username",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/terraform.tfvars",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_username",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "password": [
                         {
                             "type": "tfvar",
@@ -520,6 +506,20 @@
                         {
                             "type": "variable",
                             "name": "db_password",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "tfvar",
+                            "name": "db_username",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/terraform.tfvars",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
                             "module_connection": false
                         }
@@ -699,20 +699,6 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/main.tf",
                 "breadcrumbs": {
-                    "username": [
-                        {
-                            "type": "tfvar",
-                            "name": "db_username",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/terraform.tfvars",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_username",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "password": [
                         {
                             "type": "tfvar",
@@ -723,6 +709,20 @@
                         {
                             "type": "variable",
                             "name": "db_password",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "tfvar",
+                            "name": "db_username",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/terraform.tfvars",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario05/variables.tf",
                             "module_connection": false
                         }

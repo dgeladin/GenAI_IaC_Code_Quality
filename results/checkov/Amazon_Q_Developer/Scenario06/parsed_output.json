@@ -1,0 +1,255 @@
+{
+  "check_type": "terraform",
+  "failed_checks": [
+    {
+      "check_id": "CKV_AWS_237",
+      "severity": "LOW",
+      "check_name": "Ensure Create before destroy for API Gateway",
+      "check_result": "FAILED",
+      "file_path": "/api_gateway.tf",
+      "file_line_range": [
+        4,
+        13
+      ],
+      "resource": "aws_api_gateway_rest_api.example_api",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-api-gateway-enables-create-before-destroy"
+    },
+    {
+      "check_id": "CKV_AWS_59",
+      "severity": "LOW",
+      "check_name": "Ensure there is no open access to back-end resources through API",
+      "check_result": "FAILED",
+      "file_path": "/api_gateway.tf",
+      "file_line_range": [
+        23,
+        32
+      ],
+      "resource": "aws_api_gateway_method.example",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-6-api-gateway-authorizer-set"
+    },
+    {
+      "check_id": "CKV_AWS_120",
+      "severity": "LOW",
+      "check_name": "Ensure API Gateway caching is enabled",
+      "check_result": "FAILED",
+      "file_path": "/api_gateway.tf",
+      "file_line_range": [
+        104,
+        126
+      ],
+      "resource": "aws_api_gateway_stage.prod",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-api-gateway-caching-is-enabled"
+    },
+    {
+      "check_id": "CKV_AWS_73",
+      "severity": "LOW",
+      "check_name": "Ensure API Gateway has X-Ray Tracing enabled",
+      "check_result": "FAILED",
+      "file_path": "/api_gateway.tf",
+      "file_line_range": [
+        104,
+        126
+      ],
+      "resource": "aws_api_gateway_stage.prod",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-15"
+    },
+    {
+      "check_id": "CKV_AWS_158",
+      "severity": "LOW",
+      "check_name": "Ensure that CloudWatch Log Group is encrypted by KMS",
+      "check_result": "FAILED",
+      "file_path": "/api_gateway.tf",
+      "file_line_range": [
+        129,
+        134
+      ],
+      "resource": "aws_cloudwatch_log_group.api_gateway",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-cloudwatch-log-group-is-encrypted-by-kms"
+    },
+    {
+      "check_id": "CKV_AWS_338",
+      "severity": "INFO",
+      "check_name": "Ensure CloudWatch log groups retains logs for at least 1 year",
+      "check_result": "FAILED",
+      "file_path": "/api_gateway.tf",
+      "file_line_range": [
+        129,
+        134
+      ],
+      "resource": "aws_cloudwatch_log_group.api_gateway",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-338"
+    },
+    {
+      "check_id": "CKV_AWS_290",
+      "severity": "HIGH",
+      "check_name": "Ensure IAM policies does not allow write access without constraints",
+      "check_result": "FAILED",
+      "file_path": "/iam.tf",
+      "file_line_range": [
+        53,
+        73
+      ],
+      "resource": "aws_iam_role_policy.api_gateway_cloudwatch",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290"
+    },
+    {
+      "check_id": "CKV_AWS_355",
+      "severity": "HIGH",
+      "check_name": "Ensure no IAM policies documents allow \"*\" as a statement's resource for restrictable actions",
+      "check_result": "FAILED",
+      "file_path": "/iam.tf",
+      "file_line_range": [
+        53,
+        73
+      ],
+      "resource": "aws_iam_role_policy.api_gateway_cloudwatch",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355"
+    },
+    {
+      "check_id": "CKV_AWS_115",
+      "severity": "LOW",
+      "check_name": "Ensure that AWS Lambda function is configured for function-level concurrent execution limit",
+      "check_result": "FAILED",
+      "file_path": "/lambda.tf",
+      "file_line_range": [
+        4,
+        47
+      ],
+      "resource": "aws_lambda_function.example_lambda_function",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-function-level-concurrent-execution-limit"
+    },
+    {
+      "check_id": "CKV_AWS_173",
+      "severity": "LOW",
+      "check_name": "Check encryption settings for Lambda environmental variable",
+      "check_result": "FAILED",
+      "file_path": "/lambda.tf",
+      "file_line_range": [
+        4,
+        47
+      ],
+      "resource": "aws_lambda_function.example_lambda_function",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-5"
+    },
+    {
+      "check_id": "CKV_AWS_272",
+      "severity": "HIGH",
+      "check_name": "Ensure AWS Lambda function is configured to validate code-signing",
+      "check_result": "FAILED",
+      "file_path": "/lambda.tf",
+      "file_line_range": [
+        4,
+        47
+      ],
+      "resource": "aws_lambda_function.example_lambda_function",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-272"
+    },
+    {
+      "check_id": "CKV_AWS_116",
+      "severity": "LOW",
+      "check_name": "Ensure that AWS Lambda function is configured for a Dead Letter Queue(DLQ)",
+      "check_result": "FAILED",
+      "file_path": "/lambda.tf",
+      "file_line_range": [
+        4,
+        47
+      ],
+      "resource": "aws_lambda_function.example_lambda_function",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-a-dead-letter-queue-dlq"
+    },
+    {
+      "check_id": "CKV_AWS_158",
+      "severity": "LOW",
+      "check_name": "Ensure that CloudWatch Log Group is encrypted by KMS",
+      "check_result": "FAILED",
+      "file_path": "/lambda.tf",
+      "file_line_range": [
+        50,
+        55
+      ],
+      "resource": "aws_cloudwatch_log_group.lambda_log_group",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-cloudwatch-log-group-is-encrypted-by-kms"
+    },
+    {
+      "check_id": "CKV_AWS_338",
+      "severity": "INFO",
+      "check_name": "Ensure CloudWatch log groups retains logs for at least 1 year",
+      "check_result": "FAILED",
+      "file_path": "/lambda.tf",
+      "file_line_range": [
+        50,
+        55
+      ],
+      "resource": "aws_cloudwatch_log_group.lambda_log_group",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-338"
+    },
+    {
+      "check_id": "CKV2_AWS_51",
+      "severity": "LOW",
+      "check_name": "Ensure AWS API Gateway endpoints uses client certificate authentication",
+      "check_result": "FAILED",
+      "file_path": "/api_gateway.tf",
+      "file_line_range": [
+        104,
+        126
+      ],
+      "resource": "aws_api_gateway_stage.prod",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-2-51"
+    },
+    {
+      "check_id": "CKV2_AWS_29",
+      "severity": "MEDIUM",
+      "check_name": "Ensure public API gateway are protected by WAF",
+      "check_result": "FAILED",
+      "file_path": "/api_gateway.tf",
+      "file_line_range": [
+        104,
+        126
+      ],
+      "resource": "aws_api_gateway_stage.prod",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-api-gateway-are-protected-by-waf"
+    },
+    {
+      "check_id": "CKV2_AWS_4",
+      "severity": "LOW",
+      "check_name": "Ensure API Gateway stage have logging level defined as appropriate",
+      "check_result": "FAILED",
+      "file_path": "/api_gateway.tf",
+      "file_line_range": [
+        104,
+        126
+      ],
+      "resource": "aws_api_gateway_stage.prod",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-api-gateway-stage-have-logging-level-defined-as-appropiate"
+    },
+    {
+      "check_id": "CKV2_AWS_53",
+      "severity": "LOW",
+      "check_name": "Ensure AWS API gateway request is validated",
+      "check_result": "FAILED",
+      "file_path": "/api_gateway.tf",
+      "file_line_range": [
+        23,
+        32
+      ],
+      "resource": "aws_api_gateway_method.example",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-2-53"
+    }
+  ],
+  "summary": {
+    "passed": 30,
+    "failed": 18,
+    "skipped": 0,
+    "parsing_errors": 0,
+    "resource_count": 21,
+    "checkov_version": "3.2.382",
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 3,
+      "MEDIUM": 1,
+      "LOW": 12,
+      "UNKNOWN": 0,
+      "INFO": 2
+    }
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "check_type": "terraform",
+  "failed_checks": [
+    {
+      "check_id": "CKV_AWS_130",
+      "severity": "LOW",
+      "check_name": "Ensure VPC subnets do not assign public IP by default",
+      "check_result": "FAILED",
+      "file_path": "/modules/aws/main.tf",
+      "file_line_range": [
+        28,
+        40
+      ],
+      "resource": "module.aws_resources.aws_subnet.monitoring_subnet",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-vpc-subnets-do-not-assign-public-ip-by-default"
+    },
+    {
+      "check_id": "CKV_AWS_24",
+      "severity": "INFO",
+      "check_name": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 22",
+      "check_result": "FAILED",
+      "file_path": "/modules/aws/main.tf",
+      "file_line_range": [
+        66,
+        105
+      ],
+      "resource": "module.aws_resources.aws_security_group.monitoring_sg",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-1-port-security"
+    },
+    {
+      "check_id": "CKV_AWS_382",
+      "severity": "LOW",
+      "check_name": "Ensure no security groups allow egress from 0.0.0.0:0 to port -1",
+      "check_result": "FAILED",
+      "file_path": "/modules/aws/main.tf",
+      "file_line_range": [
+        66,
+        105
+      ],
+      "resource": "module.aws_resources.aws_security_group.monitoring_sg",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382"
+    },
+    {
+      "check_id": "CKV_AWS_126",
+      "severity": "MEDIUM",
+      "check_name": "Ensure that detailed monitoring is enabled for EC2 instances",
+      "check_result": "FAILED",
+      "file_path": "/modules/aws/main.tf",
+      "file_line_range": [
+        140,
+        175
+      ],
+      "resource": "module.aws_resources.aws_instance.monitoring_instance",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-detailed-monitoring-is-enabled-for-ec2-instances"
+    },
+    {
+      "check_id": "CKV_AWS_135",
+      "severity": "LOW",
+      "check_name": "Ensure that EC2 is EBS optimized",
+      "check_result": "FAILED",
+      "file_path": "/modules/aws/main.tf",
+      "file_line_range": [
+        140,
+        175
+      ],
+      "resource": "module.aws_resources.aws_instance.monitoring_instance",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized"
+    },
+    {
+      "check_id": "CKV_AZURE_50",
+      "severity": "MEDIUM",
+      "check_name": "Ensure Virtual Machine Extensions are not Installed",
+      "check_result": "FAILED",
+      "file_path": "/modules/azure/main.tf",
+      "file_line_range": [
+        108,
+        154
+      ],
+      "resource": "module.azure_resources.azurerm_linux_virtual_machine.monitoring_vm",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/bc-azr-general-14"
+    },
+    {
+      "check_id": "CKV2_AWS_12",
+      "severity": "LOW",
+      "check_name": "Ensure the default security group of every VPC restricts all traffic",
+      "check_result": "FAILED",
+      "file_path": "/modules/aws/main.tf",
+      "file_line_range": [
+        2,
+        13
+      ],
+      "resource": "module.aws_resources.aws_vpc.monitoring_vpc",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4"
+    },
+    {
+      "check_id": "CKV2_AWS_11",
+      "severity": "INFO",
+      "check_name": "Ensure VPC flow logging is enabled in all VPCs",
+      "check_result": "FAILED",
+      "file_path": "/modules/aws/main.tf",
+      "file_line_range": [
+        2,
+        13
+      ],
+      "resource": "module.aws_resources.aws_vpc.monitoring_vpc",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-9-enable-vpc-flow-logging"
+    },
+    {
+      "check_id": "CKV2_AZURE_31",
+      "severity": "LOW",
+      "check_name": "Ensure VNET subnet is configured with a Network Security Group (NSG)",
+      "check_result": "FAILED",
+      "file_path": "/modules/azure/main.tf",
+      "file_line_range": [
+        25,
+        30
+      ],
+      "resource": "module.azure_resources.azurerm_subnet.monitoring_subnet",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/bc-azure-2-31"
+    },
+    {
+      "check_id": "CKV_AZURE_119",
+      "severity": "LOW",
+      "check_name": "Ensure that Network Interfaces don't use public IPs",
+      "check_result": "FAILED",
+      "file_path": "/modules/azure/main.tf",
+      "file_line_range": [
+        77,
+        90
+      ],
+      "resource": "module.azure_resources.azurerm_network_interface.monitoring_nic",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/ensure-that-network-interfaces-dont-use-public-ips"
+    }
+  ],
+  "summary": {
+    "passed": 32,
+    "failed": 10,
+    "skipped": 0,
+    "parsing_errors": 0,
+    "resource_count": 36,
+    "checkov_version": "3.2.382",
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 2,
+      "LOW": 6,
+      "UNKNOWN": 0,
+      "INFO": 2
+    }
+  }
+}

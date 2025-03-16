@@ -274,10 +274,10 @@
                             "module_connection": false
                         }
                     ],
-                    "resource_group_name": [
+                    "location": [
                         {
                             "type": "variable",
-                            "name": "azure_resource_group_name",
+                            "name": "azure_location",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario09/variables.tf",
                             "module_connection": false
                         },
@@ -288,10 +288,10 @@
                             "module_connection": false
                         }
                     ],
-                    "location": [
+                    "resource_group_name": [
                         {
                             "type": "variable",
-                            "name": "azure_location",
+                            "name": "azure_resource_group_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Anthropic_Claude/Scenario09/variables.tf",
                             "module_connection": false
                         },
@@ -431,8 +431,8 @@
                     },
                     "evaluated_keys": [
                         "delegation/service_delegation/name",
-                        "name",
-                        "resource_type"
+                        "resource_type",
+                        "name"
                     ]
                 },
                 "code_block": null,

@@ -1,0 +1,502 @@
+{
+  "check_type": "terraform",
+  "failed_checks": [
+    {
+      "check_id": "CKV_AWS_150",
+      "severity": "LOW",
+      "check_name": "Ensure that Load Balancer has deletion protection enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/alb/alb.tf",
+      "file_line_range": [
+        2,
+        14
+      ],
+      "resource": "module.alb_east.aws_lb.app_lb",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-150"
+    },
+    {
+      "check_id": "CKV_AWS_91",
+      "severity": "INFO",
+      "check_name": "Ensure the ELBv2 (Application/Network) has access logging enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/alb/alb.tf",
+      "file_line_range": [
+        2,
+        14
+      ],
+      "resource": "module.alb_east.aws_lb.app_lb",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-logging-22"
+    },
+    {
+      "check_id": "CKV_AWS_131",
+      "severity": "MEDIUM",
+      "check_name": "Ensure that ALB drops HTTP headers",
+      "check_result": "FAILED",
+      "file_path": "/modules/alb/alb.tf",
+      "file_line_range": [
+        2,
+        14
+      ],
+      "resource": "module.alb_east.aws_lb.app_lb",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-drops-http-headers"
+    },
+    {
+      "check_id": "CKV_AWS_2",
+      "severity": "LOW",
+      "check_name": "Ensure ALB protocol is HTTPS",
+      "check_result": "FAILED",
+      "file_path": "/modules/alb/alb.tf",
+      "file_line_range": [
+        29,
+        38
+      ],
+      "resource": "module.alb_east.aws_lb_listener.front_end",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-29"
+    },
+    {
+      "check_id": "CKV_AWS_150",
+      "severity": "LOW",
+      "check_name": "Ensure that Load Balancer has deletion protection enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/alb/alb.tf",
+      "file_line_range": [
+        2,
+        14
+      ],
+      "resource": "module.alb_west.aws_lb.app_lb",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-150"
+    },
+    {
+      "check_id": "CKV_AWS_91",
+      "severity": "INFO",
+      "check_name": "Ensure the ELBv2 (Application/Network) has access logging enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/alb/alb.tf",
+      "file_line_range": [
+        2,
+        14
+      ],
+      "resource": "module.alb_west.aws_lb.app_lb",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-logging-22"
+    },
+    {
+      "check_id": "CKV_AWS_131",
+      "severity": "MEDIUM",
+      "check_name": "Ensure that ALB drops HTTP headers",
+      "check_result": "FAILED",
+      "file_path": "/modules/alb/alb.tf",
+      "file_line_range": [
+        2,
+        14
+      ],
+      "resource": "module.alb_west.aws_lb.app_lb",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-drops-http-headers"
+    },
+    {
+      "check_id": "CKV_AWS_2",
+      "severity": "LOW",
+      "check_name": "Ensure ALB protocol is HTTPS",
+      "check_result": "FAILED",
+      "file_path": "/modules/alb/alb.tf",
+      "file_line_range": [
+        29,
+        38
+      ],
+      "resource": "module.alb_west.aws_lb_listener.front_end",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-29"
+    },
+    {
+      "check_id": "CKV_AWS_24",
+      "severity": "INFO",
+      "check_name": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 22",
+      "check_result": "FAILED",
+      "file_path": "/modules/asg/asg.tf",
+      "file_line_range": [
+        21,
+        52
+      ],
+      "resource": "module.asg_east.aws_security_group.asg_sg",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-1-port-security"
+    },
+    {
+      "check_id": "CKV_AWS_260",
+      "severity": "LOW",
+      "check_name": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 80",
+      "check_result": "FAILED",
+      "file_path": "/modules/asg/asg.tf",
+      "file_line_range": [
+        21,
+        52
+      ],
+      "resource": "module.asg_east.aws_security_group.asg_sg",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-groups-do-not-allow-ingress-from-00000-to-port-80"
+    },
+    {
+      "check_id": "CKV_AWS_23",
+      "severity": "LOW",
+      "check_name": "Ensure every security group and rule has a description",
+      "check_result": "FAILED",
+      "file_path": "/modules/asg/asg.tf",
+      "file_line_range": [
+        21,
+        52
+      ],
+      "resource": "module.asg_east.aws_security_group.asg_sg",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31"
+    },
+    {
+      "check_id": "CKV_AWS_382",
+      "severity": "LOW",
+      "check_name": "Ensure no security groups allow egress from 0.0.0.0:0 to port -1",
+      "check_result": "FAILED",
+      "file_path": "/modules/asg/asg.tf",
+      "file_line_range": [
+        21,
+        52
+      ],
+      "resource": "module.asg_east.aws_security_group.asg_sg",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382"
+    },
+    {
+      "check_id": "CKV_AWS_79",
+      "severity": "HIGH",
+      "check_name": "Ensure Instance Metadata Service Version 1 is not enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/asg/asg.tf",
+      "file_line_range": [
+        55,
+        76
+      ],
+      "resource": "module.asg_east.aws_launch_template.app_launch_template",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31"
+    },
+    {
+      "check_id": "CKV_AWS_88",
+      "severity": "HIGH",
+      "check_name": "EC2 instance should not have public IP.",
+      "check_result": "FAILED",
+      "file_path": "/modules/asg/asg.tf",
+      "file_line_range": [
+        55,
+        76
+      ],
+      "resource": "module.asg_east.aws_launch_template.app_launch_template",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-12"
+    },
+    {
+      "check_id": "CKV_AWS_24",
+      "severity": "INFO",
+      "check_name": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 22",
+      "check_result": "FAILED",
+      "file_path": "/modules/asg/asg.tf",
+      "file_line_range": [
+        21,
+        52
+      ],
+      "resource": "module.asg_west.aws_security_group.asg_sg",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-1-port-security"
+    },
+    {
+      "check_id": "CKV_AWS_260",
+      "severity": "LOW",
+      "check_name": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 80",
+      "check_result": "FAILED",
+      "file_path": "/modules/asg/asg.tf",
+      "file_line_range": [
+        21,
+        52
+      ],
+      "resource": "module.asg_west.aws_security_group.asg_sg",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-groups-do-not-allow-ingress-from-00000-to-port-80"
+    },
+    {
+      "check_id": "CKV_AWS_23",
+      "severity": "LOW",
+      "check_name": "Ensure every security group and rule has a description",
+      "check_result": "FAILED",
+      "file_path": "/modules/asg/asg.tf",
+      "file_line_range": [
+        21,
+        52
+      ],
+      "resource": "module.asg_west.aws_security_group.asg_sg",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31"
+    },
+    {
+      "check_id": "CKV_AWS_382",
+      "severity": "LOW",
+      "check_name": "Ensure no security groups allow egress from 0.0.0.0:0 to port -1",
+      "check_result": "FAILED",
+      "file_path": "/modules/asg/asg.tf",
+      "file_line_range": [
+        21,
+        52
+      ],
+      "resource": "module.asg_west.aws_security_group.asg_sg",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382"
+    },
+    {
+      "check_id": "CKV_AWS_79",
+      "severity": "HIGH",
+      "check_name": "Ensure Instance Metadata Service Version 1 is not enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/asg/asg.tf",
+      "file_line_range": [
+        55,
+        76
+      ],
+      "resource": "module.asg_west.aws_launch_template.app_launch_template",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31"
+    },
+    {
+      "check_id": "CKV_AWS_88",
+      "severity": "HIGH",
+      "check_name": "EC2 instance should not have public IP.",
+      "check_result": "FAILED",
+      "file_path": "/modules/asg/asg.tf",
+      "file_line_range": [
+        55,
+        76
+      ],
+      "resource": "module.asg_west.aws_launch_template.app_launch_template",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-12"
+    },
+    {
+      "check_id": "CKV_TF_1",
+      "severity": "MEDIUM",
+      "check_name": "Ensure Terraform module sources use a commit hash",
+      "check_result": "FAILED",
+      "file_path": "/providers.tf",
+      "file_line_range": [
+        37,
+        60
+      ],
+      "resource": "vpc_east",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision"
+    },
+    {
+      "check_id": "CKV_TF_1",
+      "severity": "MEDIUM",
+      "check_name": "Ensure Terraform module sources use a commit hash",
+      "check_result": "FAILED",
+      "file_path": "/providers.tf",
+      "file_line_range": [
+        63,
+        86
+      ],
+      "resource": "vpc_west",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/supply-chain-policies/terraform-policies/ensure-terraform-module-sources-use-git-url-with-commit-hash-revision"
+    },
+    {
+      "check_id": "CKV_AWS_144",
+      "severity": "LOW",
+      "check_name": "Ensure that S3 bucket has cross-region replication enabled",
+      "check_result": "FAILED",
+      "file_path": "/global_accelerator.tf",
+      "file_line_range": [
+        52,
+        55
+      ],
+      "resource": "aws_s3_bucket.flow_logs_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-bucket-has-cross-region-replication-enabled"
+    },
+    {
+      "check_id": "CKV2_AWS_61",
+      "severity": "MEDIUM",
+      "check_name": "Ensure that an S3 bucket has a lifecycle configuration",
+      "check_result": "FAILED",
+      "file_path": "/global_accelerator.tf",
+      "file_line_range": [
+        52,
+        55
+      ],
+      "resource": "aws_s3_bucket.flow_logs_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-61"
+    },
+    {
+      "check_id": "CKV2_AWS_62",
+      "severity": "LOW",
+      "check_name": "Ensure S3 buckets should have event notifications enabled",
+      "check_result": "FAILED",
+      "file_path": "/global_accelerator.tf",
+      "file_line_range": [
+        52,
+        55
+      ],
+      "resource": "aws_s3_bucket.flow_logs_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-62"
+    },
+    {
+      "check_id": "CKV_AWS_18",
+      "severity": "INFO",
+      "check_name": "Ensure the S3 bucket has access logging enabled",
+      "check_result": "FAILED",
+      "file_path": "/global_accelerator.tf",
+      "file_line_range": [
+        52,
+        55
+      ],
+      "resource": "aws_s3_bucket.flow_logs_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-13-enable-logging"
+    },
+    {
+      "check_id": "CKV_AWS_103",
+      "severity": "HIGH",
+      "check_name": "Ensure that load balancer is using at least TLS 1.2",
+      "check_result": "FAILED",
+      "file_path": "/modules/alb/alb.tf",
+      "file_line_range": [
+        29,
+        38
+      ],
+      "resource": "module.alb_east.aws_lb_listener.front_end",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-43"
+    },
+    {
+      "check_id": "CKV_AWS_103",
+      "severity": "HIGH",
+      "check_name": "Ensure that load balancer is using at least TLS 1.2",
+      "check_result": "FAILED",
+      "file_path": "/modules/alb/alb.tf",
+      "file_line_range": [
+        29,
+        38
+      ],
+      "resource": "module.alb_west.aws_lb_listener.front_end",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-43"
+    },
+    {
+      "check_id": "CKV2_AWS_6",
+      "severity": "LOW",
+      "check_name": "Ensure that S3 bucket has a Public Access block",
+      "check_result": "FAILED",
+      "file_path": "/global_accelerator.tf",
+      "file_line_range": [
+        52,
+        55
+      ],
+      "resource": "aws_s3_bucket.flow_logs_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/s3-bucket-should-have-public-access-blocks-defaults-to-false-if-the-public-access-block-is-not-attached"
+    },
+    {
+      "check_id": "CKV2_AWS_20",
+      "severity": "LOW",
+      "check_name": "Ensure that ALB redirects HTTP requests into HTTPS ones",
+      "check_result": "FAILED",
+      "file_path": "/modules/alb/alb.tf",
+      "file_line_range": [
+        2,
+        14
+      ],
+      "resource": "module.alb_east.aws_lb.app_lb",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-redirects-http-requests-into-https-ones"
+    },
+    {
+      "check_id": "CKV2_AWS_20",
+      "severity": "LOW",
+      "check_name": "Ensure that ALB redirects HTTP requests into HTTPS ones",
+      "check_result": "FAILED",
+      "file_path": "/modules/alb/alb.tf",
+      "file_line_range": [
+        2,
+        14
+      ],
+      "resource": "module.alb_west.aws_lb.app_lb",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-alb-redirects-http-requests-into-https-ones"
+    },
+    {
+      "check_id": "CKV_AWS_145",
+      "severity": "LOW",
+      "check_name": "Ensure that S3 buckets are encrypted with KMS by default",
+      "check_result": "FAILED",
+      "file_path": "/global_accelerator.tf",
+      "file_line_range": [
+        52,
+        55
+      ],
+      "resource": "aws_s3_bucket.flow_logs_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-buckets-are-encrypted-with-kms-by-default"
+    },
+    {
+      "check_id": "CKV_AWS_21",
+      "severity": "LOW",
+      "check_name": "Ensure all data stored in the S3 bucket have versioning enabled",
+      "check_result": "FAILED",
+      "file_path": "/global_accelerator.tf",
+      "file_line_range": [
+        52,
+        55
+      ],
+      "resource": "aws_s3_bucket.flow_logs_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-16-enable-versioning"
+    },
+    {
+      "check_id": "CKV_AWS_378",
+      "severity": "MEDIUM",
+      "check_name": "Ensure AWS Load Balancer doesn't use HTTP protocol",
+      "check_result": "FAILED",
+      "file_path": "/modules/alb/alb.tf",
+      "file_line_range": [
+        16,
+        27
+      ],
+      "resource": "module.alb_east.aws_lb_target_group.app_tg",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-378"
+    },
+    {
+      "check_id": "CKV_AWS_378",
+      "severity": "MEDIUM",
+      "check_name": "Ensure AWS Load Balancer doesn't use HTTP protocol",
+      "check_result": "FAILED",
+      "file_path": "/modules/alb/alb.tf",
+      "file_line_range": [
+        16,
+        27
+      ],
+      "resource": "module.alb_west.aws_lb_target_group.app_tg",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-378"
+    },
+    {
+      "check_id": "CKV2_AWS_28",
+      "severity": "LOW",
+      "check_name": "Ensure public facing ALB are protected by WAF",
+      "check_result": "FAILED",
+      "file_path": "/modules/alb/alb.tf",
+      "file_line_range": [
+        2,
+        14
+      ],
+      "resource": "module.alb_east.aws_lb.app_lb",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-facing-alb-are-protected-by-waf"
+    },
+    {
+      "check_id": "CKV2_AWS_28",
+      "severity": "LOW",
+      "check_name": "Ensure public facing ALB are protected by WAF",
+      "check_result": "FAILED",
+      "file_path": "/modules/alb/alb.tf",
+      "file_line_range": [
+        2,
+        14
+      ],
+      "resource": "module.alb_west.aws_lb.app_lb",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-public-facing-alb-are-protected-by-waf"
+    }
+  ],
+  "summary": {
+    "passed": 28,
+    "failed": 37,
+    "skipped": 0,
+    "parsing_errors": 0,
+    "resource_count": 21,
+    "checkov_version": "3.2.382",
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 6,
+      "MEDIUM": 7,
+      "LOW": 19,
+      "UNKNOWN": 0,
+      "INFO": 5
+    }
+  }
+}

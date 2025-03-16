@@ -1,0 +1,33 @@
+{
+  "check_type": "kubernetes",
+  "failed_checks": [
+    {
+      "check_id": "CKV_K8S_21",
+      "severity": "LOW",
+      "check_name": "The default namespace should not be used",
+      "check_result": "FAILED",
+      "file_path": "/../data/outputs/Github_Copilot/Scenario03/ingress.yaml",
+      "file_line_range": [
+        1,
+        25
+      ],
+      "resource": "Ingress.default.api-ingress",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-20"
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 1,
+    "skipped": 0,
+    "parsing_errors": 0,
+    "resource_count": 1,
+    "checkov_version": "3.2.382",
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 1,
+      "UNKNOWN": 0
+    }
+  }
+}

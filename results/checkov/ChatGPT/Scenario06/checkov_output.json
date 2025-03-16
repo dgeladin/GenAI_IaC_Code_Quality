@@ -249,7 +249,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/main.tf",
                 "breadcrumbs": {
-                    "handler": [
+                    "environment.variables": [
                         {
                             "type": "module",
                             "name": "lambda",
@@ -258,7 +258,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "lambda_handler",
+                            "name": "environment_variables",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -273,6 +273,48 @@
                         {
                             "type": "variable",
                             "name": "memory_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "handler": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "lambda_handler",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "timeout": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "timeout",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "function_name": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "lambda_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -301,48 +343,6 @@
                         {
                             "type": "variable",
                             "name": "lambda_runtime",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "function_name": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "lambda_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "timeout": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "timeout",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "environment.variables": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment_variables",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -399,7 +399,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/main.tf",
                 "breadcrumbs": {
-                    "handler": [
+                    "environment.variables": [
                         {
                             "type": "module",
                             "name": "lambda",
@@ -408,7 +408,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "lambda_handler",
+                            "name": "environment_variables",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -423,6 +423,48 @@
                         {
                             "type": "variable",
                             "name": "memory_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "handler": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "lambda_handler",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "timeout": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "timeout",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "function_name": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "lambda_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -451,48 +493,6 @@
                         {
                             "type": "variable",
                             "name": "lambda_runtime",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "function_name": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "lambda_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "timeout": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "timeout",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "environment.variables": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment_variables",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -549,7 +549,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/main.tf",
                 "breadcrumbs": {
-                    "handler": [
+                    "environment.variables": [
                         {
                             "type": "module",
                             "name": "lambda",
@@ -558,7 +558,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "lambda_handler",
+                            "name": "environment_variables",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -573,6 +573,48 @@
                         {
                             "type": "variable",
                             "name": "memory_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "handler": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "lambda_handler",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "timeout": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "timeout",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "function_name": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "lambda_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -601,48 +643,6 @@
                         {
                             "type": "variable",
                             "name": "lambda_runtime",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "function_name": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "lambda_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "timeout": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "timeout",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "environment.variables": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment_variables",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -699,7 +699,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/main.tf",
                 "breadcrumbs": {
-                    "handler": [
+                    "environment.variables": [
                         {
                             "type": "module",
                             "name": "lambda",
@@ -708,7 +708,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "lambda_handler",
+                            "name": "environment_variables",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -723,6 +723,48 @@
                         {
                             "type": "variable",
                             "name": "memory_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "handler": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "lambda_handler",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "timeout": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "timeout",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "function_name": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "lambda_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -751,48 +793,6 @@
                         {
                             "type": "variable",
                             "name": "lambda_runtime",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "function_name": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "lambda_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "timeout": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "timeout",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "environment.variables": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment_variables",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -849,7 +849,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/main.tf",
                 "breadcrumbs": {
-                    "handler": [
+                    "environment.variables": [
                         {
                             "type": "module",
                             "name": "lambda",
@@ -858,7 +858,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "lambda_handler",
+                            "name": "environment_variables",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -873,6 +873,48 @@
                         {
                             "type": "variable",
                             "name": "memory_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "handler": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "lambda_handler",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "timeout": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "timeout",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "function_name": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "lambda_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -901,48 +943,6 @@
                         {
                             "type": "variable",
                             "name": "lambda_runtime",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "function_name": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "lambda_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "timeout": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "timeout",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "environment.variables": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment_variables",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -999,7 +999,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/main.tf",
                 "breadcrumbs": {
-                    "handler": [
+                    "environment.variables": [
                         {
                             "type": "module",
                             "name": "lambda",
@@ -1008,7 +1008,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "lambda_handler",
+                            "name": "environment_variables",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -1023,6 +1023,48 @@
                         {
                             "type": "variable",
                             "name": "memory_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "handler": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "lambda_handler",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "timeout": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "timeout",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "function_name": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "lambda_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -1051,48 +1093,6 @@
                         {
                             "type": "variable",
                             "name": "lambda_runtime",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "function_name": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "lambda_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "timeout": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "timeout",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "environment.variables": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment_variables",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -1149,7 +1149,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/main.tf",
                 "breadcrumbs": {
-                    "handler": [
+                    "environment.variables": [
                         {
                             "type": "module",
                             "name": "lambda",
@@ -1158,7 +1158,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "lambda_handler",
+                            "name": "environment_variables",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -1173,6 +1173,48 @@
                         {
                             "type": "variable",
                             "name": "memory_size",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "handler": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "lambda_handler",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "timeout": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "timeout",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "function_name": [
+                        {
+                            "type": "module",
+                            "name": "lambda",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "lambda_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }
@@ -1201,48 +1243,6 @@
                         {
                             "type": "variable",
                             "name": "lambda_runtime",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "function_name": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "lambda_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "timeout": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "timeout",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "environment.variables": [
-                        {
-                            "type": "module",
-                            "name": "lambda",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment_variables",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/ChatGPT/Scenario06/modules/lambda/variables.tf",
                             "module_connection": false
                         }

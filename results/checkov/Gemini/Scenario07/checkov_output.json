@@ -387,34 +387,6 @@
                             "module_connection": false
                         }
                     ],
-                    "network_interface.security_groups.0": [
-                        {
-                            "type": "module",
-                            "name": "compute",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "web_server_sg_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "network_interface.security_groups": [
-                        {
-                            "type": "module",
-                            "name": "compute",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "web_server_sg_id",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "name_prefix": [
                         {
                             "type": "module",
@@ -451,6 +423,34 @@
                         {
                             "type": "resource",
                             "name": "aws_autoscaling_group.web_server",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "network_interface.security_groups.0": [
+                        {
+                            "type": "module",
+                            "name": "compute",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "web_server_sg_id",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "network_interface.security_groups": [
+                        {
+                            "type": "module",
+                            "name": "compute",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "web_server_sg_id",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
                             "module_connection": false
                         }
@@ -507,7 +507,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
                 "breadcrumbs": {
-                    "subnets": [
+                    "tag.value": [
                         {
                             "type": "module",
                             "name": "compute",
@@ -516,7 +516,13 @@
                         },
                         {
                             "type": "variable",
-                            "name": "public_subnet_ids",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_autoscaling_group.web_server",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
                             "module_connection": false
                         }
@@ -555,7 +561,7 @@
                             "module_connection": false
                         }
                     ],
-                    "tag.value": [
+                    "subnets": [
                         {
                             "type": "module",
                             "name": "compute",
@@ -564,13 +570,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_autoscaling_group.web_server",
+                            "name": "public_subnet_ids",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
                             "module_connection": false
                         }
@@ -627,7 +627,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
                 "breadcrumbs": {
-                    "subnets": [
+                    "tag.value": [
                         {
                             "type": "module",
                             "name": "compute",
@@ -636,7 +636,13 @@
                         },
                         {
                             "type": "variable",
-                            "name": "public_subnet_ids",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_autoscaling_group.web_server",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
                             "module_connection": false
                         }
@@ -675,7 +681,7 @@
                             "module_connection": false
                         }
                     ],
-                    "tag.value": [
+                    "subnets": [
                         {
                             "type": "module",
                             "name": "compute",
@@ -684,13 +690,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_autoscaling_group.web_server",
+                            "name": "public_subnet_ids",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
                             "module_connection": false
                         }
@@ -747,7 +747,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
                 "breadcrumbs": {
-                    "subnets": [
+                    "tag.value": [
                         {
                             "type": "module",
                             "name": "compute",
@@ -756,7 +756,13 @@
                         },
                         {
                             "type": "variable",
-                            "name": "public_subnet_ids",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_autoscaling_group.web_server",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
                             "module_connection": false
                         }
@@ -795,7 +801,7 @@
                             "module_connection": false
                         }
                     ],
-                    "tag.value": [
+                    "subnets": [
                         {
                             "type": "module",
                             "name": "compute",
@@ -804,13 +810,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_autoscaling_group.web_server",
+                            "name": "public_subnet_ids",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
                             "module_connection": false
                         }
@@ -867,7 +867,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
                 "breadcrumbs": {
-                    "tag.value": [
+                    "name": [
                         {
                             "type": "module",
                             "name": "compute",
@@ -887,7 +887,7 @@
                             "module_connection": false
                         }
                     ],
-                    "name": [
+                    "tag.value": [
                         {
                             "type": "module",
                             "name": "compute",
@@ -978,34 +978,6 @@
                             "module_connection": false
                         }
                     ],
-                    "db_name": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "allocated_storage": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_allocated_storage",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "db_subnet_group_name": [
                         {
                             "type": "module",
@@ -1043,7 +1015,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1057,7 +1029,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "db_name": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1076,7 +1062,7 @@
                             "module_connection": false
                         }
                     ],
-                    "username": [
+                    "allocated_storage": [
                         {
                             "type": "module",
                             "name": "database",
@@ -1085,7 +1071,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "db_username",
+                            "name": "db_allocated_storage",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1100,6 +1086,20 @@
                         {
                             "type": "variable",
                             "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1175,34 +1175,6 @@
                             "module_connection": false
                         }
                     ],
-                    "db_name": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "allocated_storage": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_allocated_storage",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "db_subnet_group_name": [
                         {
                             "type": "module",
@@ -1240,7 +1212,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1254,7 +1226,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "db_name": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1273,7 +1259,7 @@
                             "module_connection": false
                         }
                     ],
-                    "username": [
+                    "allocated_storage": [
                         {
                             "type": "module",
                             "name": "database",
@@ -1282,7 +1268,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "db_username",
+                            "name": "db_allocated_storage",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1297,6 +1283,20 @@
                         {
                             "type": "variable",
                             "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1372,34 +1372,6 @@
                             "module_connection": false
                         }
                     ],
-                    "db_name": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "allocated_storage": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_allocated_storage",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "db_subnet_group_name": [
                         {
                             "type": "module",
@@ -1437,7 +1409,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1451,7 +1423,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "db_name": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1470,7 +1456,7 @@
                             "module_connection": false
                         }
                     ],
-                    "username": [
+                    "allocated_storage": [
                         {
                             "type": "module",
                             "name": "database",
@@ -1479,7 +1465,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "db_username",
+                            "name": "db_allocated_storage",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1494,6 +1480,20 @@
                         {
                             "type": "variable",
                             "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1569,34 +1569,6 @@
                             "module_connection": false
                         }
                     ],
-                    "db_name": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "allocated_storage": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_allocated_storage",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "db_subnet_group_name": [
                         {
                             "type": "module",
@@ -1634,7 +1606,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1648,7 +1620,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "db_name": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1667,7 +1653,7 @@
                             "module_connection": false
                         }
                     ],
-                    "username": [
+                    "allocated_storage": [
                         {
                             "type": "module",
                             "name": "database",
@@ -1676,7 +1662,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "db_username",
+                            "name": "db_allocated_storage",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1691,6 +1677,20 @@
                         {
                             "type": "variable",
                             "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1766,34 +1766,6 @@
                             "module_connection": false
                         }
                     ],
-                    "db_name": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "allocated_storage": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_allocated_storage",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "db_subnet_group_name": [
                         {
                             "type": "module",
@@ -1831,7 +1803,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1845,7 +1817,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "db_name": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1864,7 +1850,7 @@
                             "module_connection": false
                         }
                     ],
-                    "username": [
+                    "allocated_storage": [
                         {
                             "type": "module",
                             "name": "database",
@@ -1873,7 +1859,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "db_username",
+                            "name": "db_allocated_storage",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1888,6 +1874,20 @@
                         {
                             "type": "variable",
                             "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -1963,34 +1963,6 @@
                             "module_connection": false
                         }
                     ],
-                    "db_name": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "allocated_storage": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_allocated_storage",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "db_subnet_group_name": [
                         {
                             "type": "module",
@@ -2028,7 +2000,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -2042,7 +2014,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "db_name": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -2061,7 +2047,7 @@
                             "module_connection": false
                         }
                     ],
-                    "username": [
+                    "allocated_storage": [
                         {
                             "type": "module",
                             "name": "database",
@@ -2070,7 +2056,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "db_username",
+                            "name": "db_allocated_storage",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -2085,6 +2071,20 @@
                         {
                             "type": "variable",
                             "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -2160,34 +2160,6 @@
                             "module_connection": false
                         }
                     ],
-                    "db_name": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "allocated_storage": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_allocated_storage",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "db_subnet_group_name": [
                         {
                             "type": "module",
@@ -2225,7 +2197,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -2239,7 +2211,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "db_name": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -2258,7 +2244,7 @@
                             "module_connection": false
                         }
                     ],
-                    "username": [
+                    "allocated_storage": [
                         {
                             "type": "module",
                             "name": "database",
@@ -2267,7 +2253,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "db_username",
+                            "name": "db_allocated_storage",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -2282,6 +2268,20 @@
                         {
                             "type": "variable",
                             "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -2357,34 +2357,6 @@
                             "module_connection": false
                         }
                     ],
-                    "db_name": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "allocated_storage": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_allocated_storage",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "db_subnet_group_name": [
                         {
                             "type": "module",
@@ -2422,7 +2394,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -2436,7 +2408,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "db_name": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -2455,7 +2441,7 @@
                             "module_connection": false
                         }
                     ],
-                    "username": [
+                    "allocated_storage": [
                         {
                             "type": "module",
                             "name": "database",
@@ -2464,7 +2450,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "db_username",
+                            "name": "db_allocated_storage",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -2479,6 +2465,20 @@
                         {
                             "type": "variable",
                             "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -2541,6 +2541,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
                 "breadcrumbs": {
+                    "tags.Environment": [
+                        {
+                            "type": "module",
+                            "name": "network",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "name": [
                         {
                             "type": "module",
@@ -2556,20 +2570,6 @@
                         }
                     ],
                     "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "network",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Environment": [
                         {
                             "type": "module",
                             "name": "network",
@@ -2638,6 +2638,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
                 "breadcrumbs": {
+                    "tags.Environment": [
+                        {
+                            "type": "module",
+                            "name": "network",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "name": [
                         {
                             "type": "module",
@@ -2653,20 +2667,6 @@
                         }
                     ],
                     "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "network",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Environment": [
                         {
                             "type": "module",
                             "name": "network",
@@ -2738,6 +2738,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
                 "breadcrumbs": {
+                    "tags.Environment": [
+                        {
+                            "type": "module",
+                            "name": "network",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "name": [
                         {
                             "type": "module",
@@ -2753,20 +2767,6 @@
                         }
                     ],
                     "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "network",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Environment": [
                         {
                             "type": "module",
                             "name": "network",
@@ -2857,9 +2857,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "parameter/*/name",
                         "engine",
-                        "resource_type"
+                        "resource_type",
+                        "parameter/*/name"
                     ]
                 },
                 "code_block": null,
@@ -2909,34 +2909,6 @@
                             "module_connection": false
                         }
                     ],
-                    "db_name": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "allocated_storage": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_allocated_storage",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "db_subnet_group_name": [
                         {
                             "type": "module",
@@ -2974,7 +2946,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -2988,7 +2960,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "db_name": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -3007,7 +2993,7 @@
                             "module_connection": false
                         }
                     ],
-                    "username": [
+                    "allocated_storage": [
                         {
                             "type": "module",
                             "name": "database",
@@ -3016,7 +3002,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "db_username",
+                            "name": "db_allocated_storage",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -3031,6 +3017,20 @@
                         {
                             "type": "variable",
                             "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "username": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -3085,12 +3085,12 @@
                         }
                     },
                     "evaluated_keys": [
-                        "default_action/redirect/protocol",
-                        "load_balancer_type",
+                        "ssl_policy",
                         "default_action/type",
-                        "resource_type",
+                        "load_balancer_type",
                         "protocol",
-                        "ssl_policy"
+                        "resource_type",
+                        "default_action/redirect/protocol"
                     ]
                 },
                 "code_block": null,
@@ -3127,116 +3127,6 @@
                             "name": "compute",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
                             "idx": 3,
-                            "source_module_object": null
-                        }
-                    ]
-                }
-            },
-            {
-                "check_id": "CKV2_AWS_12",
-                "bc_check_id": "BC_AWS_NETWORKING_4",
-                "check_name": "Ensure the default security group of every VPC restricts all traffic",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_vpc": {
-                            "main": {
-                                "__end_line__": 47,
-                                "__start_line__": 39,
-                                "cidr_block": [
-                                    "10.0.0.0/16"
-                                ],
-                                "enable_dns_hostnames": [
-                                    true
-                                ],
-                                "tags": [
-                                    {
-                                        "Environment": "terraform.workspace",
-                                        "Name": "${terraform.workspace}-vpc"
-                                    }
-                                ],
-                                "__address__": "module.network.aws_vpc.main",
-                                "__provider_address__": "aws.default"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "ingress/self",
-                        "ingress/protocol",
-                        "egress/cidr_blocks",
-                        "ingress/from_port",
-                        "resource_type",
-                        "egress/protocol",
-                        "egress/to_port",
-                        "egress/from_port",
-                        "ingress/to_port"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/network/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
-                "repo_file_path": "/data/outputs/Gemini/Scenario07/modules/network/main.tf",
-                "file_line_range": [
-                    39,
-                    47
-                ],
-                "resource": "module.network.aws_vpc.main",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {
-                    "Environment": "terraform.workspace",
-                    "Name": "${terraform.workspace}-vpc"
-                },
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
-                "breadcrumbs": {
-                    "tags.Environment": [
-                        {
-                            "type": "module",
-                            "name": "network",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "network",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "source_module_": [
-                        {
-                            "type": "module",
-                            "name": "network",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "idx": 1,
                             "source_module_object": null
                         }
                     ]
@@ -3359,34 +3249,6 @@
                             "module_connection": false
                         }
                     ],
-                    "db_name": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_name",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "allocated_storage": [
-                        {
-                            "type": "module",
-                            "name": "database",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "db_allocated_storage",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
-                            "module_connection": false
-                        }
-                    ],
                     "db_subnet_group_name": [
                         {
                             "type": "module",
@@ -3424,7 +3286,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -3438,7 +3300,21 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
+                            "name": "db_name",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "db_name": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_name",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -3457,7 +3333,7 @@
                             "module_connection": false
                         }
                     ],
-                    "username": [
+                    "allocated_storage": [
                         {
                             "type": "module",
                             "name": "database",
@@ -3466,7 +3342,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "db_username",
+                            "name": "db_allocated_storage",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
                             "module_connection": false
                         }
@@ -3485,12 +3361,136 @@
                             "module_connection": false
                         }
                     ],
+                    "username": [
+                        {
+                            "type": "module",
+                            "name": "database",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "db_username",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/database/main.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "source_module_": [
                         {
                             "type": "module",
                             "name": "database",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
                             "idx": 2,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_12",
+                "bc_check_id": "BC_AWS_NETWORKING_4",
+                "check_name": "Ensure the default security group of every VPC restricts all traffic",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_vpc": {
+                            "main": {
+                                "__end_line__": 47,
+                                "__start_line__": 39,
+                                "cidr_block": [
+                                    "10.0.0.0/16"
+                                ],
+                                "enable_dns_hostnames": [
+                                    true
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "terraform.workspace",
+                                        "Name": "${terraform.workspace}-vpc"
+                                    }
+                                ],
+                                "__address__": "module.network.aws_vpc.main",
+                                "__provider_address__": "aws.default"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "egress/cidr_blocks",
+                        "egress/from_port",
+                        "ingress/self",
+                        "ingress/protocol",
+                        "ingress/to_port",
+                        "egress/to_port",
+                        "egress/protocol",
+                        "resource_type",
+                        "ingress/from_port"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/network/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
+                "repo_file_path": "/data/outputs/Gemini/Scenario07/modules/network/main.tf",
+                "file_line_range": [
+                    39,
+                    47
+                ],
+                "resource": "module.network.aws_vpc.main",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "terraform.workspace",
+                    "Name": "${terraform.workspace}-vpc"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-4",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
+                "breadcrumbs": {
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "network",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "tags.Environment": [
+                        {
+                            "type": "module",
+                            "name": "network",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "network",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "idx": 1,
                             "source_module_object": null
                         }
                     ]
@@ -3618,6 +3618,20 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
                 "breadcrumbs": {
+                    "tags.Environment": [
+                        {
+                            "type": "module",
+                            "name": "network",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
+                            "module_connection": false
+                        }
+                    ],
                     "name": [
                         {
                             "type": "module",
@@ -3632,6 +3646,95 @@
                             "module_connection": false
                         }
                     ],
+                    "tags.Name": [
+                        {
+                            "type": "module",
+                            "name": "network",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "variable",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "source_module_": [
+                        {
+                            "type": "module",
+                            "name": "network",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
+                            "idx": 1,
+                            "source_module_object": null
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV2_AWS_11",
+                "bc_check_id": "BC_AWS_LOGGING_9",
+                "check_name": "Ensure VPC flow logging is enabled in all VPCs",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_vpc": {
+                            "main": {
+                                "__end_line__": 47,
+                                "__start_line__": 39,
+                                "cidr_block": [
+                                    "10.0.0.0/16"
+                                ],
+                                "enable_dns_hostnames": [
+                                    true
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "terraform.workspace",
+                                        "Name": "${terraform.workspace}-vpc"
+                                    }
+                                ],
+                                "__address__": "module.network.aws_vpc.main",
+                                "__provider_address__": "aws.default"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "networking",
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/modules/network/main.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
+                "repo_file_path": "/data/outputs/Gemini/Scenario07/modules/network/main.tf",
+                "file_line_range": [
+                    39,
+                    47
+                ],
+                "resource": "module.network.aws_vpc.main",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "terraform.workspace",
+                    "Name": "${terraform.workspace}-vpc"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-9-enable-vpc-flow-logging",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
+                "breadcrumbs": {
                     "tags.Name": [
                         {
                             "type": "module",
@@ -3759,109 +3862,6 @@
                 }
             },
             {
-                "check_id": "CKV2_AWS_11",
-                "bc_check_id": "BC_AWS_LOGGING_9",
-                "check_name": "Ensure VPC flow logging is enabled in all VPCs",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_vpc": {
-                            "main": {
-                                "__end_line__": 47,
-                                "__start_line__": 39,
-                                "cidr_block": [
-                                    "10.0.0.0/16"
-                                ],
-                                "enable_dns_hostnames": [
-                                    true
-                                ],
-                                "tags": [
-                                    {
-                                        "Environment": "terraform.workspace",
-                                        "Name": "${terraform.workspace}-vpc"
-                                    }
-                                ],
-                                "__address__": "module.network.aws_vpc.main",
-                                "__provider_address__": "aws.default"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "networking",
-                        "resource_type"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/modules/network/main.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
-                "repo_file_path": "/data/outputs/Gemini/Scenario07/modules/network/main.tf",
-                "file_line_range": [
-                    39,
-                    47
-                ],
-                "resource": "module.network.aws_vpc.main",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {
-                    "Environment": "terraform.workspace",
-                    "Name": "${terraform.workspace}-vpc"
-                },
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-9-enable-vpc-flow-logging",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
-                "breadcrumbs": {
-                    "tags.Environment": [
-                        {
-                            "type": "module",
-                            "name": "network",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "tags.Name": [
-                        {
-                            "type": "module",
-                            "name": "network",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/network/main.tf",
-                            "module_connection": false
-                        }
-                    ],
-                    "source_module_": [
-                        {
-                            "type": "module",
-                            "name": "network",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/main.tf",
-                            "idx": 1,
-                            "source_module_object": null
-                        }
-                    ]
-                }
-            },
-            {
                 "check_id": "CKV2_AWS_28",
                 "bc_check_id": "BC_AWS_NETWORKING_58",
                 "check_name": "Ensure public facing ALB are protected by WAF",
@@ -3907,9 +3907,9 @@
                         }
                     },
                     "evaluated_keys": [
+                        "resource_type",
                         "internal",
-                        "load_balancer_type",
-                        "resource_type"
+                        "load_balancer_type"
                     ]
                 },
                 "code_block": null,
@@ -3940,7 +3940,7 @@
                 "check_len": null,
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
                 "breadcrumbs": {
-                    "subnets": [
+                    "tag.value": [
                         {
                             "type": "module",
                             "name": "compute",
@@ -3949,7 +3949,13 @@
                         },
                         {
                             "type": "variable",
-                            "name": "public_subnet_ids",
+                            "name": "environment",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "aws_autoscaling_group.web_server",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
                             "module_connection": false
                         }
@@ -3988,7 +3994,7 @@
                             "module_connection": false
                         }
                     ],
-                    "tag.value": [
+                    "subnets": [
                         {
                             "type": "module",
                             "name": "compute",
@@ -3997,13 +4003,7 @@
                         },
                         {
                             "type": "variable",
-                            "name": "environment",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
-                            "module_connection": false
-                        },
-                        {
-                            "type": "resource",
-                            "name": "aws_autoscaling_group.web_server",
+                            "name": "public_subnet_ids",
                             "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario07/modules/compute/main.tf",
                             "module_connection": false
                         }

@@ -1,0 +1,645 @@
+{
+  "check_type": "terraform",
+  "failed_checks": [
+    {
+      "check_id": "CKV_AWS_290",
+      "severity": "HIGH",
+      "check_name": "Ensure IAM policies does not allow write access without constraints",
+      "check_result": "FAILED",
+      "file_path": "/dr_lambda_iam_role.tf",
+      "file_line_range": [
+        44,
+        76
+      ],
+      "resource": "aws_iam_policy.dr_lambda_policy",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290"
+    },
+    {
+      "check_id": "CKV_AWS_355",
+      "severity": "HIGH",
+      "check_name": "Ensure no IAM policies documents allow \"*\" as a statement's resource for restrictable actions",
+      "check_result": "FAILED",
+      "file_path": "/dr_lambda_iam_role.tf",
+      "file_line_range": [
+        44,
+        76
+      ],
+      "resource": "aws_iam_policy.dr_lambda_policy",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355"
+    },
+    {
+      "check_id": "CKV_AWS_290",
+      "severity": "HIGH",
+      "check_name": "Ensure IAM policies does not allow write access without constraints",
+      "check_result": "FAILED",
+      "file_path": "/lambda_function.tf",
+      "file_line_range": [
+        44,
+        76
+      ],
+      "resource": "aws_iam_policy.lambda_execution_policy",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290"
+    },
+    {
+      "check_id": "CKV_AWS_355",
+      "severity": "HIGH",
+      "check_name": "Ensure no IAM policies documents allow \"*\" as a statement's resource for restrictable actions",
+      "check_result": "FAILED",
+      "file_path": "/lambda_function.tf",
+      "file_line_range": [
+        44,
+        76
+      ],
+      "resource": "aws_iam_policy.lambda_execution_policy",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355"
+    },
+    {
+      "check_id": "CKV_AWS_117",
+      "severity": "LOW",
+      "check_name": "Ensure that AWS Lambda function is configured inside a VPC",
+      "check_result": "FAILED",
+      "file_path": "/lambda_function.tf",
+      "file_line_range": [
+        83,
+        101
+      ],
+      "resource": "aws_lambda_function.dr_failover",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-inside-a-vpc-1"
+    },
+    {
+      "check_id": "CKV_AWS_115",
+      "severity": "LOW",
+      "check_name": "Ensure that AWS Lambda function is configured for function-level concurrent execution limit",
+      "check_result": "FAILED",
+      "file_path": "/lambda_function.tf",
+      "file_line_range": [
+        83,
+        101
+      ],
+      "resource": "aws_lambda_function.dr_failover",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-function-level-concurrent-execution-limit"
+    },
+    {
+      "check_id": "CKV_AWS_50",
+      "severity": "LOW",
+      "check_name": "X-Ray tracing is enabled for Lambda",
+      "check_result": "FAILED",
+      "file_path": "/lambda_function.tf",
+      "file_line_range": [
+        83,
+        101
+      ],
+      "resource": "aws_lambda_function.dr_failover",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-4"
+    },
+    {
+      "check_id": "CKV_AWS_173",
+      "severity": "LOW",
+      "check_name": "Check encryption settings for Lambda environmental variable",
+      "check_result": "FAILED",
+      "file_path": "/lambda_function.tf",
+      "file_line_range": [
+        83,
+        101
+      ],
+      "resource": "aws_lambda_function.dr_failover",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-5"
+    },
+    {
+      "check_id": "CKV_AWS_363",
+      "severity": "MEDIUM",
+      "check_name": "Ensure Lambda Runtime is not deprecated",
+      "check_result": "FAILED",
+      "file_path": "/lambda_function.tf",
+      "file_line_range": [
+        83,
+        101
+      ],
+      "resource": "aws_lambda_function.dr_failover",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-363"
+    },
+    {
+      "check_id": "CKV_AWS_272",
+      "severity": "HIGH",
+      "check_name": "Ensure AWS Lambda function is configured to validate code-signing",
+      "check_result": "FAILED",
+      "file_path": "/lambda_function.tf",
+      "file_line_range": [
+        83,
+        101
+      ],
+      "resource": "aws_lambda_function.dr_failover",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-272"
+    },
+    {
+      "check_id": "CKV_AWS_116",
+      "severity": "LOW",
+      "check_name": "Ensure that AWS Lambda function is configured for a Dead Letter Queue(DLQ)",
+      "check_result": "FAILED",
+      "file_path": "/lambda_function.tf",
+      "file_line_range": [
+        83,
+        101
+      ],
+      "resource": "aws_lambda_function.dr_failover",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-a-dead-letter-queue-dlq"
+    },
+    {
+      "check_id": "CKV_AWS_290",
+      "severity": "HIGH",
+      "check_name": "Ensure IAM policies does not allow write access without constraints",
+      "check_result": "FAILED",
+      "file_path": "/modules/dr_lambda_iam_role/main.tf",
+      "file_line_range": [
+        23,
+        55
+      ],
+      "resource": "module.dr_lambda_iam_role.aws_iam_policy.dr_lambda_policy",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-290"
+    },
+    {
+      "check_id": "CKV_AWS_355",
+      "severity": "HIGH",
+      "check_name": "Ensure no IAM policies documents allow \"*\" as a statement's resource for restrictable actions",
+      "check_result": "FAILED",
+      "file_path": "/modules/dr_lambda_iam_role/main.tf",
+      "file_line_range": [
+        23,
+        55
+      ],
+      "resource": "module.dr_lambda_iam_role.aws_iam_policy.dr_lambda_policy",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-355"
+    },
+    {
+      "check_id": "CKV_AWS_117",
+      "severity": "LOW",
+      "check_name": "Ensure that AWS Lambda function is configured inside a VPC",
+      "check_result": "FAILED",
+      "file_path": "/modules/lambda_function/main.tf",
+      "file_line_range": [
+        1,
+        19
+      ],
+      "resource": "module.lambda_function.aws_lambda_function.dr_failover",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-inside-a-vpc-1"
+    },
+    {
+      "check_id": "CKV_AWS_115",
+      "severity": "LOW",
+      "check_name": "Ensure that AWS Lambda function is configured for function-level concurrent execution limit",
+      "check_result": "FAILED",
+      "file_path": "/modules/lambda_function/main.tf",
+      "file_line_range": [
+        1,
+        19
+      ],
+      "resource": "module.lambda_function.aws_lambda_function.dr_failover",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-function-level-concurrent-execution-limit"
+    },
+    {
+      "check_id": "CKV_AWS_50",
+      "severity": "LOW",
+      "check_name": "X-Ray tracing is enabled for Lambda",
+      "check_result": "FAILED",
+      "file_path": "/modules/lambda_function/main.tf",
+      "file_line_range": [
+        1,
+        19
+      ],
+      "resource": "module.lambda_function.aws_lambda_function.dr_failover",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-4"
+    },
+    {
+      "check_id": "CKV_AWS_173",
+      "severity": "LOW",
+      "check_name": "Check encryption settings for Lambda environmental variable",
+      "check_result": "FAILED",
+      "file_path": "/modules/lambda_function/main.tf",
+      "file_line_range": [
+        1,
+        19
+      ],
+      "resource": "module.lambda_function.aws_lambda_function.dr_failover",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-5"
+    },
+    {
+      "check_id": "CKV_AWS_363",
+      "severity": "MEDIUM",
+      "check_name": "Ensure Lambda Runtime is not deprecated",
+      "check_result": "FAILED",
+      "file_path": "/modules/lambda_function/main.tf",
+      "file_line_range": [
+        1,
+        19
+      ],
+      "resource": "module.lambda_function.aws_lambda_function.dr_failover",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-363"
+    },
+    {
+      "check_id": "CKV_AWS_272",
+      "severity": "HIGH",
+      "check_name": "Ensure AWS Lambda function is configured to validate code-signing",
+      "check_result": "FAILED",
+      "file_path": "/modules/lambda_function/main.tf",
+      "file_line_range": [
+        1,
+        19
+      ],
+      "resource": "module.lambda_function.aws_lambda_function.dr_failover",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-272"
+    },
+    {
+      "check_id": "CKV_AWS_116",
+      "severity": "LOW",
+      "check_name": "Ensure that AWS Lambda function is configured for a Dead Letter Queue(DLQ)",
+      "check_result": "FAILED",
+      "file_path": "/modules/lambda_function/main.tf",
+      "file_line_range": [
+        1,
+        19
+      ],
+      "resource": "module.lambda_function.aws_lambda_function.dr_failover",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-a-dead-letter-queue-dlq"
+    },
+    {
+      "check_id": "CKV_AWS_8",
+      "severity": "INFO",
+      "check_name": "Ensure all data stored in the Launch configuration or instance Elastic Blocks Store is securely encrypted",
+      "check_result": "FAILED",
+      "file_path": "/modules/primary_instance_and_volume/main.tf",
+      "file_line_range": [
+        1,
+        11
+      ],
+      "resource": "module.primary_instance_and_volume.aws_instance.primary",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-13"
+    },
+    {
+      "check_id": "CKV_AWS_126",
+      "severity": "MEDIUM",
+      "check_name": "Ensure that detailed monitoring is enabled for EC2 instances",
+      "check_result": "FAILED",
+      "file_path": "/modules/primary_instance_and_volume/main.tf",
+      "file_line_range": [
+        1,
+        11
+      ],
+      "resource": "module.primary_instance_and_volume.aws_instance.primary",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-detailed-monitoring-is-enabled-for-ec2-instances"
+    },
+    {
+      "check_id": "CKV_AWS_79",
+      "severity": "HIGH",
+      "check_name": "Ensure Instance Metadata Service Version 1 is not enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/primary_instance_and_volume/main.tf",
+      "file_line_range": [
+        1,
+        11
+      ],
+      "resource": "module.primary_instance_and_volume.aws_instance.primary",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31"
+    },
+    {
+      "check_id": "CKV_AWS_135",
+      "severity": "LOW",
+      "check_name": "Ensure that EC2 is EBS optimized",
+      "check_result": "FAILED",
+      "file_path": "/modules/primary_instance_and_volume/main.tf",
+      "file_line_range": [
+        1,
+        11
+      ],
+      "resource": "module.primary_instance_and_volume.aws_instance.primary",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized"
+    },
+    {
+      "check_id": "CKV_AWS_3",
+      "severity": "HIGH",
+      "check_name": "Ensure all data stored in the EBS is securely encrypted",
+      "check_result": "FAILED",
+      "file_path": "/modules/primary_instance_and_volume/main.tf",
+      "file_line_range": [
+        13,
+        23
+      ],
+      "resource": "module.primary_instance_and_volume.aws_ebs_volume.primary_data",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-3-encrypt-ebs-volume"
+    },
+    {
+      "check_id": "CKV_AWS_189",
+      "severity": "LOW",
+      "check_name": "Ensure EBS Volume is encrypted by KMS using a customer managed Key (CMK)",
+      "check_result": "FAILED",
+      "file_path": "/modules/primary_instance_and_volume/main.tf",
+      "file_line_range": [
+        13,
+        23
+      ],
+      "resource": "module.primary_instance_and_volume.aws_ebs_volume.primary_data",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-109"
+    },
+    {
+      "check_id": "CKV_AWS_8",
+      "severity": "INFO",
+      "check_name": "Ensure all data stored in the Launch configuration or instance Elastic Blocks Store is securely encrypted",
+      "check_result": "FAILED",
+      "file_path": "/primary_instance_and_volume.tf",
+      "file_line_range": [
+        17,
+        27
+      ],
+      "resource": "aws_instance.primary",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-13"
+    },
+    {
+      "check_id": "CKV_AWS_126",
+      "severity": "MEDIUM",
+      "check_name": "Ensure that detailed monitoring is enabled for EC2 instances",
+      "check_result": "FAILED",
+      "file_path": "/primary_instance_and_volume.tf",
+      "file_line_range": [
+        17,
+        27
+      ],
+      "resource": "aws_instance.primary",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-detailed-monitoring-is-enabled-for-ec2-instances"
+    },
+    {
+      "check_id": "CKV_AWS_79",
+      "severity": "HIGH",
+      "check_name": "Ensure Instance Metadata Service Version 1 is not enabled",
+      "check_result": "FAILED",
+      "file_path": "/primary_instance_and_volume.tf",
+      "file_line_range": [
+        17,
+        27
+      ],
+      "resource": "aws_instance.primary",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31"
+    },
+    {
+      "check_id": "CKV_AWS_135",
+      "severity": "LOW",
+      "check_name": "Ensure that EC2 is EBS optimized",
+      "check_result": "FAILED",
+      "file_path": "/primary_instance_and_volume.tf",
+      "file_line_range": [
+        17,
+        27
+      ],
+      "resource": "aws_instance.primary",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-ec2-is-ebs-optimized"
+    },
+    {
+      "check_id": "CKV_AWS_3",
+      "severity": "HIGH",
+      "check_name": "Ensure all data stored in the EBS is securely encrypted",
+      "check_result": "FAILED",
+      "file_path": "/primary_instance_and_volume.tf",
+      "file_line_range": [
+        29,
+        39
+      ],
+      "resource": "aws_ebs_volume.primary_data",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-3-encrypt-ebs-volume"
+    },
+    {
+      "check_id": "CKV_AWS_189",
+      "severity": "LOW",
+      "check_name": "Ensure EBS Volume is encrypted by KMS using a customer managed Key (CMK)",
+      "check_result": "FAILED",
+      "file_path": "/primary_instance_and_volume.tf",
+      "file_line_range": [
+        29,
+        39
+      ],
+      "resource": "aws_ebs_volume.primary_data",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-109"
+    },
+    {
+      "check_id": "CKV2_AWS_41",
+      "severity": "INFO",
+      "check_name": "Ensure an IAM role is attached to EC2 instance",
+      "check_result": "FAILED",
+      "file_path": "/modules/primary_instance_and_volume/main.tf",
+      "file_line_range": [
+        1,
+        11
+      ],
+      "resource": "module.primary_instance_and_volume.aws_instance.primary",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance"
+    },
+    {
+      "check_id": "CKV2_AWS_41",
+      "severity": "INFO",
+      "check_name": "Ensure an IAM role is attached to EC2 instance",
+      "check_result": "FAILED",
+      "file_path": "/primary_instance_and_volume.tf",
+      "file_line_range": [
+        17,
+        27
+      ],
+      "resource": "aws_instance.primary",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance"
+    },
+    {
+      "check_id": "CKV_AWS_144",
+      "severity": "LOW",
+      "check_name": "Ensure that S3 bucket has cross-region replication enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/s3_backup_bucket/main.tf",
+      "file_line_range": [
+        1,
+        29
+      ],
+      "resource": "module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-bucket-has-cross-region-replication-enabled"
+    },
+    {
+      "check_id": "CKV_AWS_144",
+      "severity": "LOW",
+      "check_name": "Ensure that S3 bucket has cross-region replication enabled",
+      "check_result": "FAILED",
+      "file_path": "/s3_backup_bucket.tf",
+      "file_line_range": [
+        17,
+        45
+      ],
+      "resource": "aws_s3_bucket.example_dr_backup_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-bucket-has-cross-region-replication-enabled"
+    },
+    {
+      "check_id": "CKV2_AWS_62",
+      "severity": "LOW",
+      "check_name": "Ensure S3 buckets should have event notifications enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/s3_backup_bucket/main.tf",
+      "file_line_range": [
+        1,
+        29
+      ],
+      "resource": "module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-62"
+    },
+    {
+      "check_id": "CKV2_AWS_62",
+      "severity": "LOW",
+      "check_name": "Ensure S3 buckets should have event notifications enabled",
+      "check_result": "FAILED",
+      "file_path": "/s3_backup_bucket.tf",
+      "file_line_range": [
+        17,
+        45
+      ],
+      "resource": "aws_s3_bucket.example_dr_backup_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-62"
+    },
+    {
+      "check_id": "CKV2_AWS_64",
+      "severity": "MEDIUM",
+      "check_name": "Ensure KMS key Policy is defined",
+      "check_result": "FAILED",
+      "file_path": "/dr_kms_key.tf",
+      "file_line_range": [
+        17,
+        28
+      ],
+      "resource": "aws_kms_key.dr_key",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-2-64"
+    },
+    {
+      "check_id": "CKV2_AWS_64",
+      "severity": "MEDIUM",
+      "check_name": "Ensure KMS key Policy is defined",
+      "check_result": "FAILED",
+      "file_path": "/modules/dr_kms_key/main.tf",
+      "file_line_range": [
+        1,
+        12
+      ],
+      "resource": "module.dr_kms_key.aws_kms_key.dr_key",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-2-64"
+    },
+    {
+      "check_id": "CKV_AWS_18",
+      "severity": "INFO",
+      "check_name": "Ensure the S3 bucket has access logging enabled",
+      "check_result": "FAILED",
+      "file_path": "/modules/s3_backup_bucket/main.tf",
+      "file_line_range": [
+        1,
+        29
+      ],
+      "resource": "module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-13-enable-logging"
+    },
+    {
+      "check_id": "CKV_AWS_18",
+      "severity": "INFO",
+      "check_name": "Ensure the S3 bucket has access logging enabled",
+      "check_result": "FAILED",
+      "file_path": "/s3_backup_bucket.tf",
+      "file_line_range": [
+        17,
+        45
+      ],
+      "resource": "aws_s3_bucket.example_dr_backup_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-13-enable-logging"
+    },
+    {
+      "check_id": "CKV2_AWS_6",
+      "severity": "LOW",
+      "check_name": "Ensure that S3 bucket has a Public Access block",
+      "check_result": "FAILED",
+      "file_path": "/modules/s3_backup_bucket/main.tf",
+      "file_line_range": [
+        1,
+        29
+      ],
+      "resource": "module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/s3-bucket-should-have-public-access-blocks-defaults-to-false-if-the-public-access-block-is-not-attached"
+    },
+    {
+      "check_id": "CKV2_AWS_6",
+      "severity": "LOW",
+      "check_name": "Ensure that S3 bucket has a Public Access block",
+      "check_result": "FAILED",
+      "file_path": "/s3_backup_bucket.tf",
+      "file_line_range": [
+        17,
+        45
+      ],
+      "resource": "aws_s3_bucket.example_dr_backup_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/s3-bucket-should-have-public-access-blocks-defaults-to-false-if-the-public-access-block-is-not-attached"
+    },
+    {
+      "check_id": "CKV_AWS_145",
+      "severity": "LOW",
+      "check_name": "Ensure that S3 buckets are encrypted with KMS by default",
+      "check_result": "FAILED",
+      "file_path": "/modules/s3_backup_bucket/main.tf",
+      "file_line_range": [
+        1,
+        29
+      ],
+      "resource": "module.s3_backup_bucket.aws_s3_bucket.example_dr_backup_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-buckets-are-encrypted-with-kms-by-default"
+    },
+    {
+      "check_id": "CKV_AWS_145",
+      "severity": "LOW",
+      "check_name": "Ensure that S3 buckets are encrypted with KMS by default",
+      "check_result": "FAILED",
+      "file_path": "/s3_backup_bucket.tf",
+      "file_line_range": [
+        17,
+        45
+      ],
+      "resource": "aws_s3_bucket.example_dr_backup_bucket",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-buckets-are-encrypted-with-kms-by-default"
+    },
+    {
+      "check_id": "CKV2_AWS_2",
+      "severity": "LOW",
+      "check_name": "Ensure that only encrypted EBS volumes are attached to EC2 instances",
+      "check_result": "FAILED",
+      "file_path": "/modules/primary_instance_and_volume/main.tf",
+      "file_line_range": [
+        13,
+        23
+      ],
+      "resource": "module.primary_instance_and_volume.aws_ebs_volume.primary_data",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-only-encrypted-ebs-volumes-are-attached-to-ec2-instances"
+    },
+    {
+      "check_id": "CKV2_AWS_2",
+      "severity": "LOW",
+      "check_name": "Ensure that only encrypted EBS volumes are attached to EC2 instances",
+      "check_result": "FAILED",
+      "file_path": "/primary_instance_and_volume.tf",
+      "file_line_range": [
+        29,
+        39
+      ],
+      "resource": "aws_ebs_volume.primary_data",
+      "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-only-encrypted-ebs-volumes-are-attached-to-ec2-instances"
+    }
+  ],
+  "summary": {
+    "passed": 77,
+    "failed": 48,
+    "skipped": 0,
+    "parsing_errors": 0,
+    "resource_count": 29,
+    "checkov_version": "3.2.382",
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 12,
+      "MEDIUM": 6,
+      "LOW": 24,
+      "UNKNOWN": 0,
+      "INFO": 6
+    }
+  }
+}

@@ -62,11 +62,6 @@ for llm in $LLMS; do
    done
 done
 
-if [ ! -d "./tmp" ]; then
-   echo "Creating tmp directory for external module download"
-   mkdir tmp
-fi
-
 if [ $DOWNLOAD_EXTERNAL = "true" ]; then
    download_cmd=" --download-external-modules true --external-modules-download-path $SCRIPT_DIR/tmp"
    if [ ! -d "$SCRIPT_DIR/tmp" ]; then

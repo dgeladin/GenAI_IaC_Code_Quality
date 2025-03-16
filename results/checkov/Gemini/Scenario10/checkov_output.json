@@ -626,6 +626,71 @@
                 }
             },
             {
+                "check_id": "CKV2_AWS_41",
+                "bc_check_id": "BC_AWS_IAM_69",
+                "check_name": "Ensure an IAM role is attached to EC2 instance",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_instance": {
+                            "primary": {
+                                "__end_line__": 12,
+                                "__start_line__": 3,
+                                "ami": [
+                                    "ami-0c55b159cbfafe1f0"
+                                ],
+                                "availability_zone": [
+                                    "us-west-2a"
+                                ],
+                                "instance_type": [
+                                    "t3.micro"
+                                ],
+                                "tags": [
+                                    {
+                                        "Environment": "primary",
+                                        "Name": "primary-instance"
+                                    }
+                                ],
+                                "__address__": "aws_instance.primary"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "iam_instance_profile"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/primary_resources.tf",
+                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario10/primary_resources.tf",
+                "repo_file_path": "/data/outputs/Gemini/Scenario10/primary_resources.tf",
+                "file_line_range": [
+                    3,
+                    12
+                ],
+                "resource": "aws_instance.primary",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": {
+                    "Environment": "primary",
+                    "Name": "primary-instance"
+                },
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario10/primary_resources.tf"
+            },
+            {
                 "check_id": "CKV2_AWS_64",
                 "bc_check_id": "BC_AWS_IAM_76",
                 "check_name": "Ensure KMS key Policy is defined",
@@ -692,71 +757,6 @@
                 "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario10/kms_key.tf"
             },
             {
-                "check_id": "CKV2_AWS_41",
-                "bc_check_id": "BC_AWS_IAM_69",
-                "check_name": "Ensure an IAM role is attached to EC2 instance",
-                "check_result": {
-                    "result": "FAILED",
-                    "entity": {
-                        "aws_instance": {
-                            "primary": {
-                                "__end_line__": 12,
-                                "__start_line__": 3,
-                                "ami": [
-                                    "ami-0c55b159cbfafe1f0"
-                                ],
-                                "availability_zone": [
-                                    "us-west-2a"
-                                ],
-                                "instance_type": [
-                                    "t3.micro"
-                                ],
-                                "tags": [
-                                    {
-                                        "Environment": "primary",
-                                        "Name": "primary-instance"
-                                    }
-                                ],
-                                "__address__": "aws_instance.primary"
-                            }
-                        }
-                    },
-                    "evaluated_keys": [
-                        "iam_instance_profile"
-                    ]
-                },
-                "code_block": null,
-                "file_path": "/primary_resources.tf",
-                "file_abs_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario10/primary_resources.tf",
-                "repo_file_path": "/data/outputs/Gemini/Scenario10/primary_resources.tf",
-                "file_line_range": [
-                    3,
-                    12
-                ],
-                "resource": "aws_instance.primary",
-                "evaluations": null,
-                "check_class": "checkov.common.graph.checks_infra.base_check",
-                "fixed_definition": null,
-                "entity_tags": {
-                    "Environment": "primary",
-                    "Name": "primary-instance"
-                },
-                "caller_file_path": null,
-                "caller_file_line_range": null,
-                "resource_address": null,
-                "severity": null,
-                "bc_category": null,
-                "benchmarks": null,
-                "description": null,
-                "short_description": null,
-                "vulnerability_details": null,
-                "connected_node": null,
-                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-an-iam-role-is-attached-to-ec2-instance",
-                "details": [],
-                "check_len": null,
-                "definition_context_file_path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Gemini/Scenario10/primary_resources.tf"
-            },
-            {
                 "check_id": "CKV2_AWS_62",
                 "bc_check_id": "BC_AWS_LOGGING_36",
                 "check_name": "Ensure S3 buckets should have event notifications enabled",
@@ -1012,9 +1012,9 @@
                         }
                     },
                     "evaluated_keys": [
+                        "replication_configuration/rules/*/status",
                         "resource_type",
-                        "rule/*/status",
-                        "replication_configuration/rules/*/status"
+                        "rule/*/status"
                     ]
                 },
                 "code_block": null,
@@ -1075,9 +1075,9 @@
                         }
                     },
                     "evaluated_keys": [
+                        "replication_configuration/rules/*/status",
                         "resource_type",
-                        "rule/*/status",
-                        "replication_configuration/rules/*/status"
+                        "rule/*/status"
                     ]
                 },
                 "code_block": null,
@@ -1191,8 +1191,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "lifecycle_rule",
-                        "resource_type"
+                        "resource_type",
+                        "lifecycle_rule"
                     ]
                 },
                 "code_block": null,
@@ -1253,8 +1253,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "lifecycle_rule",
-                        "resource_type"
+                        "resource_type",
+                        "lifecycle_rule"
                     ]
                 },
                 "code_block": null,
@@ -1545,9 +1545,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "block_public_acls",
+                        "block_public_policy",
                         "resource_type",
-                        "block_public_policy"
+                        "block_public_acls"
                     ]
                 },
                 "code_block": null,
@@ -1608,9 +1608,9 @@
                         }
                     },
                     "evaluated_keys": [
-                        "block_public_acls",
+                        "block_public_policy",
                         "resource_type",
-                        "block_public_policy"
+                        "block_public_acls"
                     ]
                 },
                 "code_block": null,
@@ -1724,9 +1724,9 @@
                         }
                     },
                     "evaluated_keys": [
+                        "rule/apply_server_side_encryption_by_default/sse_algorithm",
                         "resource_type",
-                        "server_side_encryption_configuration/rule/apply_server_side_encryption_by_default/sse_algorithm",
-                        "rule/apply_server_side_encryption_by_default/sse_algorithm"
+                        "server_side_encryption_configuration/rule/apply_server_side_encryption_by_default/sse_algorithm"
                     ]
                 },
                 "code_block": null,
@@ -1787,9 +1787,9 @@
                         }
                     },
                     "evaluated_keys": [
+                        "rule/apply_server_side_encryption_by_default/sse_algorithm",
                         "resource_type",
-                        "server_side_encryption_configuration/rule/apply_server_side_encryption_by_default/sse_algorithm",
-                        "rule/apply_server_side_encryption_by_default/sse_algorithm"
+                        "server_side_encryption_configuration/rule/apply_server_side_encryption_by_default/sse_algorithm"
                     ]
                 },
                 "code_block": null,
@@ -1849,14 +1849,14 @@
                         }
                     },
                     "evaluated_keys": [
-                        "egress/cidr_blocks",
-                        "ingress/from_port",
-                        "ingress/self",
-                        "egress/protocol",
                         "egress/to_port",
-                        "ingress/to_port",
-                        "resource_type",
                         "ingress/protocol",
+                        "ingress/from_port",
+                        "resource_type",
+                        "egress/protocol",
+                        "ingress/to_port",
+                        "egress/cidr_blocks",
+                        "ingress/self",
                         "egress/from_port"
                     ]
                 },
@@ -2118,8 +2118,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
                         "versioning/enabled",
+                        "resource_type",
                         "versioning_configuration/status"
                     ]
                 },

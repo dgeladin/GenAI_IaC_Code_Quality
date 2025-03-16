@@ -332,13 +332,7 @@
                             "module_connection": false
                         }
                     ],
-                    "location": [
-                        {
-                            "type": "variable",
-                            "name": "azure_location",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario09/variables.tf",
-                            "module_connection": false
-                        },
+                    "resource_group_name": [
                         {
                             "type": "resource",
                             "name": "azurerm_resource_group.example",
@@ -346,7 +340,13 @@
                             "module_connection": false
                         }
                     ],
-                    "resource_group_name": [
+                    "location": [
+                        {
+                            "type": "variable",
+                            "name": "azure_location",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario09/variables.tf",
+                            "module_connection": false
+                        },
                         {
                             "type": "resource",
                             "name": "azurerm_resource_group.example",
@@ -596,13 +596,7 @@
                             "module_connection": false
                         }
                     ],
-                    "location": [
-                        {
-                            "type": "variable",
-                            "name": "azure_location",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario09/variables.tf",
-                            "module_connection": false
-                        },
+                    "resource_group_name": [
                         {
                             "type": "resource",
                             "name": "azurerm_resource_group.example",
@@ -610,7 +604,13 @@
                             "module_connection": false
                         }
                     ],
-                    "resource_group_name": [
+                    "location": [
+                        {
+                            "type": "variable",
+                            "name": "azure_location",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario09/variables.tf",
+                            "module_connection": false
+                        },
                         {
                             "type": "resource",
                             "name": "azurerm_resource_group.example",
@@ -651,8 +651,8 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
                         "delegation/service_delegation/name",
+                        "resource_type",
                         "name"
                     ]
                 },
@@ -794,10 +794,10 @@
                         }
                     },
                     "evaluated_keys": [
-                        "resource_type",
-                        "auto_upgrade_minor_version",
+                        "type",
                         "publisher",
-                        "type"
+                        "resource_type",
+                        "auto_upgrade_minor_version"
                     ]
                 },
                 "code_block": null,
@@ -855,13 +855,7 @@
                             "module_connection": false
                         }
                     ],
-                    "location": [
-                        {
-                            "type": "variable",
-                            "name": "azure_location",
-                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario09/variables.tf",
-                            "module_connection": false
-                        },
+                    "resource_group_name": [
                         {
                             "type": "resource",
                             "name": "azurerm_resource_group.example",
@@ -869,7 +863,13 @@
                             "module_connection": false
                         }
                     ],
-                    "resource_group_name": [
+                    "location": [
+                        {
+                            "type": "variable",
+                            "name": "azure_location",
+                            "path": "/home/dgeladin/personal/GenAI_IaC_Code_Quality/data/outputs/Mistral/Scenario09/variables.tf",
+                            "module_connection": false
+                        },
                         {
                             "type": "resource",
                             "name": "azurerm_resource_group.example",
