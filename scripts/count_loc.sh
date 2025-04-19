@@ -57,7 +57,7 @@ if [[ ${#directories_to_process[@]} -gt 0 ]]; then # Check if the array is not e
   echo "Directories to process:"
   for dir in "${directories_to_process[@]}"; do
 
-    total_lines=$(find "$OUTPUT_DIR/$dir" -type f -exec wc -l {} + | awk '{total += $1} END {print total}')
+    total_lines=$(find "$OUTPUT_DIR/$dir" -type f -name "*.tf" -exec wc -l {} + | awk '{total += $1} END {print total}')
     echo " LOC: $dir : $total_lines : "
   done
 else

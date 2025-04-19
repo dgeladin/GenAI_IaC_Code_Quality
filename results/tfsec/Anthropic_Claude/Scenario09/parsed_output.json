@@ -23,8 +23,8 @@
         "start_line": 28,
         "end_line": 33
       },
-      "duplicate": false
-    },
+      "duplicate": true
+    }
     {
       "rule_id": "AVD-AWS-0028",
       "long_id": "aws-ec2-enforce-http-token-imds",
@@ -47,7 +47,7 @@
         "start_line": 2,
         "end_line": 21
       },
-      "duplicate": false
+      "duplicate": true
     },
     {
       "rule_id": "AVD-AWS-0104",
@@ -71,7 +71,7 @@
         "start_line": 32,
         "end_line": 32
       },
-      "duplicate": false
+      "duplicate": true
     }
   ],
   "summary": {

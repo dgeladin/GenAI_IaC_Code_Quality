@@ -22,7 +22,7 @@
         "start_line": 106,
         "end_line": 111
       },
-      "duplicate": false
+      "duplicate": true
     },
     {
       "rule_id": "AVD-AWS-0104",
@@ -69,7 +69,7 @@
         "start_line": 36,
         "end_line": 36
       },
-      "duplicate": false
+      "duplicate": true
     },
     {
       "rule_id": "AVD-AWS-0176",
@@ -92,7 +92,7 @@
         "start_line": 2,
         "end_line": 81
       },
-      "duplicate": false
+      "duplicate": true
     },
     {
       "rule_id": "AVD-AWS-0095",
@@ -116,7 +116,7 @@
         "start_line": 216,
         "end_line": 220
       },
-      "duplicate": false
+      "duplicate": true
     }
   ],
   "summary": {

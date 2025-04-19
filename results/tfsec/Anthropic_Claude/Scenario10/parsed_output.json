@@ -22,7 +22,7 @@
         "start_line": 89,
         "end_line": 94
       },
-      "duplicate": false
+      "duplicate": true
     },
     {
       "rule_id": "AVD-AWS-0057",
@@ -46,7 +46,7 @@
         "start_line": 36,
         "end_line": 36
       },
-      "duplicate": false
+      "duplicate": true
     },
     {
       "rule_id": "AVD-AWS-0057",
@@ -70,7 +70,7 @@
         "start_line": 36,
         "end_line": 36
       },
-      "duplicate": false
+      "duplicate": true
     },
     {
       "rule_id": "AVD-AWS-0057",
@@ -94,7 +94,7 @@
         "start_line": 85,
         "end_line": 85
       },
-      "duplicate": false
+      "duplicate": true
     },
     {
       "rule_id": "AVD-AWS-0057",
@@ -118,7 +118,7 @@
         "start_line": 29,
         "end_line": 29
       },
-      "duplicate": false
+      "duplicate": true
     },
     {
       "rule_id": "AVD-AWS-0066",
@@ -142,7 +142,7 @@
         "start_line": 62,
         "end_line": 86
       },
-      "duplicate": false
+      "duplicate": true
     },
     {
       "rule_id": "AVD-AWS-0089",
@@ -166,7 +166,7 @@
         "start_line": 2,
         "end_line": 15
       },
-      "duplicate": false
+      "duplicate": true
     }
   ],
   "summary": {
