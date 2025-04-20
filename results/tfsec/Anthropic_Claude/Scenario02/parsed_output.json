@@ -318,7 +318,7 @@
         "start_line": 38,
         "end_line": 38
       },
-      "duplicate": false
+      "duplicate": true
     },
     {
       "rule_id": "AVD-AWS-0107",

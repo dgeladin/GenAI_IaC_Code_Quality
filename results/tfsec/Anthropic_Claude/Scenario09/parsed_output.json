@@ -24,7 +24,7 @@
         "end_line": 33
       },
       "duplicate": true
-    }
+    },
     {
       "rule_id": "AVD-AWS-0028",
       "long_id": "aws-ec2-enforce-http-token-imds",
