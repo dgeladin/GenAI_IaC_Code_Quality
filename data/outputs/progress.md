@@ -2,7 +2,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | Amazon Q Developer | x | x | x | x | x | x | x | x | x | x |
 | Anthropic Claude   | x | x | x | x | x | x | x | x | x | x |
-| ChatGPT            |   |   |   |   |   |   |   |   |   |   |
-| Code Llama         |   |   |   |   |   |   |   |   |   |   |
+| ChatGPT            | x | x | x | x | x | x | x | x | x | x |
+| Mistral AI         | x | x | x | x | x | x | x | x | x | x |
 | Google Gemini      | x | x | x | x | x | x | x | x | x | x |
 | Github Copilot     | x | x | x | x | x | x | x | x | x | x |

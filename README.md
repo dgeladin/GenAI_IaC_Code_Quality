@@ -30,7 +30,7 @@ The `data/outputs` directory contains subdirectories for each GenAI model used i
 * model_2: Google Gemini
 * model_3: Anthropic Claude
 * model_4: Github Copilot
-* model_5: Code Llama
+* model_5: Mistral AI
 * model_6: Amazon Q Developer
 
 ## Accessing and Utilizing Outputs
