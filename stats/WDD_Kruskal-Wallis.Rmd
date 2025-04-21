@@ -1,0 +1,93 @@
+---
+title: "WDD Kruskal-Wallis"
+author: "Daniel Geladin"
+date: "2025-04-18"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,comment=T)
+```
+
+```{r}
+# install.packages("dplyr")
+# install.packages("ggplot2")
+# install.packages("ggpubr")
+
+data=read.csv("data/WDD.csv")
+head(data)
+
+library(dplyr)
+library(ggplot2)
+library(ggpubr)
+
+clean_data <- na.omit(data)
+
+# Group by Model and run Shapiro-Wilk test on WDD
+normality_results <- clean_data %>%
+  group_by(Model) %>%
+  summarise(
+    p_value = shapiro.test(WDD)$p.value,
+    .groups = "drop"
+  )
+normality_results
+
+
+#pval greater than 0.05, assumes normality. Anything lower than 0.05 can NOT assume normality. 
+
+clean_data <- clean_data %>%
+  mutate(log_WDD = log1p(WDD))  # log(1 + WDD)
+
+# Check normality for each model
+normality_results <- clean_data %>%
+  group_by(Model) %>%
+  summarise(
+    p_value = shapiro.test(log_WDD)$p.value,
+    .groups = "drop"
+  )
+
+data$Group <- ifelse(data$Model == "Amazon_Q_Developer", "Amazon_Q",
+                    ifelse(data$Model == "Anthropic_Claude", "Anthropic",
+                           ifelse(data$Model == "ChatGPT", "ChatGPT",
+                                  ifelse(data$Model == "Gemini", "Gemini",
+                                         ifelse(data$Model == "Github_Copilot", "Github_Copilot",
+                                                ifelse(data$Model == "Mistral", "Mistral", NA))))))
+
+
+# Print normality results
+print(normality_results)
+
+# Data is not normalized. Running anova to compare against Kruskal-Wallis
+
+#compare (log-transformed) models
+anova_result <- aov(log_WDD ~ Model, data = clean_data)
+summary(anova_result)
+
+
+#no significant difference in means between models
+
+#comparing models using a test that doesn't assume normality 
+kruskal_result <- kruskal.test(WDD ~ Model, data = clean_data)
+kruskal_result
+
+#no significant difference in means between models
+
+```
+
+
+
+graphs
+```{r}
+library(ggplot2)
+# WDD Boxplot
+ggplot(data, aes(x = factor(Group), y = WDD, fill = factor(Group))) +
+  geom_boxplot() +
+  labs(title = "WDD by Group", x = "Group", y = "WDD") +
+  theme_minimal()
+
+# Histograms for WDD by group
+ggplot(data, aes(x = WDD, fill = factor(Group))) +
+  geom_histogram(position = "dodge", bins = 20) +
+  labs(title = "Histogram of WDD by Group", x = "WDD", y = "Frequency") +
+  theme_minimal()
+```
