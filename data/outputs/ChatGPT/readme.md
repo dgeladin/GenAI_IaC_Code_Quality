@@ -1,18 +1,21 @@
-# Anthropic Claude
+# ChatGPT
 
 ## Version
-Claude 3.5 Sonnet: claude-3-5-sonnet-20241022
+ChatGPT GPT-4-turbo model
+Officially released on November 6, 2023
+
 
 ## Descriptive Statistics
   Open-Source: No
-  Num of Parameters: 175B 
+  Num of Parameters: Not Disclosed
   General or Specialized Model: General
-  Training Data: Training up to July 2024
-  Model Release Date: 22-OCT-2024
+  Training Data: December  2023
+  Model Release Date: 06-NOV-2023
   Pricing: Free to Public
 
+
 ## Process
-* Goto: https://claude.ai/  
+* Goto: https://chatgpt.com
 * Provide Prompt scenarios to chat.  
 * Copy the generated code from the chat.  
 * Create the file in source control and paste the file content.  

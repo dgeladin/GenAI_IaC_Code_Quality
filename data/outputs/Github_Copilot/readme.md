@@ -3,6 +3,14 @@
 ## Version
 OpenAI GPT-4. Up to date as of October 2023.
 
+## Descriptive Statistics
+  Open-Source: No
+  Num of Parameters: 1.76T 
+  General or Specialized Model: Specialized
+  Training Data: Training up to October 2023
+  Model Release Date: 18-DEC-2024
+  Pricing: Free to Public
+
 ## Process
 * Goto https://github.com/copilot  
 * Provide Prompt scenarios to chat  
