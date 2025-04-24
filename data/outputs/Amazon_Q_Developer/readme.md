@@ -5,12 +5,12 @@ Claude 3.5 Sonnet, specifically version claude-3-5-sonnet-20241022.
 Amazon Q is not Claude. LLM is built on Amazon Bedrock
 
 ## Descriptive Statistics
-  Open-Source: No
-  Num of Parameters: Not Disclosed 
-  General or Specialized Model: Specialized
-  Training Data: Software Engineering
-  Model Release Date: 30-JAN-2025
-  Pricing: Free to Public
+  Open-Source: No  
+  Num of Parameters: Not Disclosed   
+  General or Specialized Model: Specialized  
+  Training Data: Software Engineering  
+  Model Release Date: 30-JAN-2025  
+  Pricing: Free to Public  
 
 ## Process
 * Install VS Code
