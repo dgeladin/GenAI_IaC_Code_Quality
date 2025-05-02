@@ -7,7 +7,7 @@ Officially released on September 27, 2023
 
 ## Descriptive Statistics
   Open-Source: Non-Production License  
-  Num of Parameters: 22B  
+  Num of Parameters: 7B  
   General or Specialized Model: Specialized  
   Training Data: Open source code  
   Model Release Date: 27-SEP-2023  
